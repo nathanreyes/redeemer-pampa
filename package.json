@@ -1,0 +1,29 @@
+{
+  "name": "redeemer-pampa",
+  "version": "1.0.0",
+  "description": "Website for Redeemer Pampa, an Acts 29 church in Pampa, TX.",
+  "author": "Nathan Reyes <nathanreyes@me.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "8.1.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "glob-all": "3.1.0",
+    "purgecss-webpack-plugin": "0.20.1",
+    "tailwindcss": "0.4.3"
+  }
+}
