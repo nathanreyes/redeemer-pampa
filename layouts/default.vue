@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class='fixed w-full py-4 px-6 flex justify-between items-center flex-wrap bg-white z-20'>
+      class='fixed w-full py-4 px-6 flex justify-between items-center flex-wrap bg-white z-20 border-grey-lighter border-b'>
       <div class='flex items-center flex-no-shrink mr-6 z-10 bg-white'>
         <nuxt-link to='/' class='link rounded block text-blue text-xl py-2 px-4 tracking-wide'>
           Redeemer
@@ -32,15 +32,19 @@
       </div>
     </nav>
     <nuxt/>
+    <site-footer>
+    </site-footer>
   </div>
 </template>
 
 <script>
 import NavMenu from '~/components/NavMenu';
+import SiteFooter from '~/components/SiteFooter';
 
 export default {
   components: {
     NavMenu,
+    SiteFooter,
   },
   data() {
     return {
