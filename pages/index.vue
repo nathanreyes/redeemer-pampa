@@ -13,7 +13,7 @@
       It shapes what we know, how we worship and how we live our day to day lives.
     </p>
     <p class='text-xl'>
-      — It is why we adopt the name <em>Redeemer</em>. —
+      — It is why we adopt the name <em>Redeemer</em>.
     </p>
   </section>
   <section>
@@ -26,7 +26,7 @@
           <h3 class='mt-4 mb-8 text-2xl tracking-wide uppercase'>
             Living Sent
           </h3>
-          <p class='italic text-grey-darkest leading-normal tracking-wide'>
+          <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
             "I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing."
           </p>
           <p class='text-grey font-bold text-sm text-right mt-3'>
@@ -46,20 +46,20 @@
       Worshiping Through Generosity
     </h3>
     <p class='my-8 text-5xl font-hairline leading-tight'>
-      Generosity is hard, yet vital in our sanctification as followers of Christ, who was eternally gracious to us as his adopted sons and daughters.
+      Generosity is paramount in our sanctification as followers of Christ, who was eternally gracious to us as his adopted sons and daughters.
     </p>
     <p class='text-xl'>
-      — Our goal is to practice grace together, as a family. —
+      — We believe in the practice of grace together as a family.
     </p>
   </section>
   <section>
     <div class='flex flex-col container mx-auto md:flex-row'>
-      <div class='flex-grow mr-4 text-right col'>
+      <div class='flex-grow mr-4 md:text-right col'>
         <div class='m-4'>
           <h3 class='mt-4 mb-8 text-2xl tracking-wide uppercase'>
             Simple Obedience
           </h3>
-          <p class='italic text-grey-darkest leading-normal tracking-wide'>
+          <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
             "Be still and know that I am God."
           </p>
           <p class='text-grey font-bold text-sm text-right mt-3'>
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class='flex-grow mb-4 col md:ml-4'>
-        <img src='https://via.placeholder.com/500x350'>
+        <img class='w-full md:w-auto' src='https://via.placeholder.com/500x350'>
       </div>
     </div>
   </section>
@@ -88,7 +88,7 @@
       There are no boundaries in a Christ-driven community. If he is over all and in all, then his Church is to reflect the beauty of his diversity.
     </p>
     <p class='text-xl'>
-      — It is Redeemer's desire to represent <em>all</em> of Pampa, TX. —
+      — We desire to represent <em>all</em> of Pampa, TX.
     </p>
   </section>
 </div>

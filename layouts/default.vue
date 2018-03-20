@@ -1,19 +1,34 @@
 <template>
   <div>
-    <nav class='fixed w-full py-3 flex justify-center items-center bg-grey-lightest z-20'>
-      <div class='block lg:hidden'>
-        <button class='flex items-center px-3 py-2 border rounded'>
+    <nav
+      class='fixed w-full py-3 px-6 flex justify-between items-center flex-wrap bg-white z-20'>
+      <div class='flex items-center flex-no-shrink mr-6 z-10 bg-white'>
+        <nuxt-link to='/' class='link rounded block text-blue text-xl py-2 px-4 tracking-wide'>
+          Redeemer
+        </nuxt-link>
+      </div>
+      <div class='block lg:hidden bg-white z-10'>
+        <button
+          class='flex items-center px-3 py-2 border rounded'
+          @click='menuVisible = !menuVisible'>
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
           </svg>
         </button>
       </div>
-      <div class='w-full block flex-grow lg:flex lg:justify-center lg:items-center lg:w-auto'>
-        <nuxt-link to='/services' :class='navClass'>Services & Staff</nuxt-link>
-        <nuxt-link to='/services' :class='navClass'>Gospel Communities</nuxt-link>
-        <nuxt-link to='/contact' :class='navClass'>Contact</nuxt-link>
-        <nuxt-link to='/giving' :class='navClass'>Giving</nuxt-link>
+      <nav-menu
+        class='hidden lg:flex justify-center items-center w-auto'>
+      </nav-menu>
+      <div class='relative flex-grow w-full lg:hidden block -mx-6'>
+        <transition
+          name='fade'
+          tag='div'>
+          <nav-menu
+            class='absolute pin-t pin-r w-full bg-grey-lighter mt-3 pt-3'
+            v-if='menuVisible'>
+          </nav-menu>
+        </transition>
       </div>
     </nav>
     <nuxt/>
@@ -21,16 +36,28 @@
 </template>
 
 <script>
+import NavMenu from '~/components/NavMenu';
+
 export default {
+  components: {
+    NavMenu,
+  },
   data() {
     return {
-      navClass:
-        'link rounded block text-blue text-xl mt-4 mr-8 py-2 px-4 tracking-wide lg:mt-0',
+      menuVisible: false,
     };
   },
 };
 </script>
 
 <style>
-
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
 </style>
