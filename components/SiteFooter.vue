@@ -1,8 +1,8 @@
 <template>
-  <div class='bg-blue py-8'>
+  <div class='bg-blue flex flex-col justify-center'>
     <div class='container mx-auto text-white'>
-      <div class='w-full'>
-        <div class='flex justify-between my-8'>
+      <div class='w-full h-full flex flex-col'>
+        <div class='flex justify-between py-8'>
           <div
             v-for='menu in menus'
             :key='menu.header'
@@ -20,7 +20,7 @@
             </a>
           </div>
         </div>
-        <div class='flex justify-center text-blue-light pt-6 border-t border-blue-light'>
+        <div class='flex-no-shrink flex justify-center text-blue-light py-6 border-t border-blue-light'>
           Copyright © 2018 Redeemer Pampa. All rights reserved.
         </div>
       </div>
@@ -97,5 +97,8 @@ export default {
 <style>
 .col {
   flex-basis: 200px;
+}
+.footer-menu {
+  height: 400px;
 }
 </style>
