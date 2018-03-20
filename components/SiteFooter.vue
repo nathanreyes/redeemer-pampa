@@ -1,28 +1,30 @@
 <template>
-  <div class='bg-blue flex flex-col justify-center'>
+  <div class='bg-blue w-full'>
     <div class='container mx-auto text-white'>
-      <div class='w-full h-full flex flex-col'>
-        <div class='flex justify-between py-8'>
-          <div
-            v-for='menu in menus'
-            :key='menu.header'
-            :class='colClass'>
-            <span
-              :class='headingClass'>
-              {{ menu.header }}
-            </span>
-            <a
-              v-for='submenu in menu.submenus'
-              :key='submenu.title'
-              :class='subheadingClass'
-              :href='submenu.url'>
-              {{ submenu.title }}
-            </a>
-          </div>
+      <div class='flex flex-col px-8 py-8 md:flex-row md:justify-center'>
+        <div
+          v-for='(menu, i) in menus'
+          :key='menu.header'
+          :class='getColClass(i)'>
+          <span
+            :class='headingClass'>
+            {{ menu.header }}
+          </span>
+          <a
+            v-for='submenu in menu.submenus'
+            :key='submenu.title'
+            :class='subheadingClass'
+            :href='submenu.url'>
+            {{ submenu.title }}
+          </a>
         </div>
-        <div class='flex-no-shrink flex justify-center text-blue-light py-6 border-t border-blue-light'>
-          Copyright © 2018 Redeemer Pampa. All rights reserved.
-        </div>
+      </div>
+      <div class='flex justify-center pb-8'>
+        <a class='link text-blue-darker' href='https://www.facebook.com/RedeemerPampa/'>Facebook Logo</a>
+        <a class='link text-blue-darker ml-4'>Acts 29 Logo</a>
+      </div>
+      <div class='flex-no-shrink flex justify-center text-blue-light py-8 border-t border-blue-light'>
+        Copyright © 2018 Redeemer Pampa. All rights reserved.
       </div>
     </div>
   </div>
@@ -86,19 +88,15 @@ export default {
           ],
         },
       ],
-      colClass: 'flex flex-col col',
+      colClass: 'flex flex-col mt-8',
       headingClass: 'text-xl text-blue-lightest font-light mb-4',
-      subheadingClass: 'link font-semibold mb-2 text-white',
+      subheadingClass: 'link font-semibold mb-3 text-white',
     };
+  },
+  methods: {
+    getColClass(idx) {
+      return `flex flex-col mt-8 ${idx && 'ml-8'}`;
+    },
   },
 };
 </script>
-
-<style>
-.col {
-  flex-basis: 200px;
-}
-.footer-menu {
-  height: 400px;
-}
-</style>
