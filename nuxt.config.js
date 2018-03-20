@@ -1,6 +1,6 @@
-const path = require("path");
-const PurgecssPlugin = require("purgecss-webpack-plugin");
-const glob = require("glob-all");
+const path = require('path');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob-all');
 
 class TailwindExtractor {
   static extract(content) {
@@ -13,38 +13,38 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: "redeemer-pampa",
+    title: 'redeemer-pampa',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: "Website for Redeemer Pampa, an Acts 29 church in Pampa, TX."
-      }
+        hid: 'description',
+        name: 'description',
+        content: 'Website for Redeemer Pampa, an Acts 29 church in Pampa, TX.',
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: "#3B8070" },
+  loading: { color: '#3B8070' },
   /*
   ** Build configuration
   */
   build: {
     extractCSS: true,
-    postcss: [require("tailwindcss")("./tailwind.js"), require("autoprefixer")],
+    postcss: [require('tailwindcss')('./tailwind.js'), require('autoprefixer')],
     /*
     ** Run ESLint on save
     */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/,
         });
       }
       if (!isDev) {
@@ -53,20 +53,21 @@ module.exports = {
             // purgecss configuration
             // https://github.com/FullHuman/purgecss
             paths: glob.sync([
-              path.join(__dirname, "./pages/**/*.vue"),
-              path.join(__dirname, "./layouts/**/*.vue")
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue'),
             ]),
             extractors: [
               {
                 extractor: TailwindExtractor,
-                extensions: ["vue"]
-              }
+                extensions: ['vue'],
+              },
             ],
-            whitelist: ["html", "body", "nuxt-progress"]
-          })
+            whitelist: ['html', 'body', 'nuxt-progress'],
+          }),
         );
       }
-    }
+    },
   },
-  css: ["~/assets/styles/tailwind.css"]
+  css: ['~/assets/styles/tailwind.css'],
 };

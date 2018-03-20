@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class='fixed w-full py-3 px-6 flex justify-between items-center flex-wrap bg-white z-20'>
+      class='fixed w-full py-4 px-6 flex justify-between items-center flex-wrap bg-white z-20'>
       <div class='flex items-center flex-no-shrink mr-6 z-10 bg-white'>
         <nuxt-link to='/' class='link rounded block text-blue text-xl py-2 px-4 tracking-wide'>
           Redeemer
