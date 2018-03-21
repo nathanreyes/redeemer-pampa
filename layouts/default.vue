@@ -3,7 +3,7 @@
     <nav
       class='fixed w-full py-4 px-6 flex justify-between items-center flex-wrap bg-white z-20 border-grey-lighter border-b'>
       <div class='flex items-center flex-no-shrink mr-6 z-10 bg-white'>
-        <nuxt-link to='/' class='link rounded block text-blue text-xl py-2 px-4 tracking-wide'>
+        <nuxt-link to='/' class='link rounded block text-grey-dark text-2xl py-2 px-4 tracking-wide font-serif'>
           Redeemer
         </nuxt-link>
       </div>
@@ -17,17 +17,17 @@
           </svg>
         </button>
       </div>
-      <nav-menu
+      <site-nav
         class='hidden lg:flex justify-center items-center w-auto'>
-      </nav-menu>
+      </site-nav>
       <div class='relative flex-grow w-full lg:hidden block -mx-6'>
         <transition
           name='fade'
           tag='div'>
-          <nav-menu
+          <site-nav
             class='absolute pin-t pin-r w-full bg-grey-lighter mt-3 pt-3'
             v-if='menuVisible'>
-          </nav-menu>
+          </site-nav>
         </transition>
       </div>
     </nav>
@@ -38,12 +38,12 @@
 </template>
 
 <script>
-import NavMenu from '~/components/NavMenu';
+import SiteNav from '~/components/SiteNav';
 import SiteFooter from '~/components/SiteFooter';
 
 export default {
   components: {
-    NavMenu,
+    SiteNav,
     SiteFooter,
   },
   data() {

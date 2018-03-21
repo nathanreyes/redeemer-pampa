@@ -5,7 +5,7 @@
   </banner>
   <section
     class='container mx-auto px-4 py-8 text-center lg:w-2/3'>
-    <h3 class='my-8 text-2xl tracking-wide uppercase'>
+    <h3 class='my-8 text-2xl tracking-wide font-serif uppercase'>
       The Gospel Is Everything
     </h3>
     <p class='my-8 text-5xl font-light leading-tight'>
@@ -23,7 +23,7 @@
       </div>
       <div class='flex-grow ml-4 col'>
         <div class='m-4'>
-          <h3 class='mt-4 mb-8 text-2xl tracking-wide uppercase'>
+          <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
             Living Sent
           </h3>
           <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
@@ -42,7 +42,7 @@
   </section>
   <section
     class='container mx-auto px-4 py-8 text-center lg:w-2/3'>
-    <h3 class='my-8 text-2xl tracking-wide uppercase'>
+    <h3 class='my-8 text-2xl tracking-wide font-serif uppercase'>
       Worshiping Through Generosity
     </h3>
     <p class='my-8 text-5xl font-light leading-tight'>
@@ -56,7 +56,7 @@
     <div class='flex flex-col container mx-auto md:flex-row'>
       <div class='flex-grow mr-4 md:text-right col'>
         <div class='m-4'>
-          <h3 class='mt-4 mb-8 text-2xl tracking-wide uppercase'>
+          <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
             Simple Obedience
           </h3>
           <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
@@ -81,7 +81,7 @@
   </section>
   <section
     class='container mx-auto px-4 py-8 text-center lg:w-2/3'>
-    <h3 class='my-8 text-2xl tracking-wide uppercase'>
+    <h3 class='my-8 text-2xl tracking-wide font-serif uppercase'>
       A Church Should Reflect Its Community
     </h3>
     <p class='my-8 text-5xl font-light leading-tight'>
@@ -90,6 +90,31 @@
     <p class='text-xl'>
       — We desire to represent <em>all</em> of Pampa, TX.
     </p>
+  </section>
+  <section>
+    <div class='flex flex-col container mx-auto md:flex-row'>
+      <div class='flex-grow mb-4 col md:text-right md:mr-4'>
+        <img class='w-full md:w-auto' src='https://via.placeholder.com/500x350'>
+      </div>
+      <div class='flex-grow ml-4 col'>
+        <div class='m-4'>
+          <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
+            Come As You Are
+          </h3>
+          <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
+            "I believe; help my unbelief!"
+          </p>
+          <p class='text-grey font-bold text-sm text-right mt-3'>
+            - Mark 9:24
+          <p>
+          <p class='text-xl mt-4 leading-normal'>
+            God doesn't want a self-perfecting version of ourselves.
+            It is our vulnerable, repentant hearts that bring us closer to Him through his Spirit.
+            With his power, we can cultivate a boldness to beat back sin.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 </template>

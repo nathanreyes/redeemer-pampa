@@ -1,0 +1,90 @@
+[
+  {
+    "header": "Connect",
+    "url": "/connect",
+    "submenus": [
+      {
+        "title": "Services",
+        "url": "/connect#services"
+      },
+      {
+        "title": "Gospel Communities",
+        "url": "/connect#gospel-communities"
+      },
+      {
+        "title": "Membership",
+        "url": "/connect#membership"
+      },
+      {
+        "title": "Baby Dedication",
+        "url": "/connect#baby-dedication"
+      }
+    ]
+  },
+  {
+    "header": "About",
+    "url": "/about",
+    "submenus": [
+      {
+        "title": "Leadership & Staff",
+        "url": "/about#leadership-staff"
+      },
+      {
+        "title": "Affiliations",
+        "url": "/about#affiliations"
+      },
+      {
+        "title": "Beliefs & Core Values",
+        "url": "/about#beliefs-core-values"
+      },
+      {
+        "title": "Church History",
+        "url": "/about#church-history"
+      }
+    ]
+  },
+  {
+    "header": "Contact",
+    "url": "/contact",
+    "submenus": [
+      {
+        "title": "Location",
+        "url": "/contact#location"
+      },
+      {
+        "title": "Subheading 2",
+        "url": "/contact#subheading2"
+      },
+      {
+        "title": "Subheading 3",
+        "url": "/services#subheading1"
+      },
+      {
+        "title": "Subheading 4",
+        "url": "/services#subheading2"
+      }
+    ]
+  },
+  {
+    "header": "Giving",
+    "url": "/giving",
+    "submenus": [
+      {
+        "title": "Subheading 1",
+        "url": "/giving#subheading1"
+      },
+      {
+        "title": "Subheading 2",
+        "url": "/giving#subheading2"
+      },
+      {
+        "title": "Subheading 3",
+        "url": "/giving#subheading1"
+      },
+      {
+        "title": "Subheading 4",
+        "url": "/giving#subheading2"
+      }
+    ]
+  }
+]
