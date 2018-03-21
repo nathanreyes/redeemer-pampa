@@ -8,16 +8,16 @@
         "url": "/connect#services"
       },
       {
+        "title": "Podcasts",
+        "url": "/connect#podcasts"
+      },
+      {
         "title": "Gospel Communities",
         "url": "/connect#gospel-communities"
       },
       {
         "title": "Membership",
         "url": "/connect#membership"
-      },
-      {
-        "title": "Baby Dedication",
-        "url": "/connect#baby-dedication"
       }
     ]
   },
