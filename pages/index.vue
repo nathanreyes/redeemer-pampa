@@ -8,7 +8,7 @@
     <h3 class='my-8 text-2xl tracking-wide uppercase'>
       The Gospel Is Everything
     </h3>
-    <p class='my-8 text-5xl font-hairline leading-tight'>
+    <p class='my-8 text-5xl font-light leading-tight'>
       Nothing trumps the redeeming work of Jesus on the cross. 
       It shapes what we know, how we worship and how we live our day to day lives.
     </p>
@@ -45,7 +45,7 @@
     <h3 class='my-8 text-2xl tracking-wide uppercase'>
       Worshiping Through Generosity
     </h3>
-    <p class='my-8 text-5xl font-hairline leading-tight'>
+    <p class='my-8 text-5xl font-light leading-tight'>
       Generosity is paramount in our sanctification as followers of Christ, who was eternally gracious to us as his adopted sons and daughters.
     </p>
     <p class='text-xl'>
@@ -84,7 +84,7 @@
     <h3 class='my-8 text-2xl tracking-wide uppercase'>
       A Church Should Reflect Its Community
     </h3>
-    <p class='my-8 text-5xl font-hairline leading-tight'>
+    <p class='my-8 text-5xl font-light leading-tight'>
       There are no boundaries in a Christ-driven community. If he is over all and in all, then his Church is to reflect the beauty of his diversity.
     </p>
     <p class='text-xl'>

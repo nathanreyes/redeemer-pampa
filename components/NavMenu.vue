@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       navClass:
-        'link rounded block text-blue text-xl text-center mb-4 py-2 px-4 tracking-wide lg:mb-0',
+        'link rounded block text-blue text-xl text-center font-semibold mb-4 py-2 px-4 tracking-wide lg:mb-0',
     };
   },
 };
