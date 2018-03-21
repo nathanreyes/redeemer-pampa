@@ -26,20 +26,20 @@
     "url": "/about",
     "submenus": [
       {
-        "title": "Leadership & Staff",
-        "url": "/about#leadership-staff"
+        "title": "Staff",
+        "url": "/about#staff"
+      },
+      {
+        "title": "Beliefs",
+        "url": "/about#beliefs"
+      },
+      {
+        "title": "History",
+        "url": "/about#history"
       },
       {
         "title": "Affiliations",
         "url": "/about#affiliations"
-      },
-      {
-        "title": "Beliefs & Core Values",
-        "url": "/about#beliefs-core-values"
-      },
-      {
-        "title": "Church History",
-        "url": "/about#church-history"
       }
     ]
   },
@@ -48,20 +48,16 @@
     "url": "/contact",
     "submenus": [
       {
+        "title": "Online",
+        "url": "/contact#online"
+      },
+      {
         "title": "Location",
         "url": "/contact#location"
       },
       {
-        "title": "Subheading 2",
-        "url": "/contact#subheading2"
-      },
-      {
-        "title": "Subheading 3",
-        "url": "/services#subheading1"
-      },
-      {
-        "title": "Subheading 4",
-        "url": "/services#subheading2"
+        "title": "Weddings & Events",
+        "url": "/contact#weddings-events"
       }
     ]
   },
@@ -70,19 +66,15 @@
     "url": "/giving",
     "submenus": [
       {
-        "title": "Subheading 1",
+        "title": "Motivation",
         "url": "/giving#subheading1"
       },
       {
-        "title": "Subheading 2",
-        "url": "/giving#subheading2"
-      },
-      {
-        "title": "Subheading 3",
+        "title": "Methods",
         "url": "/giving#subheading1"
       },
       {
-        "title": "Subheading 4",
+        "title": "Mission",
         "url": "/giving#subheading2"
       }
     ]

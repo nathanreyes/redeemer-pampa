@@ -1,37 +1,10 @@
 <template>
-  <div>
-    <nav
-      class='fixed w-full py-4 px-6 flex justify-between items-center flex-wrap bg-white z-20 border-grey-lighter border-b'>
-      <div class='flex items-center flex-no-shrink mr-6 z-10 bg-white'>
-        <nuxt-link to='/' class='link rounded block text-grey-dark text-2xl py-2 px-4 tracking-wide font-serif'>
-          Redeemer
-        </nuxt-link>
-      </div>
-      <div class='block lg:hidden bg-white z-10'>
-        <button
-          class='flex items-center px-3 py-2 border rounded'
-          @click='menuVisible = !menuVisible'>
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-          </svg>
-        </button>
-      </div>
-      <site-nav
-        class='hidden lg:flex justify-center items-center w-auto'>
-      </site-nav>
-      <div class='relative flex-grow w-full lg:hidden block -mx-6'>
-        <transition
-          name='fade'
-          tag='div'>
-          <site-nav
-            class='absolute pin-t pin-r w-full bg-grey-lighter mt-3 pt-3'
-            v-if='menuVisible'>
-          </site-nav>
-        </transition>
-      </div>
-    </nav>
-    <nuxt/>
+  <div class='min-h-screen flex flex-col'>
+    <site-nav>
+    </site-nav>
+    <div class='main flex-grow'>
+      <nuxt />
+    </div>
     <site-footer>
     </site-footer>
   </div>
@@ -46,22 +19,11 @@ export default {
     SiteNav,
     SiteFooter,
   },
-  data() {
-    return {
-      menuVisible: false,
-    };
-  },
 };
 </script>
 
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.2s ease-in-out;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-20px);
+<style scoped>
+.main {
+  margin-top: 70px;
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
-  <div class='bg-blue w-full'>
+<div>
+  <div class='bg-blue w-full shadow-inner'>
     <div class='container mx-auto text-white'>
-      <div class='flex flex-col items-center px-8 py-8 lg:flex-row lg:justify-center'>
+      <div class='flex flex-col sm:flex-row sm:flex-wrap px-8 py-8 lg:flex-row lg:justify-center'>
         <div
           v-for='(menu, i) in menus'
           :key='menu.header'
@@ -20,16 +21,29 @@
           </a>
         </div>
       </div>
-      <div class='flex justify-center pb-8'>
-        <a class='link text-blue-darker' href='https://www.facebook.com/RedeemerPampa/'>Facebook Logo</a>
-        <a class='link text-blue-darker ml-4'>Acts 29 Logo</a>
-        <a class='link text-blue-darker ml-4'>Redeemer Logo</a>
-      </div>
     </div>
-    <div class='flex-no-shrink flex justify-center text-blue-light py-8 border-t border-blue-light'>
+  </div>
+  <div class='bg-blue-darker'>
+    <div class='flex justify-center py-8'>
+      <a class='link text-white' href='https://www.acts29.com' target='_blank'>Acts 29 Logo</a>
+      <a class='link text-white ml-4' href='https://www.redeemernetwork.org' target='_blank'>Redeemer Logo</a>
+      <a class='link text-white ml-4' href='https://www.facebook.com/RedeemerPampa/' taget='_blank'>Facebook Logo</a>
+      <a class='link text-white ml-4' href='https://twitter.com/RedeemerPampa' target='_blank'>Twitter Logo</a>
+    </div>
+    <div
+      class='flex-no-shrink flex flex-col items-center pb-8 text-sm text-blue-lighter font-light leading-normal'>
+      <p>225 N. Cuyler St. (Downtown Pampa)</p>
+      <p>P.O. Box 1294</p>
+      <p>Pampa, TX 79066</p>
+      <p>806.486.2561</p>
+      <p>info.redeemerpampa@gmail.com</p>
+    </div>
+    <div
+      class='flex-no-shrink flex justify-center text-grey pb-8 text-sm font-light'>
       Copyright © 2018 Redeemer Pampa
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,7 +53,6 @@ export default {
   data() {
     return {
       menus,
-      colClass: 'flex flex-col mt-8',
       headingClass:
         'text-xl text-center text-blue-lightest font-light mb-4 md:text-left',
       subheadingClass: 'link text-center mb-3 text-white md:text-left',
@@ -47,7 +60,7 @@ export default {
   },
   methods: {
     getColClass(idx) {
-      return `flex flex-col mt-8 mx-4`;
+      return `flex flex-col mt-4 mx-4`;
     },
   },
 };
