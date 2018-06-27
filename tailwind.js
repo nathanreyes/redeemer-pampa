@@ -304,6 +304,7 @@ module.exports = {
     none: 1,
     tight: 1.25,
     normal: 1.5,
+    comfy: 1.6,
     loose: 2,
   },
 
@@ -615,6 +616,12 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
+    '20': '4rem',
+    '24': '6rem',
+    '32': '8rem',
   },
 
   /*
@@ -642,6 +649,12 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
+    '20': '4rem',
+    '24': '6rem',
+    '32': '8rem',
   },
 
   /*
@@ -849,7 +862,11 @@ module.exports = {
   |
   */
 
-  plugins: [],
+  plugins: [
+    require('tailwindcss/plugins/container')({
+      center: true,
+    }),
+  ],
 
   /*
   |-----------------------------------------------------------------------------

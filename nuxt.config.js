@@ -78,9 +78,11 @@ module.exports = {
   },
   css: ['~/assets/styles/tailwind.css'],
   modules: [
-    '@nuxtjs/google-analytics',
-    {
-      id: 'UA-116219439-1',
-    },
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-116219439-1',
+      },
+    ],
   ],
 };

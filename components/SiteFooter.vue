@@ -39,7 +39,7 @@
       <p>info.redeemerpampa@gmail.com</p>
     </div>
     <div
-      class='flex-no-shrink flex justify-center text-grey pb-8 text-sm font-light'>
+      class='flex-no-shrink flex justify-center text-grey pb-8 text-xs font-light'>
       Copyright © 2018 Redeemer Pampa
     </div>
   </div>

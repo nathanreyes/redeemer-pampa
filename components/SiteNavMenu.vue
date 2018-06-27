@@ -14,14 +14,11 @@
 import menus from '~/util/menus.json';
 
 export default {
-  props: {
-    isMobile: Boolean,
-  },
   data() {
     return {
       menus,
       navClass:
-        'link rounded block text-blue text-xl text-center uppercase mb-4 py-2 px-4 tracking-tight lg:mb-0',
+        'link rounded block text-blue font-serif text-xl text-center uppercase mb-4 py-2 px-4 tracking-wide lg:mb-0',
     };
   },
 };

@@ -5,13 +5,20 @@
  * You can see the styles here:
  * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
  *
- * If using `postcss-import`, you should import this line from it's own file:
+ * If using `postcss-import`, use this import instead:
  *
- * @import "./tailwind-preflight.css";
- *
- * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ * @import "tailwindcss/preflight";
  */
 @tailwind preflight;
+
+/**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+@tailwind components;
 
 /**
   * Here you would add any of your custom component classes; stuff that you'd
@@ -35,8 +42,32 @@ html {
 }
 
 .link {
-  @apply .cursor-pointer .no-underline;
+  @apply .cursor-pointer .no-underline .inline-block .align-baseline .text-lg .text-blue;
   transition: all 0.14s ease-in-out;
+}
+
+.link:hover {
+  @apply .text-blue-darker;
+}
+
+.section {
+  @apply .mt-8 .mb-8 .px-4 .max-w-lg .mx-auto;
+}
+
+.section-margin {
+  margin: 6em auto;
+}
+
+.section-title {
+  @apply .text-2xl .mb-6 .text-grey-darker;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+.content {
+  @apply .text-lg .leading-comfy;
 }
 
 /**
