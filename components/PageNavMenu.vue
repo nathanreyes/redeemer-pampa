@@ -1,21 +1,21 @@
 <template>
   <div
-    class='text-sm flex justify-center items-center pt-6'
+    class='hidden md:flex justify-center text-sm items-center pt-6'
     >
     <transition
       name='menu'
       appear
       >
       <ul
-        class='list-reset flex'
-        @click='showMenu = !showMenu'>
+        class='list-reset flex'>
         <li
           v-for='menuItem in menuItems'
           :key='menuItem.title'
           class='breadcrumb'>
           <a
-            :href='menuItem.url'
-            :class='menuItemClass'>
+            href='#'
+            :class='menuItemClass'
+            v-scroll-to='menuItem.url'>
             {{ menuItem.title }}
           </a>
         </li>

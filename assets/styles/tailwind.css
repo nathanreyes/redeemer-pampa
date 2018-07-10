@@ -41,6 +41,10 @@ html {
   @apply .font-sans;
 }
 
+body {
+  @apply .bg-blue-darker;
+}
+
 .link {
   @apply .cursor-pointer .no-underline .inline-block .align-baseline .text-lg .text-blue;
   transition: all 0.14s ease-in-out;
@@ -51,7 +55,7 @@ html {
 }
 
 .section {
-  @apply .mt-8 .mb-8 .px-4 .max-w-lg .mx-auto;
+  @apply .my-8 .px-4 .max-w-lg .mx-auto;
 }
 
 .section-margin {

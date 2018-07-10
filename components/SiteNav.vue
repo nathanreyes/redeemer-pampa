@@ -28,7 +28,7 @@
         name='fade'
         tag='div'>
         <site-nav-menu
-          class='absolute pin-t pin-r w-full bg-grey-lighter mt-3 pt-3'
+          class='absolute pin-t pin-r w-full bg-grey-lighter pt-3'
           v-if='menuVisible'>
         </site-nav-menu>
       </transition>
@@ -48,12 +48,18 @@ export default {
       menuVisible: false,
     };
   },
+  watch: {
+    $route() {
+      this.menuVisible = false;
+    },
+  },
 };
 </script>
 
 <style scoped>
 .nav {
   height: 70px;
+  opacity: 0.97;
 }
 
 .fade-enter-active,

@@ -17,6 +17,96 @@
       </p>
     </div>
   </section>
+  <!--Come As You Are Section-->
+  <section class='section-margin'>
+    <div class='flex flex-col container mx-auto md:flex-row'>
+      <div class='flex-grow mb-4 col md:text-right md:mr-4'>
+        <img
+          class='w-full md:w-auto'
+          :src='images.comeAsYouAre.url'>
+      </div>
+      <div class='flex-grow ml-4 col'>
+        <div class='m-4'>
+          <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
+            Come As You Are
+          </h3>
+          <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
+            "I believe; help my unbelief!"
+          </p>
+          <p class='text-grey font-bold text-sm text-right mt-3'>
+            - Mark 9:24
+          <p>
+          <p class='text-xl mt-4 leading-normal'>
+            God doesn't want a self-perfecting version of ourselves.
+            It is our vulnerable, repentant hearts that bring us closer to Him through his Spirit.
+            With his power, we can cultivate a boldness to beat back sin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Worship Through Generosity Section-->
+  <section class='section-pattern-light shadow-inner'>
+    <div
+      class='container px-4 py-8 text-center lg:w-2/3 light'>
+      <h3 class='mb-8 text-2xl tracking-wide font-serif text-blue-darkest'>
+        Worship Through Generosity
+      </h3>
+      <p class='my-8 text-5xl font-light leading-tight text-blue-darker'>
+        Generosity is paramount in our sanctification as followers of Christ, who is eternally gracious to us as his adopted sons and daughters.
+      </p>
+      <p class='text-xl pt-8 font-light italic text-blue-darkest'>
+        We believe in the practice of grace together as a family.
+      </p>
+    </div>
+  </section>
+  <!--Simple Obedience Section-->
+  <section class='section-margin'>
+    <div class='container'>
+      <div class='flex flex-col md:flex-row'>
+        <div class='flex-grow mr-4 md:text-right col'>
+          <div class='m-4'>
+            <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
+              Simple Obedience
+            </h3>
+            <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
+              "Be still and know that I am God."
+            </p>
+            <p class='text-grey font-bold text-sm text-right mt-3'>
+              - Psalm 46:10
+            <p>
+            <p class='text-xl mt-4 leading-normal'>
+              Simple living and worship is an intentional acknowledgment of our dependance on Christ.
+              Not only does it prevent us from getting lost in rituals and religious activities, it naturally guides us by simply asking,
+            </p>
+            <p class='tracking-wide text-2xl mt-2 font-light italic text-grey-darker'>
+              "Does this advance our mission of spreading the Gospel or equipping the saints?"
+            </p>
+          </div>
+        </div>
+        <div class='flex-grow mb-4 col md:ml-4'>
+          <img
+            class='w-full md:w-auto'
+            :src='images.simpleObedience.url'>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='section-pattern text-blue-lightest shadow-inner'>
+    <div class='container mx-auto px-4 py-8 text-center lg:w-2/3'>
+      <h3 class='mb-8 text-2xl tracking-wide font-serif text-white'>
+        A Church That Reflects Its Community
+      </h3>
+      <p class='my-8 text-5xl font-light leading-tight text-blue-lightest'>
+        There are no boundaries in a Christ-driven community. If he is over all and in all,
+        then his Church is to reflect the beauty of the diversity of His creation.
+      </p>
+      <p class='text-xl font-light pt-6 text-blue-lighter'>
+        — We desire to represent <em>all</em> of Pampa, TX.
+      </p>
+    </div>
+  </section>
+  <!--Living Sent Section-->
   <section class='section-margin'>
     <div class='container'>
       <div class='flex flex-col md:flex-row'>
@@ -43,88 +133,6 @@
       </div>
     </div>
   </section>
-  <section class='section-pattern-light shadow-inner'>
-    <div
-      class='container px-4 py-8 text-center lg:w-2/3 light'>
-      <h3 class='mb-8 text-2xl tracking-wide font-serif text-blue-darkest'>
-        Worship Through Generosity
-      </h3>
-      <p class='my-8 text-5xl font-light leading-tight text-blue-darker'>
-        Generosity is paramount in our sanctification as followers of Christ, who is eternally gracious to us as his adopted sons and daughters.
-      </p>
-      <p class='text-xl pt-8 font-light italic text-blue-darkest'>
-        We believe in the practice of grace together as a family.
-      </p>
-    </div>
-  </section>
-  <section class='section-margin'>
-    <div class='container'>
-      <div class='flex flex-col md:flex-row'>
-        <div class='flex-grow mr-4 md:text-right col'>
-          <div class='m-4'>
-            <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
-              Simple Obedience
-            </h3>
-            <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
-              "Be still and know that I am God."
-            </p>
-            <p class='text-grey font-bold text-sm text-right mt-3'>
-              - Psalm 46:10
-            <p>
-            <p class='text-xl mt-4 leading-normal'>
-              Simple living and worship is an intentional acknowledgment of our dependance on Christ.
-              Not only does it prevent us from getting lost in rituals and religious activities, it naturally guides us by simply asking,
-            </p>
-            <p class='tracking-wide text-2xl mt-2 font-light italic text-grey-darker'>
-              "Does this advance our mission of spreading the Gospel or equipping the saints?"
-            </p>
-          </div>
-        </div>
-        <div class='flex-grow mb-4 col md:ml-4'>
-          <img class='w-full md:w-auto' src='https://via.placeholder.com/500x350'>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class='section-pattern text-blue-lightest shadow-inner'>
-    <div class='container mx-auto px-4 py-8 text-center lg:w-2/3'>
-      <h3 class='mb-8 text-2xl tracking-wide font-serif text-white'>
-        A Church That Reflects Its Community
-      </h3>
-      <p class='my-8 text-5xl font-light leading-tight text-blue-lightest'>
-        There are no boundaries in a Christ-driven community. If he is over all and in all,
-        then his Church is to reflect the beauty of the diversity of His creation.
-      </p>
-      <p class='text-xl font-light pt-6 text-blue-lighter'>
-        — We desire to represent <em>all</em> of Pampa, TX.
-      </p>
-    </div>
-  </section>
-  <section class='section-margin'>
-    <div class='flex flex-col container mx-auto md:flex-row'>
-      <div class='flex-grow mb-4 col md:text-right md:mr-4'>
-        <img class='w-full md:w-auto' src='https://via.placeholder.com/500x350'>
-      </div>
-      <div class='flex-grow ml-4 col'>
-        <div class='m-4'>
-          <h3 class='mt-4 mb-8 text-2xl tracking-wide font-serif uppercase'>
-            Come As You Are
-          </h3>
-          <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
-            "I believe; help my unbelief!"
-          </p>
-          <p class='text-grey font-bold text-sm text-right mt-3'>
-            - Mark 9:24
-          <p>
-          <p class='text-xl mt-4 leading-normal'>
-            God doesn't want a self-perfecting version of ourselves.
-            It is our vulnerable, repentant hearts that bring us closer to Him through his Spirit.
-            With his power, we can cultivate a boldness to beat back sin.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 </div>
 </template>
 
@@ -134,6 +142,22 @@ import Banner from '../components/Banner';
 export default {
   components: {
     Banner,
+  },
+  data() {
+    return {
+      images: {
+        simpleObedience: {
+          url:
+            'https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_900/v1530723570/redeemer-pampa/Prayer-1.jpg',
+          alt: 'Simple prayer',
+        },
+        comeAsYouAre: {
+          url:
+            'https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_900/v1530721622/redeemer-pampa/Baptism-1.jpg',
+          alt: 'Come as you are',
+        },
+      },
+    };
   },
 };
 </script>

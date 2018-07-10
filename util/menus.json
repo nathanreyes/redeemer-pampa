@@ -1,5 +1,23 @@
 [
   {
+    "header": "Home",
+    "url": "/",
+    "submenus": [
+      {
+        "title": "Core Values",
+        "url": "/#core-values"
+      },
+      {
+        "title": "Contact Us",
+        "url": "/home#contact"
+      },
+      {
+        "title": "See Our Location",
+        "url": "/home#see-our-location"
+      }
+    ]
+  },
+  {
     "header": "Connect",
     "url": "/connect",
     "submenus": [
@@ -10,10 +28,6 @@
       {
         "title": "Gospel Communities",
         "url": "/connect#gospel-communities"
-      },
-      {
-        "title": "Podcasts",
-        "url": "/connect#podcasts"
       },
       {
         "title": "Membership",
@@ -34,30 +48,8 @@
         "url": "/about#beliefs"
       },
       {
-        "title": "History",
-        "url": "/about#history"
-      },
-      {
         "title": "Affiliations",
         "url": "/about#affiliations"
-      }
-    ]
-  },
-  {
-    "header": "Contact",
-    "url": "/contact",
-    "submenus": [
-      {
-        "title": "Online",
-        "url": "/contact#online"
-      },
-      {
-        "title": "Location",
-        "url": "/contact#location"
-      },
-      {
-        "title": "Weddings & Events",
-        "url": "/contact#weddings-events"
       }
     ]
   },

@@ -7,11 +7,9 @@
     <page-nav-menu
       :menu-items='menuItems'>
     </page-nav-menu>
-    <div
-      class='container'>
-      <!--Worship Section-->
-      <div
-        :class='sectionClass'>
+    <!--Worship Section-->
+    <div class='section'>
+      <div class='container'>
         <h1
           class='section-title'
           id='worship'>
@@ -23,9 +21,10 @@
           Join us for morning services. We start at 11:00am every Sunday morning.
         </p>
       </div>
-      <!--Gospel Communities Section-->
-      <div
-        :class='sectionClass'>
+    </div>
+    <!--Gospel Community Description Section-->
+    <div class='section'>
+      <div class='container'>
         <h1
           class='section-title'
           id='gospel-communities'>
@@ -33,7 +32,7 @@
         </h1>
         <div class='flex flex-col md:flex-row'>
           <div class='flex-grow mb-4 col flex items-center md:text-right md:mr-2'>
-            <img class='w-full md:w-auto' src='https://via.placeholder.com/500x350'>
+            <img class='w-full md:w-auto' src='https://res.cloudinary.com/dqgcfqzpk/image/upload/c_fill,w_900/v1530719618/redeemer-pampa/Gospel_Community.jpg'>
           </div>
           <div class='flex-grow col'>
             <p
@@ -54,8 +53,13 @@
           Gospel Communities serve as the primary extension of our spiritual family, as we strive to learn to apply the gospel to life. Our GC’s meet weekly and are casual gatherings of individuals of different ages, life stages, and family dynamics. A typical gathering will include either a meal/snacks/or a dessert, a deeper look at the previous Sunday’s sermon text, prayer, conversation, and community.
           Groups are open – new folks are welcome each and every week.
         </p>
+      </div>
+    </div>
+    <!--Gospel Community Groups Section-->
+    <div class='bg-blue-dark shadow-inner py-4'>
+      <div class='section'>
         <div
-          class='grid mt-6'
+          class='grid'
           >
           <gc-card
             v-for='gc in gcData'
@@ -69,18 +73,11 @@
           </gc-card>
         </div>
       </div>
-      <!--Podcasts Section-->
-      <div
-        :class='sectionClass'>
-        <h1
-          class='section-title'
-          id='podcasts'>
-          Podcasts
-        </h1>
-      </div>
-      <!--Membership Section-->
-      <div
-        :class='sectionClass'>
+    </div>
+    <!--Membership Section-->
+    <div
+      :class='sectionClass'>
+      <div class='container'>
         <h1
           class='section-title'
           id='membership'>
@@ -113,10 +110,6 @@ export default {
         {
           title: 'Gospel Communities',
           url: '#gospel-communities',
-        },
-        {
-          title: 'Podcasts',
-          url: '#podcasts',
         },
         {
           title: 'Membership',

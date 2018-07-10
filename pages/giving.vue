@@ -19,6 +19,11 @@
           <li>You can <a href='http://www.easytithe.com/dl/?uid=rede225179' target='_blank' class='link'>click here</a> to give online.</li>
         </ul>
       </p>
+    </div>
+  </div>
+  <div class='section'>
+    <div class='container'>
+      <h1 class='section-title'>Mission</h1>
       <p class='content mt-4'>
         Thanks for partnering with us on mission! If you have any questions regarding giving please email us.
       </p>

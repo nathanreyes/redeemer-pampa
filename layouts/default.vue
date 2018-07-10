@@ -1,5 +1,6 @@
 <template>
-  <div class='min-h-screen flex flex-col'>
+  <div
+    class='min-h-screen flex flex-col bg-white'>
     <site-nav>
     </site-nav>
     <div class='main flex-grow'>

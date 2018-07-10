@@ -76,6 +76,7 @@ module.exports = {
       }
     },
   },
+  plugins: ['~/plugins/vue-scrollto'],
   css: ['~/assets/styles/tailwind.css'],
   modules: [
     [

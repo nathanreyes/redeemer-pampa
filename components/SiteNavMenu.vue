@@ -18,8 +18,14 @@ export default {
     return {
       menus,
       navClass:
-        'link rounded block text-blue font-serif text-xl text-center uppercase mb-4 py-2 px-4 tracking-wide lg:mb-0',
+        'link nav-link rounded block text-blue text-lg text-center uppercase mb-4 py-2 px-4 tracking-wide lg:mb-0',
     };
   },
 };
 </script>
+
+<style scoped>
+.nav-link:first-letter {
+  font-size: 1.4rem;
+}
+</style>
