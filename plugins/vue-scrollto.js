@@ -2,5 +2,5 @@ import Vue from 'vue';
 import VueScrollTo from 'vue-scrollto';
 
 Vue.use(VueScrollTo, {
-  offset: -80,
+  offset: -70,
 });

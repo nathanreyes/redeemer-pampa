@@ -61,15 +61,4 @@ export default {
   height: 70px;
   opacity: 0.97;
 }
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.2s ease-in-out;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(-20px);
-}
 </style>

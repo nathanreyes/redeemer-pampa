@@ -1,6 +1,6 @@
 <template>
   <div
-    class='min-h-screen flex flex-col bg-white'>
+    class='min-h-screen flex flex-col bg-white relative'>
     <site-nav>
     </site-nav>
     <div class='main flex-grow'>
@@ -26,5 +26,6 @@ export default {
 <style scoped>
 .main {
   margin-top: 70px;
+  z-index: 1;
 }
 </style>

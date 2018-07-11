@@ -13,11 +13,13 @@
       @click='showPlayer = !showPlayer'>
       Listen
     </a>
-    <div
-      class='flex justify-center lg:absolute player'
-      v-show='showPlayer'>
-      <iframe src="https://anchor.fm/redeemer-pampa-podcast/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-    </div>
+    <transition name='fade'>
+      <div
+        class='flex justify-center lg:absolute player'
+        v-show='showPlayer'>
+        <iframe src="https://anchor.fm/redeemer-pampa-podcast/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -29,7 +31,7 @@ export default {
     return {
       menus,
       navClass:
-        'link nav-link rounded block text-blue text-lg text-center uppercase py-4 px-4 tracking-wide lg:mb-0',
+        'link nav-link rounded block text-blue text-center uppercase py-4 px-4 tracking-wide lg:mb-0',
       showPlayer: false,
     };
   },
@@ -38,7 +40,7 @@ export default {
 
 <style scoped>
 .nav-link:first-letter {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .player {
   top: 100%;
