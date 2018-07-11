@@ -56,7 +56,7 @@
       </div>
     </div>
     <!--Gospel Community Groups Section-->
-    <div class='bg-blue-dark shadow-inner py-4'>
+    <div class='bg-grey-lighter shadow-inner py-4'>
       <div class='section'>
         <div
           class='grid'
@@ -72,17 +72,6 @@
             >
           </gc-card>
         </div>
-      </div>
-    </div>
-    <!--Membership Section-->
-    <div
-      :class='sectionClass'>
-      <div class='container'>
-        <h1
-          class='section-title'
-          id='membership'>
-          Membership
-        </h1>
       </div>
     </div>
   </div>
@@ -110,10 +99,6 @@ export default {
         {
           title: 'Gospel Communities',
           url: '#gospel-communities',
-        },
-        {
-          title: 'Membership',
-          url: '#membership',
         },
       ],
       gcData: [

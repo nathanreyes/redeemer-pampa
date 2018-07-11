@@ -38,8 +38,8 @@
           <p>
           <p class='text-xl mt-4 leading-normal'>
             God doesn't want a self-perfecting version of ourselves.
-            It is our vulnerable, repentant hearts that bring us closer to Him through his Spirit.
-            With his power, we can cultivate a boldness to beat back sin.
+            It is our vulnerable, repentant hearts that bring us closer to Him through His Spirit.
+            With His power, we can cultivate a boldness to beat back sin.
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@
         Worship Through Generosity
       </h3>
       <p class='my-8 text-5xl font-light leading-tight text-blue-darker'>
-        Generosity is paramount in our sanctification as followers of Christ, who is eternally gracious to us as his adopted sons and daughters.
+        Generosity is paramount in our sanctification as followers of Christ, who is eternally gracious to us as His adopted sons and daughters.
       </p>
       <p class='text-xl pt-8 font-light italic text-blue-darkest'>
         We believe in the practice of grace together as a family.
@@ -99,7 +99,7 @@
       </h3>
       <p class='my-8 text-5xl font-light leading-tight text-blue-lightest'>
         There are no boundaries in a Christ-driven community. If he is over all and in all,
-        then his Church is to reflect the beauty of the diversity of His creation.
+        then His Church is to reflect the beauty of the diversity of His creation.
       </p>
       <p class='text-xl font-light pt-6 text-blue-lighter'>
         — We desire to represent <em>all</em> of Pampa, TX.
@@ -125,7 +125,7 @@
               - John 15:5
             <p>
             <p class='text-xl mt-4 leading-normal'>
-              To follow Jesus is to be on mission. As we grow closer to him and allow the Spirit to transform our lives,
+              To follow Jesus is to be on mission. As we grow closer to Him and allow the Spirit to transform our lives,
               a boundless love for our friends, our family and the strangers among us naturally follows.
             </p>
           </div>

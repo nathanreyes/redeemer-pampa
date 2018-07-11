@@ -9,11 +9,11 @@
       },
       {
         "title": "Contact Us",
-        "url": "/home#contact"
+        "url": "/#contact-us"
       },
       {
         "title": "See Our Location",
-        "url": "/home#see-our-location"
+        "url": "/#see-our-location"
       }
     ]
   },
@@ -28,10 +28,6 @@
       {
         "title": "Gospel Communities",
         "url": "/connect#gospel-communities"
-      },
-      {
-        "title": "Membership",
-        "url": "/connect#membership"
       }
     ]
   },

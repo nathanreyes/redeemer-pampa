@@ -29,7 +29,7 @@
         tag='div'>
         <site-nav-menu
           class='absolute pin-t pin-r w-full bg-grey-lighter pt-3'
-          v-if='menuVisible'>
+          v-show='menuVisible'>
         </site-nav-menu>
       </transition>
     </div>

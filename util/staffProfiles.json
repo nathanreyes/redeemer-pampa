@@ -1,14 +1,5 @@
 [
   {
-    "name": "Jeremy Buck",
-    "role": "Lead Pastor, Elder",
-    "imgUrl":
-      "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,w_180,x_210,y_10/v1530715706/redeemer-pampa/Jeremy_Buck.jpg",
-    "email": "jbuck.redeemerpampa@gmail.com",
-    "description":
-      "Jeremy is on paid staff at Redeemer Pampa. He was born and raised in Pampa and graduated from Pampa High School in 2000. He and his wife, Karmen, have been married since December of 2002. Together they have one daughter, Karsen, and one son, Jude."
-  },
-  {
     "name": "Rex McKay, III",
     "role": "Elder",
     "imgUrl":
@@ -25,5 +16,14 @@
     "email": "primitivo.cuellar@accoladehomecare.com",
     "description":
       "TV is the branch director of a local home health care office. He graduated from Pampa High School in 1985 after moving to Pampa in 1980. He has been married to his wife, Yvette, since 1992 and he has two sons; Luke (& wife Amanda) and Paul (& wife Alison) and two grandchildren."
+  },
+  {
+    "name": "Jeremy Buck",
+    "role": "Lead Pastor, Elder",
+    "imgUrl":
+      "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,w_180,x_210,y_10/v1530715706/redeemer-pampa/Jeremy_Buck.jpg",
+    "email": "jbuck.redeemerpampa@gmail.com",
+    "description":
+      "Jeremy is on paid staff at Redeemer Pampa. He was born and raised in Pampa and graduated from Pampa High School in 2000. He and his wife, Karmen, have been married since December of 2002. Together they have one daughter, Karsen, and one son, Jude."
   }
 ]
