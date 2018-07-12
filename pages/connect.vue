@@ -80,7 +80,7 @@
 <script>
 import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
-import GcCard from '../components/GCCard';
+import GcCard from '../components/GcCard';
 
 export default {
   components: {
