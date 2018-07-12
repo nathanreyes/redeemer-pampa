@@ -6,7 +6,7 @@
     <div class='main flex-grow'>
       <nuxt />
     </div>
-    <site-footer>
+    <site-footer class='footer'>
     </site-footer>
   </div>
 </template>
@@ -26,6 +26,9 @@ export default {
 <style scoped>
 .main {
   margin-top: 70px;
+  z-index: 1;
+}
+.footer {
   z-index: 1;
 }
 </style>
