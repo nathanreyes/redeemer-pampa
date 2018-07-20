@@ -23,6 +23,14 @@ module.exports = {
         content: 'Website for Redeemer Pampa, an Acts 29 church in Pampa, TX.',
       },
     ],
+    script: [
+      {
+        src:
+          'https://maps.googleapis.com/maps/api/js?key=AIzaSyAxHjdK3i5GDppHfiNiKLp9MLqd2FpTzrk',
+        async: true,
+        defer: true,
+      },
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {

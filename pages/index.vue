@@ -3,7 +3,7 @@
   <hero></hero>
   <div
     id='core-values'
-    class='bg-white py-4 main-content'>
+    class='bg-white main-content'>
     <!--Come As You Are Section-->
     <section class='section-margin'>
       <div class='flex flex-col container mx-auto md:flex-row'>
@@ -122,39 +122,59 @@
       </div>
     </section>
     <!--Contact Us Section-->
-    <section
-      class='py-10 px-4 bg-white'
+    <section class='py-10 px-4 bg-grey-lighter border border-t border-grey-light'
       id='contact-us'>
       <div class='container'>
-        <h3 class='mt-4 mb-8 text-2xl text-grey-darker tracking-wide text-center'>
+        <h3 class='mt-4 mb-2 text-2xl text-grey-darker tracking-wide text-center'>
           Contact Us
         </h3>
       </div>
-      <form class='w-full max-w-md mx-auto border border-grey-light rounded-lg p-8'>
-        <div class='flex flex-wrap -mx-3 mb-6'>
+      <form class='w-full max-w-md mx-auto rounded-lg p-8'>
+        <input type="hidden" name="form-name" value="contact">
+        <!--First/Last Name Fields-->
+        <div class='flex flex-wrap -mx-3'>
           <!--First Name Field-->
-          <div class='w-full md:w-1/2 px-3 mb-6 md:mb-0'>
-            <label class='block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2' for='grid-first-name'>
+          <div class='w-full md:w-1/2 px-3 mb-4'>
+            <label
+              class='block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2'
+              for='grid-first-name'>
               First Name
             </label>
             <input
-              class='appearance-none block w-full bg-grey-lighter text-grey-darker rounded py-3 px-4 mb-3 leading-tight'
+              class='appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight'
               id='grid-first-name'
+              name='firstname'
               type='text'
               placeholder=''>
           </div>
           <!--Last Name Field-->
-          <div
-            class='w-full md:w-1/2 px-3'>
+          <div class='w-full md:w-1/2 px-3 mb-4'>
             <label
               class='block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2'
               for='grid-last-name'>
               Last Name
             </label>
             <input
-              class='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight'
+              class='appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight'
               id='grid-last-name'
+              name='lastname'
               type='text'
+              placeholder=''>
+          </div>
+        </div>
+        <!--Email Field-->
+        <div class='flex flex-wrap -mx-3 mb-4'>
+          <div class='w-full px-3'>
+            <label
+              class='block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2'
+              for='grid-email'>
+              Email
+            </label>
+            <input
+              class='appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight'
+              id='grid-email'
+              name='email'
+              type='email'
               placeholder=''>
           </div>
         </div>
@@ -167,9 +187,11 @@
               Message
             </label>
             <textarea
-              class='appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-2 leading-tight'
+              class='appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 mb-2 leading-tight'
               id='grid-message'
-              placeholder=''>
+              name='message'
+              placeholder=''
+              rows='4'>
             </textarea>
           </div>
         </div>
@@ -181,6 +203,54 @@
         </button>
       </form>
     </section>
+    <section id='map'>
+      <google-map
+        api-key='AIzaSyAxHjdK3i5GDppHfiNiKLp9MLqd2FpTzrk'
+        :center='{ latitude: 35.5374614, longitude: -100.9647873 }'
+        :style='{ height: "500px" }'>
+        <div slot='infoWindow'>
+          <h3 class='text-lg text-grey-darkest mb-2'>
+            {{ contact.name }}
+          </h3>
+          <div class='flex items-center mb-2'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              class='w-3 h-3 text-grey-dark fill-current'>
+              <path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+            </svg>
+            <span class='text-grey-darkest ml-2'>
+              {{ contact.address }}
+            </span>
+          </div>
+          <div class='flex items-center mb-2'>
+            <i class='fa fa-phone'></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              class='w-3 h-3 text-grey-dark fill-current'>
+              <path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/>
+            </svg>
+            <span class='text-grey-darkest ml-2'>
+              {{ contact.phone }}
+            </span>
+          </div>
+          <div class='flex items-center'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              class='w-3 h-3 text-grey-dark fill-current'>
+              <path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/>
+            </svg>
+            <a
+              :href='"mail-to:" + contact.email'
+              class='text-blue-dark no-underline ml-2'>
+              {{ contact.email }}
+            </a>
+          </div>
+        </div>
+      </google-map>
+    </section>
   </div>
 
 </div>
@@ -190,12 +260,15 @@
 import Hero from '../components/Hero';
 import HeroBg from '../components/HeroBg';
 import Banner from '../components/Banner';
+import GoogleMap from '../components/GoogleMap';
+import { contact } from '../util/siteInfo';
 
 export default {
   components: {
     Hero,
     HeroBg,
     Banner,
+    GoogleMap,
   },
   data() {
     return {
@@ -211,6 +284,7 @@ export default {
           alt: 'Come as you are',
         },
       },
+      contact,
     };
   },
 };
