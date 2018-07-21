@@ -58,10 +58,6 @@ body {
   @apply .my-8 .px-4 .max-w-lg .mx-auto;
 }
 
-.section-margin {
-  padding: 6em;
-}
-
 .section-title {
   @apply .text-2xl .mb-6 .text-grey-darker;
 }

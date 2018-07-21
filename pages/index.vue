@@ -5,30 +5,30 @@
     id='core-values'
     class='bg-white main-content'>
     <!--Come As You Are Section-->
-    <section class='section-margin'>
-      <div class='flex flex-col container mx-auto md:flex-row'>
-        <div class='flex-grow mb-4 col md:text-right md:mr-4'>
+    <section class='md:py-24'>
+      <div class='flex flex-col-reverse container mx-auto md:flex-row'>
+        <!--Image-->
+        <div class='flex-grow col md:text-right md:mr-4'>
           <img
             class='w-full md:w-auto'
             :src='images.comeAsYouAre.url'>
         </div>
-        <div class='flex-grow ml-4 col'>
-          <div class='m-4'>
-            <h3 class='mt-4 mb-8 text-2xl text-grey-darker tracking-wide'>
-              Come As You Are
-            </h3>
-            <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
-              "I believe; help my unbelief!"
-            </p>
-            <p class='text-blue font-bold text-sm text-right mt-3'>
-              - Mark 9:24
-            <p>
-            <p class='text-xl mt-4 leading-normal'>
-              God doesn't want a self-perfecting version of ourselves.
-              It is our vulnerable, repentant hearts that bring us closer to Him through His Spirit.
-              With His power, we can cultivate a boldness to beat back sin.
-            </p>
-          </div>
+        <!--Description-->
+        <div class='flex-grow m-4 col my-8 md:my-0'>
+          <h3 class='text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8'>
+            Come As You Are
+          </h3>
+          <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
+            "I believe; help my unbelief!"
+          </p>
+          <p class='text-blue font-bold text-sm text-right mt-3'>
+            - Mark 9:24
+          <p>
+          <p class='text-xl mt-4 leading-normal'>
+            God doesn't want a self-perfecting version of ourselves.
+            It is our vulnerable, repentant hearts that bring us closer to Him through His Spirit.
+            With His power, we can cultivate a boldness to beat back sin.
+          </p>
         </div>
       </div>
     </section>
@@ -48,30 +48,30 @@
       </div>
     </section>
     <!--Simple Obedience Section-->
-    <section class='section-margin'>
+    <section class='py-0 md:py-24'>
       <div class='container'>
         <div class='flex flex-col md:flex-row'>
-          <div class='flex-grow mr-4 md:text-right col'>
-            <div class='m-4'>
-              <h3 class='mt-4 mb-8 text-2xl text-grey-darker tracking-wide'>
-                Simple Obedience
-              </h3>
-              <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
-                "Be still and know that I am God."
-              </p>
-              <p class='text-blue font-bold text-sm text-right mt-3'>
-                - Psalm 46:10
-              <p>
-              <p class='text-xl mt-4 leading-normal'>
-                Simple living and worship is an intentional acknowledgment of our dependance on Christ.
-                Not only does it prevent us from getting lost in rituals and religious activities, it naturally guides us by simply asking,
-              </p>
-              <p class='tracking-wide text-2xl mt-2 font-light italic text-grey-darker'>
-                "Does this advance our mission of spreading the Gospel or equipping the saints?"
-              </p>
-            </div>
+          <!--Description-->
+          <div class='flex-grow m-4 md:text-right col my-8 md:my-0'>
+            <h3 class='text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8'>
+              Simple Obedience
+            </h3>
+            <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
+              "Be still and know that I am God."
+            </p>
+            <p class='text-blue font-bold text-sm text-right mt-3'>
+              - Psalm 46:10
+            <p>
+            <p class='text-xl mt-4 leading-normal'>
+              Simple living and worship is an intentional acknowledgment of our dependance on Christ.
+              Not only does it prevent us from getting lost in rituals and religious activities, it naturally guides us by simply asking,
+            </p>
+            <p class='tracking-wide text-2xl mt-2 font-light italic text-grey-darker'>
+              "Does this advance our mission of spreading the Gospel or equipping the saints?"
+            </p>
           </div>
-          <div class='flex-grow mb-4 col md:ml-4'>
+          <!--Image-->
+          <div class='flex-grow col md:ml-4'>
             <img
               class='w-full md:w-auto'
               :src='images.simpleObedience.url'>
@@ -95,28 +95,26 @@
       </div>
     </section>
     <!--Living Sent Section-->
-    <section class='section-margin'>
+    <section class='py-0 md:py-24'>
       <div class='container'>
         <div class='flex flex-col md:flex-row'>
           <div class='flex-grow mb-4 col md:text-right md:mr-4'>
             <img class='w-full md:w-auto' src='https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,h_1200,w_892/v1531363292/redeemer-pampa/living-sent.jpg'>
           </div>
-          <div class='flex-grow ml-4 col'>
-            <div class='m-4'>
-              <h3 class='mt-4 mb-8 text-2xl text-grey-darker tracking-wide'>
-                Living Sent
-              </h3>
-              <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
-                "I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing."
-              </p>
-              <p class='text-blue font-bold text-sm text-right mt-3'>
-                - John 15:5
-              <p>
-              <p class='text-xl mt-4 leading-normal'>
-                To follow Jesus is to be on mission. As we grow closer to Him and allow the Spirit to transform our lives,
-                a boundless love for our friends, our family and the strangers among us naturally follows.
-              </p>
-            </div>
+          <div class='flex-grow m-4 col my-8 md:my-0'>
+            <h3 class='text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8'>
+              Living Sent
+            </h3>
+            <p class='italic text-grey-darkest text-right leading-normal tracking-wide'>
+              "I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing."
+            </p>
+            <p class='text-blue font-bold text-sm text-right mt-3'>
+              - John 15:5
+            <p>
+            <p class='text-xl mt-4 leading-normal'>
+              To follow Jesus is to be on mission. As we grow closer to Him and allow the Spirit to transform our lives,
+              a boundless love for our friends, our family and the strangers among us naturally follows.
+            </p>
           </div>
         </div>
       </div>
@@ -258,7 +256,6 @@
 
 <script>
 import Hero from '../components/Hero';
-import HeroBg from '../components/HeroBg';
 import Banner from '../components/Banner';
 import GoogleMap from '../components/GoogleMap';
 import { contact } from '../util/siteInfo';
@@ -266,7 +263,6 @@ import { contact } from '../util/siteInfo';
 export default {
   components: {
     Hero,
-    HeroBg,
     Banner,
     GoogleMap,
   },
