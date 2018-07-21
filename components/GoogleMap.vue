@@ -1,5 +1,5 @@
 <template>
-<div ref='map' class='map'>
+<div ref='map'>
   <div ref='infoWindow'>
     <slot name='infoWindow'></slot>
   </div>
@@ -150,13 +150,5 @@ export default {
 <style scoped>
 .map {
   box-sizing: border-box;
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  .map {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
 }
 </style>

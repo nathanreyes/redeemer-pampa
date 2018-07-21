@@ -43,7 +43,6 @@
       </h2>
       <div
         class='flex flex-col md:flex-row'>
-
         <div class='md:hidden'>
           <div class='w-full md:w-1/3 px-2 mb-4 md:mb-0'>
             <label
