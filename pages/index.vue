@@ -127,7 +127,12 @@
           Contact Us
         </h3>
       </div>
-      <form class='w-full max-w-md mx-auto rounded-lg p-8'>
+      <form
+        name='contact'
+        method='post'
+        data-netlify='true'
+        netlify-honeypot='trigger'
+        class='w-full max-w-md mx-auto rounded-lg p-8'>
         <input type="hidden" name="form-name" value="contact">
         <!--First/Last Name Fields-->
         <div class='flex flex-wrap -mx-3'>
@@ -193,6 +198,7 @@
             </textarea>
           </div>
         </div>
+        <div data-netlify-recaptcha></div>
         <!--Send Button-->
         <button
           class='bg-blue hover:bg-blue-dark text-white font-bold w-full py-2 px-4 rounded'
@@ -201,6 +207,7 @@
         </button>
       </form>
     </section>
+    <!--Map Section-->
     <section id='map'>
       <google-map
         api-key='AIzaSyAxHjdK3i5GDppHfiNiKLp9MLqd2FpTzrk'
