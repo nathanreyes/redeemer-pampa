@@ -15,13 +15,14 @@
       </div>
       <div class='mb-4'>
         <div class='block text-grey-darker font-bold mb-2'>Hosts:</div>
-        <div class='text-grey-darker'>{{ hosts }}</div>
+        <div class='text-grey-darker leading-comfy'>{{ hosts }}</div>
       </div>
-      <div class='mb-4'>
+      <div class='mb-4' v-if='moreInfo'>
         <div class='block text-grey-darker font-bold mb-2'>More:</div>
         <div
-          class='text-grey-darker'>
-          Contact <email :address='email'></email> for more information.</div>
+          class='text-grey-darker leading-comfy'
+          v-html='moreInfo'>
+        </div>
       </div>
     </div>
   </div>
@@ -40,6 +41,7 @@ export default {
     time: String,
     hosts: String,
     email: String,
+    moreInfo: String,
   },
 };
 </script>

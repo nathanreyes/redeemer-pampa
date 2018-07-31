@@ -115,6 +115,9 @@
               To follow Jesus is to be on mission. As we grow closer to Him and allow the Spirit to transform our lives,
               a boundless love for our friends, our family and the strangers among us naturally follows.
             </p>
+            <p class='text-xl mt-4 leading-normal'>
+              We will intentionally live our lives as sent-out ones, on mission with Jesus at the grocery store, at our jobs, in our neighborhoods, and everywhere in between. We will adopt a missional lifestyle that says "go and be" and not "come and see."
+            </p>
           </div>
         </div>
       </div>
@@ -148,7 +151,8 @@
               id='grid-first-name'
               name='firstname'
               type='text'
-              placeholder=''>
+              placeholder=''
+              autocomplete='given-name'>
           </div>
           <!--Last Name Field-->
           <div class='w-full md:w-1/2 px-3 mb-4'>
@@ -162,7 +166,8 @@
               id='grid-last-name'
               name='lastname'
               type='text'
-              placeholder=''>
+              placeholder=''
+              autocomplete='family-name'>
           </div>
         </div>
         <!--Email Field-->
@@ -178,7 +183,8 @@
               id='grid-email'
               name='email'
               type='email'
-              placeholder=''>
+              placeholder=''
+              autocomplete='email'>
           </div>
         </div>
         <!--Message Field-->
@@ -198,11 +204,13 @@
             </textarea>
           </div>
         </div>
-        <div data-netlify-recaptcha></div>
+        <div class='flex justify-center mb-4'>
+          <div data-netlify-recaptcha></div>
+        </div>
         <!--Send Button-->
         <button
           class='bg-blue hover:bg-blue-dark text-white font-bold w-full py-2 px-4 rounded'
-          type='button'>
+          type='submit'>
           Send
         </button>
       </form>

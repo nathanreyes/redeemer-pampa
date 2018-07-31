@@ -62,13 +62,13 @@
           class='grid'
           >
           <gc-card
-            v-for='gc in gcData'
+            v-for='gc in gospelCommunities'
             :key='gc.hosts'
             :time='gc.time'
             :hosts='gc.hosts'
             :address='gc.address'
             :subaddress='gc.subaddress'
-            :email='gc.email'
+            :more-info='gc.moreInfo'
             >
           </gc-card>
         </div>
@@ -81,6 +81,7 @@
 import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import GcCard from '../components/GcCard';
+import { gospelCommunities } from '../util/siteInfo';
 
 export default {
   components: {
@@ -101,45 +102,7 @@ export default {
           url: '#gospel-communities',
         },
       ],
-      gcData: [
-        {
-          time: 'Sundays @ 5:30pm',
-          hosts: 'Jeremy & Karmen Buck, Reagan & Carol Herman',
-          address: '815 N. Somerville St.',
-          email: 'jbuck.redeemerpampa@gmail.com',
-        },
-        {
-          time: 'Sundays @ 6:00pm',
-          hosts: 'Rex & Robin McKay, TV & Yvette Cuellar',
-          address: '7805 FM 2300 (Groom Hwy)',
-          email: 'haymckay3@gmail.com',
-        },
-        {
-          time: 'Sundays @ 5:30pm',
-          hosts: 'Paul & Mary Grace Rayburn, Nathan & Raine Reyes',
-          address: '201 Nicki Ave',
-          email: 'marygrace.rayburn@gmail.com',
-        },
-        {
-          time: 'Wednesdays @ 6:30pm',
-          hosts: 'Danny & Lori Hendricks, Clint & Jenee Devoll',
-          address: '345 Winters Quarters Road & 1206 Mary Ellen',
-          email: '',
-        },
-        {
-          time: 'Wednesdays @ 7:00pm',
-          hosts: 'Mike & Devney Anderson, Carl & Dale Ann Novian',
-          address: '1816 N. Dogwood',
-          email: 'michael@pampasleepsource.com',
-        },
-        {
-          time: 'Wednesdays @ 6:30pm',
-          hosts: 'Jeremy Buck',
-          address: '225 N. Cuyler St.',
-          subaddress: 'Students Only, 6th - 12th Grades',
-          email: 'jbuck.redeemerpampa@gmail.com',
-        },
-      ],
+      gospelCommunities,
     };
   },
 };

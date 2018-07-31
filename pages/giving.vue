@@ -21,14 +21,6 @@
       </p>
     </div>
   </div>
-  <div class='section'>
-    <div class='container'>
-      <h1 class='section-title'>Mission</h1>
-      <p class='content mt-4'>
-        Thanks for partnering with us on mission! If you have any questions regarding giving please email us.
-      </p>
-    </div>
-  </div>
 </div>
 </template>
 

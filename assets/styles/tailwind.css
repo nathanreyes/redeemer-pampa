@@ -54,6 +54,14 @@ body {
   @apply .text-blue-darker;
 }
 
+.link-small {
+  @apply inline-block align-baseline font-bold text-sm text-blue no-underline;
+}
+
+.link-small:hover {
+  @apply .text-blue-darker;
+}
+
 .section {
   @apply .my-8 .px-4 .max-w-lg .mx-auto;
 }

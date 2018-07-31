@@ -8,7 +8,7 @@
         <nuxt-link
           to='/'
           class='link rounded block text-grey-darker text-2xl py-2 tracking-wide font-serif'>
-          Redeemer
+          Redeemer Pampa
         </nuxt-link>
       </div>
       <!--Nav Right Section-->

@@ -9,13 +9,13 @@
       <h2
         class='section-title'
         id='staff'>
-        Staff
+        Elders & Staff
       </h2>
-      <p class='content'>
-        Redeemer Church is an elder led church. We have elders who work outside of Redeemer as well as elders who are employed by Redeemer Pampa. You can learn more about elders and the plurality of leadership that Redeemer Pampa has adopted here.
+      <p class='content mb-4'>
+        Redeemer Church is an elder led church. We have elders who work outside of Redeemer as well as elders who are employed by Redeemer Pampa. You can learn more about elders and the plurality of leadership that Redeemer Pampa has adopted <a href='/Plural-Leadership.pdf' class='link' target='_blank'>here</a>.
       </p>
       <p class='content'>
-        Currently we have three elders.
+        Currently, we have three elders.
       </p>
     </div>
     <!--Staff Profiles Bio Section-->
@@ -143,8 +143,7 @@
 import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import ProfileCard from '../components/ProfileCard';
-import staffProfiles from '../util/staffProfiles.json';
-import beliefs from '../util/beliefs.json';
+import { staffProfiles, beliefs } from '../util/siteInfo';
 
 export default {
   components: {
