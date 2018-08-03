@@ -123,7 +123,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .banner-container {
   height: 600px;

@@ -4,7 +4,7 @@ const glob = require('glob-all');
 
 class TailwindExtractor {
   static extract(content) {
-    return content.match(/[A-z0-9-:/]+/g) || [];
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
   }
 }
 
@@ -71,14 +71,21 @@ module.exports = {
               path.join(__dirname, './pages/**/*.vue'),
               path.join(__dirname, './layouts/**/*.vue'),
               path.join(__dirname, './components/**/*.vue'),
+              path.join(__dirname, './util/**/*.js'),
             ]),
             extractors: [
               {
                 extractor: TailwindExtractor,
-                extensions: ['vue'],
+                extensions: ['vue', 'js'],
               },
             ],
             whitelist: ['html', 'body', 'nuxt-progress'],
+            whitelistPatterns: [
+              /-enter-active$/,
+              /-leave-active$/,
+              /-enter$/,
+              /-leave-to$/,
+            ],
           }),
         );
       }

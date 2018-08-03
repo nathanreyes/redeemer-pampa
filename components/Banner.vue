@@ -9,7 +9,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   props: {
@@ -18,11 +17,7 @@ export default {
 };
 </script>
 
-<style>
-.banner {
-  padding-top: 70px;
-}
-
+<style scoped>
 .banner {
   background-repeat: no-repeat;
   background-size: cover;
