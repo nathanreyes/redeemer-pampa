@@ -25,6 +25,9 @@ collections:
             label: 'Gospel Communities'
             widget: list
             fields:
+              - name: hosts
+                label: Hosts
+                widget: string
               - name: address
                 label: Address
                 widget: string
@@ -33,9 +36,6 @@ collections:
                 widget: string
               - name: time
                 label: Time
-                widget: string
-              - name: hosts
-                label: Hosts
                 widget: string
               - name: moreInfo
                 label: More Info
