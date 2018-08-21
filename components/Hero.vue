@@ -1,11 +1,11 @@
 <template>
   <div class='banner-container relative'>
-    <div class='container mx-auto flex items-center h-full'>
+    <div class='container mx-auto px-4 flex items-center h-full'>
       <!--Hero Left Column-->
-      <div class='flex-grow flex flex-col items-center lg:items-start'>
+      <div class='lg:w-1/2 flex flex-col items-center lg:items-start'>
         <!--Hero Header-->
         <p class='text-5xl text-white font-light text-center lg:text-left'>
-          Nothing outweighs the <br /> redeeming work of Jesus on <br /> the cross.
+          {{ bannerMessage }}
         </p>
         <!--Divider Line-->
         <div class='divider mt-12 lg:mt-24 mb-12'></div>
@@ -23,7 +23,7 @@
         </a>
       </div>
       <!--Hero Right Column-->
-      <div class='hidden lg:flex flex-col justify-center items-end'>
+      <div class='hidden w-1/2 lg:flex flex-col justify-center items-end'>
         <!--Wrapper for centering/alignment-->
         <div
           class='bg-white rounded-lg p-8'
