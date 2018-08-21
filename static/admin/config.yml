@@ -17,3 +17,26 @@ collections:
           - name: bannerButton
             label: Banner Button
             widget: string
+      - name: 'connect'
+        label: 'Connect'
+        file: 'content/pages/connect.json'
+        fields:
+          - name: 'gospelCommunities'
+            label: 'Gospel Communities'
+            widget: list
+            fields:
+              - name: address
+                label: Address
+                widget: string
+              - name: subaddress
+                label: Subaddress
+                widget: string
+              - name: time
+                label: Time
+                widget: string
+              - name: hosts
+                label: Hosts
+                widget: string
+              - name: moreInfo
+                label: More Info
+                widget: text
