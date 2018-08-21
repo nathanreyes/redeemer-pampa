@@ -1,0 +1,9 @@
+[Settings]
+ID = "031dcc5e-8deb-4329-86bb-779d1df2f368"
+
+[build]
+  publish = "dist"
+  command = "npm run generate"
+
+[build.environment]
+  NODE_VERSION = "8.9.3"

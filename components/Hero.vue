@@ -13,7 +13,7 @@
           href='#'
           class='inline-flex items-center text-xl bg-blue-lightest text-black opacity-75 font-semibold h-12 px-4 border-2 border-white outline-none rounded no-underline'
           v-scroll-to='"#core-values"'>
-          See Who We Are
+          {{ bannerButton }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -108,6 +108,7 @@
 
 <script>
 import { mapMutations } from 'vuex';
+import homeContent from '~/content/pages/home.json';
 
 export default {
   data() {
@@ -115,6 +116,8 @@ export default {
       linkClass:
         'text-blue-dark font-semibold tracking-wide pb-1 no-underline border-b-2 border-blue-dark',
       iconClass: 'w-4 h-4 text-blue-dark fill-current mr-6',
+      bannerMessage: homeContent.bannerMessage,
+      bannerButton: homeContent.bannerButton,
     };
   },
   methods: {
