@@ -81,7 +81,7 @@
 import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import GcCard from '../components/GcCard';
-import { gospelCommunities } from '../util/siteInfo';
+import content from '~/content/pages/connect.json';
 
 export default {
   components: {
@@ -102,7 +102,7 @@ export default {
           url: '#gospel-communities',
         },
       ],
-      gospelCommunities,
+      gospelCommunities: content.gospelCommunities,
     };
   },
 };
