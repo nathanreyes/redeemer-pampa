@@ -23,6 +23,7 @@ collections:
         fields:
           - name: 'gospelCommunities'
             label: 'Gospel Communities'
+            label_singular: 'Gospel Community'
             widget: list
             fields:
               - name: hosts
@@ -40,16 +41,18 @@ collections:
               - name: moreInfo
                 label: More Info
                 widget: text
-  - name: 'beliefs'
-    label: 'Beliefs'
-    label_singular: 'Belief'
-    folder: 'content/beliefs'
-    create: true
-    extension: json
-    fields:
-      - name: 'title'
-        label: 'Title'
-        widget: string
-      - name: 'description'
-        label: 'Description'
-        widget: markdown
+      - name: 'about'
+        label: 'About'
+        file: 'content/pages/about'
+        fields:
+          - name: 'beliefs'
+            label: 'Beliefs'
+            label_singular: 'Belief'
+            widget: list
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
