@@ -43,7 +43,7 @@ collections:
                 widget: text
       - name: 'about'
         label: 'About'
-        file: 'content/pages/about'
+        file: 'content/pages/about.json'
         fields:
           - name: 'beliefs'
             label: 'Beliefs'
