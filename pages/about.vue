@@ -143,7 +143,8 @@
 import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import ProfileCard from '../components/ProfileCard';
-import { staffProfiles, beliefs } from '../util/siteInfo';
+import content from '~/content/pages/about.json';
+import { staffProfiles } from '../util/siteInfo';
 
 export default {
   components: {
@@ -168,8 +169,8 @@ export default {
         },
       ],
       staffProfiles,
-      beliefs,
-      selectedBelief: beliefs[0],
+      beliefs: content.beliefs,
+      selectedBelief: content.beliefs[0],
       transitionName: '',
     };
   },
