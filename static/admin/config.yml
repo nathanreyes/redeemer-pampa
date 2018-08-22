@@ -40,8 +40,8 @@ collections:
               - name: moreInfo
                 label: More Info
                 widget: text
-  - name: 'beliefs'
-    label: 'Beliefs'
+  - name: 'belief'
+    label: 'Belief'
     folder: 'content/beliefs'
     create: true
     extension: json
