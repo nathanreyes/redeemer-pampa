@@ -40,3 +40,15 @@ collections:
               - name: moreInfo
                 label: More Info
                 widget: text
+  - name: 'beliefs'
+    label: 'Beliefs'
+    folder: 'content/beliefs'
+    create: true
+    extension: json
+    fields:
+      - name: 'title'
+        label: 'Title'
+        widget: string
+      - name: 'description'
+        label: 'Description'
+        widget: markdown
