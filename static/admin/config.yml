@@ -61,6 +61,8 @@ collections:
     label_singular: 'Person'
     folder: 'content/people'
     create: true
+    editor:
+      preview: false
     fields:
       - name: 'title'
         label: 'Name'
@@ -68,13 +70,31 @@ collections:
       - name: 'role'
         label: 'Role'
         widget: 'select'
-        options: ['Pastor', 'Elder', 'Worship Team', 'Staff', 'Member', 'Other']
+        options:
+          [
+            'Pastor',
+            'Elder',
+            'Worship Team',
+            'Staff',
+            'Group Leader',
+            'Member',
+            'Other',
+          ]
+      - name: 'email'
+        label: 'Email'
+        widget: 'string'
+      - name: 'phone'
+        label: 'Phone'
+        widget: 'string'
       - name: 'isSermonLeader'
         label: 'Leads Sermons'
         widget: boolean
       - name: 'twitterHandle'
         label: 'Twitter'
         width: 'string'
+      - name: 'image'
+        label: 'Image'
+        widget: 'image'
   - name: 'sermonLeaders'
     label: 'Sermon Leaders'
     folder: 'content/people'
