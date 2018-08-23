@@ -11,12 +11,12 @@ collections:
         label: 'Home'
         file: 'content/pages/home.json'
         fields:
-          - name: bannerMessage
-            label: Banner Message
-            widget: string
-          - name: bannerButton
-            label: Banner Button
-            widget: string
+          - name: 'bannerMessage'
+            label: 'Banner Message'
+            widget: 'string'
+          - name: 'bannerButton'
+            label: 'Banner Button'
+            widget: 'string'
       - name: 'connect'
         label: 'Connect'
         file: 'content/pages/connect.json'
@@ -24,23 +24,23 @@ collections:
           - name: 'gospelCommunities'
             label: 'Gospel Communities'
             label_singular: 'Gospel Community'
-            widget: list
+            widget: 'list'
             fields:
-              - name: hosts
-                label: Hosts
-                widget: string
-              - name: address
-                label: Address
-                widget: string
-              - name: subaddress
-                label: Subaddress
-                widget: string
-              - name: time
-                label: Time
-                widget: string
-              - name: moreInfo
-                label: More Info
-                widget: text
+              - name: 'hosts'
+                label: 'Hosts'
+                widget: 'string'
+              - name: 'address'
+                label: 'Address'
+                widget: 'string'
+              - name: 'subaddress'
+                label: 'Subaddress'
+                widget: 'string'
+              - name: 'time'
+                label: 'Time'
+                widget: 'string'
+              - name: 'moreInfo'
+                label: 'More Info'
+                widget: 'text'
       - name: 'about'
         label: 'About'
         file: 'content/pages/about.json'
@@ -50,9 +50,83 @@ collections:
             label_singular: 'Belief'
             widget: list
             fields:
-              - name: title
-                label: Title
-                widget: string
-              - name: description
-                label: Description
-                widget: markdown
+              - name: 'title'
+                label: 'Title'
+                widget: 'string'
+              - name: 'description'
+                label: 'Description'
+                widget: 'markdown'
+  - name: 'people'
+    label: 'People'
+    label_singular: 'Person'
+    folder: 'content/people'
+    create: true
+    fields:
+      - name: 'title'
+        label: 'Name'
+        widget: 'string'
+      - name: 'role'
+        label: 'Role'
+        widget: 'select'
+        options: ['Pastor', 'Elder', 'Worship Team', 'Staff', 'Member', 'Other']
+      - name: 'isSermonLeader'
+        label: 'Leads Sermons'
+        widget: boolean
+      - name: 'twitterHandle'
+        label: 'Twitter'
+        width: 'string'
+  - name: 'sermonLeaders'
+    label: 'Sermon Leaders'
+    folder: 'content/people'
+    filter: { field: 'leadsSermons', value: true }
+  - name: 'series'
+    label: 'Series'
+    folder: 'content/series'
+    create: true
+    fields:
+      - name: 'title'
+        label: 'Title'
+        widget: 'string'
+      - name: 'description'
+        label: 'Description'
+        widget: 'markdown'
+      - name: 'image'
+        label: 'Image'
+        widget: 'image'
+  - name: 'sermons'
+    label: 'Sermons'
+    label_singular: 'Sermon'
+    folder: 'content/sermons'
+    create: true
+    fields:
+      - name: 'title'
+        label: 'Title'
+        widget: 'string'
+      - name: 'series'
+        label: 'Series'
+        widget: 'relation'
+        collection: 'series'
+        searchFields: ['title']
+        valueField: 'title'
+      - name: 'leader'
+        label: 'Leader'
+        widget: 'relation'
+        collection: 'sermonLeaders'
+        searchFields: ['name', 'twitterHandle']
+        valueField: 'name'
+      - name: 'summary'
+        label: 'Summary'
+        widget: 'markdown'
+      - name: 'files'
+        label: 'Files'
+        widget: 'list'
+        fields:
+          - name: 'title'
+            label: 'Title'
+            widget: 'string'
+          - name: 'file'
+            label: 'File'
+            widget: 'file'
+          - name: 'description'
+            label: 'Description'
+            widget: 'markdown'
