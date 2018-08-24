@@ -71,15 +71,11 @@ collections:
         label: 'Role'
         widget: 'select'
         options:
-          [
-            'Pastor',
-            'Elder',
-            'Worship Team',
-            'Staff',
-            'Group Leader',
-            'Member',
-            'Other',
-          ]
+          [Pastor, Elder, Worship Team, Staff, Group Leader, Member, Other]
+        required: false
+      - name: 'summary'
+        label: Summary
+        widget: markdown
         required: false
       - name: 'email'
         label: 'Email'
