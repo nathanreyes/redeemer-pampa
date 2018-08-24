@@ -92,9 +92,9 @@ collections:
         label: 'Twitter'
         width: 'string'
         required: false
-      - name: 'image'
-        label: 'Image'
-        widget: 'image'
+      - name: imgUrl
+        label: Image URL
+        widget: string
         required: false
   - name: 'sermonLeaders'
     label: 'Sermon Leaders'
