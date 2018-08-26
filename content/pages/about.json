@@ -1,4 +1,27 @@
 {
+  "staff": [
+    {
+      "name": "Rex McKay, III",
+      "role": "Elder",
+      "summary": "Rex is a local businessman and farmer who graduated from White Deer High School in 1983. He has been married to his wife, Robin, since 1984. Together they have three children; Will, Mary (& husband Taylor), and Mason.",
+      "email": "haymckay3@gmail.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,h_600,w_600,x_420,y_100/v1530713511/redeemer-pampa/Rex_McKay.jpg"
+    },
+    {
+      "name": "TV Cuellar",
+      "role": "Elder",
+      "summary": "TV is the branch director of a local home health care office. He graduated from Pampa High School in 1985 after moving to Pampa in 1980. He has been married to his wife, Yvette, since 1992 and he has two sons; Luke (& wife Amanda) and Paul (& wife Alison) and two grandchildren.",
+      "email": "primitivo.cuellar@accoladehomecare.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,h_400,w_400,x_220,y_440/v1530714527/redeemer-pampa/TV_Cuellar.jpg"
+    },
+    {
+      "name": "Jeremy Buck",
+      "role": "Lead Pastor, Elder",
+      "summary": "Jeremy is on paid staff at Redeemer Pampa. He was born and raised in Pampa and graduated from Pampa High School in 2000. He and his wife, Karmen, have been married since December of 2002. Together they have one daughter, Karsen, and one son, Jude.",
+      "email": "jbuck.redeemerpampa@gmail.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,w_180,x_210,y_10/v1530715706/redeemer-pampa/Jeremy_Buck.jpg"
+    }
+  ],
   "beliefs": [
     {
       "title": "The Scriptures",
