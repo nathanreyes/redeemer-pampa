@@ -22,14 +22,14 @@
     <div class='bg-blue-dark shadow-inner py-4'>
       <div class='section'>
         <profile-card
-          v-for='profile in staffProfiles'
+          v-for='profile in staff'
           :key='profile.name'
           class='my-4 mx-auto'
           :name='profile.name'
           :role='profile.role'
           :email='profile.email'
           :img-url='profile.imgUrl'
-          :description='profile.description'
+          :description='profile.summary'
           >
         </profile-card>
       </div>
@@ -144,7 +144,6 @@ import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import ProfileCard from '../components/ProfileCard';
 import content from '~/content/pages/about.json';
-import { staffProfiles } from '../util/siteInfo';
 
 export default {
   components: {
@@ -168,7 +167,7 @@ export default {
           url: '#affiliations',
         },
       ],
-      staffProfiles,
+      staff: content.staff,
       beliefs: content.beliefs,
       selectedBelief: content.beliefs[0],
       transitionName: '',

@@ -137,9 +137,12 @@ collections:
           - name: file
             label: File
             widget: file
+            required: false
           - name: url
             label: URL
             widget: string
+            required: false
           - name: 'description'
             label: 'Description'
             widget: 'markdown'
+            required: false
