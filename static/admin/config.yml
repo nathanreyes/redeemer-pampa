@@ -45,8 +45,36 @@ collections:
         label: 'About'
         file: 'content/pages/about.json'
         fields:
-          - name: 'beliefs'
-            label: 'Beliefs'
+          - name: 'staff'
+            label: 'Staff'
+            label_singular: Staff Member
+            widget: list
+            fields:
+              - name: 'name'
+                label: 'Name'
+                widget: 'string'
+              - name: 'role'
+                label: 'Role'
+                widget: string
+                required: false
+              - name: 'summary'
+                label: Summary
+                widget: markdown
+                required: false
+              - name: 'email'
+                label: 'Email'
+                widget: 'string'
+                required: false
+              - name: 'phone'
+                label: 'Phone'
+                widget: 'string'
+                required: false
+              - name: imgUrl
+                label: Image URL
+                widget: string
+                required: false
+          - name: beliefs
+            label: Beliefs
             label_singular: 'Belief'
             widget: list
             fields:
@@ -56,50 +84,6 @@ collections:
               - name: 'description'
                 label: 'Description'
                 widget: 'markdown'
-  - name: 'people'
-    label: 'People'
-    label_singular: 'Person'
-    folder: 'content/people'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - name: 'title'
-        label: 'Name'
-        widget: 'string'
-      - name: 'role'
-        label: 'Role'
-        widget: 'select'
-        options:
-          [Pastor, Elder, Worship Team, Staff, Group Leader, Member, Other]
-        required: false
-      - name: 'summary'
-        label: Summary
-        widget: markdown
-        required: false
-      - name: 'email'
-        label: 'Email'
-        widget: 'string'
-        required: false
-      - name: 'phone'
-        label: 'Phone'
-        widget: 'string'
-        required: false
-      - name: 'isSermonLeader'
-        label: 'Leads Sermons'
-        widget: boolean
-      - name: 'twitterHandle'
-        label: 'Twitter'
-        width: 'string'
-        required: false
-      - name: imgUrl
-        label: Image URL
-        widget: string
-        required: false
-  - name: 'sermonLeaders'
-    label: 'Sermon Leaders'
-    folder: 'content/people'
-    filter: { field: 'leadsSermons', value: true }
   - name: 'series'
     label: 'Series'
     folder: 'content/series'
@@ -124,7 +108,7 @@ collections:
     fields:
       - name: 'title'
         label: 'Title'
-        widget: 'string'
+        widget: string
       - name: 'series'
         label: 'Series'
         widget: 'relation'
@@ -132,11 +116,10 @@ collections:
         searchFields: ['title']
         valueField: 'title'
         required: false
-      - name: 'leader'
-        label: 'Leader'
-        widget: 'relation'
-        collection: 'sermonLeaders'
-        searchFields: ['name', 'twitterHandle']
+      - name: leader
+        label: Leader
+        widget: select
+        options: ['Jeremy Buck', 'Dan Fowler', 'Paul Rayburn']
         valueField: 'name'
         required: false
       - name: 'summary'
