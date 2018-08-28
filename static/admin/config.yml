@@ -84,26 +84,28 @@ collections:
               - name: 'description'
                 label: 'Description'
                 widget: 'markdown'
-  - name: 'series'
-    label: 'Series'
-    folder: 'content/series'
+  - name: series
+    label: Series
+    folder: content/series
+    extension: json
     create: true
     fields:
-      - name: 'title'
-        label: 'Title'
-        widget: 'string'
-      - name: 'description'
-        label: 'Description'
+      - name: title
+        label: Title
+        widget: string
+      - name: description
+        label: Description
         widget: 'markdown'
         required: false
-      - name: 'image'
-        label: 'Image'
-        widget: 'image'
+      - name: image
+        label: Image
+        widget: image
         required: false
-  - name: 'sermonLists'
-    label: 'Sermon Lists'
-    label_singular: 'Sermon List'
-    folder: 'content/sermons'
+  - name: sermonLists
+    label: Sermon Lists
+    label_singular: Sermon List
+    folder: content/sermons
+    extension: json
     create: true
     fields:
       - name: title
@@ -113,6 +115,7 @@ collections:
         label: Sermons
         label_singular: Sermon
         widget: list
+        required: false
         fields:
           - name: title
             label: Title
