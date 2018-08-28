@@ -100,9 +100,9 @@ collections:
         label: 'Image'
         widget: 'image'
         required: false
-  - name: 'sermons'
-    label: 'Sermons'
-    label_singular: 'Sermon'
+  - name: 'sermonLists'
+    label: 'Sermon Lists'
+    label_singular: 'Sermon List'
     folder: 'content/sermons'
     create: true
     fields:
@@ -111,6 +111,7 @@ collections:
         widget: string
       - name: sermons
         label: Sermons
+        label_singular: Sermon
         widget: list
         fields:
           - name: title
