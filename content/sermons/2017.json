@@ -1,3 +1,421 @@
 {
-  "title": "2017"
+  "year": 2017,
+  "sermons": [
+    {
+      "title": "Exodus 15",
+      "leader": "Jeremy Buck",
+      "date": "2017-12-31T06:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Advent 3 - Joy",
+      "leader": "Jeremy Buck",
+      "date": "2017-12-17T06:00:00.000Z",
+      "series": "Advent",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Advent 2 - Peace",
+      "leader": "Jeremy Buck",
+      "date": "2017-12-10T06:00:00.000Z",
+      "series": "Advent",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Advent 1 - Hope",
+      "leader": "Jeremy Buck",
+      "date": "2017-12-03T06:00:00.000Z",
+      "series": "Advent",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 12-14",
+      "leader": "Jeremy Buck",
+      "date": "2017-11-26T06:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 11-12",
+      "leader": "Jeremy Buck",
+      "date": "2017-11-19T06:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus -Hardened Hearts",
+      "leader": "Jeremy Buck",
+      "date": "2017-11-12T06:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 8-10",
+      "leader": "Jeremy Buck",
+      "date": "2017-11-05T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 7",
+      "leader": "Jeremy Buck",
+      "date": "2017-10-29T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 6",
+      "leader": "Jeremy Buck",
+      "date": "2017-10-22T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 5",
+      "leader": "Jeremy Buck",
+      "date": "2017-10-15T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 4",
+      "leader": "Jeremy Buck",
+      "date": "2017-10-08T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 3",
+      "leader": "Jeremy Buck",
+      "date": "2017-10-01T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus 2",
+      "leader": "Jeremy Buck",
+      "date": "2017-09-24T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Exodus Intro",
+      "leader": "Jeremy Buck",
+      "date": "2017-09-17T05:00:00.000Z",
+      "series": "Exodus",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 16",
+      "leader": "Dan Fowler",
+      "date": "2017-09-10T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 15.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-09-03T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 14.3",
+      "leader": "Jeremy Buck",
+      "date": "2017-08-27T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Spiritual Parenting Seminar",
+      "leader": "Dusty Thompson",
+      "date": "2017-08-23T05:00:00.000Z",
+      "series": "Parenting",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 14.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-08-20T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 14.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-08-13T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 13",
+      "leader": "Paul Rayburn",
+      "date": "2017-08-06T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 12.4",
+      "leader": "Jeremy Buck",
+      "date": "2017-07-30T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 12.3",
+      "leader": "Jeremy Buck",
+      "date": "2017-07-23T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 12.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-07-16T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 12.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-07-09T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 11.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-07-02T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 10.3",
+      "leader": "Jeremy Buck",
+      "date": "2017-06-25T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 10.2",
+      "leader": "Dan Fowler",
+      "date": "2017-06-18T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 10.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-06-11T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 9.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-06-04T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 9.1 ",
+      "leader": "Jeremy Buck",
+      "date": "2017-05-28T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 8.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-05-21T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 7.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-05-14T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 7.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-05-07T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 6.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-04-30T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 6.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-04-23T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Easter 2017",
+      "leader": "Jeremy Buck",
+      "date": "2017-04-16T05:00:00.000Z",
+      "series": "",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 5",
+      "leader": "Jeremy Buck",
+      "date": "2017-04-09T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 4.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-04-02T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 4.1",
+      "leader": "Jeremy Buck",
+      "date": "2017-03-26T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 3",
+      "leader": "Jeremy Buck",
+      "date": "2017-03-19T05:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 2.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-03-12T06:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 2",
+      "leader": "Jeremy Buck",
+      "date": "2017-03-05T06:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 1.3",
+      "leader": "Jeremy Buck",
+      "date": "2017-02-26T06:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Mark 1.2",
+      "leader": "Jeremy Buck",
+      "date": "2017-02-19T06:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Introduction to Mark",
+      "leader": "Jeremy Buck",
+      "date": "2017-02-12T06:00:00.000Z",
+      "series": "Mark",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Membership",
+      "leader": "Jeremy Buck",
+      "date": "2017-02-05T06:00:00.000Z",
+      "series": "Core Values",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Plural Leadership",
+      "leader": "Jeremy Buck",
+      "date": "2017-01-29T06:00:00.000Z",
+      "series": "Core Values",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Generosity and Simplicity",
+      "leader": "Jeremy Buck",
+      "date": "2017-01-22T06:00:00.000Z",
+      "series": "Core Values",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Missional Living",
+      "leader": "Jeremy Buck",
+      "date": "2017-01-08T06:00:00.000Z",
+      "series": "Core Values",
+      "summary": "",
+      "files": []
+    },
+    {
+      "title": "Galatians 6.3",
+      "leader": "Jeremy Buck",
+      "date": "2017-01-01T06:00:00.000Z",
+      "series": "Galatians",
+      "summary": "",
+      "files": []
+    }
+  ]
 }
