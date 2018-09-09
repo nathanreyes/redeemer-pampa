@@ -12,7 +12,7 @@
         <a
           href='#'
           class='inline-flex items-center text-xl bg-blue-lightest text-black opacity-75 font-semibold h-12 px-4 border-2 border-white outline-none rounded no-underline'
-          v-scroll-to='"#core-values"'>
+          v-scroll-to='"#who-we-are"'>
           {{ bannerButton }}
           <svg
             xmlns="http://www.w3.org/2000/svg"

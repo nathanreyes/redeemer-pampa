@@ -2,7 +2,7 @@
 <div>
   <hero></hero>
   <div
-    id='core-values'
+    id='who-we-are'
     class='bg-white main-content'>
     <!--Come As You Are Section-->
     <section class='md:py-24'>
