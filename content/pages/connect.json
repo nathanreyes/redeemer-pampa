@@ -1,40 +1,40 @@
 {
   "gospelCommunities": [
     {
-      "time": "Sundays @ 5:30pm",
       "hosts": "Jeremy & Karmen Buck, Reagan & Carol Herman",
       "address": "815 N. Somerville St.",
+      "time": "Sundays @ 5:30pm",
       "moreInfo": "Contact <a href='mailto:jbuck.redeemerpampa@gmail.com' class='link-small'>jbuck.redeemerpampa@gmail.com</a> for more info"
     },
     {
-      "time": "Sundays @ 6:00pm",
       "hosts": "Rex & Robin McKay, TV & Yvette Cuellar",
       "address": "7805 FM 2300 (Groom Hwy)",
+      "time": "Sundays @ 6:00pm",
       "moreInfo": "Contact <a href='mailto:haymckay3@gmail.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>haymckay3@gmail.com</a> for more info"
     },
     {
+      "hosts": "Paul & Mary Grace Rayburn, David & Mandy Lewis",
+      "address": "1908 Evergreen",
       "time": "Sundays @ 5:30pm",
-      "hosts": "Paul & Mary Grace Rayburn, Nathan & Raine Reyes",
-      "address": "201 Nicki Ave",
       "moreInfo": "Contact <a href='mailto:marygrace.rayburn@gmail.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>marygrace.rayburn@gmail.com</a> for more info"
     },
     {
-      "time": "Wednesdays @ 6:30pm",
       "hosts": "Danny & Lori Hendricks, Clint & Jenee Devoll",
       "address": "345 Winters Quarters Road & 1206 Mary Ellen",
+      "time": "Wednesdays @ 6:30pm",
       "moreInfo": "This group rotates location monthly. Text Lori at <a href='tel:1-806-662-2542' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>806.662.2542</a> for current location."
     },
     {
-      "time": "Wednesdays @ 7:00pm",
       "hosts": "Mike & Devney Anderson, Carl & Dale Ann Novian",
       "address": "1816 N. Dogwood",
+      "time": "Wednesdays @ 7:00pm",
       "moreInfo": "Contact <a href='mailto:michael@pampasleepsource.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>michael@pampasleepsource.com</a> for more info"
     },
     {
-      "time": "Wednesdays @ 6:30pm",
       "hosts": "Jesse and Marissa Lee",
       "address": "2128 Lynn St.",
-      "subaddress": "Students Only, 6th - 12th Grades",
+      "subaddress": "Students 6th - 12th Grades",
+      "time": "Wednesdays @ 6:30pm",
       "moreInfo": "Contact <a href='mailto:j_doyle_lee@yahoo.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>j_doyle_lee@yahoo.com</a> for more info"
     }
   ]
