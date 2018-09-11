@@ -10,5 +10,5 @@ ID = "031dcc5e-8deb-4329-86bb-779d1df2f368"
 
 # Podcast feed redirect
 [[redirects]]
-  from = "/resources/sermons/?podcast"
+  from = "/resources/sermons/*"
   to = "https://anchor.fm/s/530ebe8/podcast/rss"
