@@ -7,3 +7,8 @@ ID = "031dcc5e-8deb-4329-86bb-779d1df2f368"
 
 [build.environment]
   NODE_VERSION = "8.9.3"
+
+# Podcast feed redirect
+[[redirects]]
+  from = "/resources/sermons/?podcast"
+  to = "https://anchor.fm/s/530ebe8/podcast/rss"
