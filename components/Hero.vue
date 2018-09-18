@@ -1,5 +1,5 @@
 <template>
-  <div class='banner-container relative'>
+  <div class='banner-container bg-scroll sm:bg-fixed relative'>
     <div class='container mx-auto px-4 flex items-center h-full'>
       <!--Hero Left Column-->
       <div class='lg:w-1/2 flex flex-col items-center lg:items-start'>
@@ -132,7 +132,6 @@ export default {
   overflow: hidden;
   background: url('https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_1200/v1532109704/redeemer-pampa/group-prayer-edit.jpg');
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;

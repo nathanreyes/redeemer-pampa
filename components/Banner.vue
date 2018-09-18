@@ -1,6 +1,6 @@
 <template>
   <div
-  class='banner text-base'
+  class='banner text-base bg-scroll sm:bg-fixed'
   :style='{ backgroundImage: `url(${image})` }'>
     <div class='relative w-full h-full'>
       <slot>
