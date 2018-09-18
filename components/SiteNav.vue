@@ -2,12 +2,12 @@
   <!--Nav Bar-->
   <nav class='nav fixed w-full bg-white z-20 border-grey-lighter border-b'>
     <!--Nav Container-->
-    <div class='container px-6 md:px-0 h-full flex justify-between items-center flex-wrap'>
+    <div class='container px-6 h-full flex justify-between items-center flex-no-wrap'>
       <!--Nav Left Section-->
       <div class='flex h-full items-center flex-no-shrink mr-6 z-10'>
         <nuxt-link
           to='/'
-          class='link rounded block text-grey-darker text-2xl py-2 tracking-wide font-serif'>
+          class='link rounded block text-grey-darker break-words text-lg sm:text-2xl py-2 tracking-wide font-serif'>
           Redeemer Pampa
         </nuxt-link>
       </div>
@@ -43,28 +43,28 @@
           class='hidden lg:flex justify-center items-center w-auto'>
         </site-nav-menu>
       </div>
-      <!--Nav Toggle Area for Menu and Podcast Player-->
-      <div class='relative flex-grow w-full block -mx-6'>
-        <transition
-          name='fade'>
-          <site-nav-menu
-            class='absolute pin-t pin-r w-full bg-grey-lighter pt-3 lg:hidden'
-            v-show='menuVisible'>
-          </site-nav-menu>
-        </transition>
-        <transition
-          name='fade'>
-          <iframe
-            src='https://anchor.fm/redeemer-pampa-podcast/embed'
-            class='absolute pin-t pin-r mt-3 mr-6'
-            height='102px'
-            width='400px'
-            frameborder='0'
-            scrolling='no'
-            v-show='playerVisible'>
-          </iframe>
-        </transition>
-      </div>
+    </div>
+    <!--Nav Toggle Area for Menu and Podcast Player-->
+    <div
+      class='relative flex-grow w-full block'>
+      <transition
+        name='fade'>
+        <site-nav-menu
+          class='absolute pin-t pin-r w-full bg-grey-lighter pt-3 lg:hidden'
+          v-show='menuVisible'>
+        </site-nav-menu>
+      </transition>
+      <transition
+        name='fade'>
+        <iframe
+          src='https://anchor.fm/redeemer-pampa-podcast/embed'
+          class='absolute pin-t pin-r mt-3 mx-2'
+          height='102px'
+          frameborder='0'
+          scrolling='no'
+          v-show='playerVisible'>
+        </iframe>
+      </transition>
     </div>
   </nav>
 </template>
