@@ -1,7 +1,4 @@
 <template>
-  <!-- <banner
-    image='https://via.placeholder.com/800x600'>
-  </banner> -->
   <div>
     <!--Page Menu-->
     <page-nav-menu
@@ -78,14 +75,12 @@
 </template>
 
 <script>
-import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import GcCard from '../components/GcCard';
 import content from '~/content/pages/connect.json';
 
 export default {
   components: {
-    Banner,
     PageNavMenu,
     GcCard,
   },

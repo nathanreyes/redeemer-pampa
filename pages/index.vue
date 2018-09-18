@@ -271,14 +271,12 @@
 
 <script>
 import Hero from '../components/Hero';
-import Banner from '../components/Banner';
 import GoogleMap from '../components/GoogleMap';
 import { contact } from '../util/siteInfo';
 
 export default {
   components: {
     Hero,
-    Banner,
     GoogleMap,
   },
   data() {

@@ -140,14 +140,12 @@
 </template>
 
 <script>
-import Banner from '../components/Banner';
 import PageNavMenu from '../components/PageNavMenu';
 import ProfileCard from '../components/ProfileCard';
 import content from '~/content/pages/about.json';
 
 export default {
   components: {
-    Banner,
     PageNavMenu,
     ProfileCard,
   },

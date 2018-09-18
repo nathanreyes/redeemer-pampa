@@ -50,7 +50,7 @@
       <transition
         name='fade'>
         <site-nav-menu
-          class='absolute pin-t pin-r w-full bg-grey-lighter pt-3 lg:hidden'
+          class='absolute pin-t pin-r w-full pt-3 bg-grey-lighter shadow-outline lg:hidden'
           v-show='menuVisible'>
         </site-nav-menu>
       </transition>
