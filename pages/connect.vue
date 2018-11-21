@@ -71,18 +71,22 @@
         </div>
       </div>
     </div>
+    <!--Sermons-->
+    <sermons></sermons>
   </div>
 </template>
 
 <script>
 import PageNavMenu from '../components/PageNavMenu';
 import GcCard from '../components/GcCard';
+import Sermons from '../components/Sermons';
 import content from '~/content/pages/connect.json';
 
 export default {
   components: {
     PageNavMenu,
     GcCard,
+    Sermons,
   },
   data() {
     return {

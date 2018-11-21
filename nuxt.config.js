@@ -1,6 +1,8 @@
+const fs = require('fs');
 const path = require('path');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob-all');
+const buildIndex = require('./util/buildIndex');
 
 class TailwindExtractor {
   static extract(content) {
@@ -10,8 +12,8 @@ class TailwindExtractor {
 
 module.exports = {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'Redeemer Pampa',
     meta: [
@@ -41,18 +43,18 @@ module.exports = {
     ],
   },
   /*
-  ** Customize the progress bar color
-  */
+   ** Customize the progress bar color
+   */
   loading: { color: '#3490dc' },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     extractCSS: true,
     postcss: [require('tailwindcss')('./tailwind.js'), require('autoprefixer')],
     /*
-    ** Run ESLint on save
-    */
+     ** Run ESLint on save
+     */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -101,4 +103,16 @@ module.exports = {
       },
     ],
   ],
+  hooks: {
+    generate: {
+      before(nuxt) {
+        const dirSermons = path.resolve('./content/sermons');
+        const dirSeries = path.resolve('./content/series');
+        console.log(`Building index for sermons at ${dirSermons}...`);
+        buildIndex(dirSermons);
+        console.log(`Building index for series at ${dirSeries}`);
+        buildIndex(dirSeries, data => data.title);
+      },
+    },
+  },
 };
