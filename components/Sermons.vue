@@ -28,7 +28,7 @@
         >
           <div class="border-l-2 border-blue px-6 py-4">
             <h3 class="text-grey-darkest font-semibold mb-3">{{ sermon.title }}</h3>
-            <p class="text-grey-dark text-sm">
+            <p class="text-grey-dark text-sm leading-normal">
               Led by
               <span class="text-grey-darker font-semibold">{{ sermon.leader }}</span>
               on
@@ -38,7 +38,7 @@
               <span v-if="sermon.series">during the
                 <nuxt-link
                   :to="getSeriesPath(sermon.series)"
-                  class="ml-1 mr-1 text-blue-dark text-sm font-semibold no-underline border-b border-blue-dark"
+                  class="mr-1 text-blue-dark text-sm font-semibold no-underline border-b border-blue-dark"
                 >{{ sermon.series }}</nuxt-link>series.
               </span>
             </p>
