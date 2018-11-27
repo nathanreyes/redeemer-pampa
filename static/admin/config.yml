@@ -9,7 +9,7 @@ collections:
     files:
       - name: 'home'
         label: 'Home'
-        file: 'static/content/pages/home.json'
+        file: 'content/pages/home.json'
         fields:
           - name: 'bannerMessage'
             label: 'Banner Message'
@@ -19,7 +19,7 @@ collections:
             widget: 'string'
       - name: 'connect'
         label: 'Connect'
-        file: 'static/content/pages/connect.json'
+        file: 'content/pages/connect.json'
         fields:
           - name: 'gospelCommunities'
             label: 'Gospel Communities'
@@ -43,7 +43,7 @@ collections:
                 widget: 'text'
       - name: 'about'
         label: 'About'
-        file: 'static/content/pages/about.json'
+        file: 'content/pages/about.json'
         fields:
           - name: 'staff'
             label: 'Staff'
@@ -104,7 +104,7 @@ collections:
   - name: sermonLists
     label: Sermon Lists
     label_singular: Sermon List
-    folder: static/content/sermons
+    folder: content/sermons
     extension: json
     create: true
     fields:
