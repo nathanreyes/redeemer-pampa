@@ -104,7 +104,7 @@ collections:
   - name: sermonLists
     label: Sermon Lists
     label_singular: Sermon List
-    folder: content/sermons
+    folder: content/sermons/year
     extension: json
     create: true
     fields:
