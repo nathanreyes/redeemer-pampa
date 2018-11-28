@@ -43,22 +43,22 @@
               </span>
             </p>
             <p class="flex items-center mt-4" v-if="sermon.podcastUrl">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                class="w-4 h-4 fill-current text-grey"
+              <a
+                :href="sermon.podcastUrl"
+                target="_blank"
+                class="flex items-center text-sm text-blue-darker font-semibold no-underline bg-blue-lighter px-4 py-2 rounded"
               >
-                <path
-                  d="M16 8A6 6 0 1 0 4 8v11H2a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2V8a8 8 0 1 1 16 0v3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2V8zm-4 2h3v10h-3V10zm-7 0h3v10H5V10z"
-                ></path>
-              </svg>
-              <span>
-                <a
-                  :href="sermon.podcastUrl"
-                  target="_blank"
-                  class="ml-2 text-blue-dark text-sm font-semibold no-underline border-b border-blue-dark"
-                >Listen to this sermon</a>
-              </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  class="w-4 h-4 fill-current"
+                >
+                  <path
+                    d="M16 8A6 6 0 1 0 4 8v11H2a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2V8a8 8 0 1 1 16 0v3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2V8zm-4 2h3v10h-3V10zm-7 0h3v10H5V10z"
+                  ></path>
+                </svg>
+                <span class="ml-2">Listen to this sermon</span>
+              </a>
             </p>
           </div>
         </div>
