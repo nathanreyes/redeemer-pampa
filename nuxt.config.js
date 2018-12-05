@@ -2,7 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob-all');
-const buildIndex = require('./util/buildIndex');
+const {
+  buildIndex,
+  writeSermonsToIndex,
+  writeIndex,
+} = require('./util/buildIndex');
 
 class TailwindExtractor {
   static extract(content) {
@@ -106,13 +110,42 @@ module.exports = {
   hooks: {
     generate: {
       before(nuxt) {
-        const dirSermons = path.resolve('./content/sermons');
-        const dirSeries = path.resolve('./content/series');
+        const sermons = [];
+        const dirSermons = path.resolve('./content/sermons/year');
+        const dirSeries = path.resolve('./content/sermons/series');
         console.log(`Building index for sermons at ${dirSermons}...`);
-        buildIndex(dirSermons);
+        const sermonIndex = buildIndex(dirSermons, ({ data, fileName }) => {
+          sermons.push(...data.sermons);
+          return {
+            title: data.title,
+            path: `/year/${fileName}`,
+          };
+        }).reverse();
         console.log(`Building index for series at ${dirSeries}`);
-        buildIndex(dirSeries, data => data.title);
+        sermonIndex.push(
+          ...buildIndex(dirSeries, ({ data, fileName, filePath }) => {
+            writeSermonsToIndex(
+              filePath,
+              sermons.filter(sermon => sermon.series === data.title),
+            );
+            return {
+              title: data.title,
+              path: `/series/${fileName}`,
+            };
+          }),
+        );
+        console.log('Writing index...');
+        writeIndex(
+          sermonIndex,
+          path.resolve('./content/sermons', 'index.json'),
+        );
       },
+    },
+  },
+  generate: {
+    routes: function() {
+      const sermons = require('./content/sermons/index.json');
+      return sermons.map(sermon => `/sermons${sermon.path}`);
     },
   },
 };

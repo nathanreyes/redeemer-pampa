@@ -86,7 +86,7 @@ collections:
                 widget: 'markdown'
   - name: series
     label: Series
-    folder: content/series
+    folder: content/sermons/series
     extension: json
     create: true
     fields:
@@ -104,7 +104,7 @@ collections:
   - name: sermonLists
     label: Sermon Lists
     label_singular: Sermon List
-    folder: content/sermons
+    folder: content/sermons/year
     extension: json
     create: true
     fields:
@@ -151,6 +151,10 @@ collections:
           - name: 'summary'
             label: 'Summary'
             widget: 'markdown'
+            required: false
+          - name: 'podcastUrl'
+            label: 'Podcast URL'
+            widget: 'string'
             required: false
           - name: 'files'
             label: 'Files'

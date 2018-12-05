@@ -1,11 +1,122 @@
 [
-  "2011",
-  "2012",
-  "2013",
-  "2014",
-  "2015",
-  "2016",
-  "2017",
-  "2018",
-  "Unknown"
+  {
+    "title": 2018,
+    "path": "/year/2018"
+  },
+  {
+    "title": 2017,
+    "path": "/year/2017"
+  },
+  {
+    "title": 2016,
+    "path": "/year/2016"
+  },
+  {
+    "title": 2015,
+    "path": "/year/2015"
+  },
+  {
+    "title": 2014,
+    "path": "/year/2014"
+  },
+  {
+    "title": 2013,
+    "path": "/year/2013"
+  },
+  {
+    "title": 2012,
+    "path": "/year/2012"
+  },
+  {
+    "title": 2011,
+    "path": "/year/2011"
+  },
+  {
+    "title": "1 Corinthians",
+    "path": "/series/1-corinthians"
+  },
+  {
+    "title": "1 Peter",
+    "path": "/series/1-peter"
+  },
+  {
+    "title": "2 Peter",
+    "path": "/series/2-peter"
+  },
+  {
+    "title": "Acts",
+    "path": "/series/acts"
+  },
+  {
+    "title": "Advent",
+    "path": "/series/advent"
+  },
+  {
+    "title": "Core Values",
+    "path": "/series/core-values"
+  },
+  {
+    "title": "Ephesians",
+    "path": "/series/ephesians"
+  },
+  {
+    "title": "Exodus",
+    "path": "/series/exodus"
+  },
+  {
+    "title": "Exposition of Romans",
+    "path": "/series/exposition-of-romans"
+  },
+  {
+    "title": "Exposition of the Psalms",
+    "path": "/series/exposition-of-the-psalms"
+  },
+  {
+    "title": "Galations",
+    "path": "/series/galations"
+  },
+  {
+    "title": "Genesis",
+    "path": "/series/genesis"
+  },
+  {
+    "title": "Gospel Centered Life",
+    "path": "/series/gospel-centered-life"
+  },
+  {
+    "title": "James",
+    "path": "/series/james"
+  },
+  {
+    "title": "John",
+    "path": "/series/john"
+  },
+  {
+    "title": "Jonah",
+    "path": "/series/jonah"
+  },
+  {
+    "title": "Malachi",
+    "path": "/series/malachi"
+  },
+  {
+    "title": "Mark",
+    "path": "/series/mark"
+  },
+  {
+    "title": "Missional Living",
+    "path": "/series/missional-living"
+  },
+  {
+    "title": "Parables",
+    "path": "/series/parables"
+  },
+  {
+    "title": "Parenting",
+    "path": "/series/parenting"
+  },
+  {
+    "title": "Psalms",
+    "path": "/series/psalms"
+  }
 ]
