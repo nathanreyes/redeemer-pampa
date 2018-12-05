@@ -2,6 +2,19 @@
   "title": 2018,
   "sermons": [
     {
+      "title": "1 Corinthians 10:2",
+      "date": "2018-09-23",
+      "series": "1 Corinthians",
+      "leader": "Jeremy Buck"
+    },
+    {
+      "title": "1 Corinthians 10:1",
+      "date": "2018-09-02",
+      "series": "1 Corinthians",
+      "leader": "Jeremy Buck",
+      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Corinthians-10-1-e24r5d"
+    },
+    {
       "title": "1 Corinthians 9.2b",
       "date": "2018-08-26T05:00:00.000Z",
       "series": "1 Corinthians",
@@ -306,13 +319,6 @@
       "summary": "",
       "podcastUrl": "https://f001.backblazeb2.com/file/redeemer-pampa/2018/2018.01.07+Exodus+15.22-16.36.mp3",
       "files": []
-    },
-    {
-      "title": "1 Corinthians 10:1",
-      "date": "2018-09-02",
-      "series": "1 Corinthians",
-      "leader": "Jeremy Buck",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Corinthians-10-1-e24r5d"
     }
   ]
 }
