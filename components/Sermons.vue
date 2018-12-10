@@ -108,7 +108,7 @@ export default {
     async refreshSermons() {
       this.sermons = (await import(`@/content/sermons${
         this.selectedSermonLookup.path
-      }.json`)).sermons;
+      }.json`)).sermons.sort((a, b) => new Date(b.date) - new Date(a.date));
     },
     getButtonClass(viewBy) {
       return viewBy === this.viewBy
