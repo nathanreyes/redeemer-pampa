@@ -1,6 +1,6 @@
 [
   {
-    "title": 2018,
+    "title": "2018",
     "path": "/year/2018"
   },
   {
@@ -52,6 +52,14 @@
     "path": "/series/advent"
   },
   {
+    "title": "Colossians",
+    "path": "/series/colossians"
+  },
+  {
+    "title": "Core Values 2",
+    "path": "/series/core-values-2"
+  },
+  {
     "title": "Core Values",
     "path": "/series/core-values"
   },
@@ -72,12 +80,20 @@
     "path": "/series/exposition-of-the-psalms"
   },
   {
+    "title": "Galatians",
+    "path": "/series/galatians"
+  },
+  {
     "title": "Galations",
     "path": "/series/galations"
   },
   {
     "title": "Genesis",
     "path": "/series/genesis"
+  },
+  {
+    "title": "Gospel Applications",
+    "path": "/series/gospel-applications"
   },
   {
     "title": "Gospel Centered Life",
@@ -116,7 +132,7 @@
     "path": "/series/parenting"
   },
   {
-    "title": "Psalms",
-    "path": "/series/psalms"
+    "title": "The Book of James",
+    "path": "/series/the-book-of-james"
   }
 ]

@@ -20,14 +20,18 @@
   "devDependencies": {
     "@nuxtjs/google-analytics": "2.0.2",
     "autoprefixer": "8.6.5",
+    "axios": "^0.18.0",
     "babel-eslint": "^8.2.1",
+    "dashify": "^2.0.0",
     "eslint": "^5.0.0",
     "eslint-config-prettier": "3.3.0",
     "eslint-loader": "2.1.1",
     "eslint-plugin-prettier": "3.0.0",
     "eslint-plugin-vue": "^4.0.0",
+    "fast-xml-parser": "^3.12.10",
     "glob-all": "3.1.0",
     "purgecss-webpack-plugin": "0.20.1",
-    "tailwindcss": "0.6.5"
+    "tailwindcss": "0.6.5",
+    "xml-js": "^1.6.8"
   }
 }

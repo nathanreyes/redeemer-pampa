@@ -2,11 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob-all');
-const {
-  buildIndex,
-  writeSermonsToIndex,
-  writeIndex,
-} = require('./util/buildIndex');
+const buildSiteContent = require('./util/buildSiteContent');
 
 class TailwindExtractor {
   static extract(content) {
@@ -110,35 +106,7 @@ module.exports = {
   hooks: {
     generate: {
       before(nuxt) {
-        const sermons = [];
-        const dirSermons = path.resolve('./content/sermons/year');
-        const dirSeries = path.resolve('./content/sermons/series');
-        console.log(`Building index for sermons at ${dirSermons}...`);
-        const sermonIndex = buildIndex(dirSermons, ({ data, fileName }) => {
-          sermons.push(...data.sermons);
-          return {
-            title: data.title,
-            path: `/year/${fileName}`,
-          };
-        }).reverse();
-        console.log(`Building index for series at ${dirSeries}`);
-        sermonIndex.push(
-          ...buildIndex(dirSeries, ({ data, fileName, filePath }) => {
-            writeSermonsToIndex(
-              filePath,
-              sermons.filter(sermon => sermon.series === data.title),
-            );
-            return {
-              title: data.title,
-              path: `/series/${fileName}`,
-            };
-          }),
-        );
-        console.log('Writing index...');
-        writeIndex(
-          sermonIndex,
-          path.resolve('./content/sermons', 'index.json'),
-        );
+        buildSiteContent();
       },
     },
   },
