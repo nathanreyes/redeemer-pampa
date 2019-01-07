@@ -1,5 +1,9 @@
 [
   {
+    "title": "2019",
+    "path": "/year/2019"
+  },
+  {
     "title": "2018",
     "path": "/year/2018"
   },
@@ -34,6 +38,10 @@
   {
     "title": "1 Corinthians",
     "path": "/series/1-corinthians"
+  },
+  {
+    "title": "1 John",
+    "path": "/series/1-john"
   },
   {
     "title": "1 Peter",
