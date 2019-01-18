@@ -4,7 +4,7 @@
       class="flex flex-col items-center md:flex-row md:items-start border-grey-light bg-white rounded p-6 leading-normal shadow"
     >
       <img
-        class="w-24 h-24 rounded-full md:mr-6 mb-4"
+        class="w-24 h-24 rounded-full md:mr-6 mb-4 shadow"
         :src="imgUrl"
         :alt="`Avatar of ${name}`"
         v-if="imgUrl"

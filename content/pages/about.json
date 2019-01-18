@@ -25,19 +25,22 @@
       "name": "Jesse Lee",
       "role": "Ministry Resident",
       "summary": "Jesse works part-time as a ministry resident focusing on student ministry at Redeemer in addition to working at The Well STEM Center. He has been married to his wife, Marissa, since 2016.",
-      "email": "j_doyle_lee@yahoo.com"
+      "email": "j_doyle_lee@yahoo.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_300/v1547773987/redeemer-pampa/29870.jpg"
     },
     {
       "name": "Paul Rayburn",
       "role": "Associate Pastor, Elder",
       "summary": "Paul serves Redeemer both as an elder and works part-time as an associate pastor while also directing The Well STEM Center full-time.  He has been married to his wife, Mary Grace, since 2006. Together they have three children; Joseph, Gabe, and Kinley.",
-      "email": "paulrayburn@gmail.com"
+      "email": "paulrayburn@gmail.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,h_210,w_200,x_94,y_45/v1547774271/redeemer-pampa/paul_rayburn.jpg"
     },
     {
       "name": "Shawn Taylor",
       "role": "Associate Pastor",
       "summary": "Shawn works part-time at Redeemer leading our worship ministry. He also works at his family’s business, Texas Printing, and at The Well STEM Center. He graduated from Savannah College of Art & Design in Savannah, GA.",
-      "email": "me@bottlingthemoon.com"
+      "email": "me@bottlingthemoon.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,g_face/v1543527411/redeemer-pampa/shawnwebsite.jpg"
     }
   ],
   "beliefs": [
