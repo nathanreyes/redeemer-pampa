@@ -23,8 +23,8 @@
           </svg>
           {{ role }}
         </p>
-        <p class="text-base text-grey-darker text-left">{{ description }}</p>
-        <p class="text-sm text-grey-dark text-left mt-4" v-if="email">
+        <p class="text-base text-grey-darker text-center md:text-left">{{ description }}</p>
+        <p class="text-sm text-grey-dark text-center md:text-left mt-4" v-if="email">
           You can reach {{ firstName }} at
           <email :address="email"></email>.
         </p>
