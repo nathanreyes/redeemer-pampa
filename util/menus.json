@@ -32,6 +32,11 @@
     ]
   },
   {
+    "header": "Sermons",
+    "url": "/sermons",
+    "isMobileOnly": true
+  },
+  {
     "header": "About",
     "url": "/about",
     "submenus": [
