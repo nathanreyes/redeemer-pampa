@@ -26,14 +26,14 @@
       "address": "1804 N. Lynn",
       "subaddress": ".",
       "time": "Sundays @ 5:30pm",
-      "moreInfo": "Contact me@bottlingthemoon.com for more info"
+      "moreInfo": "Contact <a href='mailto me@bottlingthemoon.com :' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>me@bottlingthemoon.com</a> for more info"
     },
     {
       "hosts": "TV & Yvette Cuellar, Shanna Buck",
       "address": "810 N. Somerville St.",
       "subaddress": ".",
       "time": "Tuesdays @ 6:30pm",
-      "moreInfo": "Contact primitivo.cuellar@accoladehomecare.com for more info"
+      "moreInfo": "Contact <a href='mailto primitivo.cuellar@accoladehomecare.com:' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>primitivo.cuellar@accoladehomecare.com</a> for more info"
     },
     {
       "hosts": "Danny & Lori Hendricks, Clint & Jenee Devoll",
@@ -50,7 +50,7 @@
       "moreInfo": "Contact <a href='mailto:michael@pampasleepsource.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>michael@pampasleepsource.com</a> for more info"
     },
     {
-      "hosts": "Jesse and Marissa Lee",
+      "hosts": "Jesse & Marissa Lee",
       "address": "2128 N. Lynn St.",
       "subaddress": "Students 6th - 12th Grades",
       "time": "Wednesdays @ 6:30pm",
