@@ -6,14 +6,13 @@
     <div class="section">
       <h2 class="section-title" id="staff">Elders & Staff</h2>
       <p class="content mb-4">
-        Redeemer Church is an elder led church. We have elders who work outside of Redeemer as well as elders who are employed by Redeemer Pampa. You can learn more about elders and the plurality of leadership that Redeemer Pampa has adopted
+        Redeemer Church is an elder led church. Currently, we have {{ elderCount }} elders who work outside of Redeemer as well as elders who are employed by Redeemer Pampa. You can learn more about elders and the plurality of leadership that Redeemer Pampa has adopted
         <a
           href="/Plural-Leadership.pdf"
           class="link"
           target="_blank"
         >here</a>.
       </p>
-      <p class="content">Currently, we have three elders.</p>
     </div>
     <!--Staff Profiles Bio Section-->
     <div class="bg-blue-dark shadow-inner py-4">
@@ -175,6 +174,12 @@ export default {
       selectedBelief: content.beliefs[0],
       transitionName: '',
     };
+  },
+  computed: {
+    elderCount() {
+      return this.staff.filter(s => s.role.toLowerCase().includes('elder'))
+        .length;
+    },
   },
   watch: {
     selectedBelief(val, oldVal) {

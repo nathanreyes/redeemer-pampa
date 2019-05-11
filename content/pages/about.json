@@ -22,13 +22,6 @@
       "imgUrl": "https://res.cloudinary.com/dn6ddndz3/image/upload/v1547849672/website_face.jpg"
     },
     {
-      "name": "Jesse Lee",
-      "role": "Ministry Resident - Students",
-      "summary": "Jesse works part-time as a ministry resident focusing on student ministry at Redeemer in addition to working at The Well STEM Center. He has been married to his wife, Marissa, since 2016.",
-      "email": "j_doyle_lee@yahoo.com",
-      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_300/v1547773987/redeemer-pampa/29870.jpg"
-    },
-    {
       "name": "Paul Rayburn",
       "role": "Associate Pastor, Elder",
       "summary": "Paul serves Redeemer both as an elder and works part-time as an associate pastor while also directing The Well STEM Center full-time.  He has been married to his wife, Mary Grace, since 2006. Together they have three children; Joseph, Gabe, and Kinley.",
@@ -36,11 +29,32 @@
       "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,h_210,w_200,x_94,y_45/v1547774271/redeemer-pampa/paul_rayburn.jpg"
     },
     {
+      "name": "Jesse Lee",
+      "role": "Ministry Resident - Students",
+      "summary": "Jesse works part-time as a ministry resident focusing on student ministry at Redeemer in addition to working at The Well STEM Center. He has been married to his wife, Marissa, since 2016.",
+      "email": "j_doyle_lee@yahoo.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_300/v1547773987/redeemer-pampa/29870.jpg"
+    },
+    {
       "name": "Shawn Taylor",
       "role": "Associate Pastor",
       "summary": "Shawn works part-time at Redeemer leading our worship ministry. He also works at his family’s business, Texas Printing, and at The Well STEM Center. He graduated from Savannah College of Art & Design in Savannah, GA.",
       "email": "me@bottlingthemoon.com",
       "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,g_face/v1543527411/redeemer-pampa/shawnwebsite.jpg"
+    },
+    {
+      "name": "Kolbi Linder",
+      "role": "Children's Ministry, Co-director",
+      "summary": "Kolbi serves part-time at Redeemer by helping oversee our children's ministry while focusing on our babies, toddlers, and their families. She has been married to her husband, Ty, since 2013 and together they have a daughter, Aniston.",
+      "email": "klinder.redeemerpampa@gmail.com",
+      "imgUrl": ""
+    },
+    {
+      "name": "Devney Anderson",
+      "role": "Children's Ministry, Co-director",
+      "summary": "Devney serves Redeemer part-time by helping oversee our children's ministry while focusing on our preschool and elementary age children and their families. She has been married to her husband, Mike, since 1998 and they have three children; Megan, Mason, and Cooper and three grandchildren.",
+      "email": "devney@pampasleepstore.com",
+      "imgUrl": ""
     }
   ],
   "beliefs": [
