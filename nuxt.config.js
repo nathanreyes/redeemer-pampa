@@ -11,12 +11,12 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, '../certs/localhost.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, '../certs/localhost.crt')),
-    },
-  },
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(__dirname, '../certs/localhost.key')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, '../certs/localhost.crt')),
+  //   },
+  // },
   /*
    ** Headers of the page
    */
