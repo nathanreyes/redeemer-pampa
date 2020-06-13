@@ -2,6 +2,24 @@
   <div>
     <hero></hero>
     <div id="who-we-are" class="bg-white main-content">
+      <!--Video Section-->
+      <section v-if="videoUrl" class="bg-grey-lightest border-b">
+        <div class="flex justify-center items-center py-24">
+          <div class="w-full max-w-lg">
+            <h3
+              class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
+            >
+              Live Video
+            </h3>
+            <div
+              class="fb-video"
+              :data-href="videoUrl"
+              data-allowfullscreen="true"
+              data-width=""
+            ></div>
+          </div>
+        </div>
+      </section>
       <!--Come As You Are Section-->
       <section class="md:py-24">
         <div class="flex flex-col-reverse container mx-auto md:flex-row">
@@ -318,6 +336,7 @@
 import Hero from '../components/Hero';
 import GoogleMap from '../components/GoogleMap';
 import { contact } from '../util/siteInfo';
+import homeContent from '@/content/pages/home.json';
 
 export default {
   name: 'Home',
@@ -327,6 +346,7 @@ export default {
   },
   data() {
     return {
+      videoUrl: homeContent.videoUrl,
       images: {
         simpleObedience: {
           url:
