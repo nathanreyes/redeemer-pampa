@@ -7,7 +7,17 @@
 </head>
 
 <body {{ BODY_ATTRS }}>
-  {{ APP }}
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '2597504963824773',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v7.0'
+      });
+    };
+  </script>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script> {{ APP }}
 </body>
 <script>
   if (window.netlifyIdentity) {

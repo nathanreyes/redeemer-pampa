@@ -7,22 +7,29 @@
         <div class="flex flex-col-reverse container mx-auto md:flex-row">
           <!--Image-->
           <div class="flex-grow col md:text-right md:mr-4">
-            <img class="w-full md:w-auto" :src="images.comeAsYouAre.url">
+            <img class="w-full md:w-auto" :src="images.comeAsYouAre.url" />
           </div>
           <!--Description-->
           <div class="flex-grow m-4 col my-8 md:my-0">
             <h3
               class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
-            >Come As You Are</h3>
+            >
+              Come As You Are
+            </h3>
             <p
               class="italic text-grey-darkest text-right leading-normal tracking-wide"
-            >"I believe; help my unbelief!"</p>
-            <p class="text-blue font-bold text-sm text-right mt-3">- Mark 9:24</p>
+            >
+              "I believe; help my unbelief!"
+            </p>
+            <p class="text-blue font-bold text-sm text-right mt-3">
+              - Mark 9:24
+            </p>
             <p></p>
             <p class="text-xl mt-4 leading-normal">
-              God doesn't want a self-perfecting version of ourselves.
-              It is our vulnerable, repentant hearts that bring us closer to Him through His Spirit.
-              With His power, we can cultivate a boldness to beat back sin.
+              God doesn't want a self-perfecting version of ourselves. It is our
+              vulnerable, repentant hearts that bring us closer to Him through
+              His Spirit. With His power, we can cultivate a boldness to beat
+              back sin.
             </p>
           </div>
         </div>
@@ -30,13 +37,19 @@
       <!--Worship Through Generosity Section-->
       <section class="section-pattern-light shadow-inner">
         <div class="container px-4 py-8 text-center lg:w-2/3 light">
-          <h3 class="mb-8 text-2xl tracking-wide text-blue-darkest">Worship Through Generosity</h3>
+          <h3 class="mb-8 text-2xl tracking-wide text-blue-darkest">
+            Worship Through Generosity
+          </h3>
           <p
             class="my-8 text-3xl sm:text-5xl font-light leading-normal sm:leading-tight text-blue-darker"
-          >Generosity is paramount in our sanctification as followers of Christ, who is eternally gracious to us as His adopted sons and daughters.</p>
-          <p
-            class="text-xl pt-8 font-light italic text-blue-darkest"
-          >We believe in the practice of grace together as a family.</p>
+          >
+            Generosity is paramount in our sanctification as followers of
+            Christ, who is eternally gracious to us as His adopted sons and
+            daughters.
+          </p>
+          <p class="text-xl pt-8 font-light italic text-blue-darkest">
+            We believe in the practice of grace together as a family.
+          </p>
         </div>
       </section>
       <!--Simple Obedience Section-->
@@ -47,23 +60,34 @@
             <div class="flex-grow m-4 md:text-right col my-8 md:my-0">
               <h3
                 class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
-              >Simple Obedience</h3>
+              >
+                Simple Obedience
+              </h3>
               <p
                 class="italic text-grey-darkest text-right leading-normal tracking-wide"
-              >"Be still and know that I am God."</p>
-              <p class="text-blue font-bold text-sm text-right mt-3">- Psalm 46:10</p>
+              >
+                "Be still and know that I am God."
+              </p>
+              <p class="text-blue font-bold text-sm text-right mt-3">
+                - Psalm 46:10
+              </p>
               <p></p>
               <p class="text-xl mt-4 leading-normal">
-                Simple living and worship is an intentional acknowledgment of our dependance on Christ.
-                Not only does it prevent us from getting lost in rituals and religious activities, it naturally guides us by simply asking,
+                Simple living and worship is an intentional acknowledgment of
+                our dependance on Christ. Not only does it prevent us from
+                getting lost in rituals and religious activities, it naturally
+                guides us by simply asking,
               </p>
               <p
                 class="tracking-wide text-2xl mt-2 font-light italic text-grey-darker"
-              >"Does this advance our mission of spreading the Gospel or equipping the saints?"</p>
+              >
+                "Does this advance our mission of spreading the Gospel or
+                equipping the saints?"
+              </p>
             </div>
             <!--Image-->
             <div class="flex-grow col md:ml-4">
-              <img class="w-full md:w-auto" :src="images.simpleObedience.url">
+              <img class="w-full md:w-auto" :src="images.simpleObedience.url" />
             </div>
           </div>
         </div>
@@ -71,12 +95,15 @@
       <!--A Church That Relects Its Community Section-->
       <section class="section-pattern text-blue-lightest shadow-inner">
         <div class="container mx-auto px-4 py-8 text-center lg:w-2/3">
-          <h3 class="mb-8 text-2xl tracking-wide text-white">A Church That Reflects Its Community</h3>
+          <h3 class="mb-8 text-2xl tracking-wide text-white">
+            A Church That Reflects Its Community
+          </h3>
           <p
             class="my-8 text-3xl sm:text-5xl font-light leading-normal sm:leading-tight text-blue-lightest"
           >
-            There are no boundaries in a Christ-driven community. If he is over all and in all,
-            then His Church is to reflect the beauty of the diversity of His creation.
+            There are no boundaries in a Christ-driven community. If he is over
+            all and in all, then His Church is to reflect the beauty of the
+            diversity of His creation.
           </p>
           <p class="text-xl font-light pt-6 text-blue-lighter">
             — We desire to represent
@@ -92,32 +119,53 @@
               <img
                 class="w-full md:w-auto"
                 src="https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,h_1200,w_892/v1531363292/redeemer-pampa/living-sent.jpg"
-              >
+              />
             </div>
             <div class="flex-grow m-4 col my-8 md:my-0">
               <h3
                 class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
-              >Living Sent</h3>
+              >
+                Living Sent
+              </h3>
               <p
                 class="italic text-grey-darkest text-right leading-normal tracking-wide"
-              >"I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing."</p>
-              <p class="text-blue font-bold text-sm text-right mt-3">- John 15:5</p>
+              >
+                "I am the vine; you are the branches. Whoever abides in me and I
+                in him, he it is that bears much fruit, for apart from me you
+                can do nothing."
+              </p>
+              <p class="text-blue font-bold text-sm text-right mt-3">
+                - John 15:5
+              </p>
               <p></p>
               <p class="text-xl mt-4 leading-normal">
-                To follow Jesus is to be on mission. As we grow closer to Him and allow the Spirit to transform our lives,
-                a boundless love for our friends, our family and the strangers among us naturally follows.
+                To follow Jesus is to be on mission. As we grow closer to Him
+                and allow the Spirit to transform our lives, a boundless love
+                for our friends, our family and the strangers among us naturally
+                follows.
               </p>
-              <p
-                class="text-xl mt-4 leading-normal"
-              >We will intentionally live our lives as sent-out ones, on mission with Jesus at the grocery store, at our jobs, in our neighborhoods, and everywhere in between. We will adopt a missional lifestyle that says "go and be" and not "come and see."</p>
+              <p class="text-xl mt-4 leading-normal">
+                We will intentionally live our lives as sent-out ones, on
+                mission with Jesus at the grocery store, at our jobs, in our
+                neighborhoods, and everywhere in between. We will adopt a
+                missional lifestyle that says "go and be" and not "come and
+                see."
+              </p>
             </div>
           </div>
         </div>
       </section>
       <!--Contact Us Section-->
-      <section class="py-10 px-4 bg-grey-lighter border border-t border-grey-light" id="contact-us">
+      <section
+        class="py-10 px-4 bg-grey-lighter border border-t border-grey-light"
+        id="contact-us"
+      >
         <div class="container">
-          <h3 class="mt-4 mb-2 text-2xl text-grey-darker tracking-wide text-center">Contact Us</h3>
+          <h3
+            class="mt-4 mb-2 text-2xl text-grey-darker tracking-wide text-center"
+          >
+            Contact Us
+          </h3>
         </div>
         <form
           name="contact"
@@ -126,7 +174,7 @@
           netlify-honeypot="trigger"
           class="w-full max-w-md mx-auto rounded-lg px-2 py-4 md:p-8"
         >
-          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="form-name" value="contact" />
           <!--First/Last Name Fields-->
           <div class="flex flex-wrap -mx-3">
             <!--First Name Field-->
@@ -134,7 +182,8 @@
               <label
                 class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                 for="grid-first-name"
-              >First Name</label>
+                >First Name</label
+              >
               <input
                 class="appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight"
                 id="grid-first-name"
@@ -142,14 +191,15 @@
                 type="text"
                 placeholder
                 autocomplete="given-name"
-              >
+              />
             </div>
             <!--Last Name Field-->
             <div class="w-full md:w-1/2 px-3 mb-4">
               <label
                 class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                 for="grid-last-name"
-              >Last Name</label>
+                >Last Name</label
+              >
               <input
                 class="appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight"
                 id="grid-last-name"
@@ -157,7 +207,7 @@
                 type="text"
                 placeholder
                 autocomplete="family-name"
-              >
+              />
             </div>
           </div>
           <!--Email Field-->
@@ -166,7 +216,8 @@
               <label
                 class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                 for="grid-email"
-              >Email</label>
+                >Email</label
+              >
               <input
                 class="appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight"
                 id="grid-email"
@@ -174,7 +225,7 @@
                 type="email"
                 placeholder
                 autocomplete="email"
-              >
+              />
             </div>
           </div>
           <!--Message Field-->
@@ -183,7 +234,8 @@
               <label
                 class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
                 for="grid-message"
-              >Message</label>
+                >Message</label
+              >
               <textarea
                 class="appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 mb-2 leading-tight"
                 id="grid-message"
@@ -200,7 +252,9 @@
           <button
             class="bg-blue hover:bg-blue-dark text-white font-bold w-full py-2 px-4 rounded"
             type="submit"
-          >Send</button>
+          >
+            Send
+          </button>
         </form>
       </section>
       <!--Map Section-->
@@ -250,7 +304,8 @@
               <a
                 :href="`mail-to:${contact.email}`"
                 class="text-blue-dark no-underline ml-2"
-              >{{ contact.email }}</a>
+                >{{ contact.email }}</a
+              >
             </div>
           </div>
         </google-map>
@@ -265,6 +320,7 @@ import GoogleMap from '../components/GoogleMap';
 import { contact } from '../util/siteInfo';
 
 export default {
+  name: 'Home',
   components: {
     Hero,
     GoogleMap,
