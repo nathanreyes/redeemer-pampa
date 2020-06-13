@@ -16,7 +16,8 @@
       </div>
       <!--Nav Right Section-->
       <div class="flex lg:flex-row-reverse items-center">
-        <nuxt-link to="/videos" class="link nav-link py-4 px-4">
+        <!--Videos Link-->
+        <!-- <nuxt-link to="/videos" class="link nav-link py-4 px-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -28,7 +29,7 @@
             />
             <rect width="14" height="14" x="2" y="5" rx="2" />
           </svg>
-        </nuxt-link>
+        </nuxt-link> -->
         <!--Podcast Player Button-->
         <a
           class="link nav-link rounded block text-blue text-center uppercase py-4 px-4 tracking-wide mr-2 lg:m-0"
