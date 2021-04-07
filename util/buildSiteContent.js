@@ -105,12 +105,9 @@ const fetchPodcasts = async () => {
     Object.keys(sermons).forEach(key => {
       if (sermons[key].save) {
         // Sort sermons before saving
-        const sermonList = sermons[key].sermons
-          .sort((a, b) => new Date(b.date) - new Date(a.date))
-          .map(s => ({
-            ...s,
-            date: s.date instanceof Date ? s.date.toISOString() : s.date,
-          }));
+        const sermonList = sermons[key].sermons.sort(
+          (a, b) => new Date(b.date) - new Date(a.date),
+        );
         const data = {
           title: key,
           sermons: sermonList,
