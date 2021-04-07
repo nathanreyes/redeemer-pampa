@@ -80,8 +80,9 @@ const fetchPodcasts = async () => {
       const fileExists = fs.existsSync(filePath);
       // Load file if it exists and hasn't been loaded
       if (fileExists && !sermons[year]) {
+        console.log(year);
         sermons[year] = {
-          sermons: [...require(filePath).sermons],
+          sermons: require(filePath).sermons,
           filePath,
           save: false,
         };
