@@ -180,9 +180,9 @@ const writeIndex = (index, filePath) => {
   fs.writeFileSync(filePath, JSON.stringify(index, null, 2));
 };
 
-const buildSiteContent = () => {
+const buildSiteContent = async () => {
   // Fetch the podcasts to update sermon content
-  fetchPodcasts();
+  await fetchPodcasts();
   // Fill the series content
   buildSeries();
   const sermons = [];
