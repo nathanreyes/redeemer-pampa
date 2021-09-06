@@ -20,6 +20,7 @@ collections:
           - name: 'videoUrl'
             label: 'Video Url'
             widget: 'string'
+            required: false
       - name: 'connect'
         label: 'Connect'
         file: 'content/pages/connect.json'
