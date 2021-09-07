@@ -19,14 +19,14 @@
       "address": "1804 N. Lynn",
       "subaddress": ".",
       "time": "Sundays @ 5:30pm",
-      "moreInfo": "Contact <a href='mailto:me@bottlingthemoon.com :' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>me@bottlingthemoon.com</a> for more info"
+      "moreInfo": "Contact <a href='mailto:jrherman3rd@gmail.com :' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>jrherman3rd@gmail.com</a> for more info"
     },
     {
       "hosts": "TV & Yvette Cuellar, Shanna Buck",
       "address": "810 N. Somerville St.",
       "subaddress": ".",
       "time": "Wednesdays @ 6:30pm",
-      "moreInfo": "Contact <a href='mailto:primitivo.cuellar@accoladehomecare.com:' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>primitivo.cuellar@accoladehomecare.com</a> for more info"
+      "moreInfo": "Contact <a href='mailto:primitivo.cuellar@accoladehomecare.com:' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>primitivo.cuellar@txhha.com</a> for more info"
     },
     {
       "hosts": "Clint & Jenee Devoll, Jason & Joanne Genn",
@@ -48,6 +48,13 @@
       "subaddress": "Students 6th - 12th Grades",
       "time": "Wednesdays @ 6:30-8:00pm",
       "moreInfo": "Contact <a href='mailto:j_doyle_lee@yahoo.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>j_doyle_lee@yahoo.com</a> for more info"
+    },
+    {
+      "hosts": "Danny & Lori Hendricks, Nathan & Raine Reyes",
+      "address": "1601 N. Grape ",
+      "time": "Tuesdays @ 6:00pm",
+      "moreInfo": "Text Lori at 806.662.2542 for more info.",
+      "subaddress": "."
     }
   ]
 }
