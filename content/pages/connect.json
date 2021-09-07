@@ -53,7 +53,7 @@
       "hosts": "Danny & Lori Hendricks, Nathan & Raine Reyes",
       "address": "1601 N. Grape ",
       "time": "Tuesdays @ 6:00pm",
-      "moreInfo": "Text Lori at 806.662.2542 for more info.",
+      "moreInfo": "Text Lori at <a href='tel:1-806-662-2542' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>806.662.2542</a> for more info.",
       "subaddress": "."
     },
     {
