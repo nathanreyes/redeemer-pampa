@@ -1,4 +1,5 @@
 const fs = require('fs');
+const fsExtra = require('fs-extra');
 const path = require('path');
 const axios = require('axios');
 const parser = require('fast-xml-parser');
@@ -36,9 +37,10 @@ const getSermonFromPodcast = podcast => {
     files: [],
   };
   if (podcast.description) {
-    const dataPairs = podcast.description.split('\n');
-    dataPairs.forEach(pair => {
-      const [key, value] = pair.split(':').map(p => p.trim());
+    const keyValueStrings = podcast.description.split('\n');
+    keyValueStrings.forEach(kvString => {
+      kvString = kvString.replace(/(<([^>]+)>)/gi, "").replace(/&nbsp;/gi,'');
+      const [key, value] = kvString.split(':').map(p => p.trim());
       switch (key.toLowerCase()) {
         case 'leader':
           defaultSermon.leader = value;
@@ -58,6 +60,12 @@ const getSermonFromPodcast = podcast => {
   return defaultSermon;
 };
 
+const getYearFromSermon = sermon => {
+  const year = sermon.date.getFullYear();
+  if (isNaN(year) || !year) return 'Unknown';
+  return year;
+}
+
 const fetchPodcasts = async () => {
   let newSermonCount = 0;
   console.log(`Fetching sermons at ${podcastUrl}`);
@@ -75,47 +83,28 @@ const fetchPodcasts = async () => {
     // For each podcast...
     podcastsFromFeed.forEach(p => {
       const sermon = getSermonFromPodcast(p);
-      const year = sermon.date.getFullYear();
+      const year = getYearFromSermon(sermon);
       const filePath = path.resolve(`./content/sermons/year/${year}.json`);
-      const fileExists = fs.existsSync(filePath);
-      // Load file if it exists and hasn't been loaded
-      if (fileExists && !sermons[year]) {
-        console.log(year);
-        sermons[year] = {
-          sermons: require(filePath).sermons,
-          filePath,
-          save: false,
-        };
-      }
-      // Initialize to new object if needed
       sermons[year] = sermons[year] || {
         sermons: [],
         filePath,
-        save: true,
       };
-      const sermonsList = sermons[year].sermons;
-      // Add sermon to list if it hasn't already been added
-      if (!sermonsList.find(s => s.podcastUrl === p.link)) {
-        sermonsList.push(sermon);
-        sermons[year].save = true;
-        newSermonCount++;
-      }
+      sermons[year].sermons.push(sermon);
+      newSermonCount++;
     });
     console.log(`Added ${newSermonCount} new sermons`);
     // Save sermon files that changed
     Object.keys(sermons).forEach(key => {
-      if (sermons[key].save) {
-        // Sort sermons before saving
-        const sermonList = sermons[key].sermons.sort(
-          (a, b) => new Date(b.date) - new Date(a.date),
-        );
-        const data = {
-          title: key,
-          sermons: sermonList,
-        };
-        console.log(`Saving sermons to ${sermons[key].filePath}...`);
-        fs.writeFileSync(sermons[key].filePath, JSON.stringify(data, null, 2));
-      }
+      // Sort sermons before saving
+      const sermonList = sermons[key].sermons.sort(
+        (a, b) => new Date(b.date) - new Date(a.date),
+      );
+      const data = {
+        title: key,
+        sermons: sermonList,
+      };
+      console.log(`Saving sermons to ${sermons[key].filePath}...`);
+      fs.writeFileSync(sermons[key].filePath, JSON.stringify(data, null, 2));
     });
   }
 };
@@ -181,14 +170,19 @@ const writeIndex = (index, filePath) => {
 };
 
 const buildSiteContent = async () => {
+  const dirSermons = path.resolve('./content/sermons/year');
+  const dirSeries = path.resolve('./content/sermons/series');
+  // Clear content directories
+  console.log('Clearing existing sermon data...')
+  fsExtra.emptyDirSync(dirSermons);
+  fsExtra.emptyDirSync(dirSeries);
   // Fetch the podcasts to update sermon content
   await fetchPodcasts();
   // Fill the series content
   buildSeries();
-  const sermons = [];
-  const dirSermons = path.resolve('./content/sermons/year');
-  const dirSeries = path.resolve('./content/sermons/series');
+  // Build sermon indices
   console.log(`Building index for sermons at ${dirSermons}...`);
+  const sermons = [];
   const sermonIndex = buildIndex(dirSermons, ({ data, fileName }) => {
     sermons.push(...data.sermons);
     return {

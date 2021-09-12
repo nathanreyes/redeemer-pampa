@@ -2,12 +2,30 @@
   "title": "Colossians",
   "sermons": [
     {
-      "title": "Colossians 1:5-23",
-      "date": "2018-12-02",
-      "series": "Colossians",
+      "title": "Colossians 1.3",
       "leader": "Jeremy Buck",
+      "series": "Colossians",
+      "date": "2021-09-04T00:00:00.000Z",
       "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Colossians-15-23-e2m7g4",
+      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Colossians-1-3-e16umlv",
+      "files": []
+    },
+    {
+      "title": "Colossians 1.2",
+      "leader": "Jeremy Buck",
+      "series": "Colossians",
+      "date": "2021-08-29T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Colossians-1-2-e16kc80",
+      "files": []
+    },
+    {
+      "title": "Colossians 1",
+      "leader": "Jeremy Buck",
+      "series": "Colossians",
+      "date": "2021-08-22T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Colossians-1-e169qab",
       "files": []
     }
   ]

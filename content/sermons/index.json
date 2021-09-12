@@ -1,5 +1,9 @@
 [
   {
+    "title": "2021",
+    "path": "/year/2021"
+  },
+  {
     "title": "2020",
     "path": "/year/2020"
   },
@@ -12,135 +16,87 @@
     "path": "/year/2018"
   },
   {
-    "title": 2017,
-    "path": "/year/2017"
-  },
-  {
-    "title": 2016,
-    "path": "/year/2016"
-  },
-  {
-    "title": 2015,
-    "path": "/year/2015"
-  },
-  {
-    "title": 2014,
-    "path": "/year/2014"
-  },
-  {
-    "title": 2013,
-    "path": "/year/2013"
-  },
-  {
-    "title": 2012,
-    "path": "/year/2012"
-  },
-  {
-    "title": 2011,
-    "path": "/year/2011"
-  },
-  {
     "title": "1 Corinthians",
     "path": "/series/1-corinthians"
+  },
+  {
+    "title": "1 John 3",
+    "path": "/series/1-john-3"
+  },
+  {
+    "title": "1 John 5",
+    "path": "/series/1-john-5"
   },
   {
     "title": "1 John",
     "path": "/series/1-john"
   },
   {
-    "title": "1 Peter",
-    "path": "/series/1-peter"
+    "title": "1 Samuel",
+    "path": "/series/1-samuel"
   },
   {
-    "title": "2 Peter",
-    "path": "/series/2-peter"
+    "title": "1 Timothy",
+    "path": "/series/1-timothy"
   },
   {
-    "title": "Acts",
-    "path": "/series/acts"
+    "title": "2 John",
+    "path": "/series/2-john"
+  },
+  {
+    "title": "2 Samuel",
+    "path": "/series/2-samuel"
+  },
+  {
+    "title": "Advent 2020",
+    "path": "/series/advent-2020"
   },
   {
     "title": "Advent",
     "path": "/series/advent"
   },
   {
-    "title": "Colossians",
-    "path": "/series/colossians"
+    "title": "Amos",
+    "path": "/series/amos"
   },
   {
-    "title": "Core Values 2",
-    "path": "/series/core-values-2"
+    "title": "Christian Disciplines",
+    "path": "/series/christian-disciplines"
+  },
+  {
+    "title": "Colossians",
+    "path": "/series/colossians"
   },
   {
     "title": "Core Values",
     "path": "/series/core-values"
   },
   {
-    "title": "Ephesians",
-    "path": "/series/ephesians"
+    "title": "Gospel Centered",
+    "path": "/series/gospel-centered"
   },
   {
-    "title": "Exodus",
-    "path": "/series/exodus"
-  },
-  {
-    "title": "Exposition of the Psalms",
-    "path": "/series/exposition-of-the-psalms"
-  },
-  {
-    "title": "Galatians",
-    "path": "/series/galatians"
-  },
-  {
-    "title": "Galations",
-    "path": "/series/galations"
-  },
-  {
-    "title": "Genesis",
-    "path": "/series/genesis"
-  },
-  {
-    "title": "Gospel Applications",
-    "path": "/series/gospel-applications"
-  },
-  {
-    "title": "Gospel Centered Life",
-    "path": "/series/gospel-centered-life"
-  },
-  {
-    "title": "James",
-    "path": "/series/james"
+    "title": "Hebrews",
+    "path": "/series/hebrews"
   },
   {
     "title": "John",
     "path": "/series/john"
   },
   {
-    "title": "Jonah",
-    "path": "/series/jonah"
+    "title": "Numbers 6",
+    "path": "/series/numbers-6"
   },
   {
-    "title": "Malachi",
-    "path": "/series/malachi"
+    "title": "Philippians",
+    "path": "/series/philippians"
   },
   {
-    "title": "Mark",
-    "path": "/series/mark"
+    "title": "Philppians",
+    "path": "/series/philppians"
   },
   {
-    "title": "Missional Living",
-    "path": "/series/missional-living"
-  },
-  {
-    "title": "Parables",
-    "path": "/series/parables"
-  },
-  {
-    "title": "Parenting",
-    "path": "/series/parenting"
-  },
-  {
-    "title": "The Book of James",
-    "path": "/series/the-book-of-james"
+    "title": "Proverbs",
+    "path": "/series/proverbs"
   }
 ]
