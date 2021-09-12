@@ -85,12 +85,19 @@ const fetchPodcasts = async () => {
       const sermon = getSermonFromPodcast(p);
       const year = getYearFromSermon(sermon);
       const filePath = path.resolve(`./content/sermons/year/${year}.json`);
-      sermons[year] = sermons[year] || {
-        sermons: [],
-        filePath,
-      };
-      sermons[year].sermons.push(sermon);
-      newSermonCount++;
+      const fileExists = fs.existsSync(filePath);
+      if (!sermons[year]) {
+        sermons[year] = {
+          sermons: fileExists ? require(filePath).sermons : [],
+          filePath,
+        }
+      }
+      const sermonsList = sermons[year].sermons;
+      // Add sermon to list if it hasn't already been added
+      if (!sermonsList.find(s => s.podcastUrl === p.link)) {
+        sermonsList.push(sermon);
+        newSermonCount++;
+      }
     });
     console.log(`Added ${newSermonCount} new sermons`);
     // Save sermon files that changed
@@ -173,8 +180,7 @@ const buildSiteContent = async () => {
   const dirSermons = path.resolve('./content/sermons/year');
   const dirSeries = path.resolve('./content/sermons/series');
   // Clear content directories
-  console.log('Clearing existing sermon data...')
-  fsExtra.emptyDirSync(dirSermons);
+  console.log('Clearing existing sermon series data...')
   fsExtra.emptyDirSync(dirSeries);
   // Fetch the podcasts to update sermon content
   await fetchPodcasts();

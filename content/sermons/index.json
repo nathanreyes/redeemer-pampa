@@ -16,6 +16,34 @@
     "path": "/year/2018"
   },
   {
+    "title": 2017,
+    "path": "/year/2017"
+  },
+  {
+    "title": 2016,
+    "path": "/year/2016"
+  },
+  {
+    "title": 2015,
+    "path": "/year/2015"
+  },
+  {
+    "title": 2014,
+    "path": "/year/2014"
+  },
+  {
+    "title": 2013,
+    "path": "/year/2013"
+  },
+  {
+    "title": 2012,
+    "path": "/year/2012"
+  },
+  {
+    "title": 2011,
+    "path": "/year/2011"
+  },
+  {
     "title": "1 Corinthians",
     "path": "/series/1-corinthians"
   },
@@ -32,6 +60,10 @@
     "path": "/series/1-john"
   },
   {
+    "title": "1 Peter",
+    "path": "/series/1-peter"
+  },
+  {
     "title": "1 Samuel",
     "path": "/series/1-samuel"
   },
@@ -44,8 +76,16 @@
     "path": "/series/2-john"
   },
   {
+    "title": "2 Peter",
+    "path": "/series/2-peter"
+  },
+  {
     "title": "2 Samuel",
     "path": "/series/2-samuel"
+  },
+  {
+    "title": "Acts",
+    "path": "/series/acts"
   },
   {
     "title": "Advent 2020",
@@ -72,6 +112,34 @@
     "path": "/series/core-values"
   },
   {
+    "title": "Ephesians",
+    "path": "/series/ephesians"
+  },
+  {
+    "title": "Exodus",
+    "path": "/series/exodus"
+  },
+  {
+    "title": "Exposition of the Psalms",
+    "path": "/series/exposition-of-the-psalms"
+  },
+  {
+    "title": "Galatians",
+    "path": "/series/galatians"
+  },
+  {
+    "title": "Genesis",
+    "path": "/series/genesis"
+  },
+  {
+    "title": "Gospel Applications",
+    "path": "/series/gospel-applications"
+  },
+  {
+    "title": "Gospel Centered Life",
+    "path": "/series/gospel-centered-life"
+  },
+  {
     "title": "Gospel Centered",
     "path": "/series/gospel-centered"
   },
@@ -84,8 +152,32 @@
     "path": "/series/john"
   },
   {
+    "title": "Jonah",
+    "path": "/series/jonah"
+  },
+  {
+    "title": "Malachi",
+    "path": "/series/malachi"
+  },
+  {
+    "title": "Mark",
+    "path": "/series/mark"
+  },
+  {
+    "title": "Missional Living",
+    "path": "/series/missional-living"
+  },
+  {
     "title": "Numbers 6",
     "path": "/series/numbers-6"
+  },
+  {
+    "title": "Parables",
+    "path": "/series/parables"
+  },
+  {
+    "title": "Parenting",
+    "path": "/series/parenting"
   },
   {
     "title": "Philippians",
@@ -98,5 +190,9 @@
   {
     "title": "Proverbs",
     "path": "/series/proverbs"
+  },
+  {
+    "title": "The Book of James",
+    "path": "/series/the-book-of-james"
   }
 ]
