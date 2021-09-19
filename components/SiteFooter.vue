@@ -75,7 +75,8 @@
         </a>
         <!--Facebook Logo-->
         <a
-          href="https://www.facebook.com/RedeemerPampa/"
+        v-if="facebookUrl"
+          :href="facebookUrl"
           class="w-8 h-8 text-white rounded-full ml-6"
           target="_blank"
         >
@@ -96,7 +97,7 @@
           </svg>
         </a>
         <!--Twitter Logo-->
-        <a href="https://twitter.com/RedeemerPampa" class="w-8 h-8 ml-6" target="_blank">
+        <a v-if="twitterUrl" :href="twitterUrl" class="w-8 h-8 ml-6" target="_blank">
           <svg
             id="Logo_FIXED"
             data-name="Logo — FIXED"
@@ -147,6 +148,8 @@ export default {
   data() {
     return {
       menus,
+      facebookUrl: 'https://www.facebook.com/RedeemerPampa/',
+      twitterUrl: '', //https://twitter.com/RedeemerPampa
       headingClass:
         'text-xl text-center text-blue-lightest font-light mb-4 md:text-left',
       subheadingClass: 'link text-center mb-3 text-white md:text-left',

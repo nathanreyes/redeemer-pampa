@@ -96,10 +96,10 @@
         </div>
       </div>
     </div>
-    <!--Affiliations Section-->
+    <!--Church Planting Section-->
     <div class="bg-grey-lighter py-4">
       <div class="section">
-        <h2 class="section-title" id="affiliations">Affiliations</h2>
+        <h2 class="section-title" id="church_planting">Church Planting</h2>
         <p class="content ml-4">
           Redeemer Pampa is an independent church, but we voluntarily align ourselves with a few organizations for the sake of networking, support and mission.
           Our partnerships are with the Redeemer Network and the Acts 29 Network.
@@ -138,6 +138,42 @@
             class="link"
           >www.redeemernetwork.org</a>.
         </p>
+        <h2 class="mt-6">
+          <a href="https://www.redeemerborger.org" target="_blank" class="link text-lg font-semibold tracking-wide">
+            Redeemer Borger
+          </a>
+        </h2>
+        <div class="my-6">
+          <img
+            class="w-full md:w-auto"
+            src="https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_1200/v1632009052/redeemer-pampa/redeemerborger.jpg"
+          />
+        </div>
+        <h3 class="text-2xl text-center md:text-left text-grey-darker tracking-wide">
+          The Calling
+        </h3>
+        <p class="content mt-4">
+          In the spring of 2019, Ricky and Kallie Garzon were affirmed in their call to plant a church in Borger, Texas.
+          Borger is Ricky's hometown and though he had served in many ministry roles in various places, he saw need among a people he knew and loved.
+          Ricky joined the church planting residency at Redeemer Pampa and the Garzon family began attending to rest, learn, and prepare to plant a church in Borger.
+        </p>
+        <h3 class="text-2xl text-center md:text-left text-grey-darker tracking-wide mt-6">
+          God's Faithfulness
+        </h3>
+        <p class="content mt-4">
+          In March 2020, at the beginning stages of the initial COVID shutdown, the Garzons had gathered a core team which was meeting in their home.
+          As restrictions continued to tighten, they moved their Sunday night core gatherings to ZOOM and continued planning and dreaming and trusting God.
+          Through many difficult and unexpected decisions due to COVID including a very last-minute need to find a new gathering space,
+          God was faithful to move the work of church planting forward and in December 2020, Redeemer Pampa commissioned the core team of Redeemer Borger to launch their Sunday morning gatherings.
+          God provided an old downtown storefront in the heart of Borger which needed to be retro-fitted in the span of only a few weeks.
+          The core team came together and prepared the space for their initial gathering on January 17, 2021. 
+        </p>
+        <div class="my-6">
+          <img
+            class="w-full md:w-auto"
+            src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1632009052/redeemer-pampa/redeemerborger2.jpg"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -165,8 +201,8 @@ export default {
           url: '#beliefs',
         },
         {
-          title: 'Affiliations',
-          url: '#affiliations',
+          title: 'Church Planting',
+          url: '#church_planting',
         },
       ],
       staff: content.staff,
