@@ -1,13 +1,6 @@
 {
   "staff": [
     {
-      "name": "Rex McKay, III",
-      "role": "Elder",
-      "summary": "Rex is a local businessman and farmer. He has been married to his wife, Robin, since 1984. Together they have three children; Will (& wife Paige), Mary (& husband Taylor), and Mason as well as two grandchildren.",
-      "email": "haymckay3@gmail.com",
-      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_fill,g_face,h_800,w_800/v1584589290/redeemer-pampa/Rex.jpg"
-    },
-    {
       "name": "TV Cuellar",
       "role": "Elder",
       "summary": "TV works in the home health care industry. He has been married to his wife, Yvette, since 1992 and he has two sons; Luke (& wife Amanda) and Paul (& wife Alison) and four grandchildren.",
@@ -29,31 +22,29 @@
       "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_fill,g_face,h_800,w_800/v1584588013/redeemer-pampa/Paul.jpg"
     },
     {
-      "name": "Jesse Lee",
-      "role": "Ministry Resident - Students",
-      "summary": "Jesse works part-time as a ministry resident focusing on student ministry at Redeemer in addition to working at The Well STEM Center. He has been married to his wife, Marissa, since 2016 and they have a daughter, Claire.",
-      "email": "j_doyle_lee@yahoo.com",
-      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_fill,g_face,h_800,w_800/v1584588013/redeemer-pampa/Jesse.jpg"
+      "name": "Danny Hendricks",
+      "role": "Associate Pastor",
+      "summary": "Danny works full-time at Redeemer as an associate pastor. He's been married to his wife, Lori, since 1991 and together they have five children and four grandchildren."
     },
     {
       "name": "Shawn Taylor",
       "role": "Associate Pastor",
-      "summary": "Shawn works part-time at Redeemer leading our worship ministry. He also works at his family’s business, Texas Printing, and at The Well STEM Center. He graduated from Savannah College of Art & Design in Savannah, GA.",
+      "summary": "Shawn works part-time at Redeemer leading our worship ministry. He also works at his family’s business, Texas Printing, and at The Well STEM Center. Shawn's been married to, Lori Beth, since 2021 and they are expecting their first child.",
       "email": "me@bottlingthemoon.com",
       "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_crop,g_face/v1543527411/redeemer-pampa/shawnwebsite.jpg"
+    },
+    {
+      "name": "Jesse Lee",
+      "role": "Ministry Resident - Students",
+      "summary": "Jesse works part-time as a ministry resident focusing on student ministry at Redeemer in addition to working at The Well STEM Center. He has been married to his wife, Marissa, since 2016 and they have two daughters, Claire and Lydia.",
+      "email": "j_doyle_lee@yahoo.com",
+      "imgUrl": "https://res.cloudinary.com/dqgcfqzpk/image/upload/c_fill,g_face,h_800,w_800/v1584588013/redeemer-pampa/Jesse.jpg"
     },
     {
       "name": "Kolbi Linder",
       "role": "Children's Ministry, Co-director",
       "summary": "Kolbi serves part-time at Redeemer by helping oversee our children's ministry while focusing on our babies, toddlers, and their families. She has been married to her husband, Ty, since 2013 and together they have two children, a daughter, Aniston, and a son, Levi.",
       "email": "klinder.redeemerpampa@gmail.com",
-      "imgUrl": ""
-    },
-    {
-      "name": "Devney Anderson",
-      "role": "Children's Ministry, Co-director",
-      "summary": "Devney serves Redeemer part-time by helping oversee our children's ministry while focusing on our preschool and elementary age children and their families. She has been married to her husband, Mike, since 1998 and they have three children; Megan, Mason, and Cooper and four grandchildren.",
-      "email": "devney@pampasleepstore.com",
       "imgUrl": ""
     }
   ],
