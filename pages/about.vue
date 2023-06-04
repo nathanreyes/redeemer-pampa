@@ -127,7 +127,7 @@
         <div class="my-6">
           <img
             class="w-full md:w-auto rounded-lg"
-            src="https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_1200/v1632009052/redeemer-pampa/redeemerborger.jpg"
+            src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1632009052/redeemer-pampa/redeemerborger2.jpg"
           />
         </div>
         <h3 class="text-2xl text-center md:text-left text-grey-darker tracking-wide">
@@ -149,12 +149,6 @@
           God provided an old downtown storefront in the heart of Borger which needed to be retro-fitted in the span of only a few weeks.
           The core team came together and prepared the space for their initial gathering on January 17, 2021. 
         </p>
-        <div class="my-6">
-          <img
-            class="w-full md:w-auto rounded-lg"
-            src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1632009052/redeemer-pampa/redeemerborger2.jpg"
-          />
-        </div>
       </div>
     </div>
   </div>
