@@ -22,49 +22,6 @@
     </div>
     <div class="bg-blue-darker">
       <div class="flex justify-center items-center text-white py-8">
-        <!--Acts 29 Logo-->
-        <a class="text-blue-darker" href="https://www.acts29.com" target="_blank">
-          <svg
-            class="w-8 h-8 fill-current"
-            viewBox="0 0 248 248"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="62" cy="62" r="62" transform="scale(2)" fill="white"></circle>
-            <mask
-              id="mask0"
-              mask-type="alpha"
-              maskUnits="userSpaceOnUse"
-              x="52"
-              y="47"
-              width="163"
-              height="189"
-            >
-              <path
-                d="M0 73.2067L28.1761 0H42.2642L14.088 73.2067H0Z"
-                transform="translate(54 48) scale(2)"
-                fill="#303030"
-              ></path>
-              <path
-                d="M38.7421 19.8268L44.7799 4.06704L58.8679 41.1788H74.4654L79.5 52.5H63L76.5 86.5L66.5 93L51 52.5H37.5L32.7044 41.1788H47.2956L38.7421 19.8268Z"
-                transform="translate(54 48) scale(2)"
-                fill="transparent"
-              ></path>
-              <path
-                d="M0 73.2067L28.1761 0H42.2642L14.088 73.2067H0Z"
-                transform="translate(54 48) scale(2)"
-                stroke="transparent"
-              ></path>
-              <path
-                d="M38.7421 19.8268L44.7799 4.06704L58.8679 41.1788H74.4654L79.5 52.5H63L76.5 86.5L66.5 93L51 52.5H37.5L32.7044 41.1788H47.2956L38.7421 19.8268Z"
-                transform="translate(54 48) scale(2)"
-                stroke="black"
-              ></path>
-            </mask>
-            <g mask="url(#mask0)">
-              <circle cx="62" cy="62" r="62" transform="scale(2)" class="fill-current"></circle>
-            </g>
-          </svg>
-        </a>
         <!--Redeemer Logo-->
         <a
           href="https://www.redeemernetwork.org"

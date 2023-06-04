@@ -6,7 +6,7 @@
     <div class="section">
       <h2 class="section-title" id="staff">Elders & Staff</h2>
       <p class="content mb-4">
-        Redeemer Church is an elder led church. Currently, we have {{ elderCount }} elders who work outside of Redeemer as well as elders who are employed by Redeemer Pampa. You can learn more about elders and the plurality of leadership that Redeemer Pampa has adopted
+        Redeemer Church is an elder-led church. Currently, we have {{ elderCount }} elders who work outside of Redeemer as well as elders who are employed by Redeemer Pampa. You can learn more about elders and the plurality of leadership that Redeemer Pampa has adopted
         <a
           href="/Plural-Leadership.pdf"
           class="link"
@@ -101,39 +101,20 @@
       <div class="section">
         <h2 class="section-title" id="church_planting">Church Planting</h2>
         <p class="content ml-4">
-          Redeemer Pampa is an independent church, but we voluntarily align ourselves with a few organizations for the sake of networking, support and mission.
-          Our partnerships are with the Redeemer Network and the Acts 29 Network.
+          Redeemer Pampa is an independent church, but we voluntarily align ourselves with the Redeemer Network for the sake of networking, support and mission.
         </p>
         <h2 class="mt-6">
           <a
-            href="https://www.acts29.com"
-            target="_blank"
-            class="link text-lg font-semibold tracking-wide"
-          >Acts 29</a>
-        </h2>
-        <p class="content mt-2 ml-4">
-          We are a part of the Acts 29 network. Acts 29 is not a denomination, but a network of like-minded churches planting churches.
-          Check out the
-          <a
-            href="https://www.acts29.com"
-            class="link"
-            target="_blank"
-          >Acts 29 website</a> for more information about the network.
-        </p>
-        <h2 class="mt-6">
-          <a
-            href="https://www.redeemernetwork.org"
+            href="https://redeemernetwork.org"
             target="_blank"
             class="link text-lg font-semibold tracking-wide"
           >Redeemer Network</a>
         </h2>
         <p class="content mt-2 ml-4">
-          The Redeemer Network is a family of Acts 29 churches mostly in West and Central Texas who are committed to planting and establishing healthy churches together.
-          These churches are tied together by relational trust, theological distinctives (Acts 29), and a desire to plant more churches in collaboration.
-          The Redeemer Network is our primary partner for accomplishing our vision to plant churches.
+          Redeemer Network churches share a collaborative vision to develop and train Godly leaders to plant healthy, thriving churches. Each church in the Redeemer Network is an autonomous church, but we share common theology, values, and vision.
           You can learn more about our involvement with the Redeemer Network at
           <a
-            href="https://www.redeemernetwork.org"
+            href="https://redeemernetwork.org"
             target="_blank"
             class="link"
           >www.redeemernetwork.org</a>.
@@ -145,7 +126,7 @@
         </h2>
         <div class="my-6">
           <img
-            class="w-full md:w-auto"
+            class="w-full md:w-auto rounded-lg"
             src="https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_1200/v1632009052/redeemer-pampa/redeemerborger.jpg"
           />
         </div>
@@ -170,7 +151,7 @@
         </p>
         <div class="my-6">
           <img
-            class="w-full md:w-auto"
+            class="w-full md:w-auto rounded-lg"
             src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1632009052/redeemer-pampa/redeemerborger2.jpg"
           />
         </div>

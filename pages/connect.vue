@@ -18,8 +18,8 @@
         <div class="flex flex-col md:flex-row">
           <div class="flex-grow mb-4 col flex items-center md:text-right md:mr-2">
             <img
-              class="w-full md:w-auto"
-              src="https://res.cloudinary.com/dqgcfqzpk/image/upload/c_fill,w_900/v1530719618/redeemer-pampa/Gospel_Community.jpg"
+              class="w-full md:w-auto rounded-lg"
+              src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1685916200/redeemer-pampa/girls-cookout.jpg"
             >
           </div>
           <div class="flex-grow col">
