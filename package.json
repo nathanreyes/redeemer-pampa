@@ -20,7 +20,7 @@
   "devDependencies": {
     "@nuxtjs/google-analytics": "2.0.2",
     "autoprefixer": "8.6.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.2",
     "babel-eslint": "^8.2.1",
     "dashify": "^2.0.0",
     "eslint": "^5.0.0",
