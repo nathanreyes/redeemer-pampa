@@ -1,44 +1,44 @@
 {
   "gospelCommunities": [
     {
-      "hosts": "Danny & Lori Hendricks, Nathan & Raine Reyes",
+      "hosts": "Danny & Lori Hendricks, Ryan & Brianna Freudenrich",
       "address": "Text for address",
-      "time": "Tuesdays @ 6:00pm",
-      "moreInfo": "Text Lori at <a href='tel:1-806-662-2542' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>806.662.2542</a> for more info.",
+      "time": "Thursdays @ 6:00pm",
+      "moreInfo": "Text Lori 806.662.2542",
       "subaddress": "."
     },
     {
-      "hosts": "TV & Yvette Cuellar, Shanna Buck",
-      "address": "Text for address",
+      "hosts": "Dan & Eden Fowler, Ryan & Jessica Milligan, Clint & Jenee Devoll",
+      "address": "Text for address (rotating address)",
       "subaddress": ".",
-      "time": "Wednesdays @ 6:30pm",
-      "moreInfo": "Contact <a href='mailto:primitivo.cuellar@accoladehomecare.com:' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>primitivo.cuellar@txhha.com</a> for more info"
+      "time": "Sundays @ 5:30pm",
+      "moreInfo": "Text Dan 806.662.4763"
     },
     {
       "hosts": "Paul & Mary Grace Rayburn, David & Mandy Lewis",
       "address": "Text for address",
       "subaddress": ".",
       "time": "Sundays @ 1:00pm",
-      "moreInfo": "Contact <a href='mailto:marygrace.rayburn@gmail.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>marygrace.rayburn@gmail.com</a> for more info"
+      "moreInfo": "Text Mary Grace 940.395.5991"
     },
     {
       "hosts": "Jeremy & Karmen Buck",
       "address": "Text for address",
       "subaddress": ".",
       "time": "Sundays @ 5:30pm",
-      "moreInfo": "Contact <a href='mailto:jbuck.redeemerpampa@gmail.com' class='link-small'>jbuck.redeemerpampa@gmail.com</a> for more info"
+      "moreInfo": "Text Karmen 806.662.0573"
     },
     {
-      "hosts": "Dan & Eden Fowler, Reagan & Carol Herman",
+      "hosts": "Danny & Lori Hendricks, Reagan & Carol Herman",
       "address": "Text for address",
       "subaddress": ".",
       "time": "Sundays @ 5:30pm",
-      "moreInfo": "Contact <a href='mailto:jrherman3rd@gmail.com :' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>jrherman3rd@gmail.com</a> for more info"
+      "moreInfo": "Text Carol 806.683.0151"
     },
     {
       "hosts": "Shawn Taylor, Brett & Deanna Watson",
       "subaddress": ".",
-      "moreInfo": "Contact <a href='mailto:me@bottlingthemoon.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>me@bottlingthemoon.com</a> for more info. ",
+      "moreInfo": "Text Shawn 806.898.6764",
       "time": "Sundays at 5:30 pm",
       "address": "Text for address"
     },
@@ -47,7 +47,14 @@
       "address": "Text for address",
       "subaddress": "Students 6th - 12th Grades",
       "time": "Wednesdays @ 6:30-8:00pm",
-      "moreInfo": "Contact <a href='mailto:j_doyle_lee@yahoo.com' class='inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker no-underline'>j_doyle_lee@yahoo.com</a> for more info"
+      "moreInfo": "Text Jesse 478.538.4761"
+    },
+    {
+      "hosts": "Nathan & Raine Reyes, Ty & Kolbi Linder",
+      "address": "Text for address",
+      "time": "Wednesdays @ 6:30",
+      "moreInfo": "Text Raine 806.683.1456",
+      "subaddress": "."
     }
   ]
 }
