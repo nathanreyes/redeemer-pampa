@@ -1,5 +1,21 @@
 {
+  "churchInfo": {
+    "name": "Redeemer Pampa",
+    "email": "info.redeemerpampa@gmail.com",
+    "phone": "(806) 486-2561",
+    "latitude": 35.5374381,
+    "longitude": -100.9650647,
+    "serviceTime": "Sundays @ 9:15am and 11:00am",
+    "address": {
+      "street": "225 N Cuyler St",
+      "mailStreet": "P.O. Box 1294",
+      "city": "Pampa",
+      "state": "TX",
+      "zip": "79065"
+    }
+  },
   "bannerMessage": "Nothing outweighs the redeeming work of Jesus on the cross",
   "bannerButton": "See Who We Are",
+  "facebookUrl": "https://www.facebook.com/RedeemerPampa/",
   "videoUrl": ""
 }

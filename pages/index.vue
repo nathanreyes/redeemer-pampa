@@ -279,11 +279,11 @@
       <section id="map">
         <google-map
           api-key="AIzaSyAxHjdK3i5GDppHfiNiKLp9MLqd2FpTzrk"
-          :center="{ latitude: 35.5374614, longitude: -100.9647873 }"
+          :center="{ latitude: churchInfo.latitude, longitude: churchInfo.longitude }"
           :style="{ height: '500px' }"
         >
           <div slot="infoWindow">
-            <h3 class="text-lg text-grey-darkest mb-2">{{ contact.name }}</h3>
+            <h3 class="text-lg text-grey-darkest mb-2">{{ churchInfo.name }}</h3>
             <div class="flex items-center mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +294,7 @@
                   d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
                 ></path>
               </svg>
-              <span class="text-grey-darkest ml-2">{{ contact.address }}</span>
+              <span class="text-grey-darkest ml-2">{{ churchAddress }}</span>
             </div>
             <div class="flex items-center mb-2">
               <i class="fa fa-phone"></i>
@@ -307,7 +307,7 @@
                   d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"
                 ></path>
               </svg>
-              <span class="text-grey-darkest ml-2">{{ contact.phone }}</span>
+              <span class="text-grey-darkest ml-2">{{ churchInfo.phone }}</span>
             </div>
             <div class="flex items-center">
               <svg
@@ -320,9 +320,9 @@
                 ></path>
               </svg>
               <a
-                :href="`mail-to:${contact.email}`"
+                :href="`mail-to:${churchInfo.email}`"
                 class="text-blue-dark no-underline ml-2"
-                >{{ contact.email }}</a
+                >{{ churchInfo.email }}</a
               >
             </div>
           </div>
@@ -335,7 +335,6 @@
 <script>
 import Hero from '../components/Hero';
 import GoogleMap from '../components/GoogleMap';
-import { contact } from '../util/siteInfo';
 import homeContent from '@/content/pages/home.json';
 
 export default {
@@ -345,8 +344,12 @@ export default {
     GoogleMap,
   },
   data() {
+    const { videoUrl, churchInfo } = homeContent;
+    const { street, city, state, zip } = churchInfo.address;
     return {
-      videoUrl: homeContent.videoUrl,
+      videoUrl,
+      churchInfo,
+      churchAddress: `${street}, ${city}, ${state} ${zip}`,
       images: {
         comeAsYouAre: {
           url:
@@ -359,7 +362,6 @@ export default {
           alt: 'Simple obedience',
         },
       },
-      contact,
     };
   },
 };

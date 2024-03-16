@@ -57,12 +57,12 @@
       <div
         class="flex-no-shrink flex flex-col items-center pb-8 text-sm text-blue-lighter font-light leading-normal"
       >
-        <p>225 N. Cuyler St. (Downtown Pampa)</p>
-        <p>P.O. Box 1294</p>
-        <p>Pampa, TX 79066</p>
-        <p>806.486.2561</p>
-        <p>info.redeemerpampa@gmail.com</p>
-        <p class="mt-2 text-grey-light">Services start at 11:00am every Sunday morning</p>
+        <p>{{ street }}</p>
+        <p>{{ mailStreet }}</p>
+        <p>{{ city }}, {{ state }} {{ zip }}</p>
+        <p>{{ phone }}</p>
+        <p>{{ email }}</p>
+        <p class="mt-2 text-grey-light">{{ serviceTime }}</p>
       </div>
       <div
         class="flex-no-shrink flex justify-center text-grey pb-8 text-xs font-light"
@@ -73,12 +73,25 @@
 
 <script>
 import menus from '~/util/menus.json';
+import homeContent from '@/content/pages/home.json';
 
 export default {
   data() {
+    const { churchInfo, facebookUrl } = homeContent;
+    const { email, phone, address, serviceTime } = churchInfo;
+    const { street, mailStreet, city, state, zip } = address;
+
     return {
       menus,
-      facebookUrl: 'https://www.facebook.com/RedeemerPampa/',
+      street,
+      mailStreet,
+      city,
+      state,
+      zip,
+      phone,
+      email,
+      serviceTime,
+      facebookUrl,
       headingClass:
         'text-xl text-center text-blue-lightest font-light mb-4 md:text-left',
       subheadingClass: 'link text-center mb-3 text-white md:text-left',

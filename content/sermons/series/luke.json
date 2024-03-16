@@ -1,0 +1,572 @@
+{
+  "title": "Luke",
+  "sermons": [
+    {
+      "title": "Luke 14: 1-11",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-12-18T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-14-1-11-e1se68b",
+      "files": []
+    },
+    {
+      "title": "Luke 13.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-12-11T00:00:00.000Z",
+      "summary": "Luke 13",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-13-3-e1s3ec5",
+      "files": []
+    },
+    {
+      "title": "Luke 13.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-12-04T00:00:00.000Z",
+      "summary": "Luke 13",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-13-2-e1ro08l",
+      "files": []
+    },
+    {
+      "title": "Luke 13:1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-11-27T00:00:00.000Z",
+      "summary": "Luke 13",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-131-e1rcojr",
+      "files": []
+    },
+    {
+      "title": "Luke 12.4",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-11-20T00:00:00.000Z",
+      "summary": "Luke 12",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-12-4-e1r267e",
+      "files": []
+    },
+    {
+      "title": "Luke 12.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-11-13T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-12-3-e1qmrl7",
+      "files": []
+    },
+    {
+      "title": "Luke 12.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-11-06T00:00:00.000Z",
+      "summary": "Luke 12",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-12-2-e1qb7d3",
+      "files": []
+    },
+    {
+      "title": "Luke 12.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-10-30T00:00:00.000Z",
+      "summary": "Luke 12",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-12-1-e1pvn9s",
+      "files": []
+    },
+    {
+      "title": "Luke 11.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-10-23T00:00:00.000Z",
+      "summary": "Luke 11",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-11-3-e1pl8og",
+      "files": []
+    },
+    {
+      "title": "Luke 11.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-10-16T00:00:00.000Z",
+      "summary": "Luke 11-14-32",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-11-2-e1pbhgl",
+      "files": []
+    },
+    {
+      "title": "Luke 11.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-10-09T00:00:00.000Z",
+      "summary": "Luke 11",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-11-1-e1p0s3q",
+      "files": []
+    },
+    {
+      "title": "Luke 10.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-10-02T00:00:00.000Z",
+      "summary": "Luke 10",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-10-3-e1omkds",
+      "files": []
+    },
+    {
+      "title": "Luke 10.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-09-25T00:00:00.000Z",
+      "summary": "Luke 10",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-10-2-e1obgnq",
+      "files": []
+    },
+    {
+      "title": "Luke 10.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-09-18T00:00:00.000Z",
+      "summary": "Luke 10",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-10-1-e1o12i6",
+      "files": []
+    },
+    {
+      "title": "Luke 9.6",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-09-11T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-9-6-e1nmav7",
+      "files": []
+    },
+    {
+      "title": "Luke 9.5",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-09-04T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-9-5-e1nceo0",
+      "files": []
+    },
+    {
+      "title": "Luke 9.4",
+      "leader": "Danny Hendricks",
+      "series": "Luke",
+      "date": "2022-08-28T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-9-4-e1n2kbe",
+      "files": []
+    },
+    {
+      "title": "Luke 9.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-08-21T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-9-3-e1mpb7h",
+      "files": []
+    },
+    {
+      "title": "Luke 9.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-08-15T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-9-2-e1mgfcd",
+      "files": []
+    },
+    {
+      "title": "Luke 9.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-08-07T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-9-1-e1m778b",
+      "files": []
+    },
+    {
+      "title": "Luke 8.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-07-31T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-8-3-e1ltsd2",
+      "files": []
+    },
+    {
+      "title": "Luke 8.2",
+      "leader": "Dan Fowler",
+      "series": "Luke",
+      "date": "2022-07-24T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-8-2-e1lkmh6",
+      "files": []
+    },
+    {
+      "title": "Luke 8.1",
+      "leader": "JR Favela",
+      "series": "Luke",
+      "date": "2022-07-17T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-8-1-e1lbdp6",
+      "files": []
+    },
+    {
+      "title": "Luke 7.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-07-10T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-7-3-e1l200t",
+      "files": []
+    },
+    {
+      "title": "Luke 7.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-07-03T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-7-2-e1kotpp",
+      "files": []
+    },
+    {
+      "title": "Luke 7.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-06-26T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-7-1-e1kferg",
+      "files": []
+    },
+    {
+      "title": "Luke 6.4",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-06-19T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-6-4-e1k5jsr",
+      "files": []
+    },
+    {
+      "title": "Luke 6.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-06-12T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-6-3-e1jrmvs",
+      "files": []
+    },
+    {
+      "title": "Luke 6.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-06-05T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-6-3-e1jhla8",
+      "files": []
+    },
+    {
+      "title": "Luke 6.2",
+      "leader": "Ryan Henson",
+      "series": "Luke",
+      "date": "2022-05-29T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-6-2-e1j7ona",
+      "files": []
+    },
+    {
+      "title": "Luke 5.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-05-15T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-5-3-e1iig4k",
+      "files": []
+    },
+    {
+      "title": "Luke 5.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-05-08T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-5-2-e1i8aqd",
+      "files": []
+    },
+    {
+      "title": "Luke 5.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-05-01T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-5-1-e1hu303",
+      "files": []
+    },
+    {
+      "title": "Luke 4",
+      "leader": "Paul Rayburn",
+      "series": "Luke",
+      "date": "2022-04-24T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-4-e1hjnig",
+      "files": []
+    },
+    {
+      "title": "Luke 3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-04-10T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-3-e1h0d49",
+      "files": []
+    },
+    {
+      "title": "Luke 2.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-04-03T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-2-2-e1glmp1",
+      "files": []
+    },
+    {
+      "title": "Luke 2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-03-27T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-2-e1gb2s1",
+      "files": []
+    },
+    {
+      "title": "Luke 1.4",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-03-20T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-1-4-e1g039i",
+      "files": []
+    },
+    {
+      "title": "Luke 1.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-03-13T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-1-3-e1flg66",
+      "files": []
+    },
+    {
+      "title": "Luke Introduction",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2022-02-27T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-Introduction-e1f04pb",
+      "files": []
+    },
+    {
+      "title": "Luke 24.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-06-11T00:00:00.000Z",
+      "summary": "Luke 24",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-24-2-e25j5rh",
+      "files": []
+    },
+    {
+      "title": "Luke 24",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-06-04T00:00:00.000Z",
+      "summary": "Luke 24",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-24-e257c62",
+      "files": []
+    },
+    {
+      "title": "Luke 23",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-05-28T00:00:00.000Z",
+      "summary": "Luke 23",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-23-e24qbmd",
+      "files": []
+    },
+    {
+      "title": "Luke 22.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-05-21T00:00:00.000Z",
+      "summary": "Luke 22",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-22-3-e24ekii",
+      "files": []
+    },
+    {
+      "title": "Luke 22.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-05-14T00:00:00.000Z",
+      "summary": "Luke 22",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-22-2-e248iif",
+      "files": []
+    },
+    {
+      "title": "Luke 22.1",
+      "leader": "Dan Fowler",
+      "series": "Luke",
+      "date": "2023-05-07T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-22-1-e23ku4d",
+      "files": []
+    },
+    {
+      "title": "Luke 21",
+      "leader": "Danny Hendricks",
+      "series": "Luke",
+      "date": "2023-04-30T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-21-e2390am",
+      "files": []
+    },
+    {
+      "title": "Luke 20.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-04-23T00:00:00.000Z",
+      "summary": "Luke 20",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-20-2-e22sr36",
+      "files": []
+    },
+    {
+      "title": "Luke 20.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-04-16T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-20-1-e22fjda",
+      "files": []
+    },
+    {
+      "title": "Luke 19.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-04-02T00:00:00.000Z",
+      "summary": "Luke 19",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-19-3-e21jfbu",
+      "files": []
+    },
+    {
+      "title": "Luke 19.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-03-26T00:00:00.000Z",
+      "summary": "Luke 19",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-19-2-e215qte",
+      "files": []
+    },
+    {
+      "title": "Luke 18.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-03-19T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-18-3-e20nkv1",
+      "files": []
+    },
+    {
+      "title": "Luke 18.2 ",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-03-12T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-18-2-e209dd0",
+      "files": []
+    },
+    {
+      "title": "Luke 18.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-03-05T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-18-1-e1vt3kc",
+      "files": []
+    },
+    {
+      "title": "Luke 17.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-02-26T00:00:00.000Z",
+      "summary": "Luke 17",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-17-3-e1vi4pm",
+      "files": []
+    },
+    {
+      "title": "Luke 17.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-02-19T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-17-2-e1v74hs",
+      "files": []
+    },
+    {
+      "title": "Luke 17.1",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-02-12T00:00:00.000Z",
+      "summary": "Luke 17",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-17-1-e1urs77",
+      "files": []
+    },
+    {
+      "title": "Luke 16.3",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-02-05T00:00:00.000Z",
+      "summary": "Luke 16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-16-3-e1ugf1u",
+      "files": []
+    },
+    {
+      "title": "Luke 16.2",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-01-29T00:00:00.000Z",
+      "summary": "Luke 16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-16-2-e1u639v",
+      "files": []
+    },
+    {
+      "title": "Luke 16",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-01-22T00:00:00.000Z",
+      "summary": "Luke 16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-16-e1trjfa",
+      "files": []
+    },
+    {
+      "title": "Luke 15",
+      "leader": "Jeremy Buck",
+      "series": "Luke",
+      "date": "2023-01-15T00:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-15-e1th6nj",
+      "files": []
+    },
+    {
+      "title": "Luke 14.2",
+      "leader": "Paul Rayburn",
+      "series": "Luke",
+      "date": "2023-01-08T00:00:00.000Z",
+      "summary": "Luke 14",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-14-2-e1t7nc8",
+      "files": []
+    },
+    {
+      "title": "Luke 14.2",
+      "leader": "Danny Hendricks",
+      "series": "Luke",
+      "date": "2023-01-01T06:00:00.000Z",
+      "summary": "Luke 14",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-14-2-e1svah6",
+      "files": []
+    }
+  ]
+}

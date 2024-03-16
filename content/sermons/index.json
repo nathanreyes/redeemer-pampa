@@ -1,5 +1,17 @@
 [
   {
+    "title": "2024",
+    "path": "/year/2024"
+  },
+  {
+    "title": "2023",
+    "path": "/year/2023"
+  },
+  {
+    "title": "2022",
+    "path": "/year/2022"
+  },
+  {
     "title": "2021",
     "path": "/year/2021"
   },
@@ -84,12 +96,36 @@
     "path": "/series/2-samuel"
   },
   {
+    "title": "Acts - 2023",
+    "path": "/series/acts---2023"
+  },
+  {
+    "title": "Acts - 2024",
+    "path": "/series/acts---2024"
+  },
+  {
+    "title": "Acts 2023",
+    "path": "/series/acts-2023"
+  },
+  {
+    "title": "Acts 2024",
+    "path": "/series/acts-2024"
+  },
+  {
+    "title": "Acts 23-24",
+    "path": "/series/acts-23-24"
+  },
+  {
     "title": "Acts",
     "path": "/series/acts"
   },
   {
     "title": "Advent 2020",
     "path": "/series/advent-2020"
+  },
+  {
+    "title": "Advent 2023",
+    "path": "/series/advent-2023"
   },
   {
     "title": "Advent",
@@ -112,6 +148,14 @@
     "path": "/series/core-values"
   },
   {
+    "title": "Easter",
+    "path": "/series/easter"
+  },
+  {
+    "title": "Ecclesiastes",
+    "path": "/series/ecclesiastes"
+  },
+  {
     "title": "Ephesians",
     "path": "/series/ephesians"
   },
@@ -122,6 +166,10 @@
   {
     "title": "Exposition of the Psalms",
     "path": "/series/exposition-of-the-psalms"
+  },
+  {
+    "title": "Fall 2022 Ladies Event",
+    "path": "/series/fall-2022-ladies-event"
   },
   {
     "title": "Galatians",
@@ -144,6 +192,10 @@
     "path": "/series/gospel-centered"
   },
   {
+    "title": "Gospel Culture",
+    "path": "/series/gospel-culture"
+  },
+  {
     "title": "Hebrews",
     "path": "/series/hebrews"
   },
@@ -154,6 +206,10 @@
   {
     "title": "Jonah",
     "path": "/series/jonah"
+  },
+  {
+    "title": "Luke",
+    "path": "/series/luke"
   },
   {
     "title": "Malachi",

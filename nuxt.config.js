@@ -101,14 +101,6 @@ module.exports = {
   },
   plugins: ['~/plugins/vue-scrollto'],
   css: ['~/assets/styles/tailwind.css'],
-  modules: [
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-116219439-1',
-      },
-    ],
-  ],
   hooks: {
     generate: {
       before(nuxt) {
