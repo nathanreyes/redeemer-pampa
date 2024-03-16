@@ -2,9 +2,11 @@
   <div>
     <div class="bg-blue w-full shadow-inner">
       <div class="container mx-auto text-white">
-        <div class="flex flex-col sm:flex-row sm:flex-wrap px-8 py-8 lg:flex-row lg:justify-center">
+        <div
+          class="flex flex-col sm:flex-row sm:flex-wrap px-8 py-8 lg:flex-row lg:justify-center"
+        >
           <div
-            v-for="(menu, i) in menus.filter(m => m.submenus)"
+            v-for="(menu, i) in menus.filter((m) => m.submenus)"
             :key="menu.header"
             :class="getColClass(i)"
             :style="{ minWidth: '200px' }"
@@ -15,26 +17,27 @@
               :key="submenu.title"
               :class="subheadingClass"
               :href="submenu.url"
-            >{{ submenu.title }}</a>
+              >{{ submenu.title }}</a
+            >
           </div>
         </div>
       </div>
     </div>
     <div class="bg-blue-darker">
-      <div class="flex justify-center items-center text-white py-8">
+      <div class="flex justify-center items-center text-white py-8 gap-6">
         <!--Redeemer Logo-->
         <a
           href="https://www.redeemernetwork.org"
-          class="w-8 h-8 bg-white hover:bg-grey-lighter rounded-full no-underline flex items-center justify-center ml-6"
+          class="w-8 h-8 bg-white hover:bg-grey-lighter rounded-full no-underline flex items-center justify-center"
           target="_blank"
         >
           <span class="font-serif font-bold text-2xl text-blue-darker">R</span>
         </a>
         <!--Facebook Logo-->
         <a
-        v-if="facebookUrl"
+          v-if="facebookUrl"
           :href="facebookUrl"
-          class="w-8 h-8 text-white rounded-full ml-6"
+          class="w-8 h-8 text-white rounded-full"
           target="_blank"
         >
           <svg
@@ -66,7 +69,9 @@
       </div>
       <div
         class="flex-no-shrink flex justify-center text-grey pb-8 text-xs font-light"
-      >Copyright © 2018 Redeemer Pampa</div>
+      >
+        Copyright © 2018 Redeemer Pampa
+      </div>
     </div>
   </div>
 </template>
