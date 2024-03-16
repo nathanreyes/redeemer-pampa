@@ -27,7 +27,7 @@
       <div class="flex justify-center items-center text-white py-8">
         <!--Redeemer Logo-->
         <a
-          href="https://www.redeemernetwork.org"
+          href="https://redeemernetwork.org"
           class="w-8 h-8 bg-white hover:bg-grey-lighter rounded-full no-underline flex items-center justify-center"
           target="_blank"
         >
