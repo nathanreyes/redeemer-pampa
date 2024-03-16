@@ -43,7 +43,7 @@ collections:
             - name: 'longitude'
               label: 'Longitude'
               widget: 'number'
-            - name: 'serviceTime',
+            - name: 'serviceTime'
               label: 'Service Time'
               widget: 'string'
             - name: 'address'
