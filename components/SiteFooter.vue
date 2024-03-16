@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="bg-blue-darker">
-      <div class="flex justify-center items-center text-white py-8 gap-6">
+      <div class="flex justify-center items-center text-white py-8">
         <!--Redeemer Logo-->
         <a
           href="https://www.redeemernetwork.org"
@@ -37,7 +37,7 @@
         <a
           v-if="facebookUrl"
           :href="facebookUrl"
-          class="w-8 h-8 text-white rounded-full"
+          class="w-8 h-8 text-white rounded-full ml-6"
           target="_blank"
         >
           <svg
