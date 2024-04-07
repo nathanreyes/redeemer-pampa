@@ -1,9 +1,9 @@
 <template>
-  <sermons :sermon-lookup="sermonLookup"/>
+  <SermonsList :sermon-lookup="sermonLookup" />
 </template>
 
 <script>
-import Sermons from '@/components/Sermons';
+import SermonsList from '@/components/SermonsList';
 import sermonLookups from '@/content/sermons/index.json';
 
 export default {
@@ -12,8 +12,7 @@ export default {
     return { sermonLookup };
   },
   components: {
-    Sermons,
+    SermonsList,
   },
 };
 </script>
-

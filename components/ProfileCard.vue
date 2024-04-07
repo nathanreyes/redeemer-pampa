@@ -8,7 +8,7 @@
         :src="imgUrl"
         :alt="`Avatar of ${name}`"
         v-if="imgUrl"
-      >
+      />
       <div class="text-sm text-center md:text-left">
         <p class="text-black leading-none font-bold text-xl mb-2">{{ name }}</p>
         <p class="text-grey-dark tracking-wide inline-flex items-center mb-2">
@@ -23,10 +23,14 @@
           </svg>
           {{ role }}
         </p>
-        <p class="text-base text-grey-darker text-center md:text-left">{{ description }}</p>
-        <p class="text-sm text-grey-dark text-center md:text-left mt-4" v-if="email">
-          You can reach {{ firstName }} at
-          <email :address="email"></email>.
+        <p class="text-base text-grey-darker text-center md:text-left">
+          {{ description }}
+        </p>
+        <p
+          class="text-sm text-grey-dark text-center md:text-left mt-4"
+          v-if="email"
+        >
+          You can reach {{ firstName }} at <ProfileEmail :address="email" />.
         </p>
       </div>
     </div>
@@ -34,11 +38,11 @@
 </template>
 
 <script>
-import Email from './Email';
+import ProfileEmail from './ProfileEmail';
 
 export default {
   components: {
-    Email,
+    ProfileEmail,
   },
   props: {
     name: {

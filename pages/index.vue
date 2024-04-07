@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero></hero>
+    <HeroSection />
     <div id="who-we-are" class="bg-white main-content">
       <!--Video Section-->
       <section v-if="videoUrl" class="bg-grey-lightest border-b">
@@ -25,7 +25,10 @@
         <div class="flex flex-col-reverse container mx-auto md:flex-row">
           <!--Image-->
           <div class="flex-grow col md:text-right md:mr-4">
-            <img class="w-full md:w-auto rounded-lg" :src="images.comeAsYouAre.url" />
+            <img
+              class="w-full md:w-auto rounded-lg"
+              :src="images.comeAsYouAre.url"
+            />
           </div>
           <!--Description-->
           <div class="flex-grow m-4 col my-8 md:my-0">
@@ -105,7 +108,10 @@
             </div>
             <!--Image-->
             <div class="flex-grow col md:ml-4">
-              <img class="w-full md:w-auto rounded-lg" :src="images.simpleObedience.url" />
+              <img
+                class="w-full md:w-auto rounded-lg"
+                :src="images.simpleObedience.url"
+              />
             </div>
           </div>
         </div>
@@ -279,11 +285,16 @@
       <section id="map">
         <google-map
           api-key="AIzaSyAxHjdK3i5GDppHfiNiKLp9MLqd2FpTzrk"
-          :center="{ latitude: churchInfo.latitude, longitude: churchInfo.longitude }"
+          :center="{
+            latitude: churchInfo.latitude,
+            longitude: churchInfo.longitude,
+          }"
           :style="{ height: '500px' }"
         >
           <div slot="infoWindow">
-            <h3 class="text-lg text-grey-darkest mb-2">{{ churchInfo.name }}</h3>
+            <h3 class="text-lg text-grey-darkest mb-2">
+              {{ churchInfo.name }}
+            </h3>
             <div class="flex items-center mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -333,14 +344,14 @@
 </template>
 
 <script>
-import Hero from '../components/Hero';
+import HeroSection from '../components/HeroSection';
 import GoogleMap from '../components/GoogleMap';
 import homeContent from '@/content/pages/home.json';
 
 export default {
   name: 'Home',
   components: {
-    Hero,
+    HeroSection,
     GoogleMap,
   },
   data() {
@@ -352,13 +363,11 @@ export default {
       churchAddress: `${street}, ${city}, ${state} ${zip}`,
       images: {
         comeAsYouAre: {
-          url:
-            'https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_900/v1530721622/redeemer-pampa/Baptism-1.jpg',
+          url: 'https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_900/v1530721622/redeemer-pampa/Baptism-1.jpg',
           alt: 'Come as you are',
         },
         simpleObedience: {
-          url:
-            'https://res.cloudinary.com/dqgcfqzpk/image/upload/w_900,ar_1:1,c_fill,g_auto,e_art:hokusai/v1632009052/redeemer-pampa/redeemerborger.jpg',
+          url: 'https://res.cloudinary.com/dqgcfqzpk/image/upload/w_900,ar_1:1,c_fill,g_auto,e_art:hokusai/v1632009052/redeemer-pampa/redeemerborger.jpg',
           alt: 'Simple obedience',
         },
       },

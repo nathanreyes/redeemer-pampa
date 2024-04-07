@@ -56,7 +56,10 @@
     <!--Gospel Community Groups Section-->
     <div class="bg-grey-lighter shadow-inner py-4">
       <div class="section">
-        <div class="grid">
+        <p class="text-sm text-center text-grey-darker italic">
+          Please text for addresses as they may change over time.
+        </p>
+        <div class="grid mt-6">
           <gc-card
             v-for="gc in gospelCommunities"
             :key="gc.hosts"
@@ -69,8 +72,7 @@
         </div>
       </div>
     </div>
-    <!--Sermons-->
-    <sermons></sermons>
+    <SermonsList />
   </div>
 </template>
 

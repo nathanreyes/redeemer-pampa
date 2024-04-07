@@ -45,7 +45,7 @@ export default {
       return [
         {
           title: 'By Title',
-          match: item => true,
+          match: (item) => true,
         },
       ];
     },
@@ -58,13 +58,13 @@ export default {
       const appsecret_proof = 'd75fd71cdfa263fb521780f28f5e0995';
       const access_token =
         'EAAk6asCrzIUBAFoWd4MppzgldZCQq5IfMprA3dZCNmgTnmVtz1n9koxK5GlIWm2nnXK7ye72Nap3XlrvGZCQZBQGYl8aAKATvMEvKgLZCDEnSB8mJmZC7KDL2MQtVXb5bSdpgQCUNDHOIpyNbEZAn1r5detOuCHe3IZD';
-      FB.api('/RedeemerPampa/videos', 'get', { access_token }, response => {
+      FB.api('/RedeemerPampa/videos', 'get', { access_token }, (response) => {
         if (!response || response.error) {
           alert('Error occured');
           console.log('Error fetching videos', response.error);
         } else {
           const urlPrefix = 'https://www.facebook.com/facebook/videos/';
-          this.videos = response.data.map(video => ({
+          this.videos = response.data.map((video) => ({
             title: video.description || video.updated_time,
             date: video.updated_time,
             url: urlPrefix + video.id,
