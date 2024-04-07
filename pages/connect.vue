@@ -7,7 +7,7 @@
       <div class="container">
         <h1 class="section-title" id="worship">Worship</h1>
         <p class="ml-8 content">
-          Join us for morning services every Sunday at 9:15am and 11:00am
+          Join us for morning services every Sunday at 9:15am and 11:00am.
         </p>
       </div>
     </div>
