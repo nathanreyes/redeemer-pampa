@@ -1,25 +1,25 @@
 {
   "gospelCommunities": [
     {
-      "hosts": "Paul & Mary Grace Rayburn, David & Mandy Lewis",
+      "hosts": "Reagan & Carol Herman, David & Mandy Lewis",
       "address": "Text for address",
       "subaddress": ".",
       "time": "Sundays @ 1:00pm",
-      "moreInfo": "Text Mary Grace 940.395.5991"
+      "moreInfo": "Text Reagan 806.683.0047"
     },
     {
-      "hosts": "Dan & Eden Fowler, Ryan & Jessica Milligan, Clint & Jenee Devoll",
+      "hosts": "Clint & Jenee Devoll, Ryan & Jessica Milligan",
       "address": "Text for address (rotating address)",
       "subaddress": ".",
       "time": "Sundays @ 5:30pm",
-      "moreInfo": "Text Dan 806.662.4763"
+      "moreInfo": "Text Clint 806.662.5646"
     },
     {
-      "hosts": "Danny & Lori Hendricks, Reagan & Carol Herman",
+      "hosts": "Dan & Eden Fowler, Ben & Makenzie Matthews",
       "address": "Text for address",
-      "subaddress": ".",
-      "time": "Sundays @ 5:30pm",
-      "moreInfo": "Text Carol 806.683.0151"
+      "time": "Sundays @ 5:30",
+      "moreInfo": "Text Dan 806.662.4763",
+      "subaddress": "."
     },
     {
       "hosts": "Jeremy & Karmen Buck",
@@ -29,25 +29,39 @@
       "moreInfo": "Text Karmen 806.662.0573"
     },
     {
-      "hosts": "Jesse & Marissa Lee",
+      "hosts": "Dale & Stephanie Langford, Paul & Alison Cuellar",
       "address": "Text for address",
-      "subaddress": "Students 6th - 12th Grades",
-      "time": "Wednesdays @ 6:00-7:15pm",
-      "moreInfo": "Text Jesse 478.538.4761"
+      "time": "Tuesdays @ 6:00",
+      "moreInfo": "Text Dale 806.220.4417 or Paul 806.663.6199",
+      "subaddress": "."
     },
     {
-      "hosts": "Nathan & Raine Reyes, Ty & Kolbi Linder",
+      "hosts": "Danny & Lori Hendricks, Trey & Alyssa Wiggins",
+      "address": "Text for address",
+      "subaddress": ".",
+      "time": "Wednesdays @ 6:00pm",
+      "moreInfo": "Text Lori 806.662.2542"
+    },
+    {
+      "hosts": "TV & Yvette Cuellar, Nathan & Raine Reyes",
       "address": "Text for address",
       "time": "Wednesdays @ 6:30",
       "moreInfo": "Text Raine 806.683.1456",
       "subaddress": "."
     },
     {
-      "hosts": "Danny & Lori Hendricks, Ryan & Brianna Freudenrich",
+      "hosts": "Ty & Kolbi Linder, Shawn & Lori Beth Taylor, Mark & Stormy McCullar",
       "address": "Text for address",
-      "time": "Wednesdays @ 6:00pm",
-      "moreInfo": "Text Lori 806.662.2542",
+      "time": "Wednesdays @ 6:30pm",
+      "moreInfo": "Text Shawn 806.898.6764",
       "subaddress": "."
+    },
+    {
+      "hosts": "Jesse & Marissa Lee",
+      "address": "Text for address",
+      "subaddress": "Students 6th - 12th Grades",
+      "time": "Wednesdays @ 6:00-7:15pm",
+      "moreInfo": "Text Jesse 478.538.4761"
     }
   ]
 }
