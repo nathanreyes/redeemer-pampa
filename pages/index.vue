@@ -142,7 +142,7 @@
             <div class="flex-grow mb-4 col md:text-right md:mr-4">
               <img
                 class="w-full md:w-auto rounded-lg"
-                src="https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,h_1200,w_892/v1531363292/redeemer-pampa/living-sent.jpg"
+                src="https://res.cloudinary.com/do3iknsvm/image/upload/c_scale,h_1200,w_892/v1749519928/living-sent.jpg"
               />
             </div>
             <div class="flex-grow m-4 col my-8 md:my-0">
@@ -363,11 +363,11 @@ export default {
       churchAddress: `${street}, ${city}, ${state} ${zip}`,
       images: {
         comeAsYouAre: {
-          url: 'https://res.cloudinary.com/dqgcfqzpk/image/upload/c_scale,w_900/v1530721622/redeemer-pampa/Baptism-1.jpg',
+          url: 'https://res.cloudinary.com/do3iknsvm/image/upload/c_scale,w_900/v1749519927/Baptism-1.jpg',
           alt: 'Come as you are',
         },
         simpleObedience: {
-          url: 'https://res.cloudinary.com/dqgcfqzpk/image/upload/w_900,ar_1:1,c_fill,g_auto,e_art:hokusai/v1632009052/redeemer-pampa/redeemerborger.jpg',
+          url: 'https://res.cloudinary.com/do3iknsvm/image/upload/w_900,ar_1:1,c_fill,g_auto,e_art:hokusai/v1749519929/redeemerborger.jpg',
           alt: 'Simple obedience',
         },
       },

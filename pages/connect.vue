@@ -23,7 +23,7 @@
           >
             <img
               class="w-full md:w-auto rounded-lg"
-              src="https://res.cloudinary.com/dqgcfqzpk/image/upload/v1685916200/redeemer-pampa/girls-cookout.jpg"
+              src="https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto/v1749519933/girls-cookout.jpg"
             />
           </div>
           <div class="flex-grow col">
