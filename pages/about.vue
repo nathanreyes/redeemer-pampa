@@ -143,7 +143,7 @@
         <div class="my-6">
           <img
             class="w-full md:w-auto rounded-lg"
-            src="https://res.cloudinary.com/do3iknsvm/image/upload/v1749519929/redeemerborger2.jpg"
+            src="https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto/v1749519929/redeemerborger2.jpg"
           />
         </div>
         <h3

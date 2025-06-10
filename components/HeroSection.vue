@@ -139,7 +139,7 @@ export default {
 .banner-container {
   height: 600px;
   overflow: hidden;
-  background: url('https://res.cloudinary.com/do3iknsvm/image/upload/c_scale,w_1200/v1749519927/group-prayer-edit.jpg');
+  background: url('https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,w_1200/v1749519927/group-prayer-edit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
