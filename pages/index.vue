@@ -363,7 +363,7 @@ export default {
       churchAddress: `${street}, ${city}, ${state} ${zip}`,
       images: {
         comeAsYouAre: {
-          url: 'https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,w_900/v1749519927/Baptism-1.jpg',
+          url: 'https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,w_900/v1776817270/dan-clara.jpg',
           alt: 'Come as you are',
         },
         simpleObedience: {
