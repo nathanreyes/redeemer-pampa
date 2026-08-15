@@ -70,12 +70,17 @@ It is deployed separately from the site and changes rarely.
    `master` branch and copy the URL. Treat it as a secret: anyone holding it
    can trigger builds.
 
-2. **Create the KV namespace** and put the printed id into
-   `workers/rebuild/wrangler.jsonc`, replacing `REPLACE_WITH_KV_NAMESPACE_ID`:
+2. **Create the KV namespace.** Pass the config explicitly, or wrangler writes
+   the binding into the site's config at the repo root instead of the Worker's,
+   under the wrong binding name:
 
    ```bash
-   npx wrangler kv namespace create rebuild-state
+   npx wrangler kv namespace create rebuild-state \
+     --config workers/rebuild/wrangler.jsonc
    ```
+
+   The binding must be named `STATE`. This is already done — the namespace id is
+   committed in `workers/rebuild/wrangler.jsonc`.
 
 3. **Store the hook URL as a secret** — never in the repo:
 
