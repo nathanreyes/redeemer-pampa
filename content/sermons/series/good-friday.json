@@ -9,7 +9,9 @@
       "date": "2024-03-29T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Good-Friday---2024-e2ho7vl",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/84729269/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-2-29%2F372644131-44100-2-d329fbc3bdbc1.m4a",
+      "duration": 1025
     },
     {
       "guid": "6494871e-288f-4c09-aaae-4a7838dc4606",
@@ -19,7 +21,9 @@
       "date": "2025-04-18T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Good-Friday---2025-e31nf8b",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/101481163/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-18%2Fa54bb3a0-58cd-cdb1-8b68-721f8aee012f.mp3",
+      "duration": 970
     }
   ]
 }

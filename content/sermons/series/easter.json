@@ -9,7 +9,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Easter-e222cae",
       "files": [],
-      "guid": "d6d75cae-1b24-4a74-9875-2c9227d621ac"
+      "guid": "d6d75cae-1b24-4a74-9875-2c9227d621ac",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/68284174/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-3-9%2F323006592-44100-2-00d722fc099a3.m4a",
+      "duration": 2031
     },
     {
       "guid": "a679f94f-8833-43e2-813c-00c1ff49cac7",
@@ -19,7 +21,9 @@
       "date": "2025-04-20T05:00:00.000Z",
       "summary": "Ephesians 2:1-10",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Easter-2025-e31oveq",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/101530522/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-20%2Ff0fb4f2b-d680-a413-88e1-e62f1ca80216.mp3",
+      "duration": 2024
     }
   ]
 }

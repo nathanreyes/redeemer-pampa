@@ -103,6 +103,30 @@ const normalizeSeries = name => {
   return SERIES_ALIASES[key] || raw;
 };
 
+// The <enclosure> is the audio file. fast-xml-parser exposes its attributes
+// with an `@_` prefix.
+const getEnclosureUrl = podcast => {
+  const enclosure = podcast && podcast.enclosure;
+  if (!enclosure) return '';
+  const url = Array.isArray(enclosure)
+    ? enclosure[0] && enclosure[0]['@_url']
+    : enclosure['@_url'];
+  return url ? String(url).trim() : '';
+};
+
+// itunes:duration arrives as HH:MM:SS, MM:SS, or plain seconds. Store seconds,
+// so the player can show a length before the audio has loaded.
+const parseDuration = value => {
+  if (value === undefined || value === null) return 0;
+  const raw = String(value).trim();
+  if (!raw) return 0;
+  if (!raw.includes(':')) return Math.round(Number(raw)) || 0;
+  return raw
+    .split(':')
+    .map(Number)
+    .reduce((total, part) => (isNaN(part) ? total : total * 60 + part), 0);
+};
+
 const decodeEntities = str =>
   str
     .replace(/&nbsp;/gi, ' ')
@@ -133,6 +157,10 @@ const getSermonFromPodcast = podcast => {
     date: getDefaultDateFromPodcast(podcast),
     summary: '',
     podcastUrl: podcast.link,
+    // The audio itself, as opposed to podcastUrl, which is the episode's page
+    // on the host. Needed for the site's own player.
+    audioUrl: getEnclosureUrl(podcast),
+    duration: parseDuration(podcast['itunes:duration']),
     files: [],
   };
   if (podcast.description) {
@@ -256,7 +284,15 @@ const fetchPodcasts = async () => {
   // records alike, so the sidebar shows one entry per series.
   let seriesRenamed = 0;
   let leadersRenamed = 0;
+  let audioBackfilled = 0;
   records.forEach(sermon => {
+    // Sermons predating the podcast are stored with a direct link to the audio
+    // on Backblaze, so podcastUrl already is the file. Newer ones get audioUrl
+    // from the feed's enclosure.
+    if (!sermon.audioUrl && /^https?:\/\/.+\.(mp3|m4a)$/i.test(sermon.podcastUrl || '')) {
+      sermon.audioUrl = sermon.podcastUrl;
+      audioBackfilled++;
+    }
     const series = normalizeSeries(sermon.series);
     if (series !== sermon.series) seriesRenamed++;
     sermon.series = series;
@@ -267,6 +303,7 @@ const fetchPodcasts = async () => {
   console.log(
     `Normalized ${seriesRenamed} series names and ${leadersRenamed} speaker names`,
   );
+  console.log(`Backfilled audio for ${audioBackfilled} pre-podcast sermons`);
 
   // Re-bucket everything by year from scratch.
   const byYear = {};

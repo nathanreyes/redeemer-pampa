@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import content from '~~/content/pages/home.json';
+import { usePlayer } from '~/stores/player';
 
 const { churchInfo } = content;
 const nav = [
@@ -14,6 +15,9 @@ const route = useRoute();
 watch(() => route.fullPath, () => (menuOpen.value = false));
 
 const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' and ', ' · ');
+
+// Only used to keep the footer clear of the fixed player bar.
+const player = usePlayer();
 </script>
 
 <template>
@@ -76,8 +80,11 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
       <slot />
     </main>
 
+    <!-- Mounted in the layout, so it is never unmounted by navigation. -->
+    <PlayerBar />
+
     <!-- The land: the footer is the dark ground the whole site sits on. -->
-    <footer class="bg-earth-900 text-sky-200">
+    <footer class="bg-earth-900 text-sky-200" :class="player.current ? 'pb-24' : ''">
       <div class="mx-auto max-w-[110rem] px-5 py-16 sm:px-8">
         <div class="flex flex-wrap items-end gap-8">
           <LogoMark class="h-32 w-auto text-sky-100 sm:h-40" />

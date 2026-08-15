@@ -9,7 +9,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Joy-e1q3icg",
       "files": [],
-      "guid": "d5a45d61-3fe5-4742-a8d9-04a6c33a3f75"
+      "guid": "d5a45d61-3fe5-4742-a8d9-04a6c33a3f75",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/59934544/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-10-2%2F294460810-44100-2-2b0d6835fc5ca.m4a",
+      "duration": 1982
     },
     {
       "title": "Hope ",
@@ -19,7 +21,9 @@
       "summary": "Romans 5",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Hope-e1p4ksq",
       "files": [],
-      "guid": "261266cd-e2aa-4452-8c1b-a2a8698c01f0"
+      "guid": "261266cd-e2aa-4452-8c1b-a2a8698c01f0",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/58921306/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-9-12%2F290585797-44100-2-c517c42168ba7.m4a",
+      "duration": 2303
     }
   ]
 }

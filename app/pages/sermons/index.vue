@@ -1,12 +1,41 @@
 <script setup lang="ts">
+import { usePlayer, type Track } from '~/stores/player';
+
 interface Sermon {
+  guid?: string;
   title: string;
   leader: string;
   series: string;
   date: string;
   summary?: string;
   podcastUrl?: string;
+  audioUrl?: string;
+  duration?: number;
 }
+
+const player = usePlayer();
+
+const playable = (s: Sermon) => !!s.audioUrl?.startsWith('http');
+
+const toTrack = (s: Sermon): Track => ({
+  id: s.guid || s.audioUrl!,
+  title: s.title,
+  leader: s.leader,
+  series: s.series,
+  date: s.date,
+  audioUrl: s.audioUrl!,
+  duration: s.duration || 0,
+});
+
+/**
+ * Playing from the list queues everything below it in the current filtered
+ * view, so a whole series plays through in order.
+ */
+const playFrom = (sermon: Sermon) => {
+  const list = results.value.filter(playable).map(toTrack);
+  const from = list.findIndex((t) => t.id === toTrack(sermon).id);
+  player.play(toTrack(sermon), from >= 0 ? list.slice(from) : list);
+};
 
 const modules = import.meta.glob<{ default: { sermons: Sermon[] } }>(
   '~~/content/sermons/year/*.json',
@@ -154,15 +183,41 @@ useHead({ title: 'Sermons — Redeemer Pampa' });
           </button>
         </div>
 
-        <div class="md:col-span-2 md:text-right">
+        <div class="flex items-baseline gap-4 md:col-span-2 md:justify-end">
+          <span v-if="sermon.duration" class="eyebrow tabular-nums text-earth-300">
+            {{ formatTime(sermon.duration) }}
+          </span>
+          <button
+            v-if="playable(sermon)"
+            class="eyebrow inline-flex items-center gap-2 border-b-2 pb-1 transition-colors"
+            :class="
+              player.current?.id === (sermon.guid || sermon.audioUrl)
+                ? 'border-wheat-500 text-wheat-600'
+                : 'border-earth-900/20 group-hover:border-wheat-500 hover:text-wheat-600'
+            "
+            @click="playFrom(sermon)"
+          >
+            <svg class="size-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <rect
+                v-if="player.playing && player.current?.id === (sermon.guid || sermon.audioUrl)"
+                x="4" y="3" width="4" height="14"
+              />
+              <rect
+                v-if="player.playing && player.current?.id === (sermon.guid || sermon.audioUrl)"
+                x="12" y="3" width="4" height="14"
+              />
+              <path v-else d="M5 3l12 7-12 7z" />
+            </svg>
+            {{ player.current?.id === (sermon.guid || sermon.audioUrl) && player.playing ? 'Playing' : 'Listen' }}
+          </button>
           <a
-            v-if="sermon.podcastUrl"
+            v-else-if="sermon.podcastUrl"
             :href="sermon.podcastUrl"
             target="_blank"
             rel="noopener"
-            class="eyebrow inline-block border-b-2 border-earth-900/20 pb-1 transition-colors group-hover:border-wheat-500 hover:text-wheat-600"
+            class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:text-wheat-600"
           >
-            Listen
+            Open
           </a>
         </div>
       </li>

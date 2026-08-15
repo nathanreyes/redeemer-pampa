@@ -9,7 +9,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-8-9-e4g58p",
       "files": [],
-      "guid": "ccfaf4be-fcd3-10bc-83c0-44f6ce500505"
+      "guid": "ccfaf4be-fcd3-10bc-83c0-44f6ce500505",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3723993/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-5-30%2F17895077-44100-2-84638c751a157.mp3",
+      "duration": 2181
     },
     {
       "title": "Amos 7",
@@ -19,7 +21,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-7-e4bscq",
       "files": [],
-      "guid": "d07556f5-e181-7d9f-6416-7086848b5ad6"
+      "guid": "d07556f5-e181-7d9f-6416-7086848b5ad6",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3583834/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-5-16%2F17053608-44100-2-dcbb44ba1783b.mp3",
+      "duration": 2541
     },
     {
       "title": "Amos 6",
@@ -29,7 +33,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-6-e49occ",
       "files": [],
-      "guid": "67fb0982-fced-8e61-bff0-982bfc4186e6"
+      "guid": "67fb0982-fced-8e61-bff0-982bfc4186e6",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3514188/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-5-9%2F16689732-44100-2-ecb9c6db3d39e.mp3",
+      "duration": 2331
     },
     {
       "title": "Amos 5.2",
@@ -39,7 +45,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-5-2-e47fqk",
       "files": [],
-      "guid": "642e3067-d6a9-e0f7-1dd3-ed4ac118b319"
+      "guid": "642e3067-d6a9-e0f7-1dd3-ed4ac118b319",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3439892/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-5-2%2F16307308-44100-2-f0fe18d1fb062.mp3",
+      "duration": 2211
     },
     {
       "title": "Amos 4",
@@ -49,7 +57,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-4-e42vsf",
       "files": [],
-      "guid": "6215afc6-f45f-0468-b6ed-4794bfcca1ba"
+      "guid": "6215afc6-f45f-0468-b6ed-4794bfcca1ba",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3292495/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-4-19%2F15386527-44100-2-1100fe5de0dbd.mp3",
+      "duration": 2297
     },
     {
       "title": "Amos 3",
@@ -59,7 +69,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-3-e40mjo",
       "files": [],
-      "guid": "c942995b-3d13-1c0e-8677-169eecd3d4de"
+      "guid": "c942995b-3d13-1c0e-8677-169eecd3d4de",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3217464/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-4-12%2F14631655-44100-2-b2632d653ece8.mp3",
+      "duration": 1885
     },
     {
       "title": "Amos 2",
@@ -69,7 +81,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-2-e3ug9e",
       "files": [],
-      "guid": "b384af3d-1ade-9e4c-47b7-3eceb9513369"
+      "guid": "b384af3d-1ade-9e4c-47b7-3eceb9513369",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3145454/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-4-5%2F14123605-44100-2-814cd2ee54651.mp3",
+      "duration": 2505
     },
     {
       "title": "Amos 1",
@@ -79,7 +93,9 @@
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Amos-1-e3sadn",
       "files": [],
-      "guid": "69e13db5-37e2-1645-64ab-b957fb7fa520"
+      "guid": "69e13db5-37e2-1645-64ab-b957fb7fa520",
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/3073911/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2F2019-3-28%2F13598722-44100-2-f19b33f105e63.mp3",
+      "duration": 2278
     }
   ]
 }

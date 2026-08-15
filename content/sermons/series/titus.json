@@ -9,7 +9,9 @@
       "date": "2025-07-06T05:00:00.000Z",
       "summary": "Titus 3:8-15",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-3-2-e355tar",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/105100059/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-6%2Ff71789a0-503a-7ed9-e0fe-a7b8185f5807.mp3",
+      "duration": 2190
     },
     {
       "guid": "8fc4e27d-6be2-4a91-84b3-e387e57b5969",
@@ -19,7 +21,9 @@
       "date": "2025-06-29T05:00:00.000Z",
       "summary": "Titus 3:1-8",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-3-e34se3f",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/104789551/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-29%2F11689cd7-cfef-6c51-0d46-19545f463f90.mp3",
+      "duration": 2221
     },
     {
       "guid": "dd1812e3-d069-471e-bd22-ec17ee29d203",
@@ -29,7 +33,9 @@
       "date": "2025-06-22T05:00:00.000Z",
       "summary": "Titus 2:10-15",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-2-3-e34j1ep",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/104481689/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-22%2F4b50fb56-b2c8-2ded-dc08-207b2be16da3.mp3",
+      "duration": 2321
     },
     {
       "guid": "eb2fb538-f655-478c-a942-48ee767b03ac",
@@ -39,7 +45,9 @@
       "date": "2025-06-01T05:00:00.000Z",
       "summary": "Titus 1",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-1-e33l88f",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/103505615/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-1%2Fd4977a13-6879-4986-142c-ba717b863825.mp3",
+      "duration": 2566
     },
     {
       "guid": "9121a647-6a59-4437-9ee3-be13e1191ba1",
@@ -49,7 +57,9 @@
       "date": "2025-05-25T05:00:00.000Z",
       "summary": "Titus 1:1-4",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus---Intro-e33b57d",
-      "files": []
+      "files": [],
+      "audioUrl": "https://anchor.fm/s/530ebe8/podcast/play/103174829/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-25%2Ff0dad21e-98e1-a855-eef7-ae0155542862.mp3",
+      "duration": 1853
     }
   ]
 }
