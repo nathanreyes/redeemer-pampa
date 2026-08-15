@@ -5,9 +5,20 @@
       "title": "Easter",
       "leader": "Jeremy Buck",
       "series": "Easter",
-      "date": "2023-04-09T00:00:00.000Z",
+      "date": "2023-04-09T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Easter-e222cae",
+      "files": [],
+      "guid": "d6d75cae-1b24-4a74-9875-2c9227d621ac"
+    },
+    {
+      "guid": "a679f94f-8833-43e2-813c-00c1ff49cac7",
+      "title": "Easter 2025",
+      "leader": "Jeremy Buck",
+      "series": "Easter",
+      "date": "2025-04-20T05:00:00.000Z",
+      "summary": "Ephesians 2:1-10",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Easter-2025-e31oveq",
       "files": []
     }
   ]

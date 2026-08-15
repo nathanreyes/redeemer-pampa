@@ -1,0 +1,35 @@
+{
+  "title": "Advent 2024",
+  "sermons": [
+    {
+      "guid": "58a7f940-ab03-416e-a5a1-ae6b0de291ea",
+      "title": "Advent 2024 - Joy",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2024",
+      "date": "2024-12-15T06:00:00.000Z",
+      "summary": "Joy",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Joy-e2sbqvt",
+      "files": []
+    },
+    {
+      "guid": "bb4de50b-ad51-4c7f-a032-0b3d400a9fa7",
+      "title": "Advent 2024 - Peace",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2024",
+      "date": "2024-12-08T06:00:00.000Z",
+      "summary": "Peace",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Peace-e2s21fg",
+      "files": []
+    },
+    {
+      "guid": "134718fa-0f7d-4d85-8b6f-069f3bb707e1",
+      "title": "Advent 2024 - Hope",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2024",
+      "date": "2024-12-01T06:00:00.000Z",
+      "summary": "Hope",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Hope-e2rnvcs",
+      "files": []
+    }
+  ]
+}

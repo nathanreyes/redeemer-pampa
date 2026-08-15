@@ -41,46 +41,51 @@
       "title": "Jonah 4",
       "leader": "Jeremy Buck",
       "series": "Jonah",
-      "date": "2023-07-09T00:00:00.000Z",
+      "date": "2023-07-09T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Jonah-4-e26o3ij",
-      "files": []
+      "files": [],
+      "guid": "269593fc-3c3c-4f20-bf7e-546fd09ba8ff"
     },
     {
       "title": "Jonah 3 - updated",
       "leader": "Paul Rayburn",
       "series": "Jonah",
-      "date": "2023-07-02T00:00:00.000Z",
+      "date": "2023-07-02T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Jonah-3---updated-e26isf4",
-      "files": []
+      "files": [],
+      "guid": "85158a6b-96be-4f6e-8184-1266241fc041"
     },
     {
       "title": "Jonah 3",
       "leader": "Paul Rayburn",
       "series": "Jonah",
-      "date": "2023-07-02T00:00:00.000Z",
+      "date": "2023-07-02T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Jonah-3-e26f5kd",
-      "files": []
+      "files": [],
+      "guid": "0e73267a-7411-4378-8fd7-a39e2aec291a"
     },
     {
       "title": "Jonah 2",
       "leader": "Jeremy Buck",
       "series": "Jonah",
-      "date": "2023-06-25T00:00:00.000Z",
+      "date": "2023-06-25T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Jonah-2-e265uc5",
-      "files": []
+      "files": [],
+      "guid": "0119bf8b-b4a3-4ba8-96cf-72c714e21007"
     },
     {
       "title": "Jonah 1",
       "leader": "Jeremy Buck",
       "series": "Jonah",
-      "date": "2023-06-18T00:00:00.000Z",
+      "date": "2023-06-18T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Jonah-1-e25soj0",
-      "files": []
+      "files": [],
+      "guid": "ab5115ca-a730-434e-acae-0009c0629753"
     }
   ]
 }

@@ -7,26 +7,9 @@
       "series": "1 Timothy",
       "date": "2019-09-02T05:00:00.000Z",
       "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-6-e56e45",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 6",
-      "leader": "Jeremy Buck",
-      "series": "1 Timothy",
-      "date": "2019-09-02T05:00:00.000Z",
-      "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-6-e56e45",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 5.2",
-      "leader": "Jeremy Buck",
-      "series": "1 Timothy",
-      "date": "2019-08-25T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-5-2-e53gmt",
-      "files": []
+      "files": [],
+      "guid": "a8cbb964-d4fa-0691-d63b-1cbca6e8648e"
     },
     {
       "title": "1 Timothy 5.2",
@@ -35,16 +18,8 @@
       "date": "2019-08-25T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-5-2-e53gmt",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 4",
-      "leader": "Jeremy Buck",
-      "series": "1 Timothy",
-      "date": "2019-08-11T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-4-e4u0hj",
-      "files": []
+      "files": [],
+      "guid": "8e44f1b7-813e-8687-e241-eeff45687713"
     },
     {
       "title": "1 Timothy 4",
@@ -53,16 +28,8 @@
       "date": "2019-08-11T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-4-e4u0hj",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 3.2",
-      "leader": "Jeremy Buck",
-      "series": "1 Timothy",
-      "date": "2019-08-04T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-3-2-e4rehg",
-      "files": []
+      "files": [],
+      "guid": "02a4c878-c7aa-97ec-f20c-171d2b3bb6d2"
     },
     {
       "title": "1 Timothy 3.2",
@@ -71,7 +38,8 @@
       "date": "2019-08-04T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-3-2-e4rehg",
-      "files": []
+      "files": [],
+      "guid": "0bc56b16-66de-ab3c-66f7-577cee88aa95"
     },
     {
       "title": "1 Timothy 3",
@@ -80,52 +48,28 @@
       "date": "2019-07-28T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-3-e4osld",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 3",
-      "leader": "Paul Rayburn",
-      "series": "1 Timothy",
-      "date": "2019-07-28T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-3-e4osld",
-      "files": []
+      "files": [],
+      "guid": "fbe4c0aa-b402-9f4e-3a0c-ccbf5440b56a"
     },
     {
       "title": "1 Timothy 1.2",
       "leader": "Jeremy Buck",
       "series": "1 Timothy",
-      "date": "2019-07-14T00:00:00.000Z",
+      "date": "2019-07-14T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-1-2-e4kble",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 1.2",
-      "leader": "Jeremy Buck",
-      "series": "1 Timothy",
-      "date": "2019-07-14T00:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-1-2-e4kble",
-      "files": []
+      "files": [],
+      "guid": "a71d2a93-b667-696f-c7b0-c11d8105ed56"
     },
     {
       "title": "1 Timothy 1 - Intro",
       "leader": "Jeremy Buck",
       "series": "1 Timothy",
-      "date": "2019-07-07T00:00:00.000Z",
-      "summary": "1 Timothy 1",
+      "date": "2019-07-07T05:00:00.000Z",
+      "summary": "1 Timothy 1:1-3",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/1-Timothy-1---Intro-e4i5ri",
-      "files": []
-    },
-    {
-      "title": "1 Timothy 1 - Intro",
-      "leader": "Jeremy Buck",
-      "series": "1 Timothy",
-      "date": "2019-07-07T00:00:00.000Z",
-      "summary": "1 Timothy 1",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/1-Timothy-1---Intro-e4i5ri",
-      "files": []
+      "files": [],
+      "guid": "0d56c5a0-fb8d-e80f-0b75-e5d6fe936446"
     }
   ]
 }

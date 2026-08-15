@@ -41,28 +41,11 @@
       "title": "Core Values - Generosity",
       "leader": "Jeremy Buck",
       "series": "Core Values",
-      "date": "2021-08-15T00:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Core-Values---Generosity-e15v3tl",
-      "files": []
-    },
-    {
-      "title": "Core Values - Generosity",
-      "leader": "Jeremy Buck",
-      "series": "Core Values",
-      "date": "2021-08-15T00:00:00.000Z",
+      "date": "2021-08-15T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Core-Values---Generosity-e15v3tl",
-      "files": []
-    },
-    {
-      "title": "Core Values - Missional",
-      "leader": "Jeremy Buck",
-      "series": "Core Values",
-      "date": "2021-08-08T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Core-Values---Missional-e15klth",
-      "files": []
+      "files": [],
+      "guid": "854caa6b-3ffa-46ef-bc46-6551cbc371e0"
     },
     {
       "title": "Core Values - Missional",
@@ -71,43 +54,28 @@
       "date": "2021-08-08T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Core-Values---Missional-e15klth",
-      "files": []
+      "files": [],
+      "guid": "5b6f3f06-9b27-4fdf-ada4-e727faec778e"
     },
     {
       "title": "Core Values - Plural Leadership",
       "leader": "Paul Rayburn",
       "series": "Core Values",
-      "date": "2021-07-25T00:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Core-Values---Plural-Leadership-e1506it",
-      "files": []
-    },
-    {
-      "title": "Core Values - Plural Leadership",
-      "leader": "Paul Rayburn",
-      "series": "Core Values",
-      "date": "2021-07-25T00:00:00.000Z",
+      "date": "2021-07-25T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Core-Values---Plural-Leadership-e1506it",
-      "files": []
+      "files": [],
+      "guid": "de378348-493d-4462-a1f5-81746c11c1b2"
     },
     {
       "title": "Core Values - Reflective of Community",
       "leader": "Jeremy Buck",
       "series": "Core Values",
-      "date": "2021-07-18T00:00:00.000Z",
+      "date": "2021-07-18T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Core-Values---Reflective-of-Community-e14l5qh",
-      "files": []
-    },
-    {
-      "title": "Core Values - Reflective of Community",
-      "leader": "Jeremy Buck",
-      "series": "Core Values",
-      "date": "2021-07-18T00:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Core-Values---Reflective-of-Community-e14l5qh",
-      "files": []
+      "files": [],
+      "guid": "0fa0cf93-9a27-4942-b321-f67bd7cd6fc0"
     }
   ]
 }

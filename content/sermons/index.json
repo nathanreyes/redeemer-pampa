@@ -1,5 +1,13 @@
 [
   {
+    "title": "2026",
+    "path": "/year/2026"
+  },
+  {
+    "title": "2025",
+    "path": "/year/2025"
+  },
+  {
     "title": "2024",
     "path": "/year/2024"
   },
@@ -28,31 +36,31 @@
     "path": "/year/2018"
   },
   {
-    "title": 2017,
+    "title": "2017",
     "path": "/year/2017"
   },
   {
-    "title": 2016,
+    "title": "2016",
     "path": "/year/2016"
   },
   {
-    "title": 2015,
+    "title": "2015",
     "path": "/year/2015"
   },
   {
-    "title": 2014,
+    "title": "2014",
     "path": "/year/2014"
   },
   {
-    "title": 2013,
+    "title": "2013",
     "path": "/year/2013"
   },
   {
-    "title": 2012,
+    "title": "2012",
     "path": "/year/2012"
   },
   {
-    "title": 2011,
+    "title": "2011",
     "path": "/year/2011"
   },
   {
@@ -84,6 +92,10 @@
     "path": "/series/1-timothy"
   },
   {
+    "title": "2 Corinthians",
+    "path": "/series/2-corinthians"
+  },
+  {
     "title": "2 John",
     "path": "/series/2-john"
   },
@@ -96,28 +108,28 @@
     "path": "/series/2-samuel"
   },
   {
-    "title": "Acts - 2023",
-    "path": "/series/acts---2023"
-  },
-  {
     "title": "Acts - 2024",
     "path": "/series/acts---2024"
+  },
+  {
+    "title": "Acts - 23/24",
+    "path": "/series/acts---23-24"
   },
   {
     "title": "Acts 2023",
     "path": "/series/acts-2023"
   },
   {
-    "title": "Acts 2024",
-    "path": "/series/acts-2024"
-  },
-  {
-    "title": "Acts 23-24",
+    "title": "Acts 23/24",
     "path": "/series/acts-23-24"
   },
   {
     "title": "Acts",
     "path": "/series/acts"
+  },
+  {
+    "title": "Advent - Love",
+    "path": "/series/advent---love"
   },
   {
     "title": "Advent 2020",
@@ -126,6 +138,14 @@
   {
     "title": "Advent 2023",
     "path": "/series/advent-2023"
+  },
+  {
+    "title": "Advent 2024",
+    "path": "/series/advent-2024"
+  },
+  {
+    "title": "Advent 2025",
+    "path": "/series/advent-2025"
   },
   {
     "title": "Advent",
@@ -146,6 +166,10 @@
   {
     "title": "Core Values",
     "path": "/series/core-values"
+  },
+  {
+    "title": "Daniel",
+    "path": "/series/daniel"
   },
   {
     "title": "Easter",
@@ -180,6 +204,10 @@
     "path": "/series/genesis"
   },
   {
+    "title": "Good Friday",
+    "path": "/series/good-friday"
+  },
+  {
     "title": "Gospel Applications",
     "path": "/series/gospel-applications"
   },
@@ -200,12 +228,20 @@
     "path": "/series/hebrews"
   },
   {
+    "title": "Hosea",
+    "path": "/series/hosea"
+  },
+  {
     "title": "John",
     "path": "/series/john"
   },
   {
     "title": "Jonah",
     "path": "/series/jonah"
+  },
+  {
+    "title": "Ladies Equip",
+    "path": "/series/ladies-equip"
   },
   {
     "title": "Luke",
@@ -220,12 +256,20 @@
     "path": "/series/mark"
   },
   {
+    "title": "Matthew",
+    "path": "/series/matthew"
+  },
+  {
     "title": "Missional Living",
     "path": "/series/missional-living"
   },
   {
-    "title": "Numbers 6",
-    "path": "/series/numbers-6"
+    "title": "Numbers 6:22-27",
+    "path": "/series/numbers-6-22-27"
+  },
+  {
+    "title": "Numbers",
+    "path": "/series/numbers"
   },
   {
     "title": "Parables",
@@ -250,5 +294,13 @@
   {
     "title": "The Book of James",
     "path": "/series/the-book-of-james"
+  },
+  {
+    "title": "Titus",
+    "path": "/series/titus"
+  },
+  {
+    "title": "Wisdom",
+    "path": "/series/wisdom"
   }
 ]

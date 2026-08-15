@@ -1,0 +1,215 @@
+{
+  "title": "Matthew",
+  "sermons": [
+    {
+      "guid": "1ecbb634-27d8-4e98-8211-8ab27968cc20",
+      "title": "Matthew 12.3",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-08-09T05:00:00.000Z",
+      "summary": "Matthew 12:38- 50",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-12-3-e3n62r3",
+      "files": []
+    },
+    {
+      "guid": "503ae1aa-7fc7-48ec-8be6-accb3e6a0147",
+      "title": "Matthew 12.2",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-08-02T05:00:00.000Z",
+      "summary": "Matthew 12:14-30",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-12-2-e3ms3lu",
+      "files": []
+    },
+    {
+      "guid": "da739232-0374-4ea0-bee6-0a9c42ed1e65",
+      "title": "Matthew 12.1",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-07-26T05:00:00.000Z",
+      "summary": "Matthew 12:1-14",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-12-1-e3milmp",
+      "files": []
+    },
+    {
+      "guid": "c3e17f3f-0fac-43b7-8496-eff58552df7c",
+      "title": "Matthew 11.2",
+      "leader": "Dan Fowler",
+      "series": "Matthew",
+      "date": "2026-07-19T05:00:00.000Z",
+      "summary": "Matthew 11:20-30",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-11-2-e3m9864",
+      "files": []
+    },
+    {
+      "guid": "ff768f18-c695-494f-85c4-9f164953a68c",
+      "title": "Matthew 11.1",
+      "leader": "Clint Devoll",
+      "series": "Matthew",
+      "date": "2026-07-12T05:00:00.000Z",
+      "summary": "Matthew 11:1-19",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-11-1-e3lvrri",
+      "files": []
+    },
+    {
+      "guid": "bf66a960-f155-4330-9e80-fd5eb3c12746",
+      "title": "Matthew 10",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-07-05T05:00:00.000Z",
+      "summary": "Matthew 10",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-10-e3lm93k",
+      "files": []
+    },
+    {
+      "guid": "b7101546-3d85-4b34-b069-56de8720938d",
+      "title": "Matthew 9.3",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-06-21T05:00:00.000Z",
+      "summary": "Matthew 9:14-26",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-9-3-e3l34dg",
+      "files": []
+    },
+    {
+      "guid": "d82730e5-0705-40a6-8c00-b5406f0e5234",
+      "title": "Matthew 9.2",
+      "leader": "Danny Hendricks",
+      "series": "Matthew",
+      "date": "2026-06-14T05:00:00.000Z",
+      "summary": "Matthew 9:1-13",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-9-2-e3kp7v1",
+      "files": []
+    },
+    {
+      "guid": "7521bb32-7e90-475f-9cda-a93ed880e2d5",
+      "title": "Matthew 8.2",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-05-31T05:00:00.000Z",
+      "summary": "Matthew 8:18-27",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-8-2-e3k4trh",
+      "files": []
+    },
+    {
+      "guid": "3f16d194-ce0d-4839-8c75-591e14859d2a",
+      "title": "Matthew 8",
+      "leader": "Clint Devoll",
+      "series": "Matthew",
+      "date": "2026-05-24T05:00:00.000Z",
+      "summary": "Matthew 8",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-8-e3jqv6f",
+      "files": []
+    },
+    {
+      "guid": "4e0adbbe-ada3-4a59-9e47-c75b9390da3b",
+      "title": "Matthew 7.2",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-05-17T05:00:00.000Z",
+      "summary": "Matthew 7:13-29",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-7-2-e3jg78f",
+      "files": []
+    },
+    {
+      "guid": "6be1e08e-12c0-44d8-9894-6d983a651f80",
+      "title": "Matthew 7.1",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-05-10T05:00:00.000Z",
+      "summary": "Matthew 7:1-12",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-7-1-e3j5kef",
+      "files": []
+    },
+    {
+      "guid": "92026daa-041f-4549-bc19-6cd866a67941",
+      "title": "Matthew 6.1",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-04-26T05:00:00.000Z",
+      "summary": "Matthew 6:1-18",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-6-1-e3ig7aa",
+      "files": []
+    },
+    {
+      "guid": "0cff946c-d7f5-4b24-8394-7d7c64158c28",
+      "title": "Matthew 5.4",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-04-19T05:00:00.000Z",
+      "summary": "Matt 5:32-48",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-5-4-e3i4mhh",
+      "files": []
+    },
+    {
+      "guid": "af02d1a0-4caf-43e4-bd86-2c2703dd118b",
+      "title": "Matthew 5.3",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-04-12T05:00:00.000Z",
+      "summary": "Matthew 5:21-30",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-5-3-e3hpmhe",
+      "files": []
+    },
+    {
+      "guid": "683472ab-99e8-44ba-8d08-05cf2775d058",
+      "title": "Matthew 5.2",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-04-05T05:00:00.000Z",
+      "summary": "Matthew 5:17-20",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-5-2-e3hfa1a",
+      "files": []
+    },
+    {
+      "guid": "b5d0891c-57e6-4505-8340-3d4ff5ec7d2f",
+      "title": "Matthew 5.1",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-03-29T05:00:00.000Z",
+      "summary": "Matthew 5:1-16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-5-1-e3h4j94",
+      "files": []
+    },
+    {
+      "guid": "6f094da4-6e8e-4220-93f3-e1511839f6a7",
+      "title": "Matthew 4",
+      "leader": "Clint Devoll",
+      "series": "Matthew",
+      "date": "2026-03-15T05:00:00.000Z",
+      "summary": "Matthew 4, Temptation of Jesus",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-4-e3gflqt",
+      "files": []
+    },
+    {
+      "guid": "24e37310-5286-4dcf-85e9-e6c8c9d6444a",
+      "title": "Matthew 3 - updated",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-03-08T06:00:00.000Z",
+      "summary": "Matthew 3",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-3---updated-e3g8prj",
+      "files": []
+    },
+    {
+      "guid": "1d7534e9-cabd-4833-998b-169a1053819b",
+      "title": "Matthew 2",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-03-01T06:00:00.000Z",
+      "summary": "Matthew 1:18-25, Matthew 2:1-23",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-2-e3fpivp",
+      "files": []
+    },
+    {
+      "guid": "ebec605c-a588-4a87-b261-00ecfba4b36c",
+      "title": "Matthew Intro ",
+      "leader": "Jeremy Buck",
+      "series": "Matthew",
+      "date": "2026-02-22T06:00:00.000Z",
+      "summary": "Matthew 1:1-18",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Matthew-Intro-e3felbc",
+      "files": []
+    }
+  ]
+}

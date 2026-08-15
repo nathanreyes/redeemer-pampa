@@ -1,0 +1,35 @@
+{
+  "title": "Advent 2025",
+  "sermons": [
+    {
+      "guid": "93a80aa8-29f7-4e3a-bd76-d7cb6adafa50",
+      "title": "Advent 2025 - Love",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2025",
+      "date": "2025-12-21T06:00:00.000Z",
+      "summary": "Love",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2025---Love-e3clbgm",
+      "files": []
+    },
+    {
+      "guid": "1d8c2e46-55ef-4699-9636-e9415bee383c",
+      "title": "Advent 2025 - Joy",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2025",
+      "date": "2025-12-14T06:00:00.000Z",
+      "summary": "Joy",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2025---Joy-e3cbal6",
+      "files": []
+    },
+    {
+      "guid": "62113d77-bbc5-45f2-acdb-ef142c3c8613",
+      "title": "Advent 2025 - Hope",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2025",
+      "date": "2025-11-30T06:00:00.000Z",
+      "summary": "Hope",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2025---Hope-e3bm11c",
+      "files": []
+    }
+  ]
+}

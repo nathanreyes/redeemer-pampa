@@ -8,25 +8,8 @@
       "date": "2020-05-31T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Integrity-eeqn1m",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Integrity",
-      "leader": "Ricky Garzon",
-      "series": "Proverbs",
-      "date": "2020-05-31T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Integrity-eeqn1m",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Old Age",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-05-24T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Old-Age-eejcsr",
-      "files": []
+      "files": [],
+      "guid": "07072692-9da2-4cca-9589-4e7520995bdc"
     },
     {
       "title": "Proverbs - Old Age",
@@ -35,7 +18,8 @@
       "date": "2020-05-24T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Old-Age-eejcsr",
-      "files": []
+      "files": [],
+      "guid": "051c3d0f-6d82-479d-92db-df14b0739e0f"
     },
     {
       "title": "Proverbs - The Tongue",
@@ -44,25 +28,8 @@
       "date": "2020-05-17T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---The-Tongue-eejc6m",
-      "files": []
-    },
-    {
-      "title": "Proverbs - The Tongue",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-05-17T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---The-Tongue-eejc6m",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Decision Making",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-05-10T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Decision-Making-eejbc7",
-      "files": []
+      "files": [],
+      "guid": "bfcb62b0-1416-4800-ae55-27d592dd5da2"
     },
     {
       "title": "Proverbs - Decision Making",
@@ -71,16 +38,8 @@
       "date": "2020-05-10T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Decision-Making-eejbc7",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Money, Part 3",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-05-03T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Money--Part-3-eejac0",
-      "files": []
+      "files": [],
+      "guid": "15db6e98-6338-446e-ac17-8364551de0f6"
     },
     {
       "title": "Proverbs - Money, Part 3",
@@ -89,16 +48,8 @@
       "date": "2020-05-03T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Money--Part-3-eejac0",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Money, Part 2",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-04-26T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Money--Part-2-ed9loj",
-      "files": []
+      "files": [],
+      "guid": "72d05bd2-4939-49b4-b3e3-1990ff30fefe"
     },
     {
       "title": "Proverbs - Money, Part 2",
@@ -107,16 +58,8 @@
       "date": "2020-04-26T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Money--Part-2-ed9loj",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Money",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-04-19T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Money-ed0bv3",
-      "files": []
+      "files": [],
+      "guid": "6d24277e-6cd3-46e1-93ac-e6bce70fd626"
     },
     {
       "title": "Proverbs - Money",
@@ -125,7 +68,8 @@
       "date": "2020-04-19T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Money-ed0bv3",
-      "files": []
+      "files": [],
+      "guid": "25adc286-3384-4fe9-bbd9-d9fdde1944f8"
     },
     {
       "title": "Proverbs - Pride",
@@ -134,16 +78,8 @@
       "date": "2020-04-05T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Pride-ecied5",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Pride",
-      "leader": "Paul Rayburn",
-      "series": "Proverbs",
-      "date": "2020-04-05T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Pride-ecied5",
-      "files": []
+      "files": [],
+      "guid": "132ca94f-894b-4f1b-9c9f-b3a2fdfdb8ad"
     },
     {
       "title": "Proverbs - Adversity",
@@ -152,16 +88,8 @@
       "date": "2020-03-29T05:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Adversity-ec8g3i",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Adversity",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-03-29T05:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Adversity-ec8g3i",
-      "files": []
+      "files": [],
+      "guid": "bfc6936e-e7b1-4ba2-b245-ccbdc3bd5987"
     },
     {
       "title": "Proverbs - Work",
@@ -170,16 +98,8 @@
       "date": "2020-03-08T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Work-ebbpk9",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Work",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-03-08T06:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Work-ebbpk9",
-      "files": []
+      "files": [],
+      "guid": "8b6fed13-ebc1-4f4a-880f-f8853ed786b7"
     },
     {
       "title": "Proverbs - Self Control",
@@ -188,16 +108,8 @@
       "date": "2020-03-01T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Self-Control-eb62bl",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Self Control",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-03-01T06:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Self-Control-eb62bl",
-      "files": []
+      "files": [],
+      "guid": "e2549afa-37dd-4b37-9c7a-995f598096c7"
     },
     {
       "title": "Proverbs - Conflict",
@@ -206,16 +118,8 @@
       "date": "2020-02-23T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Conflict-eb13hd",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Conflict",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-02-23T06:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Conflict-eb13hd",
-      "files": []
+      "files": [],
+      "guid": "41e85505-579d-40c6-83a6-3da70ebc50ed"
     },
     {
       "title": "Proverbs - Part 4 - Friendships",
@@ -224,25 +128,8 @@
       "date": "2020-02-16T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs---Part-4---Friendships-easb3i",
-      "files": []
-    },
-    {
-      "title": "Proverbs - Part 4 - Friendships",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-02-16T06:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs---Part-4---Friendships-easb3i",
-      "files": []
-    },
-    {
-      "title": "Proverbs 3.0",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-02-09T06:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Proverbs-3-0-eant34",
-      "files": []
+      "files": [],
+      "guid": "e7153cd0-7278-448b-b1fe-2496e14c2151"
     },
     {
       "title": "Proverbs 3.0",
@@ -251,7 +138,8 @@
       "date": "2020-02-09T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Proverbs-3-0-eant34",
-      "files": []
+      "files": [],
+      "guid": "5a05f7dc-efae-4849-9116-f4ff0250f47c"
     },
     {
       "title": "Intro to Proverbs",
@@ -260,16 +148,8 @@
       "date": "2020-01-26T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Intro-to-Proverbs-eaeh7r",
-      "files": []
-    },
-    {
-      "title": "Intro to Proverbs",
-      "leader": "Jeremy Buck",
-      "series": "Proverbs",
-      "date": "2020-01-26T06:00:00.000Z",
-      "summary": "",
-      "podcastUrl": "https://anchor.fm/redeemer-pampa-podcast/episodes/Intro-to-Proverbs-eaeh7r",
-      "files": []
+      "files": [],
+      "guid": "0867ac6a-6558-4530-924e-4ba15cbb46f7"
     }
   ]
 }

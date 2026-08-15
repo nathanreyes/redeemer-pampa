@@ -103,14 +103,20 @@ module.exports = {
   css: ['~/assets/styles/tailwind.css'],
   hooks: {
     generate: {
-      before(nuxt) {
-        buildSiteContent();
+      async before(nuxt) {
+        // Must await: generate.routes below reads index.json off disk, and
+        // without this it gets the previous build's index.
+        await buildSiteContent();
       },
     },
   },
   generate: {
     routes: function() {
-      const sermons = require('./content/sermons/index.json');
+      // Read rather than require, so this picks up the index the hook above
+      // just wrote instead of a cached copy.
+      const sermons = JSON.parse(
+        fs.readFileSync(path.resolve(__dirname, './content/sermons/index.json')),
+      );
       return sermons.map(sermon => `/sermons${sermon.path}`);
     },
   },

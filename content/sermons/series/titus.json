@@ -1,0 +1,55 @@
+{
+  "title": "Titus",
+  "sermons": [
+    {
+      "guid": "431264b8-f7ec-4e3e-83ca-7c28b9bab99f",
+      "title": "Titus 3.2",
+      "leader": "Jeremy Buck",
+      "series": "Titus",
+      "date": "2025-07-06T05:00:00.000Z",
+      "summary": "Titus 3:8-15",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-3-2-e355tar",
+      "files": []
+    },
+    {
+      "guid": "8fc4e27d-6be2-4a91-84b3-e387e57b5969",
+      "title": "Titus 3",
+      "leader": "Jeremy Buck",
+      "series": "Titus",
+      "date": "2025-06-29T05:00:00.000Z",
+      "summary": "Titus 3:1-8",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-3-e34se3f",
+      "files": []
+    },
+    {
+      "guid": "dd1812e3-d069-471e-bd22-ec17ee29d203",
+      "title": "Titus 2.3",
+      "leader": "Jeremy Buck",
+      "series": "Titus",
+      "date": "2025-06-22T05:00:00.000Z",
+      "summary": "Titus 2:10-15",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-2-3-e34j1ep",
+      "files": []
+    },
+    {
+      "guid": "eb2fb538-f655-478c-a942-48ee767b03ac",
+      "title": "Titus 1",
+      "leader": "Jeremy Buck",
+      "series": "Titus",
+      "date": "2025-06-01T05:00:00.000Z",
+      "summary": "Titus 1",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus-1-e33l88f",
+      "files": []
+    },
+    {
+      "guid": "9121a647-6a59-4437-9ee3-be13e1191ba1",
+      "title": "Titus - Intro",
+      "leader": "Jeremy Buck",
+      "series": "Titus",
+      "date": "2025-05-25T05:00:00.000Z",
+      "summary": "Titus 1:1-4",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Titus---Intro-e33b57d",
+      "files": []
+    }
+  ]
+}

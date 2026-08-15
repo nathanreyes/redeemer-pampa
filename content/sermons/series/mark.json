@@ -275,10 +275,11 @@
       "title": "Luke 1",
       "leader": "Jeremy Buck",
       "series": "Mark",
-      "date": "2022-03-06T00:00:00.000Z",
+      "date": "2022-03-06T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Luke-1-e1fan7e",
-      "files": []
+      "files": [],
+      "guid": "1daf53b9-8b43-4503-a050-3ad18a93a9e7"
     }
   ]
 }

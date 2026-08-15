@@ -2,94 +2,544 @@
   "title": "2024",
   "sermons": [
     {
+      "guid": "23dac67d-1bfc-402e-a06c-af917861460d",
+      "title": "2 Corinthians 7",
+      "leader": "Danny Hendricks",
+      "series": "2 Corinthians",
+      "date": "2024-12-29T06:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-7-e2srnkv",
+      "files": []
+    },
+    {
+      "guid": "e545237d-14e9-4cd2-8c2d-105b0b4249fe",
+      "title": "Advent 2024 - Love",
+      "leader": "Jeremy Buck",
+      "series": "Advent - Love",
+      "date": "2024-12-22T06:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Love-e2skthg",
+      "files": []
+    },
+    {
+      "guid": "58a7f940-ab03-416e-a5a1-ae6b0de291ea",
+      "title": "Advent 2024 - Joy",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2024",
+      "date": "2024-12-15T06:00:00.000Z",
+      "summary": "Joy",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Joy-e2sbqvt",
+      "files": []
+    },
+    {
+      "guid": "bb4de50b-ad51-4c7f-a032-0b3d400a9fa7",
+      "title": "Advent 2024 - Peace",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2024",
+      "date": "2024-12-08T06:00:00.000Z",
+      "summary": "Peace",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Peace-e2s21fg",
+      "files": []
+    },
+    {
+      "guid": "134718fa-0f7d-4d85-8b6f-069f3bb707e1",
+      "title": "Advent 2024 - Hope",
+      "leader": "Jeremy Buck",
+      "series": "Advent 2024",
+      "date": "2024-12-01T06:00:00.000Z",
+      "summary": "Hope",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Advent-2024---Hope-e2rnvcs",
+      "files": []
+    },
+    {
+      "guid": "68dff350-acd4-47ea-9a17-393550779e83",
+      "title": "2 Corinthians 6.2",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-11-24T06:00:00.000Z",
+      "summary": "2 Corinthians 6:14-7:1",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-6-2-e2reeg2",
+      "files": []
+    },
+    {
+      "guid": "042db4c5-afcb-4008-89e4-20ad4a88f272",
+      "title": "Ladies Equip - Advent 2024 ",
+      "leader": "Kate Ritchie",
+      "series": "Ladies Equip",
+      "date": "2024-11-19T06:00:00.000Z",
+      "summary": "Light of Christ",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Ladies-Equip---Advent-2024-e2r7t6r",
+      "files": []
+    },
+    {
+      "guid": "1a3fbd37-45cc-4c2a-8c45-d11bf2f9b3a6",
+      "title": "2 Corinthians 6.1",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-11-17T06:00:00.000Z",
+      "summary": "2 Corinthians 6:1-13",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-6-1-e2r3t3l",
+      "files": []
+    },
+    {
+      "guid": "f77772a4-a14c-48d3-8b84-e098d59c7970",
+      "title": "2 Corinthians 5.2",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-11-10T06:00:00.000Z",
+      "summary": "2 Corinthians 5:11-21",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-5-2-e2qpq6i",
+      "files": []
+    },
+    {
+      "guid": "990f1127-8b91-44f3-9eca-3df13dfec293",
+      "title": "2 Corinthians 5",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-11-03T05:00:00.000Z",
+      "summary": "2 Corinthians 5",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-5-e2qgdo3",
+      "files": []
+    },
+    {
+      "guid": "133a3b63-297c-4ed5-9d6a-81c0c2311b2e",
+      "title": "2 Corinthians 4",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-10-27T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-4-e2q72nr",
+      "files": []
+    },
+    {
+      "guid": "33537573-0ed2-4f29-b2e6-d6ae1adce909",
+      "title": "2 Corinthians 3",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-10-20T05:00:00.000Z",
+      "summary": "2 Corinthians 3:1-18",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-3-e2ptie2",
+      "files": []
+    },
+    {
+      "guid": "aff9933a-366f-4678-aea4-86f3b5335247",
+      "title": "2 Corinthians 2.3",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-10-13T05:00:00.000Z",
+      "summary": "2 Corinthians 2:12-17",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-2-3-e2pjo2e",
+      "files": []
+    },
+    {
+      "guid": "7543e3e2-c6b0-4ccb-864e-355c6622a982",
+      "title": "2 Corinthians 2.2",
+      "leader": "Danny Hendricks",
+      "series": "2 Corinthians",
+      "date": "2024-10-06T05:00:00.000Z",
+      "summary": "2 Corinthians 2:5-11",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-2-2-e2pa08c",
+      "files": []
+    },
+    {
+      "guid": "c4086097-cdd7-4811-8dde-0b2cc464914c",
+      "title": "2 Corinthians 1.2",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-09-29T05:00:00.000Z",
+      "summary": "2 Corinthians 1:12-2:4",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-1-2-e2p0mpg",
+      "files": []
+    },
+    {
+      "guid": "8e7cb344-498f-4a85-b1c1-637bcd7c2b96",
+      "title": "2 Corinthians 1.1",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-09-22T05:00:00.000Z",
+      "summary": "2 Corinthians 1:3-11",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/2-Corinthians-1-1-e2one3f",
+      "files": []
+    },
+    {
+      "guid": "df89c9fa-4ad6-47a4-9966-8ddf35fafe8e",
+      "title": "Introduction to 2 Corinthians",
+      "leader": "Jeremy Buck",
+      "series": "2 Corinthians",
+      "date": "2024-09-15T05:00:00.000Z",
+      "summary": "2 Corinthians 1:1-4",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Introduction-to-2-Corinthians-e2oe5pn",
+      "files": []
+    },
+    {
+      "guid": "84d9956f-b75f-48a6-a886-7845704170a3",
+      "title": "Daniel Closing",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-09-08T05:00:00.000Z",
+      "summary": "Jeremiah 29",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-Closing-e2o50d1",
+      "files": []
+    },
+    {
+      "guid": "ff297908-5bb2-41cf-b7a2-c395737eb115",
+      "title": "Daniel 12",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-09-01T05:00:00.000Z",
+      "summary": "Daniel 12",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-12-e2nsaa0",
+      "files": []
+    },
+    {
+      "guid": "41161c08-4b48-4fc0-99d1-86aae6b90a3b",
+      "title": "Daniel 11",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-08-25T05:00:00.000Z",
+      "summary": "Daniel 11",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-11-e2njcud",
+      "files": []
+    },
+    {
+      "guid": "8e7cee78-65d6-4594-ad66-41993d046d60",
+      "title": "Daniel 10",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-08-18T05:00:00.000Z",
+      "summary": "Daniel 10",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-10-e2nambe",
+      "files": []
+    },
+    {
+      "guid": "e67aee45-1fc0-48c0-853d-bb372beeee62",
+      "title": "Daniel 9",
+      "leader": "Jeremy Buck",
+      "series": "",
+      "date": "2024-08-11T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-9-e2n2fim",
+      "files": []
+    },
+    {
+      "guid": "57ca28d8-d516-43b9-b278-3349a776713a",
+      "title": "Daniel 8",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-08-04T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-8-e2mq8gm",
+      "files": []
+    },
+    {
+      "guid": "bb4b5ecd-124d-485a-814f-7f51cb2e3f8a",
+      "title": "Daniel 7",
+      "leader": "Jeremy Buck",
+      "series": "",
+      "date": "2024-07-28T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-7-e2mhv4o",
+      "files": []
+    },
+    {
+      "guid": "f8082dc8-449f-40b1-b319-38f58da9adc8",
+      "title": "Daniel 6",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-07-21T05:00:00.000Z",
+      "summary": "Daniel 6",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-6-e2m9cd4",
+      "files": []
+    },
+    {
+      "guid": "826be642-6f64-4f6a-a6a0-15057c512fe6",
+      "title": "Daniel 5",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-07-14T05:00:00.000Z",
+      "summary": "Daniel 5",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-5-e2m0s2j",
+      "files": []
+    },
+    {
+      "guid": "f389a528-c301-4032-8517-23b32752a452",
+      "title": "Daniel 4",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-07-07T05:00:00.000Z",
+      "summary": "Daniel 4",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-4-e2lof68",
+      "files": []
+    },
+    {
+      "guid": "6a22f111-46fe-4b82-901e-97dd7bf6620a",
+      "title": "Daniel 3",
+      "leader": "Jeremy Buck",
+      "series": "Daniel",
+      "date": "2024-06-24T05:00:00.000Z",
+      "summary": "Daniel 3",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-3-e2lft27",
+      "files": []
+    },
+    {
+      "guid": "807697e7-3c71-439d-8ed5-6885f2945516",
+      "title": "Daniel 2:1-49",
+      "leader": "Jeremy Buck",
+      "series": "",
+      "date": "2024-06-23T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-21-49-e2l76gn",
+      "files": []
+    },
+    {
+      "guid": "8b091134-27ea-4193-8f09-04fb49a05a48",
+      "title": "Daniel 1:1-21",
+      "leader": "Jeremy Buck",
+      "series": "",
+      "date": "2024-06-16T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Daniel-11-21-e2kur7v",
+      "files": []
+    },
+    {
+      "guid": "e166711a-c19f-4572-988f-656777b445eb",
+      "title": "Acts 28.2 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-06-09T05:00:00.000Z",
+      "summary": "Acts 28:17-31",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-28-2---2024-e2km75m",
+      "files": []
+    },
+    {
+      "guid": "035b7e73-f408-4c74-8fe8-94d7fd5b4cd1",
+      "title": "Acts 28.1 - 2024",
+      "leader": "Danny Hendricks",
+      "series": "Acts 23/24",
+      "date": "2024-06-02T05:00:00.000Z",
+      "summary": "Acts 28:1-16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-28-1---2024-e2kdeir",
+      "files": []
+    },
+    {
+      "guid": "616f61ea-051b-4547-8781-84661342e1ca",
+      "title": "Acts 27 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-05-26T05:00:00.000Z",
+      "summary": "Acts 27",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-27---2024-e2k8m6f",
+      "files": []
+    },
+    {
+      "guid": "55df7d59-b31e-4dec-b228-4e391e632002",
+      "title": "Acts 25-26 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-05-19T05:00:00.000Z",
+      "summary": "Acts 25-26",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-25-26---2024-e2jriif",
+      "files": []
+    },
+    {
+      "guid": "751d33e8-7c7e-4d97-ab5a-2323a6042f02",
+      "title": "Acts 24 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-05-12T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-24---2024-e2jief5",
+      "files": []
+    },
+    {
+      "guid": "efb06ae1-09ba-4e4c-a600-19813e3d6eee",
+      "title": "Acts 23.1 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-05-05T05:00:00.000Z",
+      "summary": "Acts 22:30-Acts 23",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-23-1---2024-e2j99df",
+      "files": []
+    },
+    {
+      "guid": "bd7aac62-8c34-47aa-a9ea-e64963555190",
+      "title": "Acts 22.1 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts - 23/24",
+      "date": "2024-04-28T05:00:00.000Z",
+      "summary": "Acts 21:37 - Acts 22:29",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-22-1---2024-e2ivuq6",
+      "files": []
+    },
+    {
+      "guid": "e81c6fff-282c-491c-a7d1-8636cfa503dc",
+      "title": "Acts 21.2 - 2024",
+      "leader": "Dan Fowler",
+      "series": "Acts 23/24",
+      "date": "2024-04-21T05:00:00.000Z",
+      "summary": "Acts 21-17-36",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-21-2---2024-e2im7so",
+      "files": []
+    },
+    {
+      "guid": "ba386d14-1790-4580-8ddf-5dcc64453270",
+      "title": "Acts 21.1 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts - 23/24",
+      "date": "2024-04-14T05:00:00.000Z",
+      "summary": "Acts 21: 1-16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-21-1---2024-e2icobf",
+      "files": []
+    },
+    {
+      "guid": "6f9c9eb4-3587-4512-ac52-353eaf5b73f6",
+      "title": "Acts 20.2 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-04-07T05:00:00.000Z",
+      "summary": "Acts 20:17-38",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-20-2---2024-e2i3ats",
+      "files": []
+    },
+    {
+      "guid": "e0dd126b-addf-41f8-a667-482ee73a9fdc",
+      "title": "Easter - Implications of Resurrection",
+      "leader": "Jeremy Buck",
+      "series": "",
+      "date": "2024-03-31T05:00:00.000Z",
+      "summary": "Zeph 3",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Easter---Implications-of-Resurrection-e2hpnod",
+      "files": []
+    },
+    {
+      "guid": "835a242c-ff9b-498b-876f-40f27c0ce4d5",
+      "title": "Good Friday - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Good Friday",
+      "date": "2024-03-29T05:00:00.000Z",
+      "summary": "",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Good-Friday---2024-e2ho7vl",
+      "files": []
+    },
+    {
+      "guid": "6f312e86-c63d-42d3-93d4-473c3c9403b0",
+      "title": "Acts 20.1 - 2024",
+      "leader": "Jeremy Buck",
+      "series": "Acts 23/24",
+      "date": "2024-03-24T05:00:00.000Z",
+      "summary": "Acts 20:1-16",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-20-1---2024-e2hgir9",
+      "files": []
+    },
+    {
+      "guid": "7ee88453-3709-400d-a053-c154033579ee",
+      "title": "Acts 19",
+      "leader": "Jeremy Buck",
+      "series": "",
+      "date": "2024-03-17T05:00:00.000Z",
+      "summary": "Acts 19:1-41",
+      "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-19-e2h6ks9",
+      "files": []
+    },
+    {
       "title": "Acts 18.2 -2024",
       "leader": "Jeremy Buck",
       "series": "Acts 23/24",
-      "date": "2024-03-10T00:00:00.000Z",
-      "summary": "Acts 18",
+      "date": "2024-03-10T06:00:00.000Z",
+      "summary": "Acts 18:18-28",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-18-2--2024-e2gso6o",
-      "files": []
+      "files": [],
+      "guid": "dc188d40-75b2-4f1f-af20-709f7d314f13"
     },
     {
       "title": "Acts 18.1 - 2024",
       "leader": "Danny Hendricks",
       "series": "Acts 23/24",
-      "date": "2024-03-03T00:00:00.000Z",
-      "summary": "Acts 18",
+      "date": "2024-03-03T06:00:00.000Z",
+      "summary": "Acts 18:1-17",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-18-1---2024-e2gj6cg",
-      "files": []
+      "files": [],
+      "guid": "8aa31bd7-03a9-4eed-bdbb-d144f6c0f28e"
     },
     {
       "title": "Acts 17.2 - 2024",
       "leader": "Jeremy Buck",
       "series": "Acts 23/24",
-      "date": "2024-02-25T00:00:00.000Z",
-      "summary": "Acts 17",
+      "date": "2024-02-25T06:00:00.000Z",
+      "summary": "Acts 17:16-34",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-17-2---2024-e2g8k98",
-      "files": []
+      "files": [],
+      "guid": "b10d7914-441e-4d9c-9853-5967295d3dd8"
     },
     {
       "title": "Acts 17 - 2024",
       "leader": "Jeremy Buck",
       "series": "Acts 23/24",
-      "date": "2024-02-19T00:00:00.000Z",
+      "date": "2024-02-19T06:00:00.000Z",
       "summary": "Acts 17",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-17---2024-e2fuo3r",
-      "files": []
+      "files": [],
+      "guid": "30e2df53-ef02-40fb-ad7d-1f7dbd1af683"
     },
     {
       "title": "Acts 16 2024",
       "leader": "Jeremy Buck",
       "series": "Acts 23/24",
-      "date": "2024-02-11T00:00:00.000Z",
-      "summary": "Acts 16",
+      "date": "2024-02-11T06:00:00.000Z",
+      "summary": "Acts 16:10-40",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-16-2024-e2fl7mk",
-      "files": []
+      "files": [],
+      "guid": "3805d48a-55cc-444c-a2f9-c40f7af26017"
     },
     {
       "title": "Acts 15.2 2024",
       "leader": "Jeremy Buck",
       "series": "Acts 23/24",
-      "date": "2024-02-04T00:00:00.000Z",
-      "summary": "Acts 15",
+      "date": "2024-02-04T06:00:00.000Z",
+      "summary": "Acts 15:35-16:10",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-15-2-2024-e2fbp6u",
-      "files": []
+      "files": [],
+      "guid": "55907c63-5cb9-413c-9962-6ee7b1717764"
     },
     {
       "title": "Acts 15.1 - 2024",
       "leader": "Jeremy Buck",
       "series": "Acts - 2024",
-      "date": "2024-01-28T00:00:00.000Z",
-      "summary": "Acts 15",
+      "date": "2024-01-28T06:00:00.000Z",
+      "summary": "Acts 15:1-35",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-15-1---2024-e2f2117",
-      "files": []
+      "files": [],
+      "guid": "3b94d870-5165-4d09-9be8-cd86335bb0fd"
     },
     {
       "title": "Acts 14 - 2024",
       "leader": "Jeremy Buck",
-      "series": "Acts 2024",
-      "date": "2024-01-21T00:00:00.000Z",
+      "series": "Acts - 23/24",
+      "date": "2024-01-21T06:00:00.000Z",
       "summary": "",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-14---2024-e2eo6c8",
-      "files": []
+      "files": [],
+      "guid": "68e50483-e2e6-497f-ae07-6927781d05cf"
     },
     {
       "title": "Acts 13.2 - 2024",
       "leader": "Jeremy Buck",
       "series": "Acts 23/24",
-      "date": "2024-01-14T00:00:00.000Z",
-      "summary": "Acts 13",
+      "date": "2024-01-14T06:00:00.000Z",
+      "summary": "Acts 13:13-52",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-13-2---2024-e2eedrn",
-      "files": []
+      "files": [],
+      "guid": "9dc3b4c3-e961-400b-82a2-ce9527dad7d8"
     },
     {
       "title": "Acts 13.1 - 2024",
       "leader": "Jeremy Buck",
-      "series": "Acts 23-24",
-      "date": "2024-01-07T00:00:00.000Z",
-      "summary": "Acts 13",
+      "series": "Acts - 23/24",
+      "date": "2024-01-07T06:00:00.000Z",
+      "summary": "Acts 13:1-12",
       "podcastUrl": "https://podcasters.spotify.com/pod/show/redeemer-pampa-podcast/episodes/Acts-13-1---2024-e2e4bqe",
-      "files": []
+      "files": [],
+      "guid": "09545c79-0427-4bba-b02d-b48a18bc0d8b"
     }
   ]
 }

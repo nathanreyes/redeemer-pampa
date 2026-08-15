@@ -18,16 +18,75 @@ const enumerateJSONFiles = (dir, action) => {
   });
 };
 
-const getDefaultDateFromPodcast = p => {
-  let date = new Date(Date.parse(p.pubDate));
-  const year = date.getFullYear();
-  const month = date.getMonth();
-  const day = date.getDate();
-  return new Date(year, month, day);
+// fast-xml-parser gives `{ '#text': '...', '@_isPermaLink': 'false' }` for tags
+// that carry attributes, so unwrap before use.
+const getPodcastGuid = p => {
+  const guid = p && p.guid;
+  if (guid && typeof guid === 'object') return String(guid['#text'] || '').trim();
+  return guid ? String(guid).trim() : '';
 };
 
+// Identity for a sermon, most stable first. The podcast URL is NOT stable — the
+// host moved episodes from anchor.fm to podcasters.spotify.com, which is why the
+// archive accumulated a second copy of every 2018-2021 sermon. The trailing
+// Anchor episode id survived that move, so it re-links the legacy records.
+const getEpisodeId = url => {
+  const match = /\/episodes?\/.*-(e[0-9a-z]{5,})\/?$/.exec(url || '');
+  return match ? match[1] : '';
+};
+
+// A record is indexed under EVERY identity it carries, and matched by trying
+// them in order. Existing records predate the guid field, so a feed item has to
+// be able to find them by episode id or URL and adopt them.
+const getSermonKeys = sermon => {
+  const keys = [];
+  if (sermon.guid) keys.push(`guid:${sermon.guid}`);
+  const episodeId = getEpisodeId(sermon.podcastUrl);
+  if (episodeId) keys.push(`episode:${episodeId}`);
+  if (sermon.podcastUrl) keys.push(`url:${sermon.podcastUrl}`);
+  if (!keys.length) keys.push(`title:${sermon.title}|${new Date(sermon.date).getTime()}`);
+  return keys;
+};
+
+// Strip a date down to local midnight so year bucketing never drifts across
+// timezones. Parsing '2026-01-01' with `new Date` yields UTC midnight, which is
+// still Dec 31 in US timezones and would file the sermon under the wrong year.
+const toLocalMidnight = date =>
+  new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+const getDefaultDateFromPodcast = p => toLocalMidnight(new Date(Date.parse(p.pubDate)));
+
+const parseSermonDate = value => {
+  const ymd = /^(\d{4})-(\d{1,2})-(\d{1,2})/.exec(value.trim());
+  if (ymd) return new Date(+ymd[1], +ymd[2] - 1, +ymd[3]);
+  const parsed = new Date(value);
+  return isNaN(parsed.getTime()) ? null : toLocalMidnight(parsed);
+};
+
+const decodeEntities = str =>
+  str
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&amp;/gi, '&');
+
+// The podcast host emits each field as its own block element with no newlines
+// between them. Turn block boundaries into line breaks BEFORE stripping tags,
+// otherwise every field collapses into one string and only the first survives.
+const descriptionToLines = html =>
+  html
+    .replace(/<\/(p|div|li|h[1-6])\s*>/gi, '\n')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]*>/g, '')
+    .split('\n')
+    .map(line => decodeEntities(line).replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+
 const getSermonFromPodcast = podcast => {
-  const defaultSermon = {
+  const sermon = {
+    guid: getPodcastGuid(podcast),
     title: podcast.title,
     leader: 'Jeremy Buck',
     series: '',
@@ -37,83 +96,145 @@ const getSermonFromPodcast = podcast => {
     files: [],
   };
   if (podcast.description) {
-    const keyValueStrings = podcast.description.split('\n');
-    keyValueStrings.forEach(kvString => {
-      kvString = kvString.replace(/(<([^>]+)>)/gi, "").replace(/&nbsp;/gi,'');
-      const [key, value] = kvString.split(':').map(p => p.trim());
-      switch (key.toLowerCase()) {
+    descriptionToLines(podcast.description).forEach(line => {
+      // Split on the FIRST colon only, so values containing colons
+      // ('Matthew 12:38-50') survive intact.
+      const separator = line.indexOf(':');
+      if (separator < 1) return;
+      const key = line.slice(0, separator).trim().toLowerCase();
+      const value = line.slice(separator + 1).trim();
+      if (!value) return;
+      switch (key) {
         case 'leader':
-          defaultSermon.leader = value;
+          sermon.leader = value;
           break;
         case 'series':
-          defaultSermon.series = value;
+          sermon.series = value;
           break;
-        case 'date':
-          defaultSermon.date = new Date(value);
+        case 'date': {
+          const date = parseSermonDate(value);
+          if (date) sermon.date = date;
           break;
+        }
         case 'summary':
-          defaultSermon.summary = value;
+          sermon.summary = value;
           break;
       }
     });
   }
-  return defaultSermon;
+  return sermon;
 };
 
 const getYearFromSermon = sermon => {
-  const year = sermon.date.getFullYear();
+  const year = new Date(sermon.date).getFullYear();
   if (isNaN(year) || !year) return 'Unknown';
   return year;
-}
+};
+
+const yearDir = () => path.resolve('./content/sermons/year');
+
+// Load every existing sermon into one list. Year files are only a storage
+// layout, so dedupe and re-filing have to happen across all of them at once —
+// a sermon whose corrected date moves it into another year must not leave a
+// stale copy behind in the old one.
+const loadExistingSermons = () => {
+  const dir = yearDir();
+  if (!fs.existsSync(dir)) return [];
+  const sermons = [];
+  enumerateJSONFiles(dir, ({ data }) => {
+    if (data && Array.isArray(data.sermons)) sermons.push(...data.sermons);
+  });
+  return sermons;
+};
 
 const fetchPodcasts = async () => {
-  let newSermonCount = 0;
   console.log(`Fetching sermons at ${podcastUrl}`);
-  const res = await axios.get(podcastUrl, {
-    responseType: 'xml',
-  });
-  // Validate the podcast xml data
-  if (parser.validate(res.data)) {
-    var sermons = {};
-    var json = parser.parse(res.data, {
-      ignoreAttributes: false,
-    });
-    // Get the podcasts from the fetched rss data
-    var podcastsFromFeed = json.rss.channel.item;
-    // For each podcast...
-    podcastsFromFeed.forEach(p => {
-      const sermon = getSermonFromPodcast(p);
-      const year = getYearFromSermon(sermon);
-      const filePath = path.resolve(`./content/sermons/year/${year}.json`);
-      const fileExists = fs.existsSync(filePath);
-      if (!sermons[year]) {
-        sermons[year] = {
-          sermons: fileExists ? require(filePath).sermons : [],
-          filePath,
-        }
-      }
-      const sermonsList = sermons[year].sermons;
-      // Add sermon to list if it hasn't already been added
-      if (!sermonsList.find(s => s.podcastUrl === p.link)) {
-        sermonsList.push(sermon);
-        newSermonCount++;
-      }
-    });
-    console.log(`Added ${newSermonCount} new sermons`);
-    // Save sermon files that changed
-    Object.keys(sermons).forEach(key => {
-      // Sort sermons before saving
-      const sermonList = sermons[key].sermons.sort(
-        (a, b) => new Date(b.date) - new Date(a.date),
-      );
-      const data = {
-        title: key,
-        sermons: sermonList,
-      };
-      console.log(`Saving sermons to ${sermons[key].filePath}...`);
-      fs.writeFileSync(sermons[key].filePath, JSON.stringify(data, null, 2));
-    });
+  const res = await axios.get(podcastUrl, { responseType: 'xml' });
+  if (!parser.validate(res.data)) {
+    throw new Error(`Podcast feed at ${podcastUrl} is not valid XML`);
   }
+
+  const json = parser.parse(res.data, { ignoreAttributes: false });
+  const podcastsFromFeed = [].concat(json.rss.channel.item || []);
+
+  // Seed with what's already on disk. Sermons predating the podcast (the
+  // 2011-2017 archive hosted on Backblaze) are not in the feed and must survive
+  // untouched.
+  const records = [];
+  const index = new Map();
+  const register = record =>
+    getSermonKeys(record).forEach(key => index.set(key, record));
+  const lookup = record => {
+    const key = getSermonKeys(record).find(k => index.has(k));
+    return key ? index.get(key) : null;
+  };
+
+  let duplicatesCollapsed = 0;
+  loadExistingSermons().forEach(sermon => {
+    if (lookup(sermon)) {
+      duplicatesCollapsed++;
+      return;
+    }
+    records.push(sermon);
+    register(sermon);
+  });
+
+  // Merge the feed over the top. The feed is authoritative for the fields it
+  // publishes; anything added locally (files) is preserved.
+  let added = 0;
+  let repaired = 0;
+  podcastsFromFeed.forEach(p => {
+    const sermon = getSermonFromPodcast(p);
+    const existing = lookup(sermon);
+    if (!existing) {
+      records.push(sermon);
+      register(sermon);
+      added++;
+      return;
+    }
+    const changed =
+      ['leader', 'series', 'summary', 'title'].some(
+        field => existing[field] !== sermon[field],
+      ) || +new Date(existing.date) !== +new Date(sermon.date);
+    if (changed) repaired++;
+    // Mutate in place so the record stays the one already in `records`.
+    Object.assign(existing, sermon, {
+      files: existing.files && existing.files.length ? existing.files : sermon.files,
+    });
+    register(existing);
+  });
+
+  // Re-bucket everything by year from scratch.
+  const byYear = {};
+  records.forEach(sermon => {
+    const year = getYearFromSermon(sermon);
+    (byYear[year] = byYear[year] || []).push(sermon);
+  });
+
+  console.log(
+    `Added ${added} new sermons, repaired ${repaired}, collapsed ${duplicatesCollapsed} duplicates`,
+  );
+
+  // Remove year files that no longer have any sermons, so nothing stale lingers.
+  fs.readdirSync(yearDir())
+    .filter(file => file.endsWith('.json'))
+    .forEach(file => {
+      if (!byYear[file.replace('.json', '')]) {
+        fs.unlinkSync(path.resolve(yearDir(), file));
+      }
+    });
+
+  Object.keys(byYear).forEach(year => {
+    const filePath = path.resolve(yearDir(), `${year}.json`);
+    const sermonList = byYear[year].sort(
+      (a, b) => new Date(b.date) - new Date(a.date),
+    );
+    console.log(`Saving ${sermonList.length} sermons to ${filePath}...`);
+    fs.writeFileSync(
+      filePath,
+      JSON.stringify({ title: year, sermons: sermonList }, null, 2),
+    );
+  });
 };
 
 const buildSeries = () => {
@@ -135,9 +256,10 @@ const buildSeries = () => {
     const seriesFilePath = path.resolve(seriesDir, `${fileName}.json`);
     let seriesData;
     if (fs.existsSync(seriesFilePath)) {
-      const requireFile = require(seriesFilePath);
+      // Read, don't require — require caches, and this file is rewritten below.
+      const existing = JSON.parse(fs.readFileSync(seriesFilePath));
       seriesData = {
-        ...requireFile,
+        ...existing,
         title: key,
         sermons: seriesSermons,
       };
@@ -182,8 +304,17 @@ const buildSiteContent = async () => {
   // Clear content directories
   console.log('Clearing existing sermon series data...')
   fsExtra.emptyDirSync(dirSeries);
-  // Fetch the podcasts to update sermon content
-  await fetchPodcasts();
+  // Refresh sermon content from the podcast feed. The archive is committed to
+  // the repo, so a feed outage must not fail the deploy — warn loudly and build
+  // from what's already on disk. (Before this was awaited, a failure here was an
+  // unhandled rejection that happened to let the build continue.)
+  try {
+    await fetchPodcasts();
+  } catch (err) {
+    console.warn(
+      `WARNING: could not refresh sermons from the podcast feed, building from committed content instead.\n  ${err.message}`,
+    );
+  }
   // Fill the series content
   buildSeries();
   // Build sermon indices
@@ -213,6 +344,14 @@ const buildSiteContent = async () => {
   writeIndex(sermonIndex, path.resolve('./content/sermons', 'index.json'));
 };
 
-buildSiteContent();
+// Run directly (`node util/buildSiteContent.js`) but NOT on require — importing
+// this module from nuxt.config.js used to kick off a second, concurrent build
+// racing the one the generate hook starts.
+if (require.main === module) {
+  buildSiteContent().catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+}
 
 module.exports = buildSiteContent;
