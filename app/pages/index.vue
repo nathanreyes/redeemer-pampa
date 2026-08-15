@@ -51,6 +51,9 @@ const sections = [
   },
 ];
 
+// Plain Google Maps URL — no API key, no SDK, works on every device.
+const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${churchInfo.latitude},${churchInfo.longitude}`;
+
 const hero =
   'https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,w_1800/v1749519927/group-prayer-edit.jpg';
 const heroSmall =
@@ -139,6 +142,59 @@ const heroSmall =
         </div>
       </section>
     </div>
+
+    <!-- Visit / contact. The old site had a Netlify Forms contact form and an
+         embedded Google map; neither survives the move off Netlify, and the map
+         cost an API key plus an SDK on every page. Direct details and a
+         directions link do the same job with no third party involved. -->
+    <section id="visit" class="border-b border-ink-100 bg-ink-50 py-20">
+      <div class="mx-auto max-w-6xl px-5">
+        <h2 class="text-title font-medium">Visit us</h2>
+        <div class="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <h3 class="font-sans text-sm font-semibold uppercase tracking-wider text-brand-700">
+              Gatherings
+            </h3>
+            <p class="mt-3 text-ink-600">{{ churchInfo.serviceTime }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-sans text-sm font-semibold uppercase tracking-wider text-brand-700">
+              Where
+            </h3>
+            <p class="mt-3 text-ink-600">
+              {{ churchInfo.address.street }}<br />
+              {{ churchInfo.address.city }}, {{ churchInfo.address.state }}
+              {{ churchInfo.address.zip }}
+            </p>
+            <a
+              :href="directionsUrl"
+              target="_blank"
+              rel="noopener"
+              class="mt-3 inline-block text-sm font-semibold text-brand-700 underline"
+            >
+              Get directions
+            </a>
+          </div>
+
+          <div>
+            <h3 class="font-sans text-sm font-semibold uppercase tracking-wider text-brand-700">
+              Get in touch
+            </h3>
+            <p class="mt-3 text-ink-600">
+              <a :href="`tel:${churchInfo.phone}`" class="hover:text-brand-700">
+                {{ churchInfo.phone }}
+              </a>
+            </p>
+            <p class="mt-1 break-words text-ink-600">
+              <a :href="`mailto:${churchInfo.email}`" class="hover:text-brand-700">
+                {{ churchInfo.email }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Pull quote. Flat field, no tiled SVG pattern. -->
     <section class="bg-brand-900 py-24">
