@@ -1,0 +1,2 @@
+# Podcast feed redirect, ported from netlify.toml
+/resources/sermons/*  https://anchor.fm/s/530ebe8/podcast/rss  302
