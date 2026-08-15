@@ -33,16 +33,19 @@ useHead({ title: 'About — Redeemer Pampa' });
         class="grid grid-cols-1 gap-x-10 gap-y-4 border-b border-earth-900/15 py-10 md:grid-cols-12"
       >
         <div class="md:col-span-3">
-          <img
-            v-if="person.imgUrl"
-            :src="person.imgUrl"
-            :alt="`Portrait of ${person.name}`"
-            width="480"
-            height="600"
-            loading="lazy"
-            decoding="async"
-            class="aspect-4/5 w-full max-w-[13rem] object-cover grayscale transition-all duration-500 hover:grayscale-0"
-          />
+          <!-- The duotone now does what the CSS grayscale filter used to, and
+               does it on the server, so the hover-to-colour is gone. -->
+          <div v-if="person.imgUrl" class="photo max-w-[13rem]">
+            <img
+              :src="treated(person.imgUrl)"
+              :alt="`Portrait of ${person.name}`"
+              width="480"
+              height="600"
+              loading="lazy"
+              decoding="async"
+              class="aspect-4/5 w-full object-cover"
+            />
+          </div>
         </div>
         <div class="md:col-span-4">
           <h2 class="text-section normal-case text-earth-900">{{ person.name }}</h2>

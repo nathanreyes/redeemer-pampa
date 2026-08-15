@@ -3,25 +3,22 @@ import content from '~~/content/pages/home.json';
 
 const { churchInfo, bannerMessage } = content;
 
-const cld = 'https://res.cloudinary.com/do3iknsvm/image/upload';
-const img = (t: string, v: string) => `${cld}/${t}/${v}`;
-
 // Photography is used boldly but rarely: three full-bleed bands, each acting
 // as the land beneath a horizon rule. Wide crops, because this is a landscape.
 const land = {
   hero: {
-    wide: img('q_auto,f_auto,c_fill,g_auto,ar_21:9,w_2400', 'v1749519927/group-prayer-edit.jpg'),
-    narrow: img('q_auto,f_auto,c_fill,g_auto,ar_4:3,w_1000', 'v1749519927/group-prayer-edit.jpg'),
+    wide: photo('v1749519927/group-prayer-edit.jpg', { ar: '21:9', w: 2400 }),
+    narrow: photo('v1749519927/group-prayer-edit.jpg', { ar: '4:3', w: 1000 }),
     alt: 'The congregation of Redeemer Pampa gathered in prayer',
   },
   gathering: {
-    wide: img('q_auto,f_auto,c_fill,g_auto,ar_21:9,w_2400', 'v1776817270/dan-clara.jpg'),
-    narrow: img('q_auto,f_auto,c_fill,g_auto,ar_4:3,w_1000', 'v1776817270/dan-clara.jpg'),
+    wide: photo('v1776817270/dan-clara.jpg', { ar: '21:9', w: 2400 }),
+    narrow: photo('v1776817270/dan-clara.jpg', { ar: '4:3', w: 1000 }),
     alt: 'Members of Redeemer Pampa gathered outdoors around a baptism',
   },
   sent: {
-    wide: img('q_auto,f_auto,c_fill,g_auto,ar_21:9,w_2400', 'v1749519928/living-sent.jpg'),
-    narrow: img('q_auto,f_auto,c_fill,g_auto,ar_4:3,w_1000', 'v1749519928/living-sent.jpg'),
+    wide: photo('v1749519928/living-sent.jpg', { ar: '21:9', w: 2400 }),
+    narrow: photo('v1749519928/living-sent.jpg', { ar: '4:3', w: 1000 }),
     alt: 'Volunteers of all ages packing grocery bags to give away',
   },
 };
@@ -108,7 +105,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
     </section>
 
     <!-- ================= LAND ================= -->
-    <figure class="relative">
+    <figure class="photo relative">
       <div class="horizon mx-5 text-earth-900 sm:mx-8"></div>
       <picture>
         <source :srcset="land.hero.wide" media="(min-width: 640px)" />
@@ -171,7 +168,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
     </section>
 
     <!-- ============ LAND: gathering ============ -->
-    <figure>
+    <figure class="photo">
       <picture>
         <source :srcset="land.gathering.wide" media="(min-width: 640px)" />
         <img
@@ -200,7 +197,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
     </section>
 
     <!-- ============ LAND: sent ============ -->
-    <figure>
+    <figure class="photo">
       <picture>
         <source :srcset="land.sent.wide" media="(min-width: 640px)" />
         <img

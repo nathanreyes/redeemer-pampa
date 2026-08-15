@@ -132,6 +132,27 @@
     border-left: 2px solid var(--color-wheat-500);
   }
 
+
+  /* --- Photographic grain ------------------------------------------------- */
+  /* Sits over every photograph. The duotone handles colour; this handles
+     texture — compression artefacts and phone-camera softness read as
+     intentional grain rather than as a bad photo. */
+  .photo {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    opacity: 0.22;
+    background-size: 160px 160px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+  }
+
   /* --- Staggered entrance ------------------------------------------------- */
   /* One orchestrated moment on load, nothing else. */
   .rise {
