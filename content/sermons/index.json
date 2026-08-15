@@ -104,48 +104,8 @@
     "path": "/series/acts"
   },
   {
-    "title": "Advent 2011",
-    "path": "/series/advent-2011"
-  },
-  {
-    "title": "Advent 2012",
-    "path": "/series/advent-2012"
-  },
-  {
-    "title": "Advent 2013",
-    "path": "/series/advent-2013"
-  },
-  {
-    "title": "Advent 2014",
-    "path": "/series/advent-2014"
-  },
-  {
-    "title": "Advent 2016",
-    "path": "/series/advent-2016"
-  },
-  {
-    "title": "Advent 2017",
-    "path": "/series/advent-2017"
-  },
-  {
-    "title": "Advent 2020",
-    "path": "/series/advent-2020"
-  },
-  {
-    "title": "Advent 2021",
-    "path": "/series/advent-2021"
-  },
-  {
-    "title": "Advent 2023",
-    "path": "/series/advent-2023"
-  },
-  {
-    "title": "Advent 2024",
-    "path": "/series/advent-2024"
-  },
-  {
-    "title": "Advent 2025",
-    "path": "/series/advent-2025"
+    "title": "Advent",
+    "path": "/series/advent"
   },
   {
     "title": "Amos",

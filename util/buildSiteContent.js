@@ -83,17 +83,13 @@ const seriesKey = name =>
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
 
-const normalizeSeries = (name, date) => {
+const normalizeSeries = name => {
   const raw = String(name || '').trim();
   if (!raw) return '';
   const key = seriesKey(raw);
-  // Advent is an annual season, so file each sermon under its own year rather
-  // than one perennial bucket. Every Advent sermon falls in Nov/Dec, so the
-  // calendar year is the right grouping.
-  if (key === 'advent' || key.indexOf('advent ') === 0) {
-    const year = new Date(date).getFullYear();
-    return isNaN(year) ? raw : `Advent ${year}`;
-  }
+  // Advent is one perennial series, so every Advent sermon lands in the same
+  // bucket regardless of the year or theme it was labelled with.
+  if (key === 'advent' || key.indexOf('advent ') === 0) return 'Advent';
   return SERIES_ALIASES[key] || raw;
 };
 
@@ -156,9 +152,9 @@ const getSermonFromPodcast = podcast => {
       }
     });
   }
-  // Applied last, not inside the switch above: Advent is filed by year, and the
-  // Date line may be parsed after the Series line.
-  sermon.series = normalizeSeries(sermon.series, sermon.date);
+  // Canonicalize here so feed data arrives already normalized and repeat builds
+  // are a no-op.
+  sermon.series = normalizeSeries(sermon.series);
   return sermon;
 };
 
@@ -245,7 +241,7 @@ const fetchPodcasts = async () => {
   // records alike, so the sidebar shows one entry per series.
   let seriesRenamed = 0;
   records.forEach(sermon => {
-    const normalized = normalizeSeries(sermon.series, sermon.date);
+    const normalized = normalizeSeries(sermon.series);
     if (normalized !== sermon.series) seriesRenamed++;
     sermon.series = normalized;
   });
