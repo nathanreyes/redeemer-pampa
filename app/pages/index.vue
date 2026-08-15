@@ -1,7 +1,29 @@
 <script setup lang="ts">
 import content from '~~/content/pages/home.json';
+import latest from '~~/content/sermons/latest.json';
+import { usePlayer, type Track } from '~/stores/player';
 
 const { churchInfo, bannerMessage } = content;
+
+const player = usePlayer();
+
+const latestTrack: Track = {
+  id: latest.guid || latest.audioUrl,
+  title: latest.title,
+  leader: latest.leader,
+  series: latest.series,
+  date: latest.date,
+  audioUrl: latest.audioUrl,
+  duration: latest.duration,
+};
+
+const isLatest = computed(() => player.current?.id === latestTrack.id);
+const latestDate = new Date(latest.date).toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
 
 // Photography is used boldly but rarely: three full-bleed bands, each acting
 // as the land beneath a horizon rule. Wide crops, because this is a landscape.
@@ -87,20 +109,40 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
       </h1>
 
       <div
-        class="rise mt-12 flex flex-wrap items-baseline justify-between gap-6 sm:mt-20"
+        class="rise mt-12 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-4 sm:mt-20"
         style="animation-delay: 560ms"
       >
         <p class="text-lede max-w-md font-light text-earth-600">
           {{ churchInfo.serviceTime }} at {{ churchInfo.address.street }}.
         </p>
         <div class="flex flex-wrap items-baseline gap-x-8 gap-y-3">
-          <NuxtLink to="/sermons" class="eyebrow border-b-2 border-wheat-500 pb-1 hover:text-wheat-600">
-            Listen to a sermon
+          <!-- Starts the newest sermon in place rather than sending people to
+               the archive to find it. -->
+          <button
+            class="eyebrow inline-flex items-center gap-2.5 border-b-2 border-wheat-500 pb-1 hover:text-wheat-600"
+            @click="player.play(latestTrack)"
+          >
+            <svg class="size-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <template v-if="isLatest && player.playing">
+                <rect x="4" y="3" width="4" height="14" />
+                <rect x="12" y="3" width="4" height="14" />
+              </template>
+              <path v-else d="M5 3l12 7-12 7z" />
+            </svg>
+            {{ isLatest && player.playing ? 'Playing latest' : 'Play latest sermon' }}
+          </button>
+          <NuxtLink to="/sermons" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
+            All sermons
           </NuxtLink>
           <NuxtLink to="/connect" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
             Plan a visit
           </NuxtLink>
         </div>
+
+        <p class="w-full text-sm text-earth-400 sm:text-right">
+          {{ latest.title }} · {{ latest.leader }} · {{ latestDate }}
+          <span v-if="latest.duration"> · {{ formatTime(latest.duration) }}</span>
+        </p>
       </div>
     </section>
 

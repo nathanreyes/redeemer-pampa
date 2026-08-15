@@ -444,6 +444,19 @@ const buildSiteContent = async () => {
   );
   console.log('Writing index...');
   writeIndex(sermonIndex, path.resolve('./content/sermons', 'index.json'));
+
+  // The newest playable sermon, written on its own so the homepage can offer
+  // it without pulling in the whole 250KB archive for a single record.
+  const latest = sermons
+    .filter(sermon => /^https?:\/\//.test(sermon.audioUrl || ''))
+    .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+  if (latest) {
+    console.log(`Latest playable sermon: ${latest.title}`);
+    fs.writeFileSync(
+      path.resolve('./content/sermons', 'latest.json'),
+      JSON.stringify(latest, null, 2),
+    );
+  }
 };
 
 // Run directly (`node util/buildSiteContent.js`) but NOT on require — importing
