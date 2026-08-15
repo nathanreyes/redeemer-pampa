@@ -2,5 +2,15 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "redeemer-pampa",
   "compatibility_date": "2026-08-15",
-  "pages_build_output_dir": ".output/public"
+
+  // Assets-only Worker: no "main", so there is no Worker script to run and
+  // Cloudflare serves the prerendered output directly. public/_headers and
+  // public/_redirects are copied into this directory by the build and are
+  // parsed by Workers rather than served as files.
+  "assets": {
+    "directory": ".output/public",
+    // Every route is prerendered and Nuxt emits a 404.html, so serve that
+    // rather than falling back to index.html the way an SPA would.
+    "not_found_handling": "404-page"
+  }
 }

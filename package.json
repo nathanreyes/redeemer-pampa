@@ -12,7 +12,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "content": "node util/buildSiteContent.js",
-    "deploy": "npm run generate && wrangler pages deploy .output/public"
+    "deploy": "npm run generate && wrangler deploy"
   },
   "dependencies": {
     "@pinia/nuxt": "^1.0.2",
