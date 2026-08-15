@@ -30,6 +30,13 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    // Pin the preset. Nitro sees Cloudflare's WORKERS_CI and otherwise
+    // auto-selects `cloudflare-module`, which builds a server Worker and
+    // redirects wrangler to its own generated config expecting
+    // .output/server/index.mjs. This site is fully prerendered, so no such
+    // entry point exists and the deploy fails. `static` keeps the output to
+    // .output/public and leaves wrangler.jsonc in charge.
+    preset: 'static',
     prerender: {
       crawlLinks: true,
       routes: ['/', '/sermons'],
