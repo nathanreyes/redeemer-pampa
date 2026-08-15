@@ -4,9 +4,9 @@
       <!--Hero Left Column-->
       <div class="lg:w-1/2 flex flex-col items-center lg:items-start">
         <!--Hero Header-->
-        <p class="text-5xl text-white font-light text-center lg:text-left">
+        <h1 class="text-5xl text-white font-light text-center lg:text-left">
           {{ bannerMessage }}
-        </p>
+        </h1>
         <!--Divider Line-->
         <div class="divider mt-12 lg:mt-24 mb-12"></div>
         <a

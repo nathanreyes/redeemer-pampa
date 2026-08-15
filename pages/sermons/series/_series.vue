@@ -1,5 +1,5 @@
 <template>
-  <SermonsList :sermons="sermons" :sermon-lookup="sermonLookup" />
+  <SermonsList :sermons="sermons" :sermon-lookup="sermonLookup" heading-tag="h1" />
 </template>
 
 <script>

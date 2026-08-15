@@ -1,8 +1,8 @@
 <template>
   <div class="section">
-    <h2 class="section-title" id="sermons">
+    <component :is="headingTag" class="section-title" id="sermons">
       Sermons - {{ selectedSermonLookup.title }}
-    </h2>
+    </component>
     <div class="inline-flex mb-4" v-if="false">
       <button
         class="rounded-l"
@@ -94,6 +94,9 @@ export default {
   },
   props: {
     sermonLookup: { type: Object, default: () => {} },
+    // h1 when this is the page's own subject (/sermons), h2 when it is a
+    // section inside another page (/connect).
+    headingTag: { type: String, default: 'h2' },
   },
   data() {
     return {

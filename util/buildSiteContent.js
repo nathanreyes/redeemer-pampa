@@ -77,6 +77,17 @@ const SERIES_ALIASES = {
   '1 john 5': '1 John',
 };
 
+// Same idea for speaker names, which are typed by hand into each episode too.
+const LEADER_ALIASES = {
+  'jeremy buck': 'Jeremy Buck',
+};
+
+const normalizeLeader = name => {
+  const raw = String(name || '').trim();
+  if (!raw) return raw;
+  return LEADER_ALIASES[seriesKey(raw)] || raw;
+};
+
 const seriesKey = name =>
   String(name || '')
     .toLowerCase()
@@ -155,6 +166,7 @@ const getSermonFromPodcast = podcast => {
   // Canonicalize here so feed data arrives already normalized and repeat builds
   // are a no-op.
   sermon.series = normalizeSeries(sermon.series);
+  sermon.leader = normalizeLeader(sermon.leader);
   return sermon;
 };
 
@@ -240,12 +252,18 @@ const fetchPodcasts = async () => {
   // Canonicalize series names across the whole archive, feed and committed
   // records alike, so the sidebar shows one entry per series.
   let seriesRenamed = 0;
+  let leadersRenamed = 0;
   records.forEach(sermon => {
-    const normalized = normalizeSeries(sermon.series);
-    if (normalized !== sermon.series) seriesRenamed++;
-    sermon.series = normalized;
+    const series = normalizeSeries(sermon.series);
+    if (series !== sermon.series) seriesRenamed++;
+    sermon.series = series;
+    const leader = normalizeLeader(sermon.leader);
+    if (leader !== sermon.leader) leadersRenamed++;
+    sermon.leader = leader;
   });
-  console.log(`Normalized ${seriesRenamed} series names`);
+  console.log(
+    `Normalized ${seriesRenamed} series names and ${leadersRenamed} speaker names`,
+  );
 
   // Re-bucket everything by year from scratch.
   const byYear = {};

@@ -4,7 +4,7 @@
     <page-nav-menu :menu-items="menuItems"></page-nav-menu>
     <!--Staff Profiles Intro Section-->
     <div class="section">
-      <h2 class="section-title" id="staff">Elders & Staff</h2>
+      <h1 class="section-title" id="staff">Elders &amp; Staff</h1>
       <p class="content mb-4">
         Redeemer Church is an elder-led church. Currently, we have
         {{ elderCount }} elders who work outside of Redeemer as well as elders
@@ -144,6 +144,7 @@
           <img
             class="w-full md:w-auto rounded-lg"
             src="https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto/v1749519929/redeemerborger2.jpg"
+            alt="The congregation gathered together for a Sunday service"
           />
         </div>
         <h3

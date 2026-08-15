@@ -6,11 +6,11 @@
       <section v-if="videoUrl" class="bg-grey-lightest border-b">
         <div class="flex justify-center items-center py-24">
           <div class="w-full max-w-lg">
-            <h3
+            <h2
               class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
             >
               Live Video
-            </h3>
+            </h2>
             <div
               class="fb-video"
               :data-href="videoUrl"
@@ -28,15 +28,16 @@
             <img
               class="w-full md:w-auto rounded-lg"
               :src="images.comeAsYouAre.url"
+              :alt="images.comeAsYouAre.alt"
             />
           </div>
           <!--Description-->
           <div class="flex-grow m-4 col my-8 md:my-0">
-            <h3
+            <h2
               class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
             >
               Come As You Are
-            </h3>
+            </h2>
             <p
               class="italic text-grey-darkest text-right leading-normal tracking-wide"
             >
@@ -58,9 +59,9 @@
       <!--Worship Through Generosity Section-->
       <section class="section-pattern-light shadow-inner">
         <div class="container px-4 py-8 text-center lg:w-2/3 light">
-          <h3 class="mb-8 text-2xl tracking-wide text-blue-darkest">
+          <h2 class="mb-8 text-2xl tracking-wide text-blue-darkest">
             Worship Through Generosity
-          </h3>
+          </h2>
           <p
             class="my-8 text-3xl sm:text-5xl font-light leading-normal sm:leading-tight text-blue-darker"
           >
@@ -79,11 +80,11 @@
           <div class="flex flex-col md:flex-row">
             <!--Description-->
             <div class="flex-grow m-4 md:text-right col my-8 md:my-0">
-              <h3
+              <h2
                 class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
               >
                 Simple Obedience
-              </h3>
+              </h2>
               <p
                 class="italic text-grey-darkest text-right leading-normal tracking-wide"
               >
@@ -111,6 +112,7 @@
               <img
                 class="w-full md:w-auto rounded-lg"
                 :src="images.simpleObedience.url"
+                :alt="images.simpleObedience.alt"
               />
             </div>
           </div>
@@ -119,9 +121,9 @@
       <!--A Church That Relects Its Community Section-->
       <section class="section-pattern text-blue-lightest shadow-inner">
         <div class="container mx-auto px-4 py-8 text-center lg:w-2/3">
-          <h3 class="mb-8 text-2xl tracking-wide text-white">
+          <h2 class="mb-8 text-2xl tracking-wide text-white">
             A Church That Reflects Its Community
-          </h3>
+          </h2>
           <p
             class="my-8 text-3xl sm:text-5xl font-light leading-normal sm:leading-tight text-blue-lightest"
           >
@@ -142,15 +144,16 @@
             <div class="flex-grow mb-4 col md:text-right md:mr-4">
               <img
                 class="w-full md:w-auto rounded-lg"
-                src="https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,h_1200,w_892/v1749519928/living-sent.jpg"
+                :src="images.livingSent.url"
+                :alt="images.livingSent.alt"
               />
             </div>
             <div class="flex-grow m-4 col my-8 md:my-0">
-              <h3
+              <h2
                 class="text-2xl text-center md:text-left text-grey-darker tracking-wide mb-8"
               >
                 Living Sent
-              </h3>
+              </h2>
               <p
                 class="italic text-grey-darkest text-right leading-normal tracking-wide"
               >
@@ -185,11 +188,11 @@
         id="contact-us"
       >
         <div class="container">
-          <h3
+          <h2
             class="mt-4 mb-2 text-2xl text-grey-darker tracking-wide text-center"
           >
             Contact Us
-          </h3>
+          </h2>
         </div>
         <form
           name="contact"
@@ -331,7 +334,7 @@
                 ></path>
               </svg>
               <a
-                :href="`mail-to:${churchInfo.email}`"
+                :href="`mailto:${churchInfo.email}`"
                 class="text-blue-dark no-underline ml-2"
                 >{{ churchInfo.email }}</a
               >
@@ -364,11 +367,15 @@ export default {
       images: {
         comeAsYouAre: {
           url: 'https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,w_900/v1776817270/dan-clara.jpg',
-          alt: 'Come as you are',
+          alt: 'Members of Redeemer Pampa gathered outdoors around a baptism',
         },
         simpleObedience: {
           url: 'https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,w_900,ar_1:1,c_fill,g_auto,e_art:hokusai/v1749519929/redeemerborger.jpg',
-          alt: 'Simple obedience',
+          alt: 'The congregation standing together in prayer during a service',
+        },
+        livingSent: {
+          url: 'https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_scale,h_1200,w_892/v1749519928/living-sent.jpg',
+          alt: 'Volunteers of all ages packing grocery bags to give away',
         },
       },
     };

@@ -13,7 +13,7 @@
       },
       {
         "title": "See Our Location",
-        "url": "/#see-our-location"
+        "url": "/#map"
       }
     ]
   },
@@ -22,8 +22,8 @@
     "url": "/connect",
     "submenus": [
       {
-        "title": "Services",
-        "url": "/connect#services"
+        "title": "Worship",
+        "url": "/connect#worship"
       },
       {
         "title": "Gospel Communities",
@@ -60,11 +60,11 @@
     "submenus": [
       {
         "title": "Motivation",
-        "url": "/giving#subheading1"
+        "url": "/giving#motivation"
       },
       {
         "title": "Methods",
-        "url": "/giving#subheading1"
+        "url": "/giving#methods"
       }
     ]
   }

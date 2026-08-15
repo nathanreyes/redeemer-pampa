@@ -14,9 +14,9 @@
     <!--Gospel Community Description Section-->
     <div class="section">
       <div class="container">
-        <h1 class="section-title" id="gospel-communities">
+        <h2 class="section-title" id="gospel-communities">
           Gospel Communities
-        </h1>
+        </h2>
         <div class="flex flex-col md:flex-row">
           <div
             class="flex-grow mb-4 col flex items-center md:text-right md:mr-2"
@@ -24,6 +24,7 @@
             <img
               class="w-full md:w-auto rounded-lg"
               src="https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto/v1749519933/girls-cookout.jpg"
+              alt="Members of a Gospel Community sharing a meal together"
             />
           </div>
           <div class="flex-grow col">

@@ -70,7 +70,7 @@
       <div
         class="flex-no-shrink flex justify-center text-grey pb-8 text-xs font-light"
       >
-        Copyright © 2018 Redeemer Pampa
+        Copyright © {{ currentYear }} Redeemer Pampa
       </div>
     </div>
   </div>
@@ -88,6 +88,7 @@ export default {
 
     return {
       menus,
+      currentYear: new Date().getFullYear(),
       street,
       mailStreet,
       city,
