@@ -16,9 +16,9 @@ export default defineNuxtConfig({
   fonts: {
     // Self-hosted at build time — no request to Google from the browser.
     families: [
-      // Cinzel: an inscriptional roman in the Trajan idiom, matching the
-      // wordmark on the church's original logo.
-      { name: 'Cinzel', provider: 'google', weights: [400, 500, 600, 700], subsets: ['latin'] },
+      // Archivo Narrow rather than Archivo: @nuxt/fonts downloads static
+      // instances, so there is no width axis to condense with font-stretch.
+      { name: 'Archivo Narrow', provider: 'google', weights: [400, 500, 600, 700], subsets: ['latin'] },
       { name: 'Spectral', provider: 'google', weights: [300, 400, 600], styles: ['normal', 'italic'], subsets: ['latin'] },
     ],
   },

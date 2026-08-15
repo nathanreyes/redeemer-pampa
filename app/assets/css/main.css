@@ -31,23 +31,23 @@
   --color-wheat-500: #c8913f;
   --color-wheat-600: #a5742c;
 
-  --font-display: 'Cinzel', 'Trajan Pro', 'Times New Roman', serif;
+  --font-display: 'Archivo Narrow', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
   --font-body: 'Spectral', Georgia, 'Times New Roman', serif;
 
-  /* Display type is set enormous. The vw coefficient is tuned so the longest
-     headline line ("WORK OF JESUS", measured at 8.01x the font size in Cinzel)
-     clears the gutters at every width from 320px up. */
-  --text-colossal: clamp(2rem, 10.5vw, 11.5rem);
-  --text-colossal--line-height: 1.0;
-  --text-colossal--letter-spacing: 0;
+  /* Display type is set enormous and tight. The vw coefficient is tuned so the
+     longest headline line ("THE REDEEMING", roughly 7x the font size in this
+     face) still clears the 40px of gutter at 320px wide. */
+  --text-colossal: clamp(2.25rem, 11.5vw, 11rem);
+  --text-colossal--line-height: 0.86;
+  --text-colossal--letter-spacing: -0.025em;
 
   --text-huge: clamp(2.5rem, 7vw, 5.5rem);
-  --text-huge--line-height: 1.06;
-  --text-huge--letter-spacing: 0.005em;
+  --text-huge--line-height: 0.92;
+  --text-huge--letter-spacing: -0.02em;
 
   --text-section: clamp(1.75rem, 4vw, 3rem);
-  --text-section--line-height: 1.1;
-  --text-section--letter-spacing: 0.01em;
+  --text-section--line-height: 0.98;
+  --text-section--letter-spacing: -0.01em;
 
   --text-lede: clamp(1.15rem, 1.6vw, 1.45rem);
   --text-lede--line-height: 1.55;
@@ -81,11 +81,10 @@
      most identifying feature of the design, so it is set once, here. */
   h1, h2, h3, .display {
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     text-wrap: balance;
-    /* Inscriptional romans want air between caps, not negative tracking. */
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
   }
 
   ::selection {
