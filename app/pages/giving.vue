@@ -1,5 +1,20 @@
 <script setup lang="ts">
-const givingUrl = 'https://www.easytithe.com/dl/?uid=rede225179';
+/**
+ * The giving form is embedded directly from Amplify (formerly easyTithe).
+ *
+ * Two things about the URL matter. It points at giving.myamplify.io rather
+ * than the old easytithe.com link: that link 302s here anyway, but its first
+ * hop sends `X-Frame-Options: sameorigin`, which a browser refuses to frame
+ * even though the final page allows it. And the final page sends
+ * `frame-ancestors https:` with no X-Frame-Options, so it permits embedding
+ * from any HTTPS origin — no snippet from their admin portal is needed.
+ *
+ * The link-out stays regardless. Payment iframes are the single most likely
+ * thing to be blocked by a visitor's extensions or privacy settings, and
+ * giving should never be a dead end.
+ */
+const givingUrl = 'https://giving.myamplify.io/app/giving/rede225179';
+
 useHead({ title: 'Giving — Redeemer Pampa' });
 </script>
 
@@ -42,18 +57,42 @@ useHead({ title: 'Giving — Redeemer Pampa' });
           </li>
           <li class="flex gap-5">
             <span class="display shrink-0 text-2xl text-earth-300">II</span>
-            <span>You can give online, using the link below.</span>
+            <span>You can give online, using the form below.</span>
           </li>
         </ol>
+      </div>
+    </section>
 
+    <!-- ============ GIVE ONLINE ============ -->
+    <section id="give-online" class="pt-6">
+      <div class="horizon text-earth-900"></div>
+
+      <div class="flex flex-wrap items-baseline justify-between gap-4 pt-8">
+        <h2 class="text-section text-earth-900">Give online</h2>
         <a
           :href="givingUrl"
           target="_blank"
           rel="noopener"
-          class="eyebrow mt-10 inline-block border-b-2 border-wheat-500 pb-1 text-base hover:text-wheat-600"
+          class="eyebrow border-b-2 border-wheat-500 pb-1 hover:text-wheat-600"
         >
-          Give online →
+          Open in a new tab →
         </a>
+      </div>
+
+      <p class="measure mt-4 text-sm text-earth-400">
+        Giving is handled by Amplify. If the form below doesn’t appear, some
+        browsers and privacy extensions block embedded payment forms — use the
+        link above and it will open directly.
+      </p>
+
+      <div class="mt-8 border border-earth-900/15 bg-white">
+        <iframe
+          :src="givingUrl"
+          title="Give to Redeemer Pampa"
+          class="h-[52rem] w-full"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
   </div>
