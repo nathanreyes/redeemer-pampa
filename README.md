@@ -97,6 +97,20 @@ It is deployed separately from the site and changes rarely.
 5. **Turn off the old Zapier zap.** It fires a Netlify deploy on each new
    episode, and Netlify no longer builds this site.
 
+### Verifying it ran
+
+Trigger the scheduled handler without waiting for the hour:
+
+```bash
+npx wrangler dev --config workers/rebuild/wrangler.jsonc --test-scheduled
+# then, in another shell:
+curl "http://localhost:8787/__scheduled"
+```
+
+The first run has no stored state, so it treats the current newest episode as
+new and fires one build. Every run after that logs `no change` until an
+episode is published.
+
 ### Checking on it
 
 ```bash

@@ -5,6 +5,11 @@
   "compatibility_date": "2026-08-15",
   "observability": { "enabled": true },
 
+  // Cron-only: there is no fetch handler, so a public URL is surface with
+  // nothing behind it. Both default to on if unset.
+  "workers_dev": false,
+  "preview_urls": false,
+
   // Hourly. The check is cheap; only a real change costs a build.
   "triggers": { "crons": ["0 * * * *"] },
 
