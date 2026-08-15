@@ -83,7 +83,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
         <span
           v-for="(line, i) in headlineLines"
           :key="line"
-          class="rise block"
+          class="rise block whitespace-nowrap"
           :style="{ animationDelay: `${120 + i * 80}ms` }"
           aria-hidden="true"
         >{{ line }}</span>
