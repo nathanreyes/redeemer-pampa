@@ -68,14 +68,6 @@
     "path": "/series/1-corinthians"
   },
   {
-    "title": "1 John 3",
-    "path": "/series/1-john-3"
-  },
-  {
-    "title": "1 John 5",
-    "path": "/series/1-john-5"
-  },
-  {
     "title": "1 John",
     "path": "/series/1-john"
   },
@@ -108,32 +100,40 @@
     "path": "/series/2-samuel"
   },
   {
-    "title": "Acts - 2024",
-    "path": "/series/acts---2024"
-  },
-  {
-    "title": "Acts - 23/24",
-    "path": "/series/acts---23-24"
-  },
-  {
-    "title": "Acts 2023",
-    "path": "/series/acts-2023"
-  },
-  {
-    "title": "Acts 23/24",
-    "path": "/series/acts-23-24"
-  },
-  {
     "title": "Acts",
     "path": "/series/acts"
   },
   {
-    "title": "Advent - Love",
-    "path": "/series/advent---love"
+    "title": "Advent 2011",
+    "path": "/series/advent-2011"
+  },
+  {
+    "title": "Advent 2012",
+    "path": "/series/advent-2012"
+  },
+  {
+    "title": "Advent 2013",
+    "path": "/series/advent-2013"
+  },
+  {
+    "title": "Advent 2014",
+    "path": "/series/advent-2014"
+  },
+  {
+    "title": "Advent 2016",
+    "path": "/series/advent-2016"
+  },
+  {
+    "title": "Advent 2017",
+    "path": "/series/advent-2017"
   },
   {
     "title": "Advent 2020",
     "path": "/series/advent-2020"
+  },
+  {
+    "title": "Advent 2021",
+    "path": "/series/advent-2021"
   },
   {
     "title": "Advent 2023",
@@ -146,10 +146,6 @@
   {
     "title": "Advent 2025",
     "path": "/series/advent-2025"
-  },
-  {
-    "title": "Advent",
-    "path": "/series/advent"
   },
   {
     "title": "Amos",
@@ -282,10 +278,6 @@
   {
     "title": "Philippians",
     "path": "/series/philippians"
-  },
-  {
-    "title": "Philppians",
-    "path": "/series/philppians"
   },
   {
     "title": "Proverbs",

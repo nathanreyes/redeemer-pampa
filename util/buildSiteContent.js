@@ -63,6 +63,40 @@ const parseSermonDate = value => {
   return isNaN(parsed.getTime()) ? null : toLocalMidnight(parsed);
 };
 
+// Series names are free text typed into the podcast description, so the same
+// series arrives spelled several ways ('Acts 2023', 'Acts - 23/24', 'Acts
+// 23/24'). Collapse the variants onto one canonical name. Keys are compared
+// with case and punctuation flattened, so 'Acts - 23/24' and 'acts 23/24' both
+// resolve to the same entry. Add new variants here as they show up.
+const SERIES_ALIASES = {
+  'acts 2023': 'Acts',
+  'acts 2024': 'Acts',
+  'acts 23 24': 'Acts',
+  philppians: 'Philippians',
+  '1 john 3': '1 John',
+  '1 john 5': '1 John',
+};
+
+const seriesKey = name =>
+  String(name || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+const normalizeSeries = (name, date) => {
+  const raw = String(name || '').trim();
+  if (!raw) return '';
+  const key = seriesKey(raw);
+  // Advent is an annual season, so file each sermon under its own year rather
+  // than one perennial bucket. Every Advent sermon falls in Nov/Dec, so the
+  // calendar year is the right grouping.
+  if (key === 'advent' || key.indexOf('advent ') === 0) {
+    const year = new Date(date).getFullYear();
+    return isNaN(year) ? raw : `Advent ${year}`;
+  }
+  return SERIES_ALIASES[key] || raw;
+};
+
 const decodeEntities = str =>
   str
     .replace(/&nbsp;/gi, ' ')
@@ -122,6 +156,9 @@ const getSermonFromPodcast = podcast => {
       }
     });
   }
+  // Applied last, not inside the switch above: Advent is filed by year, and the
+  // Date line may be parsed after the Series line.
+  sermon.series = normalizeSeries(sermon.series, sermon.date);
   return sermon;
 };
 
@@ -203,6 +240,16 @@ const fetchPodcasts = async () => {
     });
     register(existing);
   });
+
+  // Canonicalize series names across the whole archive, feed and committed
+  // records alike, so the sidebar shows one entry per series.
+  let seriesRenamed = 0;
+  records.forEach(sermon => {
+    const normalized = normalizeSeries(sermon.series, sermon.date);
+    if (normalized !== sermon.series) seriesRenamed++;
+    sermon.series = normalized;
+  });
+  console.log(`Normalized ${seriesRenamed} series names`);
 
   // Re-bucket everything by year from scratch.
   const byYear = {};
