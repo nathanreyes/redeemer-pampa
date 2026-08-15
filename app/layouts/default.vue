@@ -23,7 +23,7 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
       <div class="mx-auto flex h-14 max-w-[110rem] items-center justify-between px-5 sm:px-8">
         <NuxtLink to="/" class="flex items-center gap-2.5 sm:gap-3">
           <LogoMark class="h-8 w-auto text-earth-900 sm:h-9" />
-          <span class="display text-base tracking-tight sm:text-lg">Redeemer&nbsp;Pampa</span>
+          <span class="wordmark text-base sm:text-lg">Redeemer&nbsp;Pampa</span>
         </NuxtLink>
 
         <nav class="hidden items-baseline gap-7 md:flex">
@@ -81,7 +81,7 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
       <div class="mx-auto max-w-[110rem] px-5 py-16 sm:px-8">
         <div class="flex flex-wrap items-end gap-8">
           <LogoMark class="h-32 w-auto text-sky-100 sm:h-40" />
-          <p class="display text-huge text-sky-100">Redeemer Pampa</p>
+          <p class="wordmark text-huge text-sky-100">Redeemer Pampa</p>
         </div>
 
         <div class="horizon mt-10 text-sky-100/20"></div>

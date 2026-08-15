@@ -33,6 +33,8 @@
 
   --font-display: 'Archivo Narrow', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
   --font-body: 'Spectral', Georgia, 'Times New Roman', serif;
+  /* The logotype only. Everything else stays on the condensed display face. */
+  --font-wordmark: 'Cinzel', 'Trajan Pro', Georgia, serif;
 
   /* Display type is set enormous and tight. The vw coefficient is tuned so the
      longest headline line ("THE REDEEMING", roughly 7x the font size in this
@@ -105,6 +107,17 @@
   .horizon {
     border-top: 2px solid currentColor;
     box-shadow: 0 3px 0 -2px currentColor;
+  }
+
+  /* --- Wordmark ----------------------------------------------------------- */
+  /* "Redeemer Pampa" set to match the letterform in the logo. Inscriptional
+     romans want air between the caps, not the negative tracking the condensed
+     display face is set with. */
+  .wordmark {
+    font-family: var(--font-wordmark);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
   }
 
   /* --- Eyebrow / small caps label ----------------------------------------- */

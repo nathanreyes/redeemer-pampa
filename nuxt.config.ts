@@ -19,6 +19,9 @@ export default defineNuxtConfig({
       // Archivo Narrow rather than Archivo: @nuxt/fonts downloads static
       // instances, so there is no width axis to condense with font-stretch.
       { name: 'Archivo Narrow', provider: 'google', weights: [400, 500, 600, 700], subsets: ['latin'] },
+      // Cinzel is used for the wordmark alone — it is the inscriptional roman
+      // the church's logo is set in. One weight, since it sets two words.
+      { name: 'Cinzel', provider: 'google', weights: [600], subsets: ['latin'] },
       { name: 'Spectral', provider: 'google', weights: [300, 400, 600], styles: ['normal', 'italic'], subsets: ['latin'] },
     ],
   },
