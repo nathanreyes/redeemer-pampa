@@ -22,7 +22,7 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
     <header class="sticky top-0 z-40 bg-sky-100 text-earth-900">
       <div class="mx-auto flex h-14 max-w-[110rem] items-center justify-between px-5 sm:px-8">
         <NuxtLink to="/" class="flex items-center gap-2.5 sm:gap-3">
-          <LogoMark :horizon="false" class="h-6 w-auto text-earth-900 sm:h-7" />
+          <LogoMark class="h-8 w-auto text-earth-900 sm:h-9" />
           <span class="display text-base tracking-tight sm:text-lg">Redeemer&nbsp;Pampa</span>
         </NuxtLink>
 
@@ -80,7 +80,7 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
     <footer class="bg-earth-900 text-sky-200">
       <div class="mx-auto max-w-[110rem] px-5 py-16 sm:px-8">
         <div class="flex flex-wrap items-end gap-8">
-          <LogoMark class="h-28 w-auto text-sky-100 sm:h-36" />
+          <LogoMark class="h-32 w-auto text-sky-100 sm:h-40" />
           <p class="display text-huge text-sky-100">Redeemer Pampa</p>
         </div>
 
