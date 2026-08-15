@@ -1,90 +1,145 @@
 @import 'tailwindcss';
 
-/* ---------------------------------------------------------------------------
-   Design tokens. Tailwind 4 is CSS-first: this @theme block replaces the whole
-   26KB tailwind.js that used to configure v0.6.
-   --------------------------------------------------------------------------- */
+/* ===========================================================================
+   BIG SKY
+   ---------------------------------------------------------------------------
+   Redeemer Pampa sits on the Texas Panhandle: flat land, enormous sky, and a
+   stated value of simple obedience — "prevents us from getting lost in rituals
+   and religious activities". So: no ornament, no gradients, no rounded cards.
+   Type does the work. A recurring horizon rule divides sky from land, and
+   photographs act as the land itself rather than as decoration.
+   =========================================================================== */
+
 @theme {
-  /* Ink and paper. Neutrals carry a slight blue cast so they sit with the
-     brand blue rather than fighting it. */
-  --color-ink-900: #10181f;
-  --color-ink-800: #1b2732;
-  --color-ink-600: #44566a;
-  --color-ink-400: #6b7f93;
-  --color-ink-200: #c3cedb;
-  --color-ink-100: #e3e9f0;
-  --color-ink-50: #f2f5f9;
+  /* --- Sky: the pale, bleached light ground -------------------------------- */
+  --color-sky-50: #f3f4f1;
+  --color-sky-100: #e8eae6;
+  --color-sky-200: #d7dad3;
+  --color-sky-300: #b9beb5;
+  --color-sky-400: #949b8f;
 
-  /* Brand blue, carried over from the current site but deepened so it holds
-     contrast against white at body sizes. */
-  --color-brand-900: #10314e;
-  --color-brand-800: #17456d;
-  --color-brand-700: #1d5a8f;
-  --color-brand-600: #2470ad;
-  --color-brand-500: #3a8bc9;
-  --color-brand-200: #a9cfe9;
-  --color-brand-100: #dceaf6;
-  --color-brand-50: #f0f6fb;
+  /* --- Earth: warm near-black, the dark ground ----------------------------- */
+  --color-earth-400: #7d7668;
+  --color-earth-500: #5c554a;
+  --color-earth-600: #454037;
+  --color-earth-700: #35302a;
+  --color-earth-800: #221f1a;
+  --color-earth-900: #14120f;
 
-  /* A warm accent for the few places that need to lift off the blue —
-     the play state, a live badge. */
-  --color-ember-600: #b4551f;
-  --color-ember-500: #d9702f;
+  /* --- Wheat: the single sharp accent. Used rarely, never as a large field - */
+  --color-wheat-300: #e3be85;
+  --color-wheat-500: #c8913f;
+  --color-wheat-600: #a5742c;
 
-  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --font-display: 'Archivo Narrow', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Spectral', Georgia, 'Times New Roman', serif;
 
-  /* Type scale, fluid where it matters. */
-  --text-display: clamp(2.5rem, 6vw, 4.25rem);
-  --text-display--line-height: 1.04;
-  --text-display--letter-spacing: -0.02em;
-  --text-title: clamp(1.75rem, 3.5vw, 2.5rem);
-  --text-title--line-height: 1.12;
-  --text-lede: clamp(1.15rem, 2vw, 1.4rem);
-  --text-lede--line-height: 1.5;
+  /* Display type is set enormous and tight. The vw coefficient is tuned so the
+     longest headline line ("THE REDEEMING", roughly 7x the font size in this
+     face) still clears the 40px of gutter at 320px wide. */
+  --text-colossal: clamp(2.25rem, 11.5vw, 11rem);
+  --text-colossal--line-height: 0.86;
+  --text-colossal--letter-spacing: -0.025em;
+
+  --text-huge: clamp(2.5rem, 7vw, 5.5rem);
+  --text-huge--line-height: 0.92;
+  --text-huge--letter-spacing: -0.02em;
+
+  --text-section: clamp(1.75rem, 4vw, 3rem);
+  --text-section--line-height: 0.98;
+  --text-section--letter-spacing: -0.01em;
+
+  --text-lede: clamp(1.15rem, 1.6vw, 1.45rem);
+  --text-lede--line-height: 1.55;
 }
 
-/* ---------------------------------------------------------------------------
-   Base
-   --------------------------------------------------------------------------- */
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Header height, so in-page anchors don't land under the nav. This
-       replaces the vue-scrollto dependency entirely. */
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 4rem;
   }
 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 
   body {
-    background: white;
-    color: var(--color-ink-800);
-    font-family: var(--font-sans);
+    background: var(--color-sky-100);
+    color: var(--color-earth-900);
+    font-family: var(--font-body);
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
-  h1, h2, h3 {
+  /* The condensed display face. This is the single
+     most identifying feature of the design, so it is set once, here. */
+  h1, h2, h3, .display {
     font-family: var(--font-display);
-    color: var(--color-ink-900);
+    font-weight: 700;
+    text-transform: uppercase;
     text-wrap: balance;
+    letter-spacing: -0.01em;
   }
 
-  /* Every interactive thing gets a visible focus ring. */
+  ::selection {
+    background: var(--color-wheat-500);
+    color: var(--color-earth-900);
+  }
+
   :focus-visible {
-    outline: 2px solid var(--color-brand-600);
-    outline-offset: 2px;
-    border-radius: 2px;
+    outline: 2px solid var(--color-wheat-600);
+    outline-offset: 3px;
   }
 }
 
 @layer components {
-  /* Running prose, held near 65 characters. */
-  .prose-measure {
-    max-width: 34em;
-    line-height: 1.65;
+  /* --- The horizon -------------------------------------------------------- */
+  /* A doubled rule, thick over thin, reading as land meeting sky. This is the
+     structural motif of the whole site and replaces every card border. */
+  .horizon {
+    border-top: 2px solid currentColor;
+    box-shadow: 0 3px 0 -2px currentColor;
+  }
+
+  /* --- Eyebrow / small caps label ----------------------------------------- */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  /* --- Running prose ------------------------------------------------------ */
+  .measure {
+    max-width: 36em;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  /* --- Scripture ---------------------------------------------------------- */
+  /* Set in italic body face, hung off a wheat rule, never centered. */
+  .scripture {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-weight: 300;
+    border-left: 2px solid var(--color-wheat-500);
+  }
+
+  /* --- Staggered entrance ------------------------------------------------- */
+  /* One orchestrated moment on load, nothing else. */
+  .rise {
+    animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(0.6em); }
+    to { opacity: 1; transform: none; }
   }
 }

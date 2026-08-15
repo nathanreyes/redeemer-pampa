@@ -8,8 +8,6 @@ interface Sermon {
   podcastUrl?: string;
 }
 
-// Pulled in at build time by Vite, so the whole archive ships as one payload
-// (~30KB gzipped) and search is instant with no network round trip.
 const modules = import.meta.glob<{ default: { sermons: Sermon[] } }>(
   '~~/content/sermons/year/*.json',
   { eager: true },
@@ -19,8 +17,8 @@ const sermons = Object.values(modules)
   .flatMap((m) => m.default.sermons ?? [])
   .sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
-const seriesList = [...new Set(sermons.map((s) => s.series).filter(Boolean))].sort(
-  (a, b) => a.localeCompare(b),
+const seriesList = [...new Set(sermons.map((s) => s.series).filter(Boolean))].sort((a, b) =>
+  a.localeCompare(b),
 );
 const years = [...new Set(sermons.map((s) => s.date.slice(0, 4)))].sort().reverse();
 
@@ -42,14 +40,14 @@ const results = computed(() => {
   });
 });
 
-const shown = ref(30);
-watch([query, series, year], () => (shown.value = 30));
+const shown = ref(40);
+watch([query, series, year], () => (shown.value = 40));
 
-const formatDate = (iso: string) =>
+const fmt = (iso: string) =>
   new Date(iso).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
-    day: 'numeric',
+    day: '2-digit',
     timeZone: 'UTC',
   });
 
@@ -59,102 +57,127 @@ const reset = () => {
   year.value = '';
 };
 
+const filtered = computed(() => !!(query.value || series.value || year.value));
+
+const selectClass =
+  'eyebrow appearance-none border-b-2 border-earth-900/20 bg-transparent py-2 pr-6 text-earth-900 hover:border-wheat-500 focus:border-wheat-500';
+
 useHead({ title: 'Sermons — Redeemer Pampa' });
 </script>
 
 <template>
-  <div class="mx-auto max-w-4xl px-5 py-16">
-    <h1 class="text-title font-medium">Sermons</h1>
-    <p class="prose-measure mt-4 text-ink-600">
-      {{ sermons.length.toLocaleString() }} sermons going back to {{ years.at(-1) }}.
+  <div class="mx-auto max-w-[110rem] px-5 pb-32 pt-12 sm:px-8 sm:pt-20">
+    <p class="eyebrow text-earth-400">The Archive</p>
+    <h1 class="mt-6 text-colossal text-earth-900">Sermons</h1>
+
+    <!-- The scale of the archive is the point: fifteen years, book by book. -->
+    <p class="mt-8 max-w-2xl text-lede font-light text-earth-600">
+      {{ sermons.length.toLocaleString() }} sermons preached at Redeemer Pampa
+      since {{ years.at(-1) }}, working through {{ seriesList.length }} series
+      of Scripture.
     </p>
 
-    <!-- Filters. Replaces a sidebar that listed 48 series and 16 years with no
-         way to search them. -->
-    <div class="mt-8 grid gap-3 sm:grid-cols-[1fr_auto_auto]">
-      <div>
-        <label for="sermon-search" class="sr-only">Search sermons</label>
+    <!-- ============ FILTERS ============ -->
+    <div class="horizon mt-14 text-earth-900"></div>
+
+    <div class="flex flex-wrap items-end gap-x-10 gap-y-5 py-5">
+      <div class="min-w-[16rem] flex-1">
+        <label for="q" class="eyebrow block text-earth-400">Search</label>
         <input
-          id="sermon-search"
+          id="q"
           v-model="query"
           type="search"
-          placeholder="Search by title, speaker or series"
-          class="w-full rounded-md border border-ink-200 px-4 py-2.5 text-ink-800 placeholder:text-ink-400 focus:border-brand-600"
+          placeholder="Title, speaker or series"
+          class="mt-2 w-full border-b-2 border-earth-900/20 bg-transparent py-2 text-lede font-light text-earth-900 placeholder:text-earth-300 focus:border-wheat-500 focus:outline-none"
         />
       </div>
+
       <div>
-        <label for="sermon-series" class="sr-only">Filter by series</label>
-        <select
-          id="sermon-series"
-          v-model="series"
-          class="w-full rounded-md border border-ink-200 px-3 py-2.5 text-ink-800 sm:w-48"
-        >
+        <label for="series" class="eyebrow block text-earth-400">Series</label>
+        <select id="series" v-model="series" :class="['mt-2 block w-48', selectClass]">
           <option value="">All series</option>
           <option v-for="s in seriesList" :key="s" :value="s">{{ s }}</option>
         </select>
       </div>
+
       <div>
-        <label for="sermon-year" class="sr-only">Filter by year</label>
-        <select
-          id="sermon-year"
-          v-model="year"
-          class="w-full rounded-md border border-ink-200 px-3 py-2.5 text-ink-800 sm:w-32"
-        >
+        <label for="year" class="eyebrow block text-earth-400">Year</label>
+        <select id="year" v-model="year" :class="['mt-2 block w-28', selectClass]">
           <option value="">All years</option>
           <option v-for="y in years" :key="y" :value="y">{{ y }}</option>
         </select>
       </div>
     </div>
 
-    <p class="mt-5 text-sm text-ink-400">
-      {{ results.length.toLocaleString() }}
-      {{ results.length === 1 ? 'sermon' : 'sermons' }}
+    <div class="horizon text-earth-900/25"></div>
+
+    <p class="eyebrow mt-5 flex items-baseline gap-4 text-earth-400">
+      <span class="tabular-nums text-earth-900">
+        {{ results.length.toLocaleString() }} {{ results.length === 1 ? 'sermon' : 'sermons' }}
+      </span>
       <button
-        v-if="query || series || year"
-        class="ml-2 font-medium text-brand-700 underline"
+        v-if="filtered"
+        class="border-b-2 border-wheat-500 pb-0.5 text-wheat-600"
         @click="reset"
       >
-        Clear filters
+        Clear
       </button>
     </p>
 
-    <ol v-if="results.length" class="mt-6 divide-y divide-ink-100 border-t border-ink-100">
-      <li v-for="sermon in results.slice(0, shown)" :key="sermon.date + sermon.title" class="py-5">
-        <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h2 class="font-sans text-base font-semibold text-ink-900">{{ sermon.title }}</h2>
-          <span v-if="sermon.series" class="rounded bg-brand-50 px-2 py-0.5 text-xs font-medium text-brand-700">
-            {{ sermon.series }}
-          </span>
-        </div>
-        <p class="mt-1 text-sm text-ink-400">
-          {{ sermon.leader }} · <time :datetime="sermon.date">{{ formatDate(sermon.date) }}</time>
-        </p>
-        <p v-if="sermon.summary" class="prose-measure mt-2 text-sm text-ink-600">
-          {{ sermon.summary }}
-        </p>
-        <a
-          v-if="sermon.podcastUrl"
-          :href="sermon.podcastUrl"
-          target="_blank"
-          rel="noopener"
-          class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 hover:text-brand-900"
+    <!-- ============ RESULTS ============ -->
+    <!-- Laid out as a record, not as cards: aligned columns, tabular figures. -->
+    <ol v-if="results.length" class="mt-8">
+      <li
+        v-for="sermon in results.slice(0, shown)"
+        :key="sermon.date + sermon.title"
+        class="group grid grid-cols-1 gap-x-8 gap-y-2 border-t border-earth-900/15 py-6 md:grid-cols-12 md:items-baseline"
+      >
+        <time
+          :datetime="sermon.date"
+          class="eyebrow tabular-nums text-earth-400 md:col-span-2"
         >
-          <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M16 8A6 6 0 1 0 4 8v11H2a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2V8a8 8 0 1 1 16 0v3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2V8zm-4 2h3v10h-3V10zm-7 0h3v10H5V10z" />
-          </svg>
-          Listen
-        </a>
+          {{ fmt(sermon.date) }}
+        </time>
+
+        <h2 class="text-section normal-case text-earth-900 md:col-span-5">
+          {{ sermon.title }}
+        </h2>
+
+        <div class="md:col-span-3">
+          <p class="eyebrow text-earth-500">{{ sermon.leader }}</p>
+          <button
+            v-if="sermon.series"
+            class="mt-1 block text-sm font-light italic text-wheat-600 hover:underline"
+            @click="series = sermon.series"
+          >
+            {{ sermon.series }}
+          </button>
+        </div>
+
+        <div class="md:col-span-2 md:text-right">
+          <a
+            v-if="sermon.podcastUrl"
+            :href="sermon.podcastUrl"
+            target="_blank"
+            rel="noopener"
+            class="eyebrow inline-block border-b-2 border-earth-900/20 pb-1 transition-colors group-hover:border-wheat-500 hover:text-wheat-600"
+          >
+            Listen
+          </a>
+        </div>
       </li>
     </ol>
 
-    <p v-else class="mt-10 text-center text-ink-400">No sermons match those filters.</p>
+    <p v-else class="mt-16 text-lede font-light text-earth-400">
+      No sermons match those filters.
+    </p>
 
-    <div v-if="shown < results.length" class="mt-8 text-center">
+    <div v-if="shown < results.length" class="mt-12">
       <button
-        class="rounded-md border border-ink-200 px-5 py-2.5 text-sm font-semibold text-ink-600 hover:bg-ink-50"
-        @click="shown += 50"
+        class="eyebrow border-b-2 border-wheat-500 pb-1 hover:text-wheat-600"
+        @click="shown += 60"
       >
-        Show more
+        Show {{ Math.min(60, results.length - shown) }} more
       </button>
     </div>
   </div>

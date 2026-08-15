@@ -7,35 +7,55 @@ useHead({ title: 'Connect — Redeemer Pampa' });
 </script>
 
 <template>
-  <div class="mx-auto max-w-4xl px-5 py-16">
-    <h1 id="worship" class="text-title font-medium">Worship</h1>
-    <p class="prose-measure mt-5 text-ink-600">
+  <div class="mx-auto max-w-[110rem] px-5 pb-32 pt-12 sm:px-8 sm:pt-20">
+    <p class="eyebrow text-earth-400">Connect</p>
+    <h1 id="worship" class="mt-6 text-colossal text-earth-900">Worship</h1>
+    <p class="mt-8 max-w-2xl text-lede font-light text-earth-600">
       Join us for morning services every Sunday at
-      {{ home.churchInfo.serviceTime.replace('Sundays @ ', '') }}.
+      {{ home.churchInfo.serviceTime.replace('Sundays @ ', '') }},
+      at {{ home.churchInfo.address.street }} in Pampa.
     </p>
 
-    <h2 id="gospel-communities" class="mt-16 text-title font-medium">Gospel Communities</h2>
-    <p class="prose-measure mt-5 text-ink-600">
-      We don’t want our Sunday morning service to be the apex of our week.
-      Gospel Communities meet weekly and are casual gatherings of people of
-      different ages, life stages, and family dynamics. Groups are open — new
-      folks are welcome each and every week.
-    </p>
-    <p class="mt-6 text-sm italic text-ink-400">
-      Please text for addresses, as they may change over time.
+    <div class="horizon mt-16 text-earth-900"></div>
+
+    <section class="grid gap-x-12 gap-y-8 py-16 lg:grid-cols-12">
+      <h2 id="gospel-communities" class="text-section text-earth-900 lg:col-span-5">
+        Gospel Communities
+      </h2>
+      <div class="lg:col-span-7">
+        <p class="measure text-earth-600">
+          We don’t want our Sunday morning service to be the apex of our week.
+          Gospel Communities meet weekly and are casual gatherings of people of
+          different ages, life stages, and family dynamics. A typical gathering
+          includes a meal, a deeper look at the previous Sunday’s text, prayer,
+          conversation, and community.
+        </p>
+        <p class="measure mt-5 text-earth-600">
+          Groups are open — new folks are welcome each and every week.
+        </p>
+      </div>
+    </section>
+
+    <div class="horizon text-earth-900/25"></div>
+
+    <p class="eyebrow mt-8 text-earth-400">
+      Please text for addresses, as they may change over time
     </p>
 
-    <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+    <!-- Groups as a record, matching the sermon archive. -->
+    <ul class="mt-8">
       <li
         v-for="gc in groups"
         :key="gc.hosts"
-        class="rounded-lg border border-ink-100 bg-ink-50 p-5"
+        class="grid grid-cols-1 gap-x-8 gap-y-2 border-t border-earth-900/15 py-6 md:grid-cols-12 md:items-baseline"
       >
-        <p class="font-semibold text-ink-900">{{ gc.hosts }}</p>
-        <p v-if="gc.time" class="mt-1 text-sm text-brand-700">{{ gc.time }}</p>
-        <p v-if="gc.address" class="mt-2 text-sm text-ink-600">{{ gc.address }}</p>
-        <p v-if="gc.subaddress" class="text-sm text-ink-400">{{ gc.subaddress }}</p>
-        <p v-if="gc.moreInfo" class="mt-2 text-sm text-ink-600">{{ gc.moreInfo }}</p>
+        <p class="eyebrow text-wheat-600 md:col-span-3">{{ gc.time }}</p>
+        <h3 class="text-section normal-case text-earth-900 md:col-span-4">{{ gc.hosts }}</h3>
+        <div class="text-earth-600 md:col-span-5">
+          <p v-if="gc.address">{{ gc.address }}</p>
+          <p v-if="gc.subaddress" class="text-earth-400">{{ gc.subaddress }}</p>
+          <p v-if="gc.moreInfo" class="mt-1 text-sm italic">{{ gc.moreInfo }}</p>
+        </div>
       </li>
     </ul>
   </div>

@@ -20,6 +20,7 @@
     "pinia": "^4.0.3"
   },
   "devDependencies": {
+    "@nuxt/fonts": "^0.14.0",
     "@tailwindcss/vite": "^4.3.3",
     "dashify": "^2.0.0",
     "fast-xml-parser": "^5.10.1",

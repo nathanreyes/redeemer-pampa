@@ -12,53 +12,59 @@ const nav = [
 const menuOpen = ref(false);
 const route = useRoute();
 watch(() => route.fullPath, () => (menuOpen.value = false));
+
+const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' and ', ' · ');
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col">
-    <!-- Opaque, not translucent: the old nav set opacity on the whole element,
-         which faded its own links and let page content ghost through. -->
-    <header class="sticky top-0 z-40 border-b border-ink-100 bg-white">
-      <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-5">
-        <NuxtLink
-          to="/"
-          class="font-display text-xl tracking-tight text-ink-900 sm:text-2xl"
-        >
-          Redeemer Pampa
+  <div class="flex min-h-screen flex-col bg-sky-100">
+    <!-- A thin rail, not a floating card. Opaque, sits on the horizon. -->
+    <header class="sticky top-0 z-40 bg-sky-100 text-earth-900">
+      <div class="mx-auto flex h-14 max-w-[110rem] items-center justify-between px-5 sm:px-8">
+        <NuxtLink to="/" class="display text-base tracking-tight sm:text-lg">
+          Redeemer&nbsp;Pampa
         </NuxtLink>
 
-        <nav class="hidden items-center gap-1 md:flex">
+        <nav class="hidden items-baseline gap-7 md:flex">
           <NuxtLink
             v-for="item in nav"
             :key="item.to"
             :to="item.to"
-            class="rounded px-3 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-ink-50 hover:text-brand-700"
-            active-class="text-brand-700"
+            class="eyebrow text-earth-500 transition-colors hover:text-earth-900"
+            active-class="!text-earth-900"
           >
             {{ item.label }}
           </NuxtLink>
         </nav>
 
+        <p class="eyebrow hidden text-earth-400 lg:block">Sun {{ shortTimes }}</p>
+
         <button
-          class="rounded border border-ink-200 p-2 text-ink-600 md:hidden"
+          class="-mr-2 p-2 text-earth-900 md:hidden"
           :aria-expanded="menuOpen"
           aria-controls="mobile-nav"
           @click="menuOpen = !menuOpen"
         >
           <span class="sr-only">{{ menuOpen ? 'Close menu' : 'Open menu' }}</span>
           <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            <path v-if="!menuOpen" d="M0 3h20v1.6H0V3zm0 6h20v1.6H0V9zm0 6h20v1.6H0v-1.6z" />
+            <path v-else d="M2.3 1.2 18.8 17.7l-1.1 1.1L1.2 2.3z M18.8 2.3 2.3 18.8l-1.1-1.1L17.7 1.2z" />
           </svg>
         </button>
       </div>
+      <div class="horizon mx-5 text-earth-900/25 sm:mx-8"></div>
 
-      <nav v-show="menuOpen" id="mobile-nav" class="border-t border-ink-100 bg-white md:hidden">
+      <nav
+        v-show="menuOpen"
+        id="mobile-nav"
+        class="bg-sky-100 px-5 pb-4 pt-2 md:hidden"
+      >
         <NuxtLink
           v-for="item in nav"
           :key="item.to"
           :to="item.to"
-          class="block border-b border-ink-50 px-5 py-3 text-ink-600"
-          active-class="text-brand-700"
+          class="display block py-2 text-2xl text-earth-500"
+          active-class="!text-earth-900"
         >
           {{ item.label }}
         </NuxtLink>
@@ -69,28 +75,57 @@ watch(() => route.fullPath, () => (menuOpen.value = false));
       <slot />
     </main>
 
-    <footer class="mt-24 bg-brand-900 text-brand-100">
-      <div class="mx-auto max-w-6xl px-5 py-14">
-        <div class="flex flex-col gap-10 sm:flex-row sm:justify-between">
+    <!-- The land: the footer is the dark ground the whole site sits on. -->
+    <footer class="bg-earth-900 text-sky-200">
+      <div class="mx-auto max-w-[110rem] px-5 py-16 sm:px-8">
+        <p class="display text-huge text-sky-100">Redeemer Pampa</p>
+
+        <div class="horizon mt-8 text-sky-100/20"></div>
+
+        <div class="mt-8 grid gap-8 text-sm sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p class="font-display text-xl text-white">{{ churchInfo.name }}</p>
-            <p class="mt-3 text-sm leading-relaxed">
+            <p class="eyebrow text-wheat-500">Gatherings</p>
+            <p class="mt-2 leading-relaxed">{{ churchInfo.serviceTime }}</p>
+          </div>
+          <div>
+            <p class="eyebrow text-wheat-500">Where</p>
+            <p class="mt-2 leading-relaxed">
               {{ churchInfo.address.street }}<br />
+              {{ churchInfo.address.mailStreet }}<br />
               {{ churchInfo.address.city }}, {{ churchInfo.address.state }}
               {{ churchInfo.address.zip }}
             </p>
-            <p class="mt-3 text-sm">
-              <a :href="`tel:${churchInfo.phone}`" class="hover:text-white">{{ churchInfo.phone }}</a><br />
-              <a :href="`mailto:${churchInfo.email}`" class="hover:text-white">{{ churchInfo.email }}</a>
+          </div>
+          <div>
+            <p class="eyebrow text-wheat-500">Contact</p>
+            <p class="mt-2 leading-relaxed">
+              <a :href="`tel:${churchInfo.phone}`" class="hover:text-wheat-300">{{ churchInfo.phone }}</a><br />
+              <a :href="`mailto:${churchInfo.email}`" class="break-words hover:text-wheat-300">
+                {{ churchInfo.email }}
+              </a>
             </p>
           </div>
           <div>
-            <p class="text-sm font-semibold uppercase tracking-wider text-brand-200">Gatherings</p>
-            <p class="mt-3 text-sm">{{ churchInfo.serviceTime }}</p>
+            <p class="eyebrow text-wheat-500">Elsewhere</p>
+            <p class="mt-2 leading-relaxed">
+              <a href="https://redeemernetwork.org" target="_blank" rel="noopener" class="hover:text-wheat-300">
+                Redeemer Network
+              </a><br />
+              <a
+                v-if="content.facebookUrl"
+                :href="content.facebookUrl"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-wheat-300"
+              >
+                Facebook
+              </a>
+            </p>
           </div>
         </div>
-        <p class="mt-12 border-t border-brand-800 pt-6 text-xs text-brand-200">
-          Copyright © {{ new Date().getFullYear() }} {{ churchInfo.name }}
+
+        <p class="eyebrow mt-14 text-earth-400">
+          © {{ new Date().getFullYear() }} Redeemer Pampa · Pampa, Texas
         </p>
       </div>
     </footer>
