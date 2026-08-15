@@ -7,7 +7,7 @@ Nuxt 4 · Tailwind 4 · prerendered to static · hosted on Cloudflare Pages.
 ## Develop
 
 ```bash
-nvm use          # 24.14.1, see .nvmrc
+nvm use          # 24.18.0, see .nvmrc
 npm install
 npm run dev
 ```
@@ -48,4 +48,4 @@ Cloudflare Pages builds from Git.
 | --- | --- |
 | Build command | `npm run generate` |
 | Output directory | `.output/public` |
-| Node version | from `.nvmrc` |
+| Node version | from `.nvmrc` (24.18.0, preinstalled on the build image) |
