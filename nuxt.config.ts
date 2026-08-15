@@ -36,7 +36,12 @@ export default defineNuxtConfig({
             'Redeemer Pampa is a church in Pampa, Texas, aligned with the Redeemer Network.',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+      link: [
+        // SVG first for crisp scaling; the PNG stays as a fallback for
+        // browsers that ignore SVG favicons.
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      ],
     },
   },
 

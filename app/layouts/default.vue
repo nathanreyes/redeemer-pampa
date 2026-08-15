@@ -21,8 +21,9 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
     <!-- A thin rail, not a floating card. Opaque, sits on the horizon. -->
     <header class="sticky top-0 z-40 bg-sky-100 text-earth-900">
       <div class="mx-auto flex h-14 max-w-[110rem] items-center justify-between px-5 sm:px-8">
-        <NuxtLink to="/" class="display text-base tracking-tight sm:text-lg">
-          Redeemer&nbsp;Pampa
+        <NuxtLink to="/" class="flex items-center gap-2.5 sm:gap-3">
+          <LogoMark :horizon="false" class="h-6 w-auto text-earth-900 sm:h-7" />
+          <span class="display text-base tracking-tight sm:text-lg">Redeemer&nbsp;Pampa</span>
         </NuxtLink>
 
         <nav class="hidden items-baseline gap-7 md:flex">
@@ -78,9 +79,12 @@ const shortTimes = churchInfo.serviceTime.replace('Sundays @ ', '').replace(' an
     <!-- The land: the footer is the dark ground the whole site sits on. -->
     <footer class="bg-earth-900 text-sky-200">
       <div class="mx-auto max-w-[110rem] px-5 py-16 sm:px-8">
-        <p class="display text-huge text-sky-100">Redeemer Pampa</p>
+        <div class="flex flex-wrap items-end gap-8">
+          <LogoMark class="h-28 w-auto text-sky-100 sm:h-36" />
+          <p class="display text-huge text-sky-100">Redeemer Pampa</p>
+        </div>
 
-        <div class="horizon mt-8 text-sky-100/20"></div>
+        <div class="horizon mt-10 text-sky-100/20"></div>
 
         <div class="mt-8 grid gap-8 text-sm sm:grid-cols-2 lg:grid-cols-4">
           <div>
