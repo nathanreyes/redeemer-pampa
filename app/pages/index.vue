@@ -75,7 +75,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
          The photograph arrives below, as the land. -->
     <section class="mx-auto max-w-[110rem] px-5 pb-10 pt-12 sm:px-8 sm:pb-16 sm:pt-20">
       <p class="eyebrow rise text-earth-400" style="animation-delay: 40ms">
-        An Acts&nbsp;29 church · Pampa, Texas · Since 2011
+        Redeemer Network · Pampa, Texas · Since 2011
       </p>
 
       <h1 class="mt-6 text-colossal text-earth-900 sm:mt-10">

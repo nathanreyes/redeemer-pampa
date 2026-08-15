@@ -1,7 +1,7 @@
 {
   "name": "redeemer-pampa",
   "version": "2.0.0",
-  "description": "Website for Redeemer Pampa, an Acts 29 church in Pampa, TX.",
+  "description": "Website for Redeemer Pampa, a church in Pampa, TX, aligned with the Redeemer Network.",
   "author": "Nathan Reyes <nathanreyes@me.com>",
   "private": true,
   "type": "module",

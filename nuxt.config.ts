@@ -32,7 +32,8 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Redeemer Pampa is an Acts 29 church in Pampa, Texas.',
+          content:
+            'Redeemer Pampa is a church in Pampa, Texas, aligned with the Redeemer Network.',
         },
       ],
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],

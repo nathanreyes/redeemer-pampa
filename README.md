@@ -1,6 +1,6 @@
 # Redeemer Pampa
 
-Website for Redeemer Pampa, an Acts 29 church in Pampa, TX.
+Website for Redeemer Pampa, a church in Pampa, TX, aligned with the Redeemer Network.
 
 Nuxt 4 · Tailwind 4 · prerendered to static · hosted on Cloudflare Pages.
 
