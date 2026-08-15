@@ -147,8 +147,9 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
     </section>
 
     <!-- ================= LAND ================= -->
+    <!-- No horizon rule here: the photograph's own top edge is the horizon,
+         and an inset rule above a full-bleed image disagrees with it. -->
     <figure class="photo relative">
-      <div class="horizon mx-5 text-earth-900 sm:mx-8"></div>
       <picture>
         <source :srcset="land.hero.wide" media="(min-width: 640px)" />
         <img
@@ -158,7 +159,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
           height="1029"
           fetchpriority="high"
           decoding="async"
-          class="mt-5 aspect-4/3 w-full object-cover sm:mt-8 sm:aspect-[21/9]"
+          class="mt-10 aspect-4/3 w-full object-cover sm:mt-14 sm:aspect-[21/9]"
         />
       </picture>
     </figure>

@@ -33,8 +33,9 @@
 
   --font-display: 'Archivo Narrow', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
   --font-body: 'Spectral', Georgia, 'Times New Roman', serif;
-  /* The logotype only. Everything else stays on the condensed display face. */
-  --font-wordmark: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  /* The logotype only. Uses the body serif rather than a third family, so the
+     site carries two typefaces, not three. */
+  --font-wordmark: 'Spectral', Georgia, 'Times New Roman', serif;
 
   /* Display type is set enormous and tight. The vw coefficient is tuned so the
      longest headline line ("THE REDEEMING", roughly 7x the font size in this
