@@ -12,7 +12,10 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "content": "node util/buildSiteContent.js",
-    "deploy": "npm run generate && wrangler deploy"
+    "deploy": "npm run generate && wrangler deploy",
+    "cron:deploy": "wrangler deploy --config workers/rebuild/wrangler.jsonc",
+    "cron:secret": "wrangler secret put DEPLOY_HOOK_URL --config workers/rebuild/wrangler.jsonc",
+    "cron:tail": "wrangler tail --config workers/rebuild/wrangler.jsonc"
   },
   "dependencies": {
     "@pinia/nuxt": "^1.0.2",

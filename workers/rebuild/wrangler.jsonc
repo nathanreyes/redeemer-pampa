@@ -1,0 +1,19 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "redeemer-pampa-rebuild",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-15",
+  "observability": { "enabled": true },
+
+  // Hourly. The check is cheap; only a real change costs a build.
+  "triggers": { "crons": ["0 * * * *"] },
+
+  "kv_namespaces": [
+    {
+      "binding": "STATE",
+      // Replace with the id printed by:
+      //   npx wrangler kv namespace create rebuild-state
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+    }
+  ]
+}

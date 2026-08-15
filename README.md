@@ -49,3 +49,55 @@ Cloudflare Pages builds from Git.
 | Build command | `npm run generate` |
 | Output directory | `.output/public` |
 | Node version | from `.nvmrc` (24.18.0, preinstalled on the build image) |
+
+## Rebuilding when a sermon is published
+
+The site is static and its build reads the podcast feed, so a sermon only
+appears once a build runs. Pushing code triggers one; publishing an episode
+does not, because the podcast host offers no webhook.
+
+`workers/rebuild` is a small Worker that closes that gap. It polls the feed
+hourly and fires a deploy hook only when the newest episode has changed, so a
+sermon is live within the hour without spending a build on the hours when
+nothing has happened.
+
+It is deployed separately from the site and changes rarely.
+
+### One-time setup
+
+1. **Create the deploy hook.** Cloudflare dashboard → Workers & Pages →
+   `redeemer-pampa` → Settings → Builds → Deploy Hooks. Create one for the
+   `master` branch and copy the URL. Treat it as a secret: anyone holding it
+   can trigger builds.
+
+2. **Create the KV namespace** and put the printed id into
+   `workers/rebuild/wrangler.jsonc`, replacing `REPLACE_WITH_KV_NAMESPACE_ID`:
+
+   ```bash
+   npx wrangler kv namespace create rebuild-state
+   ```
+
+3. **Store the hook URL as a secret** — never in the repo:
+
+   ```bash
+   npm run cron:secret     # paste the deploy hook URL when prompted
+   ```
+
+4. **Deploy:**
+
+   ```bash
+   npm run cron:deploy
+   ```
+
+5. **Turn off the old Zapier zap.** It fires a Netlify deploy on each new
+   episode, and Netlify no longer builds this site.
+
+### Checking on it
+
+```bash
+npm run cron:tail
+```
+
+Each run logs one line: no change, a build triggered, or why it could not.
+If the deploy hook fails the run does not record the episode, so the next
+hour retries.
