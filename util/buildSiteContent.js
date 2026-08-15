@@ -1,9 +1,8 @@
-const fs = require('fs');
-const fsExtra = require('fs-extra');
-const path = require('path');
-const axios = require('axios');
-const parser = require('fast-xml-parser');
-const dashify = require('dashify');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { XMLParser, XMLValidator } from 'fast-xml-parser';
+import dashify from 'dashify';
 
 const podcastUrl = 'https://anchor.fm/s/530ebe8/podcast/rss';
 
@@ -194,12 +193,16 @@ const loadExistingSermons = () => {
 
 const fetchPodcasts = async () => {
   console.log(`Fetching sermons at ${podcastUrl}`);
-  const res = await axios.get(podcastUrl, { responseType: 'xml' });
-  if (!parser.validate(res.data)) {
+  const res = await fetch(podcastUrl);
+  if (!res.ok) {
+    throw new Error(`Podcast feed at ${podcastUrl} returned HTTP ${res.status}`);
+  }
+  const xml = await res.text();
+  if (XMLValidator.validate(xml) !== true) {
     throw new Error(`Podcast feed at ${podcastUrl} is not valid XML`);
   }
 
-  const json = parser.parse(res.data, { ignoreAttributes: false });
+  const json = new XMLParser({ ignoreAttributes: false }).parse(xml);
   const podcastsFromFeed = [].concat(json.rss.channel.item || []);
 
   // Seed with what's already on disk. Sermons predating the podcast (the
@@ -364,7 +367,8 @@ const buildSiteContent = async () => {
   const dirSeries = path.resolve('./content/sermons/series');
   // Clear content directories
   console.log('Clearing existing sermon series data...')
-  fsExtra.emptyDirSync(dirSeries);
+  fs.rmSync(dirSeries, { recursive: true, force: true });
+  fs.mkdirSync(dirSeries, { recursive: true });
   // Refresh sermon content from the podcast feed. The archive is committed to
   // the repo, so a feed outage must not fail the deploy — warn loudly and build
   // from what's already on disk. (Before this was awaited, a failure here was an
@@ -408,11 +412,14 @@ const buildSiteContent = async () => {
 // Run directly (`node util/buildSiteContent.js`) but NOT on require — importing
 // this module from nuxt.config.js used to kick off a second, concurrent build
 // racing the one the generate hook starts.
-if (require.main === module) {
+// Run directly (`node util/buildSiteContent.js`) but NOT on import — importing
+// this module from nuxt.config.ts used to kick off a second, concurrent build
+// racing the one the generate hook starts.
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   buildSiteContent().catch(err => {
     console.error(err);
     process.exit(1);
   });
 }
 
-module.exports = buildSiteContent;
+export default buildSiteContent;
