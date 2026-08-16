@@ -12,9 +12,7 @@ backend:
   name: github
   repo: nathanreyes/redeemer-pampa
   branch: master
-  # Uncomment once the auth Worker is deployed — see README, "Editing content".
-  # Until then, sign in with the "Sign In with Token" button on the login screen.
-  # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev
+  base_url: https://sveltia-cms-auth.nathanreyes.workers.dev
 
 # Uploads land in the repo and are served from the site root, matching the
 # paths already stored in the content files.
