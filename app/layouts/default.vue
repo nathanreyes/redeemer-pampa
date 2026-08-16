@@ -121,16 +121,19 @@ const player = usePlayer();
             <p class="mt-2 leading-relaxed">
               <a href="https://redeemernetwork.org" target="_blank" rel="noopener" class="hover:text-wheat-300">
                 Redeemer Network
-              </a><br />
-              <a
-                v-if="content.facebookUrl"
-                :href="content.facebookUrl"
-                target="_blank"
-                rel="noopener"
-                class="hover:text-wheat-300"
-              >
-                Facebook
               </a>
+              <template v-if="content.facebookUrl">
+                <br />
+                <a :href="content.facebookUrl" target="_blank" rel="noopener" class="hover:text-wheat-300">
+                  Facebook
+                </a>
+              </template>
+              <template v-if="content.instagramUrl">
+                <br />
+                <a :href="content.instagramUrl" target="_blank" rel="noopener" class="hover:text-wheat-300">
+                  Instagram
+                </a>
+              </template>
             </p>
           </div>
         </div>
