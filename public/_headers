@@ -8,3 +8,10 @@
 
 /_nuxt/*
   Cache-Control: public, max-age=31536000, immutable
+
+# The editor. Keep it out of search results, and out of the browser cache so a
+# config change takes effect on the next reload rather than whenever the cache
+# expires.
+/admin/*
+  X-Robots-Tag: noindex
+  Cache-Control: no-cache

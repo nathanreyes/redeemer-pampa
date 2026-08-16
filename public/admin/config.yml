@@ -1,0 +1,169 @@
+# Sveltia CMS — editing config for redeemerpampa's content files.
+#
+# Editors sign in with GitHub, the CMS commits straight to `master`, and the
+# push triggers a Cloudflare build. A save is live in a couple of minutes.
+#
+# IMPORTANT: the CMS rewrites each file from the fields listed here, so any key
+# missing from this config is dropped on the next save. That is why the podcast
+# block below is spelled out even though nobody asked to edit it — leaving it
+# out would delete it the first time someone edited a Gospel Community.
+
+backend:
+  name: github
+  repo: nathanreyes/redeemer-pampa
+  branch: master
+  # Uncomment once the auth Worker is deployed — see README, "Editing content".
+  # Until then, sign in with the "Sign In with Token" button on the login screen.
+  # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev
+
+# Uploads land in the repo and are served from the site root, matching the
+# paths already stored in the content files.
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      # ---------------------------------------------------------------- about
+      - name: about
+        label: Elders & Staff
+        file: content/pages/about.json
+        fields:
+          - name: staff
+            label: Elders & Staff
+            label_singular: Person
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - name: role
+                label: Role
+                widget: string
+                required: false
+                hint: Shown under the name. Leave blank for staff who are not elders.
+              - name: summary
+                label: Summary
+                widget: text
+                required: false
+              - { name: email, label: Email, widget: string, required: false }
+              - { name: phone, label: Phone, widget: string, required: false }
+              - name: imgUrl
+                label: Portrait
+                widget: image
+                required: false
+                hint: >-
+                  Uploads to Cloudinary, not the repo. The site layers its own
+                  tonal treatment on whatever crop you pick, so choose a
+                  face-aware square or 4:5 crop and leave the color alone. Blank
+                  is fine — the entry renders without a photo.
+                # Portraits go to Cloudinary rather than the repo because
+                # app/utils/image.ts applies the house duotone through
+                # Cloudinary's transform URLs. A file committed to public/images
+                # would render untreated, in color, beside the others.
+                #
+                # Only the cloud name and API key appear here. Cloudinary's API
+                # secret is never needed and must not be added — editors sign in
+                # to Cloudinary themselves the first time they open the picker.
+                media_libraries:
+                  cloudinary:
+                    config:
+                      cloud_name: do3iknsvm
+                      # Cloudinary Console → Settings → API Keys. Safe to commit;
+                      # it identifies the account and grants nothing on its own.
+                      api_key: YOUR_CLOUDINARY_API_KEY
+          - name: beliefs
+            label: Beliefs
+            label_singular: Belief
+            widget: list
+            collapsed: true
+            summary: '{{fields.title}}'
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+
+      # -------------------------------------------------------------- connect
+      - name: connect
+        label: Gospel Communities
+        file: content/pages/connect.json
+        fields:
+          - name: gospelCommunities
+            label: Gospel Communities
+            label_singular: Gospel Community
+            widget: list
+            summary: '{{fields.hosts}}'
+            fields:
+              - { name: hosts, label: Hosts, widget: string }
+              - name: address
+                label: Address
+                widget: string
+                hint: Addresses are not published — "Text for address" is the usual entry.
+              - name: subaddress
+                label: Subaddress
+                widget: string
+                required: false
+                hint: A second line, used for notes like "Students 6th - 12th Grades".
+              - { name: time, label: Time, widget: string }
+              - { name: moreInfo, label: More Info, widget: text }
+          - name: podcast
+            label: Podcast
+            widget: object
+            collapsed: true
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: subtitle, label: Subtitle, widget: string }
+              - { name: artwork, label: Artwork, widget: image }
+              - name: description
+                label: Description
+                widget: list
+                field: { name: paragraph, label: Paragraph, widget: text }
+              - name: links
+                label: Links
+                label_singular: Link
+                widget: list
+                summary: '{{fields.label}}'
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: url, label: URL, widget: string }
+
+      # ----------------------------------------------------------------- home
+      - name: home
+        label: Church Info
+        file: content/pages/home.json
+        fields:
+          - name: churchInfo
+            label: Church Info
+            widget: object
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: email, label: Email, widget: string }
+              - { name: phone, label: Phone, widget: string }
+              - name: serviceTime
+                label: Service Time
+                widget: string
+                hint: >-
+                  Pages strip the leading "Sundays @ " when they need the times
+                  alone, so keep that prefix.
+              - name: address
+                label: Address
+                widget: object
+                fields:
+                  - { name: street, label: Street, widget: string }
+                  - { name: mailStreet, label: Mailing Street, widget: string }
+                  - { name: city, label: City, widget: string }
+                  - { name: state, label: State, widget: string }
+                  - { name: zip, label: ZIP, widget: string }
+              - name: latitude
+                label: Latitude
+                widget: number
+                value_type: float
+                hint: Used for the driving-directions link. Change only if the church moves.
+              - name: longitude
+                label: Longitude
+                widget: number
+                value_type: float
+          - name: bannerMessage
+            label: Banner Message
+            widget: string
+            hint: Read by screen readers over the homepage hero.
+          - { name: facebookUrl, label: Facebook URL, widget: string, required: false }
+          - { name: instagramUrl, label: Instagram URL, widget: string, required: false }

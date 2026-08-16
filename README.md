@@ -33,12 +33,77 @@ npm run content
 | What | Where | Owner |
 | --- | --- | --- |
 | Sermons | `content/sermons/` | Generated from the podcast RSS feed. Do not hand-edit — the next build overwrites it. Fix mistakes in Spotify for Creators. |
-| Staff, Gospel Communities | `content/pages/` | Hand-edited. A CMS for these two is planned. |
-| Church info, page copy | `content/pages/home.json`, page components | Hand-edited. |
+| Staff, Gospel Communities, church info | `content/pages/` | Edited at `/admin`, or by hand. |
+| Page copy | page components | Hand-edited. |
 
 Series and speaker names arrive as free text in the podcast description, so
 `util/buildSiteContent.js` normalizes them through `SERIES_ALIASES` and
 `LEADER_ALIASES`. Add new variants there.
+
+## Editing content
+
+`/admin` serves [Sveltia CMS](https://sveltiacms.app), a form editor over the
+JSON in `content/pages/`. It runs entirely in the browser and commits to
+`master` through the GitHub API, so a save triggers a Cloudflare build and is
+live a couple of minutes later. Nothing runs on the server — the site stays
+fully prerendered.
+
+It covers elders and staff, beliefs, Gospel Communities, the podcast block, and
+church info. Sermons are left out on purpose: the build regenerates them from
+the podcast feed and would overwrite anything typed here.
+
+Editors need a GitHub account with write access to the repo.
+
+**One rule when changing `public/admin/config.yml`:** the CMS rewrites each
+file from the fields the config lists, so a key left out of the config is
+deleted from the JSON the next time anyone saves that file. Add a field to the
+config whenever you add one to the content.
+
+### One-time setup: sign in with GitHub
+
+Until this is done, the login screen's **Sign In with Token** button works with
+a GitHub personal access token that can write to the repo. The button below
+replaces that with a normal "Sign in with GitHub".
+
+The browser cannot hold the OAuth client secret, so the exchange needs a
+Worker. [Sveltia publishes one](https://github.com/sveltia/sveltia-cms-auth);
+it is deployed from its own repo, not this one.
+
+1. **Deploy the Worker** — use the deploy button in that repo, or clone it and
+   run `npx wrangler deploy`. Copy the resulting
+   `https://sveltia-cms-auth.<subdomain>.workers.dev` URL.
+
+2. **Register a GitHub OAuth app** at
+   <https://github.com/settings/applications/new>. Set the authorization
+   callback URL to `<worker-url>/callback`. Keep the client ID and secret.
+
+3. **Give the Worker the credentials.** Cloudflare dashboard → the
+   `sveltia-cms-auth` Worker → Settings → Variables:
+   `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET` (encrypted), and
+   `ALLOWED_DOMAINS` set to the site's hostname so no other site can borrow it.
+
+4. **Point the CMS at it.** Uncomment `base_url` in
+   `public/admin/config.yml` and set it to the Worker URL.
+
+### Uploads
+
+Uploads go to one of two places, depending on the field.
+
+**Staff portraits go to Cloudinary.** `app/utils/image.ts` applies the house
+duotone through Cloudinary's transform URLs, so a portrait committed to the
+repo would render untreated, in color, beside the others. The portrait field
+opens Cloudinary's picker and stores the full URL.
+
+This needs the account's API key filled into `public/admin/config.yml` — it is
+committed as `YOUR_CLOUDINARY_API_KEY`. Find it under Cloudinary Console →
+Settings → API Keys. The key is safe to commit: it names the account and grants
+nothing by itself. The **API secret is not needed and must never go in the
+config** — editors sign in to Cloudinary themselves the first time they open
+the picker.
+
+**Everything else commits into `public/images/`**, which `public/_headers`
+caches for a year as immutable. Re-uploading under a name already in use keeps
+serving the old file, so upload under a new name.
 
 ## Deploy
 
