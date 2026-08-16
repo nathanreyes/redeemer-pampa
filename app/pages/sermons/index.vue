@@ -138,9 +138,8 @@ useHead({ title: 'Sermons — Redeemer Pampa' });
       </div>
     </div>
 
-    <div class="horizon text-earth-900/25"></div>
-
-    <p class="eyebrow mt-5 flex items-baseline gap-4 text-earth-400">
+    <!-- No closing rule under the filters: the first row's border opens the list. -->
+    <p class="eyebrow flex items-baseline gap-4 text-earth-400">
       <span class="tabular-nums text-earth-900">
         {{ results.length.toLocaleString() }} {{ results.length === 1 ? 'sermon' : 'sermons' }}
       </span>
