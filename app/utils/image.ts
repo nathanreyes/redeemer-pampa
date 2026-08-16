@@ -15,19 +15,33 @@ const CLOUDINARY = 'https://res.cloudinary.com/do3iknsvm/image/upload';
  */
 const TREATMENT = 'e_tint:100:14120f:0p:e8eae6:100p/e_contrast:15';
 
+/**
+ * Extra push for a photograph that has to carry type.
+ *
+ * The house treatment is tuned for pictures shown on their own, and it leaves
+ * some of them sitting in a narrow band around mid grey — fine as a band, gone
+ * entirely once a scrim is laid over them to make a headline readable. This
+ * opens the range back up. Brightness after contrast, not before: contrast
+ * pivots around mid grey, so lifting first only clips the highlights it makes.
+ */
+const LIFT = 'e_contrast:40/e_brightness:70';
+
 type PhotoOptions = {
   /** Rendered width in pixels. */
   w?: number;
   /** Aspect ratio, Cloudinary style — '21:9', '4:3', '4:5'. */
   ar?: string;
+  /** Open the tonal range up, for a photograph shown under a scrim. */
+  lift?: boolean;
 };
 
 /** Build a treated Cloudinary URL from a version-and-file path. */
-export function photo(file: string, { w, ar }: PhotoOptions = {}): string {
+export function photo(file: string, { w, ar, lift }: PhotoOptions = {}): string {
   const crop = ['q_auto', 'f_auto', 'c_fill', 'g_auto'];
   if (ar) crop.push(`ar_${ar}`);
   if (w) crop.push(`w_${w}`);
-  return `${CLOUDINARY}/${crop.join(',')}/${TREATMENT}/${file}`;
+  const treatment = lift ? `${TREATMENT}/${LIFT}` : TREATMENT;
+  return `${CLOUDINARY}/${crop.join(',')}/${treatment}/${file}`;
 }
 
 /**

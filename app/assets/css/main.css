@@ -44,6 +44,14 @@
   --text-colossal--line-height: 0.86;
   --text-colossal--letter-spacing: -0.025em;
 
+  /* The banner headline sits on the photograph rather than in open air, so it
+     is set below colossal: five lines at that size fill the band edge to edge
+     and leave the picture no room to show. This lands the block at roughly
+     three-fifths of the band height, with the photograph carrying the rest. */
+  --text-banner: clamp(2.75rem, 6vw, 5.8rem);
+  --text-banner--line-height: 0.86;
+  --text-banner--letter-spacing: -0.025em;
+
   --text-huge: clamp(2.5rem, 7vw, 5.5rem);
   --text-huge--line-height: 0.92;
   --text-huge--letter-spacing: -0.02em;

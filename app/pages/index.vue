@@ -25,18 +25,13 @@ const latestDate = new Date(latest.date).toLocaleDateString('en-US', {
   timeZone: 'UTC',
 });
 
-// Photography is used boldly but rarely: three full-bleed bands, each acting
-// as the land beneath a horizon rule. Wide crops, because this is a landscape.
+// Photography is used boldly but rarely: full-bleed bands, each acting as the
+// land beneath a horizon rule. Wide crops, because this is a landscape.
 const land = {
-  hero: {
+  prayer: {
     wide: photo('v1749519927/group-prayer-edit.jpg', { ar: '21:9', w: 2400 }),
     narrow: photo('v1749519927/group-prayer-edit.jpg', { ar: '4:3', w: 1000 }),
     alt: 'The congregation of Redeemer Pampa gathered in prayer',
-  },
-  gathering: {
-    wide: photo('v1776817270/dan-clara.jpg', { ar: '21:9', w: 2400 }),
-    narrow: photo('v1776817270/dan-clara.jpg', { ar: '4:3', w: 1000 }),
-    alt: 'Members of Redeemer Pampa gathered outdoors around a baptism',
   },
   sent: {
     wide: photo('v1749519928/living-sent.jpg', { ar: '21:9', w: 2400 }),
@@ -81,6 +76,17 @@ const values = [
   },
 ];
 
+// The headline is set over this one, so it has to be a photograph with somewhere
+// for the type to land: the baptism runs across the lower half and the wall of
+// the building fills the upper half, flat and empty. Cropped 4:3 — taller than
+// the band ever is — so that anchoring it to the top crops from the bottom and
+// drops the two faces clear of the headline.
+const banner = {
+  wide: photo('v1776817270/dan-clara.jpg', { ar: '4:3', w: 2400, lift: true }),
+  narrow: photo('v1776817270/dan-clara.jpg', { ar: '9:16', w: 900, lift: true }),
+  alt: 'A baptism outside the church, watched by the gathered congregation',
+};
+
 const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${churchInfo.latitude},${churchInfo.longitude}`;
 
 // Split the banner message so it can be set as stacked display lines.
@@ -89,83 +95,92 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
 
 <template>
   <div>
-    <!-- ================= SKY ================= -->
-    <!-- The headline is set in the open air of the page, not over a photo.
-         The photograph arrives below, as the land. -->
-    <section class="mx-auto max-w-[110rem] px-5 pb-10 pt-12 sm:px-8 sm:pb-16 sm:pt-20">
-      <p class="eyebrow rise text-earth-400" style="animation-delay: 40ms">
-        Redeemer Network · Pampa, Texas · Since 2011
-      </p>
+    <!-- ================= BANNER ================= -->
+    <!-- The headline is set on the photograph. The picture is already a duotone
+         of the two ground colours, so a scrim weighted to the top reads as the
+         same dark field the type sits in, and the baptism surfaces below the
+         last line where the scrim thins out. The band is sized so the type
+         takes the upper three-fifths and the photograph keeps the rest. -->
+    <section class="relative isolate flex min-h-[calc(100svh-3.5rem)] flex-col overflow-hidden bg-earth-900">
+      <div class="photo absolute inset-0 -z-10">
+        <picture>
+          <source :srcset="banner.wide" media="(min-width: 640px)" />
+          <img
+            :src="banner.narrow"
+            :alt="banner.alt"
+            width="2400"
+            height="1800"
+            fetchpriority="high"
+            decoding="async"
+            class="size-full object-cover object-top"
+          />
+        </picture>
+        <!-- Lightest across the middle, where the baptism is, and heavier at
+             the two ends where the small type sits. Read these against the
+             lifted photograph: on the unlifted one the same numbers turn the
+             whole band into a black rectangle. -->
+        <div class="absolute inset-0 bg-gradient-to-b from-earth-900/70 via-earth-900/45 via-45% to-earth-900/70"></div>
+      </div>
 
-      <h1 class="mt-6 text-colossal text-earth-900 sm:mt-10">
-        <span class="sr-only">{{ bannerMessage }}</span>
-        <span
-          v-for="(line, i) in headlineLines"
-          :key="line"
-          class="rise block whitespace-nowrap"
-          :style="{ animationDelay: `${120 + i * 80}ms` }"
-          aria-hidden="true"
-        >{{ line }}</span>
-      </h1>
-
-      <div
-        class="rise mt-12 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-4 sm:mt-20"
-        style="animation-delay: 560ms"
-      >
-        <p class="text-lede max-w-md font-light text-earth-600">
-          {{ churchInfo.serviceTime }} at {{ churchInfo.address.street }}.
+      <div class="mx-auto flex w-full max-w-[110rem] flex-1 flex-col px-5 pb-10 pt-12 sm:px-8 sm:pb-14 sm:pt-16">
+        <p class="eyebrow rise text-wheat-500" style="animation-delay: 40ms">
+          Redeemer Network · Pampa, Texas · Since 2011
         </p>
-        <div class="flex flex-wrap items-baseline gap-x-8 gap-y-3">
-          <!-- Starts the newest sermon in place rather than sending people to
-               the archive to find it. -->
-          <button
-            class="eyebrow inline-flex items-center gap-2.5 border-b-2 border-wheat-500 pb-1 hover:text-wheat-600"
-            @click="player.play(latestTrack)"
-          >
-            <svg class="size-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <template v-if="isLatest && player.playing">
-                <rect x="4" y="3" width="4" height="14" />
-                <rect x="12" y="3" width="4" height="14" />
-              </template>
-              <path v-else d="M5 3l12 7-12 7z" />
-            </svg>
-            {{ isLatest && player.playing ? 'Playing latest' : 'Play latest sermon' }}
-          </button>
-          <NuxtLink to="/sermons" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
-            All sermons
-          </NuxtLink>
-          <NuxtLink to="/connect" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
-            Plan a visit
-          </NuxtLink>
-          <NuxtLink to="/connect#podcast" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
-            Men’s podcast
-          </NuxtLink>
+
+        <h1 class="mt-6 text-banner text-sky-100 sm:mt-8">
+          <span class="sr-only">{{ bannerMessage }}</span>
+          <span
+            v-for="(line, i) in headlineLines"
+            :key="line"
+            class="rise block whitespace-nowrap"
+            :style="{ animationDelay: `${120 + i * 80}ms` }"
+            aria-hidden="true"
+          >{{ line }}</span>
+        </h1>
+
+        <!-- Pushed to the foot of the band, so the picture is left to itself
+             between the last line of the headline and this. -->
+        <div
+          class="rise mt-auto flex flex-wrap items-baseline justify-between gap-x-6 gap-y-4 pt-16"
+          style="animation-delay: 560ms"
+        >
+          <p class="text-lede max-w-md font-light text-sky-200">
+            {{ churchInfo.serviceTime }} at {{ churchInfo.address.street }}.
+          </p>
+          <div class="flex flex-wrap items-baseline gap-x-8 gap-y-3 text-sky-100">
+            <!-- Starts the newest sermon in place rather than sending people to
+                 the archive to find it. -->
+            <button
+              class="eyebrow inline-flex items-center gap-2.5 border-b-2 border-wheat-500 pb-1 hover:text-wheat-300"
+              @click="player.play(latestTrack)"
+            >
+              <svg class="size-3" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <template v-if="isLatest && player.playing">
+                  <rect x="4" y="3" width="4" height="14" />
+                  <rect x="12" y="3" width="4" height="14" />
+                </template>
+                <path v-else d="M5 3l12 7-12 7z" />
+              </svg>
+              {{ isLatest && player.playing ? 'Playing latest' : 'Play latest sermon' }}
+            </button>
+            <NuxtLink to="/sermons" class="eyebrow border-b-2 border-sky-100/25 pb-1 hover:border-wheat-500">
+              All sermons
+            </NuxtLink>
+            <NuxtLink to="/connect" class="eyebrow border-b-2 border-sky-100/25 pb-1 hover:border-wheat-500">
+              Plan a visit
+            </NuxtLink>
+            <NuxtLink to="/connect#podcast" class="eyebrow border-b-2 border-sky-100/25 pb-1 hover:border-wheat-500">
+              Men’s podcast
+            </NuxtLink>
+          </div>
+
+          <p class="w-full text-sm text-sky-400 sm:text-right">
+            {{ latest.title }} · {{ latest.leader }} · {{ latestDate }}
+            <span v-if="latest.duration"> · {{ formatTime(latest.duration) }}</span>
+          </p>
         </div>
-
-        <p class="w-full text-sm text-earth-400 sm:text-right">
-          {{ latest.title }} · {{ latest.leader }} · {{ latestDate }}
-          <span v-if="latest.duration"> · {{ formatTime(latest.duration) }}</span>
-        </p>
       </div>
     </section>
-
-    <!-- ================= LAND ================= -->
-    <!-- No horizon rule here: the photograph's own top edge is the horizon,
-         and an inset rule above a full-bleed image disagrees with it. -->
-    <figure class="photo relative">
-      <picture>
-        <source :srcset="land.hero.wide" media="(min-width: 640px)" />
-        <img
-          :src="land.hero.narrow"
-          :alt="land.hero.alt"
-          width="2400"
-          height="1029"
-          fetchpriority="high"
-          decoding="async"
-          class="mt-10 aspect-4/3 w-full object-cover sm:mt-14 sm:aspect-[21/9]"
-        />
-      </picture>
-    </figure>
 
     <!-- ================= VALUES ================= -->
     <div class="mx-auto max-w-[110rem] px-5 sm:px-8">
@@ -213,13 +228,13 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
       </div>
     </section>
 
-    <!-- ============ LAND: gathering ============ -->
+    <!-- ============ LAND: sent ============ -->
     <figure class="photo">
       <picture>
-        <source :srcset="land.gathering.wide" media="(min-width: 640px)" />
+        <source :srcset="land.sent.wide" media="(min-width: 640px)" />
         <img
-          :src="land.gathering.narrow"
-          :alt="land.gathering.alt"
+          :src="land.sent.narrow"
+          :alt="land.sent.alt"
           width="2400"
           height="1029"
           loading="lazy"
@@ -242,13 +257,13 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
       </p>
     </section>
 
-    <!-- ============ LAND: sent ============ -->
+    <!-- ============ LAND: prayer ============ -->
     <figure class="photo">
       <picture>
-        <source :srcset="land.sent.wide" media="(min-width: 640px)" />
+        <source :srcset="land.prayer.wide" media="(min-width: 640px)" />
         <img
-          :src="land.sent.narrow"
-          :alt="land.sent.alt"
+          :src="land.prayer.narrow"
+          :alt="land.prayer.alt"
           width="2400"
           height="1029"
           loading="lazy"
