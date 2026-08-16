@@ -1,4 +1,18 @@
 {
+  "podcast": {
+    "title": "Rugged & Redeemed",
+    "subtitle": "Becoming Men of the Gospel",
+    "artwork": "/images/rugged-and-redeemed.webp",
+    "description": [
+      "A group of men from Redeemer working through books of the Bible verse by verse — seeking truth and sharpening one another as brothers joined together in Christ.",
+      "New episodes most weeks. Listen wherever you already keep your podcasts."
+    ],
+    "links": [
+      { "label": "Apple Podcasts", "url": "https://podcasts.apple.com/us/podcast/rugged-and-redeemed-becoming-men-of-the-gospel/id1866619094" },
+      { "label": "Spotify", "url": "https://open.spotify.com/show/1oKR3GuxN4fyUj2vfoZjwG" },
+      { "label": "RSS feed", "url": "https://anchor.fm/s/10c5a7708/podcast/rss" }
+    ]
+  },
   "gospelCommunities": [
     {
       "hosts": "Reagan & Carol Herman, David & Mandy Lewis",

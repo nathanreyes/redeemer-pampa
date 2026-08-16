@@ -137,6 +137,9 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
           <NuxtLink to="/connect" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
             Plan a visit
           </NuxtLink>
+          <NuxtLink to="/connect#podcast" class="eyebrow border-b-2 border-earth-900/20 pb-1 hover:border-wheat-500">
+            Men’s podcast
+          </NuxtLink>
         </div>
 
         <p class="w-full text-sm text-earth-400 sm:text-right">

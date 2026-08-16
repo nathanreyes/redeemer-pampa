@@ -134,6 +134,12 @@ const player = usePlayer();
                   Instagram
                 </a>
               </template>
+              <br />
+              <!-- Points at our own section rather than one player, so nobody
+                   is sent to an app they don't use. -->
+              <NuxtLink to="/connect#podcast" class="hover:text-wheat-300">
+                Rugged &amp; Redeemed
+              </NuxtLink>
             </p>
           </div>
         </div>

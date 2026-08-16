@@ -3,6 +3,7 @@ import content from '~~/content/pages/connect.json';
 import home from '~~/content/pages/home.json';
 
 const groups = content.gospelCommunities ?? [];
+const podcast = content.podcast;
 useHead({ title: 'Connect — Redeemer Pampa' });
 </script>
 
@@ -58,5 +59,53 @@ useHead({ title: 'Connect — Redeemer Pampa' });
         </div>
       </li>
     </ul>
+
+    <!-- Podcast. The cover is a black square, so it is set on the pale ground
+         as its own patch of land rather than inside a dark band, where it
+         would vanish. -->
+    <section v-if="podcast" id="podcast" class="border-t border-earth-900/15 pt-16">
+      <p class="eyebrow text-earth-400">Podcast</p>
+
+      <div class="mt-8 grid gap-x-12 gap-y-8 lg:grid-cols-12">
+        <img
+          :src="podcast.artwork"
+          :alt="`Cover art for ${podcast.title}: ${podcast.subtitle}`"
+          width="1000"
+          height="1000"
+          loading="lazy"
+          decoding="async"
+          class="w-full max-w-sm lg:col-span-4"
+        />
+
+        <div class="lg:col-span-8">
+          <h2 class="text-section text-earth-900">{{ podcast.title }}</h2>
+          <p class="eyebrow mt-3 text-wheat-600">{{ podcast.subtitle }}</p>
+
+          <p
+            v-for="para in podcast.description"
+            :key="para"
+            class="measure mt-6 text-earth-600"
+          >
+            {{ para }}
+          </p>
+
+          <!-- Apple and Spotify cover most people; the feed covers the rest,
+               so no other player needs its own link. -->
+          <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3">
+            <a
+              v-for="(link, i) in podcast.links"
+              :key="link.url"
+              :href="link.url"
+              target="_blank"
+              rel="noopener"
+              class="eyebrow border-b-2 pb-1 hover:text-wheat-600"
+              :class="i === 0 ? 'border-wheat-500' : 'border-earth-900/20 hover:border-wheat-500'"
+            >
+              {{ link.label }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
