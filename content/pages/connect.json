@@ -43,7 +43,7 @@
       "moreInfo": "Text Karmen 806.662.0573"
     },
     {
-      "hosts": "Dale & Stephanie Langford, Paul & Alison Cuellar",
+      "hosts": "Paul & Alison Cuellar",
       "address": "Text for address",
       "time": "Tuesdays @ 6:00",
       "moreInfo": "Text Dale 806.220.4417 or Paul 806.663.6199",
@@ -64,18 +64,11 @@
       "subaddress": "."
     },
     {
-      "hosts": "Ty & Kolbi Linder, Shawn & Lori Beth Taylor, Mark & Stormy McCullar",
+      "hosts": "Ty & Kolbi Linder, Shawn & Lori Beth Taylor",
       "address": "Text for address",
       "time": "Wednesdays @ 6:30pm",
       "moreInfo": "Text Shawn 806.898.6764",
       "subaddress": "."
-    },
-    {
-      "hosts": "Jesse & Marissa Lee",
-      "address": "Text for address",
-      "subaddress": "Students 6th - 12th Grades",
-      "time": "Wednesdays @ 6:00-7:15pm",
-      "moreInfo": "Text Jesse 478.538.4761"
     }
   ]
 }
