@@ -85,11 +85,19 @@ useHead({ title: 'Giving — Redeemer Pampa' });
         link above and it will open directly.
       </p>
 
-      <div class="mt-8 border border-earth-900/15 bg-white">
+      <!--
+        We can't style inside a cross-origin frame, but `multiply` is applied by
+        the compositor rather than the frame's document, so it is allowed. The
+        form's white ground multiplied by sky-100 lands on sky-100 exactly, and
+        everything else darkens by roughly 9% — which raises text contrast
+        rather than lowering it. The wrapper must carry the same sky-100 so the
+        blend has the right backdrop.
+      -->
+      <div class="isolate mt-8 border border-earth-900/15 bg-sky-100">
         <iframe
           :src="givingUrl"
           title="Give to Redeemer Pampa"
-          class="h-[52rem] w-full"
+          class="h-[52rem] w-full mix-blend-multiply"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
