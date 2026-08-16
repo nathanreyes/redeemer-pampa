@@ -122,9 +122,9 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
           />
         </picture>
         <!-- Lightest across the middle, where the baptism is, and heavier at
-             the two ends where the small type sits. Read these against the
-             lifted photograph: on the unlifted one the same numbers turn the
-             whole band into a black rectangle. -->
+             the two ends where the small type sits. Tuned to this photograph:
+             on a flatter one the same numbers turn the band into a black
+             rectangle. -->
         <div class="absolute inset-0 bg-gradient-to-b from-earth-900/70 via-earth-900/45 via-45% to-earth-900/70"></div>
       </div>
 
@@ -145,15 +145,17 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
         </h1>
 
         <!-- Pushed to the foot of the band, so the picture is left to itself
-             between the last line of the headline and this. -->
+             between the last line of the headline and this. Everything here
+             sits to the right from `sm` up: she is in the lower left of the
+             photograph, and this row was landing on her face. -->
         <div
-          class="rise mt-auto flex flex-wrap items-baseline justify-between gap-x-6 gap-y-4 pt-16"
+          class="rise mt-auto flex flex-col gap-4 pt-16 sm:items-end sm:text-right"
           style="animation-delay: 560ms"
         >
-          <p class="text-lede max-w-md font-light text-sky-200">
+          <p class="text-lede font-light text-sky-200">
             {{ churchInfo.serviceTime }} at {{ churchInfo.address.street }}.
           </p>
-          <div class="flex flex-wrap items-baseline gap-x-8 gap-y-3 text-sky-100">
+          <div class="flex flex-wrap items-baseline gap-x-8 gap-y-3 text-sky-100 sm:justify-end">
             <!-- Starts the newest sermon in place rather than sending people to
                  the archive to find it. -->
             <button
@@ -180,7 +182,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
             </NuxtLink>
           </div>
 
-          <p class="w-full text-sm text-sky-400 sm:text-right">
+          <p class="text-sm text-sky-400">
             {{ latest.title }} · {{ latest.leader }} · {{ latestDate }}
             <span v-if="latest.duration"> · {{ formatTime(latest.duration) }}</span>
           </p>
