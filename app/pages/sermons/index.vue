@@ -96,7 +96,7 @@ useHead({ title: 'Sermons — Redeemer Pampa' });
 
 <template>
   <div class="mx-auto max-w-[110rem] px-5 pb-32 pt-12 sm:px-8 sm:pt-20">
-    <p class="eyebrow text-earth-400">The Archive</p>
+    <p class="eyebrow text-wheat-600">The Archive</p>
     <h1 class="mt-6 text-colossal text-earth-900">Sermons</h1>
 
     <!-- The scale of the archive is the point: fifteen years, book by book. -->

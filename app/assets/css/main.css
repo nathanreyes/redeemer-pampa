@@ -130,6 +130,10 @@
   }
 
   /* --- Eyebrow / small caps label ----------------------------------------- */
+  /* Colour carries the distinction: an eyebrow that labels a section is set in
+     wheat — 500 on the dark grounds, 600 on the pale one, where 500 washes out
+     to about 2:1 against sky-100. Eyebrows doing utility work (nav, filter
+     labels, dates, counts) stay earth, so the accent keeps meaning something. */
   .eyebrow {
     font-family: var(--font-display);
     font-weight: 600;

@@ -9,7 +9,7 @@ useHead({ title: 'About — Redeemer Pampa' });
 
 <template>
   <div class="mx-auto max-w-[110rem] px-5 pb-32 pt-12 sm:px-8 sm:pt-20">
-    <p class="eyebrow text-earth-400">About</p>
+    <p class="eyebrow text-wheat-600">About</p>
     <h1 id="staff" class="mt-6 text-colossal text-earth-900">Elders &amp; Staff</h1>
 
     <p class="mt-8 max-w-2xl text-lede font-light text-earth-600">

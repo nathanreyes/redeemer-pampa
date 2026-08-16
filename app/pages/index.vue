@@ -254,7 +254,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
 
     <!-- ============ COMMUNITY ============ -->
     <section class="mx-auto max-w-[110rem] px-5 py-24 sm:px-8 sm:py-32">
-      <p class="eyebrow text-earth-400">A Church That Reflects Its Community</p>
+      <p class="eyebrow text-wheat-600">A Church That Reflects Its Community</p>
       <p class="mt-8 max-w-[20ch] text-huge text-earth-900">
         There are no boundaries in a Christ-driven community.
       </p>

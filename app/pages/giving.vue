@@ -20,13 +20,13 @@ useHead({ title: 'Giving — Redeemer Pampa' });
 
 <template>
   <div class="mx-auto max-w-[110rem] px-5 pb-32 pt-12 sm:px-8 sm:pt-20">
-    <p class="eyebrow text-earth-400">Giving</p>
+    <p class="eyebrow text-wheat-600">Giving</p>
     <h1 id="motivation" class="mt-6 text-colossal text-earth-900">Motivation</h1>
 
     <div class="horizon mt-14 text-earth-900"></div>
 
     <section class="grid gap-x-12 gap-y-6 py-14 lg:grid-cols-12">
-      <p class="eyebrow text-earth-400 lg:col-span-3">Why we give</p>
+      <p class="eyebrow text-wheat-600 lg:col-span-3">Why we give</p>
       <div class="lg:col-span-9">
         <p class="measure text-earth-600">
           We desire to be generous as a church family — in our time, resources,

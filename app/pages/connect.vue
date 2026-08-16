@@ -9,7 +9,7 @@ useHead({ title: 'Connect — Redeemer Pampa' });
 
 <template>
   <div class="mx-auto max-w-[110rem] px-5 pb-32 pt-12 sm:px-8 sm:pt-20">
-    <p class="eyebrow text-earth-400">Connect</p>
+    <p class="eyebrow text-wheat-600">Connect</p>
     <h1 id="worship" class="mt-6 text-colossal text-earth-900">Worship</h1>
     <p class="mt-8 max-w-2xl text-lede font-light text-earth-600">
       Join us for morning services every Sunday at
@@ -64,7 +64,7 @@ useHead({ title: 'Connect — Redeemer Pampa' });
          as its own patch of land rather than inside a dark band, where it
          would vanish. -->
     <section v-if="podcast" id="podcast" class="border-t border-earth-900/15 pt-16">
-      <p class="eyebrow text-earth-400">Podcast</p>
+      <p class="eyebrow text-wheat-600">Podcast</p>
 
       <div class="mt-8 grid gap-x-12 gap-y-8 lg:grid-cols-12">
         <img
