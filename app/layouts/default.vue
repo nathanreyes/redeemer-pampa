@@ -57,7 +57,11 @@ const player = usePlayer();
           </svg>
         </button>
       </div>
-      <div class="horizon mx-5 text-earth-900/25 sm:mx-8"></div>
+      <!-- Full bleed, not inset to the container gutters. This one divides the
+           rail from whatever the page opens with, and the homepage opens with
+           a photograph that runs edge to edge — an inset rule stopping short of
+           it reads as a mistake rather than as a margin. -->
+      <div class="horizon text-earth-900/25"></div>
 
       <nav
         v-show="menuOpen"

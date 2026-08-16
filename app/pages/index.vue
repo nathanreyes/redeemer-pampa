@@ -77,14 +77,20 @@ const values = [
 ];
 
 // The headline is set over this one, so it has to be a photograph with somewhere
-// for the type to land: the baptism runs across the lower half and the wall of
-// the building fills the upper half, flat and empty. Cropped 4:3 — taller than
-// the band ever is — so that anchoring it to the top crops from the bottom and
-// drops the two faces clear of the headline.
+// for the type to land: the barn wall fills the upper left, and the baptism
+// itself sits low and right. Uncropped, and anchored to the top — the band is
+// wider than the frame, so the little that comes off the bottom is all that can
+// go without taking her face with it. A 4:3 crop loses her entirely.
+//
+// No lift here. This one came off a real camera and is properly exposed, so the
+// house treatment already leaves it enough range to carry type; lifting it as
+// well washes the wall and the shirts out to milk.
 const banner = {
-  wide: photo('v1776817270/dan-clara.jpg', { ar: '4:3', w: 2400, lift: true }),
-  narrow: photo('v1776817270/dan-clara.jpg', { ar: '9:16', w: 900, lift: true }),
-  alt: 'A baptism outside the church, watched by the gathered congregation',
+  wide: photo('v1786853843/clint-baptism_x5ygc2.jpg', { w: 2400 }),
+  // 3:4 rather than the phone's own 9:16: the two of them stand far enough
+  // apart that a narrower crop keeps him and loses her.
+  narrow: photo('v1786853843/clint-baptism_x5ygc2.jpg', { ar: '3:4', w: 900 }),
+  alt: 'A baptism in the barn, the congregation looking on',
 };
 
 const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${churchInfo.latitude},${churchInfo.longitude}`;
@@ -109,7 +115,7 @@ const headlineLines = ['Nothing', 'outweighs', 'the redeeming', 'work of Jesus',
             :src="banner.narrow"
             :alt="banner.alt"
             width="2400"
-            height="1800"
+            height="1597"
             fetchpriority="high"
             decoding="async"
             class="size-full object-cover object-top"
