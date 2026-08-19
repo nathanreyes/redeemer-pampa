@@ -5,6 +5,7 @@
       "role": "Elder",
       "summary": "TV serves Redeemer as an elder while also working in the health care industry. He has been married to his wife, Yvette, since 1992, and together they have two sons and six grandchildren.",
       "email": "tvcuellar1966@gmail.com",
+      "phone": "",
       "imgUrl": "https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_fill,g_face,h_1200,w_1200,x_0,y_0/v1749519931/TV.jpg"
     },
     {
@@ -12,31 +13,40 @@
       "role": "Lead Pastor, Elder",
       "summary": "Jeremy serves Redeemer both as lead pastor and as an elder. He and his wife, Karmen, have been married since 2002. Together they have three children; a daughter, Karsen, and two sons, Jude and Janner.",
       "email": "jbuck.redeemerpampa@gmail.com",
+      "phone": "",
       "imgUrl": "https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_fill,g_face,h_800,w_800/v1749519928/Jeremy.jpg"
     },
     {
       "name": "Clint Devoll",
       "role": "",
       "summary": "Clint works full-time at Redeemer focusing on serving Gospel Communities and our men. He's been married to his wife, Jenee, since   2011 and together they have four children; Bristol, Rayden, Hudson, and Teagan.",
-      "email": "clint.devoll@gmail.com"
+      "email": "clint.devoll@gmail.com",
+      "phone": "",
+      "imgUrl": ""
     },
     {
       "name": "Mary Grace Rayburn",
       "role": "",
+      "summary": "M﻿ary Grace works part-time at Redeemer serving our women while also working as a Speech Therapist. She's been married to her husband, Paul, since 2006 and they have three children; Joseph, Gabe, and Kinley.",
       "email": "marygrace.rayburn@gmail.com",
-      "summary": "M﻿ary Grace works part-time at Redeemer serving our women while also working as a Speech Therapist. She's been married to her husband, Paul, since 2006 and they have three children; Joseph, Gabe, and Kinley."
+      "phone": "",
+      "imgUrl": ""
     },
     {
       "name": "Shawn Taylor",
       "role": "",
-      "summary": "Shawn works part-time at Redeemer leading our worship ministry. He also works at his family’s business, Texas Printing, and at The Well STEM Center. Shawn's been married to Lori Beth, since 2021, and they have a son, Abram.",
+      "summary": "Shawn works part-time at Redeemer leading our worship ministry. He also works at his family’s business, Texas Printing, and at The Well STEM Center. Shawn's been married to Lori Beth, since 2021, and they have a son, Abram, and a daughter, Evelyn.",
       "email": "me@bottlingthemoon.com",
+      "phone": "",
       "imgUrl": "https://res.cloudinary.com/do3iknsvm/image/upload/q_auto,f_auto,c_crop,g_face,w_500,h_500/v1749522325/shawn_taylor.jpg"
     },
     {
       "name": "Devney Anderson",
-      "summary": "D﻿evney works part-time at Redeemer serving our children and their families while also running a family business. Devney and her husband, Mike, have three children and six grandchildren.",
-      "email": "devney.anderson@gmail.com"
+      "role": "",
+      "summary": "D﻿evney works part-time at Redeemer serving our children and their families while also running a family business. Devney and her husband, Mike, have three children and seven grandchildren.",
+      "email": "devney.anderson@gmail.com",
+      "phone": "",
+      "imgUrl": ""
     }
   ],
   "beliefs": [
